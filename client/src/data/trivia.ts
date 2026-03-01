@@ -123,4 +123,48 @@ export const GAME_TRIVIA: Record<string, string> = {
   'tiny-fishing':
     'Tiny Fishing blends idle and active gameplay — the fishing requires precision, but upgrades run passively. The deepest fish (legendary tier) requires a fully upgraded line of 100+ metres. The game\'s economy follows an exponential curve: the first 10 metres cost $100 to unlock, while the last 10 cost over $1 million. Real deep-sea anglerfish live at depths of 1,000-4,000 metres and use bioluminescent lures to attract prey.',
 
+  'gunspin':
+    'GunSpin uses realistic recoil physics — heavier weapons like shotguns produce more kickback but fire fewer rounds, while pistols offer rapid fire with less thrust per shot. The concept of using gunfire for propulsion has real-world parallels: NASA explored "Project Orion" in the 1960s, which proposed propelling spacecraft using nuclear explosions. The game has over 20 unlockable weapons, and the heaviest — the Minigun — weighs 10x more than the starting pistol.',
+
+  'vex-6':
+    'The Vex series pioneered the "stickman platformer" genre in browser gaming. Vex 6 introduced swimming mechanics with a realistic air meter — the stickman loses oxygen at a rate proportional to movement speed, encouraging slow, deliberate underwater navigation. The level designers use a grid-based system where each "tile" is exactly 32×32 pixels, allowing for pixel-perfect jump distances that can be memorised with practice.',
+
+  'burrito-bison':
+    'Burrito Bison was created by Montreal-based studio Juicy Beast. The original Flash version launched in 2011 and was played over 50 million times on Newgrounds. The sequel, Launcha Libre, added two new wrestlers — Pineapple Pug (a dog in a pineapple luchador mask) and El Pollo (a chicken). The game\'s gummy bears are based on Haribo gummy bears, and the developers confirmed they ate "an unreasonable amount" during development for reference.',
+
+  'ragdoll-hit':
+    'Ragdoll physics in games were popularised by Jurassic Park: Trespasser (1998), which was the first game to use procedural ragdoll animation for character death. Modern ragdoll games like Ragdoll Hit calculate physics for each of 15+ body segments independently, requiring hundreds of constraint calculations per frame. The term "ragdoll" comes from the way a cloth doll flops when tossed — early 3D characters exhibited this same limp behavior.',
+
+  'soccer-random':
+    'Soccer Random belongs to the "Random" series by RHM Interactive, which also includes Basketball Random, Volleyball Random, and more. The game randomises up to 12 different variables each round, producing over 1 million possible combinations. The one-button control scheme (W for Player 1, UP for Player 2) was inspired by the minimalist design philosophy of games like QWOP and Flappy Bird.',
+
+  'super-mario-bros':
+    'Super Mario Bros (1985) sold over 40 million copies and is credited with reviving the video game industry after the 1983 crash. Mario was originally named "Jumpman" and appeared in the 1981 arcade game Donkey Kong. His moustache exists because creator Shigeru Miyamoto couldn\'t animate a mouth in the limited pixel space. The game\'s World 1-1 is considered the greatest level in gaming history — it teaches players every core mechanic without a single word of text.',
+
+  'baseball-bros':
+    'Baseball has been played professionally since 1869 when the Cincinnati Red Stockings became the first all-professional team. The fastest pitch ever recorded was 105.8 mph by Aroldis Chapman in 2010. A baseball has exactly 108 stitches, and every ball used in MLB is hand-stitched in Costa Rica. The "home run" as we know it became common only after Babe Ruth popularised power hitting in the 1920s.',
+
+  'baseball-9':
+    'Baseball 9 captures the depth of baseball team management — in real MLB, teams spend an average of $165 million per year on player salaries. The game\'s stat system mirrors real baseball metrics: batting average, ERA (Earned Run Average), and OPS (On-base Plus Slugging). Japan\'s Nippon Professional Baseball league is the second-largest professional baseball league, and many NPB players have gone on to MLB stardom.',
+
+  'sprunki-phase-9':
+    'The Sprunki series is inspired by Incredibox, a music creation app created by French studio So Far So Good in 2009. Incredibox has been used in over 50,000 schools worldwide as a music education tool. Sprunki Phase 9 features a darker aesthetic inspired by horror games, with sound elements that include minor key melodies, distorted vocals, and atmospheric drones. The "phase" naming convention mirrors the evolution of electronic music genres.',
+
+  'sprunki-clicker':
+    'Idle clicker games generate over $1 billion annually, a genre essentially invented by Cookie Clicker in 2013. Sprunki Clicker combines this addictive format with music creation. The psychological hook is the "variable ratio reinforcement schedule" — the same mechanism that makes slot machines compelling. Each prestige reset in the game references the music production concept of "remixing" — taking existing elements and reimagining them.',
+
+  'sprunki-night-time':
+    'Night-themed music has its own genre — "dark ambient" — pioneered by Brian Eno\'s 1982 album "Ambient 4: On Land." Sprunki Night Time\'s sound design uses techniques from this genre: long reverb tails, low-frequency drones, and sparse melodic elements. Studies show that listening to ambient music at night can reduce cortisol levels by up to 25%, potentially explaining why night-themed music games attract players seeking relaxation.',
+
+  'sprunki-grown-up':
+    'The transition from "kid-friendly" to "grown-up" music production mirrors real-world music education. Professional music producers typically train for 5-10 years before creating commercially viable tracks. Sprunki Grown Up\'s more complex sound palette includes elements of lo-fi hip hop, jazz fusion, and electronic dance music — genres that emerged in the 1980s-2000s and remain among the most popular streaming categories.',
+
+  'sprunki-playground':
+    'Sandbox-mode games consistently outperform linear games in player retention — studies show players spend 3x longer in open-ended creative modes. Sprunki Playground\'s all-unlocked approach follows the "Minecraft Creative Mode" philosophy: remove barriers and let creativity flourish. The possible sound combinations in a 50-element mixer exceed 1.1 quadrillion (2^50), meaning no two players will likely create the same exact mix.',
+
+  'crazy-chicken-3d':
+    'Crazy Chicken (Moorhuhn) was originally created as an advertising game for Johnnie Walker whisky by German developer Phenomedia in 1999. It became a viral sensation in Germany, downloaded over 10 million times in its first year — making it one of the first "viral games" before the term existed. The franchise has spawned over 30 sequels across every platform. At its peak, German employers estimated a loss of €50 million in productivity due to employees playing Moorhuhn at work.',
+
+  'free-rider':
+    'Free Rider HD\'s track editor is based on the mathematical concept of Bézier curves, invented by French engineer Pierre Bézier in 1962 for designing car bodies at Renault. The original Free Rider was a Flash game created by Pete (known as "Belugerin") in 2007. The community has created over 5 million user tracks, with the most popular tracks receiving millions of plays. The physics engine simulates 60 calculations per second for realistic bicycle suspension and momentum.',
 };
