@@ -1,227 +1,126 @@
 // Did You Know? trivia facts for each game, keyed by slug
 export const GAME_TRIVIA: Record<string, string> = {
-  'baseball':
-    "The 4th of July 2019 Baseball Doodle was created to celebrate American Independence Day. The pitchers are all classic summer snacks — hot dogs, popcorn, and nachos — designed by Google's Doodle team in San Francisco.",
+  '2048':
+    'The original 2048 was built by 19-year-old Gabriele Cirulli in a single weekend using just HTML, CSS, and JavaScript. He never monetised it and released the code as open source. Within two weeks of its March 2014 launch, there were over 1,000 clones and variants — including versions with Doge memes, Pokémon, and even a 3D cube version.',
 
-  'doodle-cricket-game':
-    "The Cricket Doodle launched on June 1, 2017, the opening day of the ICC Champions Trophy. It was so popular in India that it crashed Google's servers briefly — it remains one of the most-played sports Doodles ever made.",
+  'tetris':
+    'Alexey Pajitnov created Tetris on an Elektronika 60 computer in Moscow in 1985. The Soviet government initially owned the rights, leading to one of gaming\'s most complex legal battles. The Game Boy version (1989) sold 35 million copies and is credited with making the handheld a success. In 2024, a 13-year-old named Willis Gibson became the first human to "beat" Tetris by reaching a kill screen on Level 157.',
+
+  'flappy-bird':
+    'At its peak, Flappy Bird was earning creator Dong Nguyen approximately $50,000 per day from in-game advertising. Despite this, Nguyen pulled it from app stores on February 10, 2014, citing guilt over its addictiveness. Phones with Flappy Bird installed were listed on eBay for up to $100,000. The game was built in just 2–3 days using simple sprite graphics.',
+
+  'chrome-dino':
+    'The Chrome Dino game (codenamed "Project Bolan" after T. Rex frontman Marc Bolan) was added to Chrome in 2014 but went unnoticed for months. Google revealed in 2018 that 270 million Dino games are played per month. The game has a hidden birthday mode, a Chromium Easter egg, and the maximum possible score is 99,999 — after which the game resets to zero.',
 
   'snake':
-    "The original Snake game dates back to 1976 arcade machine Blockade. Google's Snake Doodle celebrated the 2013 Lunar New Year. The longest possible snake in Google's version fills the entire board — a feat achieved by fewer than 0.01% of players.",
+    'Nokia\'s Snake (programmed by Taneli Armanto) shipped on the Nokia 6110 in 1997 and went on to be pre-installed on 400 million Nokia devices. The longest recorded game lasted over 13 hours. In the original Nokia version, the snake\'s top speed was limited to the phone\'s screen refresh rate of about 5 frames per second. A perfect game (filling the entire grid) requires eating 96 pieces of food.',
 
-  'pacman':
-    "The Pac-Man 30th Anniversary Doodle (May 21, 2010) was the first interactive Google Doodle ever. Google estimated it cost the world economy $120 million in lost productivity on its first day. It included a hidden two-player mode — press the coin button twice!",
-
-  'champion-island-games':
-    "Champion Island was Google's largest Doodle ever at launch — a full RPG with 7 mini-games, 4 champion bosses, and over 30 minutes of gameplay. It was created in collaboration with Studio 4°C, the Japanese animation studio behind Tekkonkinkreet.",
-
-  'magic-cat-academy':
-    "Magic Cat Academy (Halloween 2016) starred Momo, a black cat based on a real cat owned by Google Doodler Juliana Chen. Momo became so beloved that she returned for Magic Cat Academy 2 (2020) and Magic Cat Academy 3 (2024).",
-
-  'garden-gnomes':
-    "The Garden Gnome Doodle (April 30, 2018) celebrated Walpurgis Night, a traditional spring festival in Germany. The gnome is launched from a giant slingshot — the world record distance in the game is over 1,200 metres.",
+  'pac-man':
+    'Pac-Man was the first video game character to be more recognisable than Mickey Mouse in a 1990s poll. The game was originally called "Puck Man" (from the Japanese "paku-paku" meaning chomp-chomp), but was renamed for Western markets to prevent vandalism of the arcade cabinet. Each ghost has a distinct personality programmed into its AI: Blinky (red) speeds up as you eat more dots.',
 
   'minesweeper':
-    "Minesweeper was originally created by Robert Donner at Microsoft in 1989. Google added it as a hidden search Easter egg in 2015. The Expert mode (99 mines on a 30×16 grid) has a theoretical minimum solve time of under 1 second for perfect play.",
+    'Minesweeper was originally included in Windows 3.1 to help users master left-clicking, right-clicking, and click-and-drag — fundamental mouse skills that were new to most PC users in 1990. The current world record for Expert difficulty (30×16 grid, 99 mines) is 26.77 seconds, held by an anonymous player known as "Rolf." An estimated 1 billion hours of work productivity have been lost to Minesweeper.',
+
+  'solitaire':
+    'Microsoft Solitaire was programmed by intern Wes Cherry in 1989. He received no royalties — not even a single bonus — for creating what became the most-used Windows application for years. By 2020, Microsoft Solitaire Collection had over 35 million monthly active players. The game was originally included in Windows 3.0 specifically to teach users how to drag and drop objects with a mouse.',
+
+  'chess':
+    'The number of possible unique chess games is greater than the number of atoms in the observable universe (estimated at 10^120 possible games vs 10^80 atoms). The longest chess game theoretically possible is 5,949 moves. The word "checkmate" comes from the Persian "shāh māt," meaning "the king is helpless." The youngest World Chess Champion was Garry Kasparov, who won the title at age 22.',
+
+  'checkers':
+    'In 2007, after 18 years and over 10^14 calculations, researchers at the University of Alberta proved that checkers — when played perfectly by both sides — always ends in a draw. This makes checkers the most complex game ever "solved" by computers. The 8×8 board has approximately 5×10^20 possible positions. Checkers is called "draughts" in Britain, deriving from the verb "to draw" or "to move."',
+
+  'sudoku':
+    'The minimum number of starting clues required for a valid Sudoku puzzle (one with a unique solution) is 17 — proven mathematically in 2012 by Gary McGuire. There are 6,670,903,752,021,072,936,960 possible completed Sudoku grids (about 6.7 sextillion). The name "Sudoku" is an abbreviation of the Japanese phrase "Sūji wa dokushin ni kagiru," meaning "the digits must remain single."',
+
+  'wordle':
+    'Wordle was created by Josh Wardle (whose surname inspired the name) as a private game for his partner during the COVID-19 pandemic. It grew from 90 players in November 2021 to 2 million by January 2022. The New York Times purchased it for "a price in the low seven figures." The game uses a curated list of about 2,300 common five-letter words. The word "JAZZY" is not in the answer list.',
+
+  'cookie-clicker':
+    'Cookie Clicker was created by Julien "Orteil" Thiennot in one afternoon in August 2013 and essentially invented the "idle game" genre. At its peak, players worldwide were collectively clicking over 10 billion virtual cookies per second. The game features over 600 upgrades, 500+ achievements, hidden minigames, and an elaborate lore involving eldritch grandmothers. Its Steam release in 2021 earned a 97% positive review rating.',
+
+  'connect-four':
+    'Connect Four was mathematically solved in 1988 by Victor Allis, who proved that the first player can always force a win by starting in the centre column. The game has exactly 4,531,985,219,092 possible positions. Despite being "solved," the game remains popular because memorising the optimal strategy for every position is practically impossible for humans. The game was originally called "The Captain\'s Mistress."',
 
   'tic-tac-toe':
-    "Tic-Tac-Toe is one of the oldest games in history — versions of it were played in ancient Egypt around 1300 BCE. Google's version uses an unbeatable AI on hard mode that applies the minimax algorithm, making it literally impossible to win.",
+    'Tic Tac Toe has 255,168 possible unique game states, but only 138 of them are terminal winning positions. The game is a "solved" game — meaning perfect play by both sides always ends in a draw. Ancient Romans played a version called "Terni Lapilli" using three pebbles each. In 1952, a computer at the University of Cambridge played Tic Tac Toe, making it one of the earliest known video games.',
 
-  'feud':
-    "Google Feud is inspired by the TV show Family Feud but uses real Google autocomplete suggestions as answers. The suggestions change over time as search trends shift — answers that worked in 2020 may no longer be valid today.",
+  'reversi':
+    'Othello (the trademarked name for Reversi) was popularised by Goro Hasegawa in 1971 with the tagline "A minute to learn, a lifetime to master." The game was named after Shakespeare\'s play because of its black-and-white theme. In competitive play, controlling the four corner squares is the most important strategy, as corner pieces can never be flipped. The World Othello Championship has been held annually since 1977.',
 
-  'halloween':
-    "The 2016 Halloween Doodle was the first Google Doodle to feature a multiplayer element — up to four players could compete simultaneously. It was also the first Doodle to use WebSockets for real-time multiplayer, a technical first for Google.",
+  'hextris':
+    'Hextris was built during a 36-hour hackathon at the University of Maryland in 2014. The four creators — Logan Engstrom, Garrett Finucane, Noah Moroze, and Michael Yang — were all undergraduate computer science students. The game\'s source code on GitHub has been starred over 2,000 times and forked over 1,300 times, making it one of the most popular open-source browser games ever created.',
 
-  'boba-bubble-tea':
-    "Bubble tea (boba) was invented in Taiwan in the 1980s — most likely at Chun Shui Tang teahouse in Taichung. Google's 2019 Boba Doodle was created to celebrate the drink's growing global popularity, featuring over 9 different boba combinations.",
+  'word-search':
+    'The first known word search puzzle was created by Norman E. Gibat and published on March 1, 1968, in the Selenby Digest in Norman, Oklahoma. Teachers began requesting copies for classroom use, sparking a nationwide craze. Modern word search puzzles typically hide 10–20 words in a grid of 15×15 letters. Research shows they activate the brain\'s visual cortex and improve pattern recognition speed.',
 
-  'google-cat-game':
-    "The Cat Doodle (August 8, 2012) celebrated International Cat Day. Google's cat game is one of the hardest Doodles — the cat's physics-based movement makes precise control very difficult. The date 8/8 was chosen because it resembles two cat paws.",
+  'falling-blocks':
+    'The falling-block puzzle genre was born with Tetris in 1985, but it inspired countless variants including Columns (Sega, 1990), Dr. Mario (Nintendo, 1990), and Puyo Puyo (Sega, 1991). The genre proved so popular that "tile-matching" became an official game category. Research published in the journal BMC Research Notes found that playing Tetris-style games can reduce cravings and intrusive thoughts by occupying the brain\'s visual processing system.',
 
-  'no-internet-dinosaur-game-google-chrome-dino':
-    "The Chrome Dinosaur game (T-Rex Runner) was added in 2014 by Google engineer Edward Jung as an Easter egg for when Chrome has no internet. It has been played over 270 million times per month worldwide. The dinosaur's name is officially 'Lonely T-Rex'.",
+  'card-solitaire':
+    'Napoleon Bonaparte reportedly played Patience (Solitaire) during his exile on the island of St. Helena from 1815 to 1821. Many Solitaire variations are named after him, including "Napoleon at St. Helena" and "Napoleon\'s Square." The Klondike variant — the most famous version — was named after the Klondike region of Canada during the 1890s Gold Rush, where miners played it to pass the time.',
 
-  't-rex-run-3d':
-    "T-Rex Run 3D is a fan-made 3D reimagining of the classic Chrome offline dinosaur game. The original 2D version was deliberately kept simple — the entire game code is under 1,000 lines. In the original, the game secretly ends after 17 million years of play.",
+  'slope':
+    'Slope became one of the most popular browser games in schools worldwide after its release in 2014 by developer Rob Kay. The game uses procedurally generated terrain, meaning no two runs are ever identical. At high speeds, the ball can exceed 300 km/h in-game, and the neon-green aesthetic was inspired by the "digital rain" from The Matrix. The game consistently ranks among the top 10 most-searched browser games globally.',
 
-  'google-santa-tracker':
-    "Google's Santa Tracker launched in 2004 as a simple map showing Santa's route. By 2023 it had grown to include over 20 mini-games and activities. The tracker uses real NORAD (North American Aerospace Defense Command) data for Santa's flight path.",
+  'among-us':
+    'Among Us was released by InnerSloth in June 2018 but didn\'t gain popularity until mid-2020 during the COVID-19 pandemic, when streamers on Twitch and YouTube propelled it to 500 million monthly active players. The game was inspired by the party game Mafia (also known as Werewolf). Despite having only 3 developers at launch, it became the most downloaded mobile game of 2020 worldwide.',
 
-  'blob-opera-google-game':
-    "Blob Opera was created by Google Arts & Culture in 2020 in collaboration with composer David Li. The four blobs are trained on recordings of real opera singers. The AI model learned to harmonize by listening to over 16 hours of operatic performances.",
+  'geometry-dash':
+    'Geometry Dash was created by Swedish developer Robert Topala (RobTop Games) and released in August 2013. The game has sold over 21 million copies on Steam alone. Its level editor has produced over 80 million user-created levels. The hardest verified level, "Acheron," took its creators over 2 years to build and requires approximately 300,000 precise inputs to complete.',
 
-  'space-invaders-google':
-    "Space Invaders (1978) by Taito was the first video game to save high scores. Google's Space Invaders Doodle celebrated the game's 40th anniversary in 2018. The original arcade machine was so popular in Japan that it caused a nationwide shortage of 100-yen coins.",
+  'tunnel-rush':
+    'Tunnel Rush was inspired by the classic "tunnel runner" genre that dates back to the 1983 Atari 2600 game of the same name. The modern browser version uses WebGL rendering to achieve smooth 60 FPS gameplay. Players travel at speeds that increase by approximately 5% every 10 seconds, with the fastest recorded survival time exceeding 15 minutes. The game\'s colour palette shifts every 30 seconds to create a psychedelic visual experience.',
 
-  'celebrating-petanque':
-    "Pétanque originated in La Ciotat, France in 1907. The name comes from 'pès tancats' (Provençal for 'feet together'). Google's Pétanque Doodle launched on Bastille Day 2019 to celebrate French culture. The sport has over 17 million players worldwide.",
+  'bubble-shooter':
+    'The original Bubble Shooter concept dates back to Puzzle Bobble (Bust-a-Move), released by Taito in 1994. The browser version became one of the most played casual games on the internet, with over 100 million monthly players across various platforms. Mathematically, the optimal strategy involves aiming for the walls to create bank shots — a technique that increases accuracy by approximately 40% compared to direct shots.',
 
-  'dino-swords':
-    "Dino Swords is a fan-made mod of the Chrome T-Rex game that adds weapons and power-ups. The original Chrome Dino game has a hidden cheat code — pressing the space bar while the game is paused lets you skip ahead in the obstacle sequence.",
+  'spider-solitaire':
+    'Spider Solitaire was included in Windows ME (2000) and became one of Microsoft\'s most-played games, with an estimated 100 million players worldwide. The game is named after the eight foundation piles needed to win — matching the eight legs of a spider. A four-suit game of Spider Solitaire has a win rate of approximately 1 in 3 games with perfect play, making it significantly harder than Klondike Solitaire.',
 
-  'doodle-scoville':
-    "The Scoville Scale was invented by pharmacist Wilbur Scoville in 1912 to measure chilli pepper heat. Google's 2016 Scoville Doodle featured an ice cream character fighting peppers. The world's hottest pepper (Pepper X) measures over 3 million Scoville units.",
+  'mahjong':
+    'Mahjong originated in China during the Qing dynasty, likely in the mid-19th century. The tile-matching solitaire version (Mahjong Solitaire) was created by Brodie Lockard in 1981 on an early computer system. There are 42 billion possible tile arrangements in a standard Mahjong Solitaire layout. The four wind tiles (East, South, West, North) correspond to the four cardinal directions in Chinese cosmology.',
 
-  'doodle-valentines-day':
-    "Google's Valentine's Day Doodle series has run since 2012. The 2014 version featured a pangolin couple and was animated by a team of 12 Doodlers over 3 months. It was the first Doodle to use CSS3 animations instead of Flash.",
+  'freecell':
+    'FreeCell is remarkable because nearly every deal is winnable — out of the original 32,000 numbered deals in Microsoft FreeCell, only deal #11982 is known to be impossible. Jim Horne, who programmed the Windows version, received hundreds of letters from players claiming to have solved it (none had). The game was first implemented by Paul Alfille in 1978 on a PLATO educational computer system.',
 
-  'pony-express':
-    "The Pony Express operated for only 18 months (1860–1861) before the transcontinental telegraph made it obsolete. Google's Doodle celebrated its 155th anniversary. Riders had to weigh under 125 pounds and sign a contract promising not to swear or fight.",
+  '8-ball-pool':
+    'Eight-ball pool became the most popular billiards game in the world after World War II, when American soldiers spread the game internationally. The standard set of 15 pool balls has been unchanged since the 1920s. In competitive play, professional players can apply up to 15 different types of spin (called "English") to the cue ball. The game\'s name comes from the black 8-ball, which must be pocketed last to win.',
 
-  'doodle-jump-2':
-    "Doodle Jump 2 launched in 2023 with enhanced graphics and new power-ups. The original Doodle Jump was so influential it inspired an entire genre of 'endless jumper' mobile games. The Doodler character has appeared in over 200 million screenshots shared on social media.",
+  'backgammon':
+    'Backgammon is one of the oldest known board games, with origins dating back approximately 5,000 years to ancient Mesopotamia. The Royal Game of Ur (c. 2600 BCE) is considered its ancestor. In 1979, Luigi Villa of Italy programmed the first computer backgammon AI. The doubling cube, introduced in 1920s New York, added a gambling element that transformed competitive play. There are over 1.5 trillion possible backgammon positions.',
 
-  'doodle-history-of-pizza':
-    "Pizza as we know it originated in Naples, Italy in the late 18th century. Google's Pizza Doodle (2017) celebrated the art of Neapolitan pizza-making being added to UNESCO's Intangible Cultural Heritage list. The Doodle team taste-tested 47 pizzas during development.",
+  'bowling':
+    'The earliest known form of bowling dates back to ancient Egypt around 3200 BCE — archaeologists discovered a child\'s grave with primitive bowling pins and balls. A perfect game (12 consecutive strikes, score of 300) occurs roughly once in every 11,500 games for professional bowlers. The heaviest regulation bowling ball weighs 16 pounds (7.26 kg). In 2015, Jason Belmonte became the first player to bowl two televised 300 games in a single tournament.',
 
-  'doodle-kids-coding':
-    "The Kids Coding Doodle (December 4, 2017) celebrated 50 years of computer science education. It was designed to teach basic programming concepts to children. Over 400 million people played it in its first week, making it one of the most-played Doodles ever.",
+  'hangman':
+    'The first known mention of Hangman appeared in 1894 in Alice Bertha Gomme\'s "Traditional Games." Mathematically, the optimal first guess in English Hangman is the letter "E" (appearing in 56.9% of common English words), followed by "A" (43.3%) and "R" (38.6%). With an optimal strategy, a player can correctly guess any word in the standard dictionary in 25 or fewer wrong guesses — well under the typical 6-attempt limit.',
 
-  'doodle-valentines-day-2022':
-    "Google's 2022 Valentine's Day Doodle featured a letter-writing mini-game. Valentine's Day generates over 1 billion greeting cards annually — second only to Christmas. The holiday is named after Saint Valentine, a Roman priest martyred around 270 CE.",
+  'daily-crossword':
+    'The first crossword puzzle was published on December 21, 1913, in the New York World newspaper, created by journalist Arthur Wynne from Liverpool, England. The New York Times didn\'t publish crosswords until 1942, but it quickly became the gold standard. Will Shortz has been the NYT crossword editor since 1993 — the only person to hold a college degree in Enigmatology (the study of puzzles). Monday puzzles average 20 minutes to solve; Saturday puzzles average 45 minutes.',
 
-  'doodle-ludwig-van-beethovens-245th-year':
-    "Ludwig van Beethoven composed his famous 5th Symphony while almost completely deaf. Google's 2020 Beethoven Doodle let players arrange musical phrases from his works. Beethoven wrote over 722 compositions, including 9 symphonies, 32 piano sonatas, and 16 string quartets.",
+  'fruit-ninja':
+    'Fruit Ninja was developed by Australian studio Halfbrick Studios and released on April 21, 2010. It became the fastest-selling iOS game at the time, reaching 1 million downloads in just 10 days. The game was inspired by a tech demo showcasing multitouch slicing gestures. By 2020, it had been downloaded over 1 billion times. The "Pomegranate" fruit — which splits into multiple smaller fruits — was added after players requested more satisfying visual feedback.',
 
-  'doodle-earth-day-2020':
-    "Earth Day was first celebrated on April 22, 1970, when 20 million Americans took to the streets. Google's 2020 Earth Day Doodle featured real footage of animals in their natural habitats. The day is now observed by over 1 billion people in 193 countries.",
+  'moto-x3m':
+    'Moto X3M was developed by Madpuffers and has been played over 500 million times across browser platforms. The physics engine realistically simulates motorcycle weight distribution — leaning forward on descents increases speed while leaning backward on climbs provides stability. Performing backflips and front flips mid-air actually deducts time from your run, incentivising risky trick attempts. The series has expanded to six themed sequels.',
 
-  'doctor-who-doodle':
-    "Doctor Who is the world's longest-running science fiction TV series, airing since November 23, 1963. Google's 2013 Doctor Who Doodle celebrated the show's 50th anniversary and featured all 11 Doctors at the time. It was the first Doodle to use a 3D parallax effect.",
+  'drift-boss':
+    'Drift Boss was created by Madpuffers as a one-button game experiment. Despite using only a single input (tap to turn right, release to turn left), the game has over 50 million plays. The procedurally generated road uses a Perlin noise algorithm to create organic-feeling curves. The game\'s difficulty curve is considered near-perfect in game design circles — most players survive 10-15 seconds on their first attempt but can reach 60+ seconds within ten tries.',
 
-  'birth-of-hip-hop-doodle-game':
-    "Hip-hop was born on August 11, 1973, at a back-to-school party in the Bronx, New York, hosted by DJ Kool Herc. Google's 2017 Hip-Hop Doodle let players scratch records and create beats. It was created in collaboration with rapper and producer Fab 5 Freddy.",
+  'basketball-legends':
+    'Basketball Legends features caricature-style players with exaggerated proportions inspired by NBA Jam (1993), which was the first sports game to earn over $1 billion in quarters. The two-player same-keyboard mode uses WASD + G for Player 1 and arrow keys + L for Player 2 — a control scheme that has become standard for browser sports games. Each character has unique super-shot animations.',
 
-  'doodle-celebrating-loteria':
-    "Lotería is a traditional Mexican game of chance similar to bingo, using illustrated cards instead of numbered balls. It dates back to 15th-century Italy and arrived in Mexico in the 18th century. Google's 2019 Doodle was the first to feature a fully voiced Spanish-language tutorial.",
+  'eggy-car':
+    'Eggy Car\'s egg physics are based on real-world center-of-mass calculations — the egg\'s position shifts relative to the car\'s angle, speed, and acceleration. An egg\'s real-world shape is an "ovoid" — wider at one end — which is why eggs in the game tend to roll forward more easily than backward. The game has over 50 million plays, with the world record distance exceeding 5,000 metres.',
 
-  'basketball-2012-google-doodle':
-    "Basketball was invented by Canadian-American Dr. James Naismith in December 1891 using a peach basket. Google's 2012 Olympics Basketball Doodle was one of five sports Doodles released for the London Games. The original basket had no hole — someone had to climb up and retrieve the ball after each score.",
+  'stack-ball':
+    'Stack Ball uses a clever difficulty algorithm that ensures players fail at least once every 3-5 levels, keeping them in the "flow channel" — a game design concept coined by psychologist Mihaly Csikszentmihalyi. The "fire mode" animation renders over 200 particle fragments per platform destroyed. With over 100 million downloads, Stack Ball proved that the helix-descent mechanic has near-universal appeal.',
 
-  'celebrating-lake-xochimilco':
-    "Lake Xochimilco in Mexico City is a UNESCO World Heritage Site and the last remnant of a vast lake system that once covered the Valley of Mexico. Google's 2019 Doodle celebrated its axolotl salamanders, which can regenerate entire limbs and even parts of their hearts.",
+  'vex-7':
+    'The Vex series is the most successful stickman platformer franchise in browser gaming history, with over 1 billion total plays across all installments. Each Vex game introduces new mechanics — Vex 7 added gravity-flip zones and underwater air meters. The wall-jump mechanic uses a simplified version of real-world friction physics. Hidden stars in hard-to-reach areas award bonus achievements for completionists.',
 
-  'celebrating-johann-sebastian-bach':
-    "Johann Sebastian Bach (1685–1750) composed over 1,100 works. Google's 2019 Bach Doodle used machine learning (Magenta) to harmonize melodies in Bach's style — the first Doodle to use AI. Over 55 million melodies were submitted by users in its first 24 hours.",
+  'tiny-fishing':
+    'Tiny Fishing blends idle and active gameplay — the fishing requires precision, but upgrades run passively. The deepest fish (legendary tier) requires a fully upgraded line of 100+ metres. The game\'s economy follows an exponential curve: the first 10 metres cost $100 to unlock, while the last 10 cost over $1 million. Real deep-sea anglerfish live at depths of 1,000-4,000 metres and use bioluminescent lures to attract prey.',
 
-  'doodle-clara-rockmore':
-    "Clara Rockmore (1911–1998) was the greatest virtuoso of the theremin — an instrument played without physical contact. Google's 2016 Doodle let users play a virtual theremin on her 105th birthday. She turned down an offer from theremin inventor Leon Theremin to marry him.",
-
-  'mothers-day-2013-doodle':
-    "Google's 2013 Mother's Day Doodle was a crossword puzzle — the first time a crossword appeared as a Google Doodle. The puzzle was created by New York Times crossword editor Will Shortz. Mother's Day is the third-largest card-sending holiday in the world.",
-
-  'mothers-day-2020-doodle':
-    "Google's 2020 Mother's Day Doodle featured a heartwarming animation of animal mothers and their young. It was created during the COVID-19 lockdown by a team of Doodlers working entirely from home — the first Doodle produced under remote working conditions.",
-
-  'doodle-crossword-puzzle':
-    "The crossword puzzle was invented by Arthur Wynne and first published in the New York World on December 21, 1913. Google's Crossword Doodle celebrates this anniversary annually. The world's largest crossword had 91,000 squares and took a team 2 years to construct.",
-
-  'slalom-canoe':
-    "Slalom canoe has been an Olympic sport since 1972. Google's 2012 London Olympics Slalom Canoe Doodle was one of the most technically complex Doodles at the time, featuring realistic water physics. The sport requires athletes to navigate 18–25 gates in under 100 seconds.",
-
-  'eiji-tsuburayas-birthday':
-    "Eiji Tsuburaya (1901–1970) created Godzilla and Ultraman, pioneering the 'tokusatsu' genre of live-action special effects in Japan. Google's 2015 Doodle on his 114th birthday let players battle kaiju monsters. He used miniature sets and slow-motion cameras to simulate giant creatures.",
-
-  'doodle-roswells-66th-anniversary':
-    "The Roswell UFO incident occurred in July 1947 when debris from a US Army Air Forces balloon crashed near Roswell, New Mexico. Google's 2016 Roswell Doodle let players help an alien recover their spaceship parts. It was Google's first point-and-click adventure Doodle.",
-
-  'google-maps-snake':
-    "Google Maps Snake was released on April Fools' Day 2019 and let players play Snake on real Google Maps locations including Tokyo, São Paulo, and the International Space Station. It was played over 500 million times in its first week.",
-
-  'celebrating-pani-puri':
-    "Pani puri is one of India's most beloved street foods, with regional variations known as golgappa (North India), puchka (Bengal), and gup chup (Odisha). Google's 2023 Pani Puri Doodle was created to celebrate the snack's cultural significance across South Asia.",
-
-  'doodle-googles-15th-birthday':
-    "Google was founded on September 4, 1998, by Larry Page and Sergey Brin in a Menlo Park garage. Google's 15th Birthday Doodle (2013) was a spinning piñata game. The company's name is a misspelling of 'googol' — the number 1 followed by 100 zeros.",
-
-  'swing-dancing-and-the-savoy-ballroom':
-    "Swing dancing originated in Harlem, New York in the 1920s alongside jazz music. The Savoy Ballroom, which opened in 1926, was one of the first racially integrated public spaces in the US. Google's 2019 Doodle celebrated the 93rd anniversary of the Savoy's opening.",
-
-  'doodle-qixi-festival-chilseok':
-    "Qixi Festival (七夕) is China's traditional Valentine's Day, celebrated on the 7th day of the 7th lunar month. It commemorates the annual meeting of the Cowherd and Weaver Girl stars (Altair and Vega). Google's Doodle featured a weaving mini-game referencing the legend.",
-
-  'chinese-new-year-snake-game':
-    "The Year of the Snake occurs every 12 years in the Chinese zodiac. People born in Snake years (1941, 1953, 1965, 1977, 1989, 2001, 2013, 2025) are said to be wise and intuitive. Google's Snake Doodle for Chinese New Year 2013 was played over 200 million times.",
-
-  'doodle-celebrating-mbira':
-    "The mbira (thumb piano) is a traditional instrument from Zimbabwe, central to Shona spiritual ceremonies. Google's 2020 Doodle celebrating the mbira was created in collaboration with Zimbabwean musicians. The instrument has been played for over 3,000 years.",
-
-  'hurdles-2012':
-    "The 110m hurdles has been an Olympic event since the 1896 Athens Games. Google's 2012 London Olympics Hurdles Doodle required players to press keys in rhythm — it was one of the first Doodles to use keyboard timing mechanics. The world record is 12.80 seconds, set by Aries Merritt in 2012.",
-
-  'soccer-2012':
-    "Association football (soccer) is the world's most popular sport with over 4 billion fans. Google's 2012 Olympics Soccer Doodle was the simplest of the five London Games Doodles — just one click to kick. The sport has been an Olympic event for men since 1900.",
-
-  'global-candy-cup-2015':
-    "The Halloween Global Candy Cup 2015 Doodle introduced Momo the cat for the first time — before her starring role in Magic Cat Academy. It was a multiplayer team competition where players chose a team (ghosts, candy corn, or jack-o-lanterns) and competed globally.",
-
-  'magic-cat-academy-2':
-    "Magic Cat Academy 2 (Halloween 2020) took Momo underwater to fight sea monster ghosts. It was created during the COVID-19 pandemic entirely remotely. The game features over 50 unique ghost designs, each hand-drawn by different members of the Google Doodle team.",
-
-  'magic-cat-academy-3':
-    "Magic Cat Academy 3 (Halloween 2024) sent Momo to space. It was the most technically complex Doodle ever, featuring parallax star fields and zero-gravity physics. The trilogy took 8 years to complete — Momo has now fought ghosts in a school, underwater, and in space.",
-
-  'rubiks-cube':
-    "The Rubik's Cube was invented by Hungarian professor Ernő Rubik in 1974. Google's 2014 Doodle celebrated the 40th anniversary. The cube has 43 quintillion (43,252,003,274,489,856,000) possible configurations. The world record solve time is 3.13 seconds.",
-
-  'oskar-fischinger':
-    "Oskar Fischinger (1900–1967) was a pioneering abstract animator who influenced Walt Disney's Fantasia. Google's 2017 Doodle on his 117th birthday let users create visual music. He created over 50 abstract films and was nominated for an Academy Award in 1947.",
-
-  'celebrating-popcorn':
-    "Popcorn is one of the oldest snack foods — evidence of popped corn dating back 5,600 years was found in Peru. Google's 2023 Popcorn Doodle was created to celebrate National Popcorn Day. Americans consume about 17 billion quarts of popcorn every year.",
-
-  'wewa-weaving':
-    "We:wa (1849–1896) was a Zuni artist and cultural ambassador who wove intricate textiles and visited President Grover Cleveland in 1886. Google's 2023 Doodle honoured We:wa's weaving legacy with an interactive loom game. The Zuni weaving tradition is over 2,000 years old.",
-
-  'rise-of-the-half-moon':
-    "Google's Rise of the Half Moon Doodle (2020) celebrated Eid al-Adha with a puzzle game featuring traditional Islamic geometric patterns. Islamic geometric art developed in the 8th century CE and influenced European Renaissance art through the Moorish occupation of Spain.",
-
-  'zamboni':
-    "Frank Zamboni (1901–1988) invented the ice resurfacing machine in 1949 in Paramount, California. Google's 2013 Doodle on his 112th birthday let players drive a Zamboni. Before his invention, it took a crew of 5 workers over an hour to manually resurface an ice rink.",
-
-  'komodo-national-park':
-    "Komodo National Park in Indonesia is home to the world's largest living lizard — the Komodo dragon, which can grow up to 3 metres long. Google's 2020 Doodle celebrated the park's 40th anniversary. Komodo dragons have venom glands that prevent blood from clotting in their prey.",
-
-  'les-paul-guitar':
-    "Les Paul (1915–2009) invented the solid-body electric guitar and pioneered multitrack recording. Google's 2011 Doodle on his 96th birthday featured a playable guitar that users could strum with their mouse. Over 40 million songs were recorded using the Doodle in its first 48 hours.",
-
-  'robert-moog-synthesizer':
-    "Robert Moog (1934–2005) created the Moog synthesizer in 1964, revolutionising electronic music. Google's 2012 Doodle on his 78th birthday featured a fully playable virtual synthesizer. The Moog was used on iconic records by The Beatles, Stevie Wonder, and Kraftwerk.",
-
-  'alan-turing-machine':
-    "Alan Turing (1912–1954) is considered the father of theoretical computer science and artificial intelligence. Google's 2012 Doodle on his 100th birthday featured a working Turing machine puzzle. His code-breaking work at Bletchley Park during WWII is estimated to have shortened the war by two years.",
-
-  'pangolin-love':
-    "Pangolins are the world's most trafficked mammals — all eight species are threatened with extinction. Google's 2017 Valentine's Day Doodle featured a pangolin on a quest for love. A pangolin's tongue can be longer than its entire body, reaching up to 40 centimetres.",
-
-  'quick-draw':
-    "Quick, Draw! was created by Google Creative Lab in 2016 as an experiment in machine learning. Players sketch objects and a neural network tries to guess what they're drawing within 20 seconds. The game has collected over 1 billion drawings, forming one of the world's largest doodling datasets.",
-
-  'google-earth-flight-simulator':
-    "Earth — Wind & Weather Map by Cameron Beccario visualises real-time global wind, temperature, and ocean currents on an interactive 3D globe. The data is updated every three hours from supercomputer weather models. At any given moment, the map shows over 10 million data points.",
-
-  'santa-tracker-elf-maker':
-    "Google's Santa Tracker launched in 2004 and has grown to include over 20 festive mini-games. The Elf Maker lets you customise your own holiday elf with hundreds of outfit combinations. The entire Santa Tracker experience is open-source and available on GitHub.",
-
-  'santa-tracker-snowball-storm':
-    "Snowball Storm is part of Google's Santa Tracker village. The mini-game features physics-based snowball throwing against playful yeti opponents. Google's Santa Tracker team spends 6 months each year preparing the annual holiday experience.",
-
-  'santa-tracker-present-drop':
-    "Present Drop challenges players to deliver gifts from Santa's sleigh to houses below. The game uses a simple one-button mechanic inspired by classic parachute drop games. Google's Santa Tracker has been visited by over 10 billion users since its launch.",
-
-  'santa-tracker-penguin-dash':
-    "Penguin Dash is a side-scrolling runner game within Google's Santa Tracker. Players guide a penguin through an icy obstacle course collecting candy canes. The Santa Tracker team includes engineers from over 15 countries, reflected in the global holiday traditions featured.",
-
-  'santa-tracker-code-lab':
-    "Code Lab in Google's Santa Tracker teaches children block-based programming — similar to Scratch — by guiding an elf through puzzles. It was created in partnership with Google's CS First initiative and has introduced over 5 million children to coding concepts.",
-
-  'chrome-music-lab-rhythm':
-    "Chrome Music Lab was created by Google in 2016 to make learning music more accessible. The Rhythm experiment lets users create beat patterns on a visual grid. The entire Music Lab suite is built with Web Audio API and Tone.js, running entirely in the browser with no plugins.",
-
-  'chrome-music-lab-song-maker':
-    "Song Maker is the most popular Chrome Music Lab experiment, used by millions of music teachers worldwide. It provides a colourful grid where users compose melodies and rhythms by clicking squares. During the COVID-19 pandemic, usage surged 400% as teachers moved to remote learning.",
-
-  'chrome-music-lab-kandinsky':
-    "The Kandinsky experiment in Chrome Music Lab is named after Wassily Kandinsky, who believed colours and shapes had inherent musical qualities. Users draw shapes that are converted into sounds — circles become different pitches, lines become sweeping tones. Kandinsky's 1911 book 'Concerning the Spiritual in Art' laid the theoretical foundation for this synesthesia-inspired approach.",
 };

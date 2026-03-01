@@ -53,7 +53,7 @@ export default function Home() {
   const [activeTags, setActiveTags] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState<'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest'>(() => {
     try {
-      const saved = localStorage.getItem('doodle-sort-by');
+      const saved = localStorage.getItem('arcade-sort-by');
       const valid = ['default', 'most-played', 'highest-rated', 'a-z', 'newest'];
       if (valid.includes(saved ?? '')) return saved as 'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest';
     } catch { /* SSR */ }
@@ -235,7 +235,7 @@ export default function Home() {
             className="hero-bg-img"
           />
           {/* Animated gradient overlay — breathes in/out */}
-          <div className="hero-overlay-breathe absolute inset-0 bg-gradient-to-r from-violet-950/88 via-violet-900/72 to-violet-900/20 rounded-3xl" />
+          <div className="hero-overlay-breathe absolute inset-0 bg-gradient-to-r from-slate-950/88 via-cyan-900/72 to-teal-900/20 rounded-3xl" />
 
           {/* Scanline sweep */}
           <div className="hero-scanline" aria-hidden="true" />
@@ -265,11 +265,11 @@ export default function Home() {
             <div className="flex-1">
               {/* Badge */}
               <div className="hero-text-enter inline-flex items-center gap-2 mb-2 md:mb-4 bg-white/10 backdrop-blur-sm border border-white/15 rounded-full px-3 py-1.5">
-                <div className="w-5 h-5 rounded-md bg-violet-400/60 flex items-center justify-center" aria-hidden="true">
+                <div className="w-5 h-5 rounded-md bg-cyan-400/60 flex items-center justify-center" aria-hidden="true">
                   <Gamepad2 className="w-3 h-3 text-white" />
                 </div>
                 <span className="text-white/90 text-[11px] font-semibold tracking-widest uppercase">
-                  Doodle Games Hub
+                  Play Arcade
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" aria-hidden="true" />
               </div>
@@ -329,8 +329,8 @@ export default function Home() {
         {recentGames.length > 0 && (
           <div className="mb-10">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-7 h-7 rounded-lg bg-violet-100 dark:bg-violet-900/40 flex items-center justify-center">
-                <Clock className="w-4 h-4 text-violet-600" />
+              <div className="w-7 h-7 rounded-lg bg-cyan-100 dark:bg-cyan-900/40 flex items-center justify-center">
+                <Clock className="w-4 h-4 text-cyan-600" />
               </div>
               <h2 className="text-base font-bold text-slate-800 dark:text-slate-100 tracking-tight">{t('home.recentlyPlayed')}</h2>
               <span className="text-xs text-slate-400 dark:text-slate-500 font-medium ml-1">— {t('home.recentlyPlayedHint')}</span>
@@ -340,16 +340,16 @@ export default function Home() {
                 <div key={game.slug} className="group relative h-full" onMouseEnter={() => prefetchGameUrl(game.iframeUrl)}>
                   <Link href={`/play/${game.slug}/`} className="block h-full">
                     <div className="h-full">
-                      <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 border border-violet-100 dark:border-violet-900/40 shadow-sm
+                      <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 border border-cyan-100 dark:border-cyan-900/40 shadow-sm
                         transition-all duration-300 ease-out
                         hover:scale-[1.03] hover:-translate-y-1.5
-                        hover:shadow-2xl hover:shadow-violet-400/25 dark:hover:shadow-violet-600/30
-                        hover:border-violet-300 dark:hover:border-violet-600
+                        hover:shadow-2xl hover:shadow-cyan-400/25 dark:hover:shadow-cyan-600/30
+                        hover:border-cyan-300 dark:hover:border-cyan-600
                         h-full flex flex-col">
                         <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                          style={{ background: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(236,72,153,0.06) 50%, rgba(6,182,212,0.06) 100%)' }}
+                          style={{ background: 'linear-gradient(135deg, rgba(6,182,212,0.08) 0%, rgba(20,184,166,0.06) 50%, rgba(6,182,212,0.06) 100%)' }}
                         />
-                        <div className="absolute top-2 left-2 z-10 flex items-center gap-1 bg-violet-600/90 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">
+                        <div className="absolute top-2 left-2 z-10 flex items-center gap-1 bg-cyan-600/90 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">
                           <Clock className="w-2.5 h-2.5" />
                           {t('home.recent')}
                         </div>
@@ -361,7 +361,7 @@ export default function Home() {
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <div className="w-12 h-12 rounded-full bg-white/95 shadow-xl flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                              <Play className="w-5 h-5 text-violet-600 fill-violet-600 ml-0.5" />
+                              <Play className="w-5 h-5 text-cyan-600 fill-cyan-600 ml-0.5" />
                             </div>
                           </div>
                         </div>
@@ -372,7 +372,7 @@ export default function Home() {
                           <div className="flex items-center gap-1.5 flex-wrap mb-1.5">
                             <span
                               className={`inline-block text-[11px] font-medium px-2 py-0.5 rounded-full capitalize ${
-                                CATEGORY_COLORS[game.category] || "text-violet-600 bg-violet-50"
+                                CATEGORY_COLORS[game.category] || "text-cyan-600 bg-cyan-50"
                               }`}
                             >
                               {t(`category.${game.category}` as any)}
@@ -428,7 +428,7 @@ export default function Home() {
             data-category-active={activeCategory === "all" ? "true" : undefined}
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 shrink-0 ${
               activeCategory === "all"
-                ? "bg-violet-600 text-white shadow-lg shadow-violet-200 dark:shadow-violet-900"
+                ? "bg-cyan-600 text-white shadow-lg shadow-cyan-200 dark:shadow-cyan-900"
                 : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 hover:border-slate-300"
             }`}
           >
@@ -481,7 +481,7 @@ export default function Home() {
               data-category-active={activeCategory === cat.id ? "true" : undefined}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 shrink-0 ${
                 activeCategory === cat.id
-                  ? "bg-violet-600 text-white shadow-lg shadow-violet-200 dark:shadow-violet-900"
+                  ? "bg-cyan-600 text-white shadow-lg shadow-cyan-200 dark:shadow-cyan-900"
                   : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 hover:border-slate-300"
               }`}
             >
@@ -497,7 +497,7 @@ export default function Home() {
             onClick={() => setShowTagPanel((v) => !v)}
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 shrink-0 ${
               showTagPanel || activeTags.length > 0
-                ? "bg-violet-600 text-white shadow-lg shadow-violet-200 dark:shadow-violet-900"
+                ? "bg-cyan-600 text-white shadow-lg shadow-cyan-200 dark:shadow-cyan-900"
                 : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 hover:border-slate-300"
             }`}
           >
@@ -505,7 +505,7 @@ export default function Home() {
             {t('home.tags')}
             {activeTags.length > 0 && (
               <span className={`text-[11px] font-bold px-1.5 py-0.5 rounded-full min-w-[20px] text-center ${
-                showTagPanel || activeTags.length > 0 ? "bg-white/20" : "bg-violet-100 text-violet-600"
+                showTagPanel || activeTags.length > 0 ? "bg-white/20" : "bg-cyan-100 text-cyan-600"
               }`}>
                 {activeTags.length}
               </span>
@@ -523,7 +523,7 @@ export default function Home() {
               placeholder={t('home.searchPlaceholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-9 pr-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-violet-300 focus:ring-2 focus:ring-violet-100 w-44 transition-all"
+              className="pl-9 pr-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-cyan-300 focus:ring-2 focus:ring-cyan-100 w-44 transition-all"
             />
           </form>
         </div>
@@ -533,7 +533,7 @@ export default function Home() {
           <div className="mb-4 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
-                <Tag className="w-4 h-4 text-violet-600" />
+                <Tag className="w-4 h-4 text-cyan-600" />
                 <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">{t('home.filterByTags')}</span>
                 <span className="text-xs text-slate-400">— {t('home.tagHint')}</span>
               </div>
@@ -564,8 +564,8 @@ export default function Home() {
                     onClick={() => toggleTag(tag.id)}
                     className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
                       isActive
-                        ? "bg-violet-600 text-white shadow-md shadow-violet-200"
-                        : "bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-violet-50 dark:hover:bg-violet-900/30 hover:text-violet-600 border border-slate-200 dark:border-slate-700 hover:border-violet-200"
+                        ? "bg-cyan-600 text-white shadow-md shadow-cyan-200"
+                        : "bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:text-cyan-600 border border-slate-200 dark:border-slate-700 hover:border-cyan-200"
                     }`}
                   >
                     <span>{tag.emoji}</span>
@@ -593,7 +593,7 @@ export default function Home() {
                 <button
                   key={tagId}
                   onClick={() => toggleTag(tagId)}
-                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-violet-600 text-white hover:bg-violet-700 transition-colors"
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-cyan-600 text-white hover:bg-cyan-700 transition-colors"
                 >
                   {tag.emoji} {t(tag.labelKey as any)}
                   <X className="w-3 h-3 ml-0.5" />
@@ -616,7 +616,7 @@ export default function Home() {
             <div className="relative ml-auto" ref={sortMenuRef}>
               <button
                 onClick={() => setShowSortMenu((v) => !v)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 hover:border-violet-300 hover:text-violet-600 transition-all shadow-sm"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-300 hover:border-cyan-300 hover:text-cyan-600 transition-all shadow-sm"
               >
                 <ArrowUpDown className="w-3.5 h-3.5" />
                 <span className="font-medium">
@@ -638,16 +638,16 @@ export default function Home() {
                   ] as const).map((opt) => (
                     <button
                       key={opt.id}
-                      onClick={() => { setSortBy(opt.id); localStorage.setItem('doodle-sort-by', opt.id); setShowSortMenu(false); }}
+                      onClick={() => { setSortBy(opt.id); localStorage.setItem('arcade-sort-by', opt.id); setShowSortMenu(false); }}
                       className={`w-full flex items-center gap-2.5 px-4 py-2.5 text-sm transition-colors ${
                         sortBy === opt.id
-                          ? 'bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-400 font-semibold'
+                          ? 'bg-cyan-50 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-400 font-semibold'
                           : 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800'
                       }`}
                     >
                       <span>{opt.icon}</span>
                       <span>{opt.label}</span>
-                      {sortBy === opt.id && <span className="ml-auto text-violet-500">✓</span>}
+                      {sortBy === opt.id && <span className="ml-auto text-cyan-500">✓</span>}
                     </button>
                   ))}
                 </div>
@@ -677,7 +677,7 @@ export default function Home() {
           {/* Link to full leaderboard */}
           {activeCategory === "top-rated" && (
             <Link href="/top-rated/">
-              <span className="text-[11px] bg-violet-50 text-violet-600 border border-violet-100 px-2 py-0.5 rounded-full font-medium hover:bg-violet-100 transition-colors cursor-pointer">
+              <span className="text-[11px] bg-cyan-50 text-cyan-600 border border-cyan-100 px-2 py-0.5 rounded-full font-medium hover:bg-cyan-100 transition-colors cursor-pointer">
                 {t('home.viewLeaderboard')} →
               </span>
             </Link>
@@ -696,15 +696,15 @@ export default function Home() {
                 <TiltCard className="group relative h-full" onMouseEnter={() => prefetchGameUrl(game.iframeUrl)}>
                   <Link href={`/play/${game.slug}/`} className="block h-full">
                     <div className="h-full">
-                      <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 border border-violet-100 dark:border-violet-900/40 shadow-sm
+                      <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800 border border-cyan-100 dark:border-cyan-900/40 shadow-sm
                         transition-all duration-300 ease-out
                         hover:scale-[1.03] hover:-translate-y-1.5
-                        hover:shadow-2xl hover:shadow-violet-400/25 dark:hover:shadow-violet-600/30
-                        hover:border-violet-300 dark:hover:border-violet-600
+                        hover:shadow-2xl hover:shadow-cyan-400/25 dark:hover:shadow-cyan-600/30
+                        hover:border-cyan-300 dark:hover:border-cyan-600
                         h-full flex flex-col">
                         {/* Shimmer border on hover */}
                         <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                          style={{ background: 'linear-gradient(135deg, rgba(139,92,246,0.08) 0%, rgba(236,72,153,0.06) 50%, rgba(6,182,212,0.06) 100%)' }}
+                          style={{ background: 'linear-gradient(135deg, rgba(6,182,212,0.08) 0%, rgba(20,184,166,0.06) 50%, rgba(6,182,212,0.06) 100%)' }}
                         />
                         {/* New ribbon */}
                         {game.isNew && activeCategory !== "top-rated" && (
@@ -723,7 +723,7 @@ export default function Home() {
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <div className="w-12 h-12 rounded-full bg-white/95 shadow-xl flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                              <Play className="w-5 h-5 text-violet-600 fill-violet-600 ml-0.5" />
+                              <Play className="w-5 h-5 text-cyan-600 fill-cyan-600 ml-0.5" />
                             </div>
                           </div>
                         </div>
@@ -734,7 +734,7 @@ export default function Home() {
                           <div className="flex items-center gap-1.5 flex-wrap mb-1.5">
                             <span
                               className={`inline-block text-[11px] font-medium px-2 py-0.5 rounded-full capitalize ${
-                                CATEGORY_COLORS[game.category] || "text-violet-600 bg-violet-50"
+                                CATEGORY_COLORS[game.category] || "text-cyan-600 bg-cyan-50"
                               }`}
                             >
                               {t(`category.${game.category}` as any)}
@@ -762,7 +762,7 @@ export default function Home() {
                               {game.tags.filter((tag) => activeTags.includes(tag)).map((tag) => {
                                 const tagInfo = ALL_TAGS.find((at) => at.id === tag);
                                 return (
-                                  <span key={tag} className="text-[9px] font-medium px-1.5 py-0.5 rounded-full bg-violet-50 text-violet-600">
+                                  <span key={tag} className="text-[9px] font-medium px-1.5 py-0.5 rounded-full bg-cyan-50 text-cyan-600">
                                     {tagInfo?.emoji} {tagInfo ? t(tagInfo.labelKey as any) : tag}
                                   </span>
                                 );
@@ -840,7 +840,7 @@ export default function Home() {
             </p>
             <button
               onClick={clearTags}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-violet-600 text-white rounded-full text-sm font-medium hover:bg-violet-700 transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-600 text-white rounded-full text-sm font-medium hover:bg-cyan-700 transition-colors"
             >
               <X className="w-4 h-4" />
               {t('home.clearTagFilters')}

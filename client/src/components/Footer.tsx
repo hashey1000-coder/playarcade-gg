@@ -12,11 +12,6 @@ const CATEGORY_LINKS = [
   { labelKey: "category.classic", href: "/?category=classic" },
   { labelKey: "category.arcade", href: "/?category=arcade" },
   { labelKey: "category.puzzle", href: "/?category=puzzle" },
-  { labelKey: "category.sports", href: "/?category=sports" },
-  { labelKey: "category.creative", href: "/?category=creative" },
-  { labelKey: "category.educational", href: "/?category=educational" },
-  { labelKey: "category.seasonal", href: "/?category=seasonal" },
-  { labelKey: "category.adventure", href: "/?category=adventure" },
 ];
 
 const QUICK_LINKS = [
@@ -30,14 +25,16 @@ const QUICK_LINKS = [
 ];
 
 const POPULAR_GAME_SLUGS = [
-  "pacman",
-  "snake",
-  "doodle-cricket-game",
-  "champion-island-games",
-  "magic-cat-academy",
-  "doodle-jump",
+  "tetris",
+  "slope",
+  "among-us",
+  "pac-man",
+  "geometry-dash",
+  "moto-x3m",
+  "vex-7",
+  "2048",
+  "wordle",
   "solitaire",
-  "minesweeper",
 ];
 
 export default function Footer() {
@@ -53,12 +50,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/">
               <div className="flex items-center gap-2 mb-4 group">
-                <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center shadow-lg">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center shadow-lg">
                   <Joystick className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <span className="font-bold text-white text-sm">DoodleGames</span>
-                  <span className="text-violet-400 font-bold text-sm">HUB</span>
+                  <span className="font-bold text-white text-sm">Play</span>
+                  <span className="text-cyan-400 font-bold text-sm">Arcade</span>
+                  <span className="text-cyan-500 font-bold text-[10px] ml-0.5">.gg</span>
                 </div>
               </div>
             </Link>
@@ -79,7 +77,7 @@ export default function Footer() {
               {CATEGORY_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>
-                    <span className="text-slate-400 hover:text-violet-400 transition-colors text-sm cursor-pointer">
+                    <span className="text-slate-400 hover:text-cyan-400 transition-colors text-sm cursor-pointer">
                       {t(link.labelKey as any)}
                     </span>
                   </Link>
@@ -95,7 +93,7 @@ export default function Footer() {
               {QUICK_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>
-                    <span className="text-slate-400 hover:text-violet-400 transition-colors text-sm cursor-pointer">
+                    <span className="text-slate-400 hover:text-cyan-400 transition-colors text-sm cursor-pointer">
                       {t(link.labelKey as any)}
                     </span>
                   </Link>
@@ -111,7 +109,7 @@ export default function Footer() {
               {popularGames.map((game) => (
                 <li key={game.slug}>
                   <Link href={`/play/${game.slug}/`}>
-                    <span className="text-slate-400 hover:text-violet-400 transition-colors text-sm cursor-pointer">
+                    <span className="text-slate-400 hover:text-cyan-400 transition-colors text-sm cursor-pointer">
                       {gt(game).title}
                     </span>
                   </Link>

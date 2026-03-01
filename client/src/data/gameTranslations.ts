@@ -1,7 +1,7 @@
 /**
  * Game-specific translations — localised titles and descriptions for every game.
  *
- * Game titles are kept recognisable (proper nouns like "Google Doodle" are
+ * Game titles are kept recognisable (proper nouns are
  * retained) while the surrounding descriptive words are translated.
  * Descriptions are fully localised per locale.
  *

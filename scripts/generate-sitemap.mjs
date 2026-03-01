@@ -1,5 +1,5 @@
 /**
- * Sitemap generator for Doodle Games Hub
+ * Sitemap generator for Play Arcade
  * Run: node scripts/generate-sitemap.mjs
  * Output: client/public/sitemap.xml
  *
@@ -28,7 +28,7 @@ const slugs = slugMatches.map((m) => m[1]);
 // ---------------------------------------------------------------------------
 
 /** Site base URL — update when deploying */
-const BASE_URL = 'https://doodlegameshub.com';
+const BASE_URL = 'https://playarcade.gg';
 
 /**
  * All supported locales.  Must stay in sync with SUPPORTED_LOCALES in

@@ -18,12 +18,13 @@ function getDailyGame() {
 
   // Seasonal slug preferences by month/date range
   const seasonalPicks: { month: number; dayRange?: [number, number]; slugs: string[] }[] = [
-    { month: 2, dayRange: [10, 15], slugs: ['doodle-valentines-day', 'doodle-valentines-day-2022'] },
-    { month: 5, dayRange: [8, 14], slugs: ['mothers-day-2013-doodle', 'mothers-day-2020-doodle'] },
-    { month: 4, dayRange: [18, 24], slugs: ['doodle-earth-day-2020'] },
-    { month: 10, dayRange: [25, 31], slugs: ['magic-cat-academy', 'halloween', 'magic-cat-academy-2', 'magic-cat-academy-3'] },
-    { month: 12, dayRange: [15, 28], slugs: ['google-santa-tracker', 'global-candy-cup-2015'] },
-    { month: 1, dayRange: [20, 31], slugs: ['chinese-new-year-snake-game'] },
+    { month: 1, dayRange: [1, 7], slugs: ['solitaire', 'mahjong', 'sudoku'] },
+    { month: 2, dayRange: [10, 15], slugs: ['solitaire', 'chess', 'mahjong', 'tiny-fishing'] },
+    { month: 3, dayRange: [17, 17], slugs: ['8-ball-pool', 'backgammon'] },
+    { month: 6, dayRange: [15, 30], slugs: ['moto-x3m', 'basketball-legends', 'bowling'] },
+    { month: 7, dayRange: [1, 7], slugs: ['fruit-ninja', 'bowling', 'bubble-shooter'] },
+    { month: 10, dayRange: [25, 31], slugs: ['pac-man', 'chrome-dino', 'among-us', 'cookie-clicker'] },
+    { month: 12, dayRange: [15, 28], slugs: ['cookie-clicker', 'tetris', 'wordle', 'freecell'] },
   ];
 
   // Check for seasonal match

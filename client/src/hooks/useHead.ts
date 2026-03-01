@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLanguage, localePath, SUPPORTED_LOCALES } from '@/contexts/LanguageContext';
 
-const SITE_ORIGIN = 'https://doodlegameshub.com';
+const SITE_ORIGIN = 'https://playarcade.gg';
 
 /** Map internal locale codes → BCP-47 lang attribute values */
 const BCP47_MAP: Record<string, string> = {
@@ -69,7 +69,7 @@ export function useHead({ title, description, routePath, ogImage, ogType = 'webs
       'og:description': description,
       'og:type': ogType,
       'og:url': ogUrl,
-      'og:site_name': 'Doodle Games Hub',
+      'og:site_name': 'Play Arcade',
       'og:locale': locale.replace('-', '_'),
       'og:image': ogImage,
     };

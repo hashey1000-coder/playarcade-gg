@@ -1,5 +1,5 @@
 /**
- * Navbar — Doodle Games Hub
+ * Navbar — Play Arcade
  * Design: Brutalist-editorial, sticky top bar with glass morphism
  * Includes: logo, search, nav links, language selector, dark mode, kids mode, mobile drawer
  */
@@ -67,15 +67,15 @@ function LanguageSelector() {
               <button
                 key={loc.code}
                 onClick={() => { setLocale(loc.code); setOpen(false); }}
-                className={`w-full flex items-center gap-3 px-3 py-2 text-sm transition-colors hover:bg-violet-50 dark:hover:bg-violet-950/50 ${
+                className={`w-full flex items-center gap-3 px-3 py-2 text-sm transition-colors hover:bg-cyan-50 dark:hover:bg-cyan-950/50 ${
                   locale === loc.code
-                    ? "text-violet-600 dark:text-violet-400 font-medium"
+                    ? "text-cyan-600 dark:text-cyan-400 font-medium"
                     : "text-slate-700 dark:text-slate-300"
                 }`}
               >
                 <span className="text-base leading-none w-5 shrink-0">{loc.flag}</span>
                 <span className="flex-1 text-left">{loc.name}</span>
-                {locale === loc.code && <Check className="w-3.5 h-3.5 shrink-0 text-violet-500" />}
+                {locale === loc.code && <Check className="w-3.5 h-3.5 shrink-0 text-cyan-500" />}
               </button>
             ))}
           </div>
@@ -174,13 +174,13 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-2 group shrink-0">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center shadow-md shadow-violet-200/50 group-hover:shadow-violet-300/60 transition-shadow">
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center shadow-md shadow-cyan-200/50 group-hover:shadow-cyan-300/60 transition-shadow">
                 <Joystick className="w-4 h-4 text-white" />
               </div>
               <span className="font-bold text-slate-900 dark:text-white text-[15px] tracking-tight">
-                <span className="text-violet-600">Doodle</span>
-                <span>Games</span>
-                <span className="text-[10px] font-semibold text-violet-500 ml-0.5 align-top mt-0.5 inline-block">HUB</span>
+                <span className="text-cyan-600 dark:text-cyan-400">Play</span>
+                <span>Arcade</span>
+                <span className="text-[10px] font-semibold text-cyan-500 ml-0.5 align-top mt-0.5 inline-block">.gg</span>
               </span>
             </div>
           </Link>
@@ -193,7 +193,7 @@ export default function Navbar() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t('nav.searchPlaceholder')}
-              className="w-full pl-9 pr-4 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-300 focus:ring-2 focus:ring-violet-100 focus:bg-white dark:focus:bg-slate-700 transition-all"
+              className="w-full pl-9 pr-4 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:border-cyan-300 focus:ring-2 focus:ring-cyan-100 focus:bg-white dark:focus:bg-slate-700 transition-all"
             />
           </form>
 
@@ -208,7 +208,7 @@ export default function Navbar() {
 
             {/* Desktop nav links */}
             <Link href="/" onClick={markAllSeen} className="hidden md:block" aria-label={t('nav.allGames')}>
-              <span className={`relative text-sm font-medium transition-colors px-3 py-1.5 rounded-full inline-flex items-center gap-1 ${isActive('/') ? 'text-violet-600 dark:text-violet-400 bg-violet-50 dark:bg-violet-950/50' : 'text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 hover:bg-violet-50 dark:hover:bg-violet-950/50'}`}>
+              <span className={`relative text-sm font-medium transition-colors px-3 py-1.5 rounded-full inline-flex items-center gap-1 ${isActive('/') ? 'text-cyan-600 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-950/50' : 'text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-950/50'}`}>
                 {t('nav.allGames')}
                 {unseenCount > 0 && (
                   <span className="inline-flex items-center justify-center min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white text-[10px] font-bold leading-none animate-pulse">
@@ -219,7 +219,7 @@ export default function Navbar() {
             </Link>
 
             <Link href="/games/" className="hidden md:block" aria-label={t('nav.aToZ')}>
-              <span className={`flex items-center gap-1.5 text-sm font-medium transition-colors px-3 py-1.5 rounded-full inline-flex ${isActive('/games/') ? 'text-violet-600 dark:text-violet-400 bg-violet-50 dark:bg-violet-950/50' : 'text-slate-600 dark:text-slate-300 hover:text-violet-600 hover:bg-violet-50'}`}>
+              <span className={`flex items-center gap-1.5 text-sm font-medium transition-colors px-3 py-1.5 rounded-full inline-flex ${isActive('/games/') ? 'text-cyan-600 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-950/50' : 'text-slate-600 dark:text-slate-300 hover:text-cyan-600 hover:bg-cyan-50'}`}>
                 <LayoutList className="w-3.5 h-3.5" />
                 {t('nav.aToZ')}
               </span>
@@ -285,7 +285,7 @@ export default function Navbar() {
             {/* Random button (desktop) */}
             <button
               onClick={handleRandomGame}
-              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-violet-500 to-violet-600 text-white text-sm font-medium hover:from-violet-600 hover:to-violet-700 transition-all shadow-sm hover:shadow-md hover:shadow-violet-200/50 active:scale-95"
+              className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-600 text-white text-sm font-medium hover:from-cyan-600 hover:to-teal-700 transition-all shadow-sm hover:shadow-md hover:shadow-cyan-200/50 active:scale-95"
               title={t('nav.randomTooltip' as any)}
               aria-label={t('nav.randomTooltip' as any)}
             >
@@ -321,11 +321,11 @@ export default function Navbar() {
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100 dark:border-slate-800">
               <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-500 to-violet-600 flex items-center justify-center">
+                <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center">
                   <Joystick className="w-3.5 h-3.5 text-white" />
                 </div>
                 <span className="font-bold text-slate-900 dark:text-white text-sm">
-                  <span className="text-violet-600">Doodle</span>Games
+                  <span className="text-cyan-600 dark:text-cyan-400">Play</span>Arcade
                 </span>
               </div>
               <button
@@ -342,7 +342,7 @@ export default function Navbar() {
               <div className="flex flex-col flex-1 overflow-hidden">
                 <button
                   onClick={() => setShowLangPanel(false)}
-                  className="flex items-center gap-2 px-5 py-3 text-sm font-medium text-violet-600 hover:bg-violet-50 transition-colors border-b border-slate-100 dark:border-slate-800"
+                  className="flex items-center gap-2 px-5 py-3 text-sm font-medium text-cyan-600 hover:bg-cyan-50 transition-colors border-b border-slate-100 dark:border-slate-800"
                 >
                   <span className="text-base">←</span> {t('common.back')}
                 </button>
@@ -352,15 +352,15 @@ export default function Navbar() {
                     <button
                       key={loc.code}
                       onClick={() => { setLocale(loc.code); setShowLangPanel(false); }}
-                      className={`w-full flex items-center gap-3 px-5 py-2.5 text-sm transition-colors hover:bg-violet-50 dark:hover:bg-violet-950/50 ${
+                      className={`w-full flex items-center gap-3 px-5 py-2.5 text-sm transition-colors hover:bg-cyan-50 dark:hover:bg-cyan-950/50 ${
                         locale === loc.code
-                          ? "text-violet-600 dark:text-violet-400 font-medium"
+                          ? "text-cyan-600 dark:text-cyan-400 font-medium"
                           : "text-slate-700 dark:text-slate-300"
                       }`}
                     >
                       <span className="text-base leading-none w-5 shrink-0">{loc.flag}</span>
                       <span className="flex-1 text-left">{loc.name}</span>
-                      {locale === loc.code && <Check className="w-3.5 h-3.5 shrink-0 text-violet-500" />}
+                      {locale === loc.code && <Check className="w-3.5 h-3.5 shrink-0 text-cyan-500" />}
                     </button>
                   ))}
                 </div>
@@ -376,7 +376,7 @@ export default function Navbar() {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder={t('nav.searchPlaceholder')}
-                      className="w-full pl-9 pr-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:border-violet-300 focus:ring-2 focus:ring-violet-100 focus:bg-white dark:focus:bg-slate-700 transition-all"
+                      className="w-full pl-9 pr-4 py-2 rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm text-slate-700 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:border-cyan-300 focus:ring-2 focus:ring-cyan-100 focus:bg-white dark:focus:bg-slate-700 transition-all"
                     />
                   </div>
                 </form>
@@ -386,7 +386,7 @@ export default function Navbar() {
                   <p className="px-3 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-slate-400">{t('nav.navigate')}</p>
 
                   <Link href="/" onClick={markAllSeen}>
-                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/') ? 'bg-violet-50 dark:bg-violet-950/50 text-violet-600 dark:text-violet-400' : 'text-slate-700 dark:text-slate-200 hover:bg-violet-50 dark:hover:bg-violet-950/50 hover:text-violet-600'}`}>
+                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/') ? 'bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400' : 'text-slate-700 dark:text-slate-200 hover:bg-cyan-50 dark:hover:bg-cyan-950/50 hover:text-cyan-600'}`}>
                       <Home className="w-4 h-4 shrink-0" />
                       <span className="text-sm font-medium">{t('nav.allGames')}</span>
                       {unseenCount > 0 && (
@@ -398,7 +398,7 @@ export default function Navbar() {
                   </Link>
 
                   <Link href="/games/">
-                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/games/') ? 'bg-violet-50 dark:bg-violet-950/50 text-violet-600 dark:text-violet-400' : 'text-slate-700 dark:text-slate-200 hover:bg-violet-50 dark:hover:bg-violet-950/50 hover:text-violet-600'}`}>
+                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/games/') ? 'bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400' : 'text-slate-700 dark:text-slate-200 hover:bg-cyan-50 dark:hover:bg-cyan-950/50 hover:text-cyan-600'}`}>
                       <LayoutList className="w-4 h-4 shrink-0" />
                       <span className="text-sm font-medium">{t('nav.aToZ')}</span>
                     </div>
@@ -424,21 +424,21 @@ export default function Navbar() {
                   </Link>
 
                   <Link href="/about/">
-                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/about/') ? 'bg-violet-50 dark:bg-violet-950/50 text-violet-600 dark:text-violet-400' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900'}`}>
+                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/about/') ? 'bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900'}`}>
                       <Info className="w-4 h-4 shrink-0" />
                       <span className="text-sm font-medium">{t('nav.about')}</span>
                     </div>
                   </Link>
 
                   <Link href="/contact/">
-                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/contact/') ? 'bg-violet-50 dark:bg-violet-950/50 text-violet-600 dark:text-violet-400' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900'}`}>
+                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/contact/') ? 'bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900'}`}>
                       <Mail className="w-4 h-4 shrink-0" />
                       <span className="text-sm font-medium">{t('nav.contact')}</span>
                     </div>
                   </Link>
 
                   <Link href="/privacy/">
-                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/privacy/') ? 'bg-violet-50 dark:bg-violet-950/50 text-violet-600 dark:text-violet-400' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900'}`}>
+                    <div className={`flex items-center gap-3 px-3 py-2.5 rounded-xl transition-colors cursor-pointer ${isActive('/privacy/') ? 'bg-cyan-50 dark:bg-cyan-950/50 text-cyan-600 dark:text-cyan-400' : 'text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900'}`}>
                       <Shield className="w-4 h-4 shrink-0" />
                       <span className="text-sm font-medium">{t('nav.privacy')}</span>
                     </div>
@@ -491,7 +491,7 @@ export default function Navbar() {
                 <div className="px-5 py-4 border-t border-slate-100 dark:border-slate-800">
                   <button
                     onClick={handleRandomGame}
-                    className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-violet-500 to-violet-600 text-white text-sm font-semibold hover:from-violet-600 hover:to-violet-700 transition-all shadow-md shadow-violet-200/40 active:scale-95"
+                    className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-600 text-white text-sm font-semibold hover:from-cyan-600 hover:to-teal-700 transition-all shadow-md shadow-cyan-200/40 active:scale-95"
                   >
                     <Shuffle className="w-4 h-4" />
                     {t('nav.surpriseMe')}
@@ -529,7 +529,7 @@ export default function Navbar() {
               </div>
               <button
                 onClick={handleDismissMilestone}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-gradient-to-r from-violet-500 to-violet-600 text-white rounded-xl text-sm font-semibold hover:from-violet-600 hover:to-violet-700 transition-all"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-gradient-to-r from-cyan-500 to-teal-600 text-white rounded-xl text-sm font-semibold hover:from-cyan-600 hover:to-teal-700 transition-all"
               >
                 {t('nav.keepPlaying')}
               </button>
@@ -547,7 +547,7 @@ export default function Navbar() {
 
       {/* Spin Wheel overlay — lazy loaded on demand */}
       {showSpinWheel && (
-        <Suspense fallback={<div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center"><div className="w-12 h-12 border-4 border-violet-400 border-t-transparent rounded-full animate-spin" /></div>}>
+        <Suspense fallback={<div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center"><div className="w-12 h-12 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin" /></div>}>
           <SpinWheel onClose={() => setShowSpinWheel(false)} />
         </Suspense>
       )}

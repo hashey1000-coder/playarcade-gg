@@ -137,7 +137,7 @@ const { render, GAMES, getGameT, getTranslation } = ssrModule;
 // Build a slug → game lookup
 const gameBySlug = Object.fromEntries(GAMES.map((g) => [g.slug, g]));
 
-const SITE_ORIGIN = 'https://doodlegameshub.com';
+const SITE_ORIGIN = 'https://playarcade.gg';
 
 /** Map locale code to BCP-47 lang attribute */
 function bcp47(locale) {
@@ -238,11 +238,11 @@ function buildPageMeta(routePath, locale) {
         educationalLevel: difficultyMap[game.difficulty] ?? 'Medium',
         publisher: {
           '@type': 'Organization',
-          name: 'Google',
+          name: 'Play Arcade',
         },
         provider: {
           '@type': 'Organization',
-          name: 'Doodle Games Hub',
+          name: 'Play Arcade',
           url: `${SITE_ORIGIN}/`,
         },
       };
@@ -541,7 +541,7 @@ const spotChecks = [
   '404.html',
   'fr/index.html',
   'fr/404.html',
-  'ja/play/pacman/index.html',
+  'ja/play/pac-man/index.html',
   'es/play/snake/index.html',
 ];
 for (const f of spotChecks) {

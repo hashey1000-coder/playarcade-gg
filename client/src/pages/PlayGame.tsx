@@ -284,9 +284,9 @@ export default function PlayGame() {
           description: `${t('game.playTime')} ${formatDuration(seconds)} — ${t('game.longestSession')}`,
           duration: 6000,
           classNames: {
-            toast: "!bg-gradient-to-br !from-[#1e1b4b] !to-[#2e1065] !border-violet-600",
-            title: "!text-violet-100",
-            description: "!text-violet-300",
+            toast: "!bg-gradient-to-br !from-[#0c4a6e] !to-[#155e75] !border-cyan-600",
+            title: "!text-cyan-100",
+            description: "!text-cyan-300",
           },
         }
       );
@@ -468,11 +468,11 @@ export default function PlayGame() {
         educationalLevel: difficultyMap[game.difficulty] ?? 'Medium',
         publisher: {
           '@type': 'Organization',
-          name: 'Google',
+          name: 'Play Arcade',
         },
         provider: {
           '@type': 'Organization',
-          name: 'Doodle Games Hub',
+          name: 'Play Arcade',
           url: window.location.origin,
         },
       });
@@ -557,7 +557,7 @@ export default function PlayGame() {
           <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">{t('game.notFound')}</h2>
           <p className="text-slate-500 dark:text-slate-400 mb-6">{t('game.notFoundDesc')}</p>
           <Link href="/">
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 text-white rounded-full text-sm font-medium hover:bg-violet-700 transition-colors">
+            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-cyan-600 text-white rounded-full text-sm font-medium hover:bg-cyan-700 transition-colors">
               <ChevronLeft className="w-4 h-4" />
               {t('game.backToGames')}
             </span>
@@ -591,7 +591,7 @@ export default function PlayGame() {
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 mb-4 text-sm">
           <Link href="/">
-            <span className="flex items-center gap-1 text-violet-600 hover:text-violet-700 transition-colors font-medium">
+            <span className="flex items-center gap-1 text-cyan-600 hover:text-cyan-700 transition-colors font-medium">
               <ChevronLeft className="w-4 h-4" />
               {t('nav.allGames')}
             </span>
@@ -656,7 +656,7 @@ export default function PlayGame() {
                     setNextGame(getNextSuggestion(game));
                     setShowPlayNext(true);
                   }}
-                  className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-1.5 bg-violet-600/80 hover:bg-violet-600 text-white text-xs font-semibold rounded-lg transition-colors backdrop-blur-sm"
+                  className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-1.5 bg-cyan-600/80 hover:bg-cyan-600 text-white text-xs font-semibold rounded-lg transition-colors backdrop-blur-sm"
                   title={t('game.suggestNext' as any)}
                   aria-label={t('game.suggestNext' as any)}
                 >
@@ -703,8 +703,8 @@ export default function PlayGame() {
               {gameStarted && !iframeLoaded && !iframeError && (
                 <div className="absolute inset-0 z-[5] flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-sm">
                   <div className="relative w-16 h-16 mb-4">
-                    <div className="absolute inset-0 rounded-full border-4 border-violet-500/30" />
-                    <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-violet-500 animate-spin" />
+                    <div className="absolute inset-0 rounded-full border-4 border-cyan-500/30" />
+                    <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-cyan-500 animate-spin" />
                   </div>
                   <p className="text-white/90 text-sm font-medium">{t('game.loading' as any) || 'Loading game...'}</p>
                 </div>
@@ -731,7 +731,7 @@ export default function PlayGame() {
                           requestAnimationFrame(() => { iframe.src = url; });
                         }
                       }}
-                      className="px-5 py-2.5 bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold rounded-lg transition-colors"
+                      className="px-5 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-semibold rounded-lg transition-colors"
                     >
                       {t('game.tryAgain' as any)}
                     </button>
@@ -840,7 +840,7 @@ export default function PlayGame() {
               <button
                 onClick={() => setShowControls(true)}
                 aria-label={t('game.howToPlay')}
-                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-violet-50 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 hover:bg-violet-100 dark:hover:bg-violet-900/50 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-cyan-50 dark:bg-cyan-900/30 text-cyan-600 dark:text-cyan-400 hover:bg-cyan-100 dark:hover:bg-cyan-900/50 transition-colors"
               >
                 <Gamepad2 className="w-4 h-4" />
                 <span>{t('game.howToPlay')}</span>
@@ -858,7 +858,7 @@ export default function PlayGame() {
               <div className="flex items-center gap-2 flex-wrap">
                 <span
                   className={`inline-block text-[11px] font-medium px-2.5 py-1 rounded-full capitalize ${
-                    CATEGORY_COLORS[game.category] || "text-violet-600 bg-violet-50"
+                    CATEGORY_COLORS[game.category] || "text-cyan-600 bg-cyan-50"
                   }`}
                 >
                   {t(`category.${game.category}` as any)}
@@ -908,13 +908,13 @@ export default function PlayGame() {
                     <div className="mb-6">
                       <div className="flex items-center justify-between mb-3">
                         <div className="flex items-center gap-2">
-                          <div className={`w-2 h-6 rounded-full ${CATEGORY_ACCENT[game.category] || 'bg-violet-500'}`} />
+                          <div className={`w-2 h-6 rounded-full ${CATEGORY_ACCENT[game.category] || 'bg-cyan-500'}`} />
                           <h2 className="text-base font-bold text-slate-900 dark:text-slate-100 capitalize">
                             {t('game.moreGames')} — {t(`category.${game.category}` as any)}
                           </h2>
                         </div>
                         <Link href={`/?category=${game.category}`}>
-                          <span className="text-xs text-violet-500 hover:text-violet-700 font-medium flex items-center gap-1 cursor-pointer transition-colors">
+                          <span className="text-xs text-cyan-500 hover:text-cyan-700 font-medium flex items-center gap-1 cursor-pointer transition-colors">
                             {t('common.seeAll')} <ArrowRight className="w-3 h-3" />
                           </span>
                         </Link>
@@ -938,13 +938,13 @@ export default function PlayGame() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-center pb-3">
                                   <div className="flex items-center gap-1.5 bg-white/90 dark:bg-slate-800/90 rounded-full px-3 py-1">
-                                    <Play className="w-3 h-3 text-violet-600 fill-violet-600" />
-                                    <span className="text-[11px] font-bold text-violet-600">{t('common.play')}</span>
+                                    <Play className="w-3 h-3 text-cyan-600 fill-cyan-600" />
+                                    <span className="text-[11px] font-bold text-cyan-600">{t('common.play')}</span>
                                   </div>
                                 </div>
                               </div>
                               <div className="p-2.5 flex-1 flex flex-col">
-                                <p className="text-[12px] font-semibold text-slate-800 dark:text-slate-200 leading-tight line-clamp-2 group-hover:text-violet-600 transition-colors mb-1">
+                                <p className="text-[12px] font-semibold text-slate-800 dark:text-slate-200 leading-tight line-clamp-2 group-hover:text-cyan-600 transition-colors mb-1">
                                   {gt(g).title}
                                 </p>
                                 <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded-full mt-auto self-start ${
@@ -988,13 +988,13 @@ export default function PlayGame() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-center pb-3">
                                   <div className="flex items-center gap-1.5 bg-white/90 dark:bg-slate-800/90 rounded-full px-3 py-1">
-                                    <Play className="w-3 h-3 text-violet-600 fill-violet-600" />
-                                    <span className="text-[11px] font-bold text-violet-600">{t('common.play')}</span>
+                                    <Play className="w-3 h-3 text-cyan-600 fill-cyan-600" />
+                                    <span className="text-[11px] font-bold text-cyan-600">{t('common.play')}</span>
                                   </div>
                                 </div>
                               </div>
                               <div className="p-2.5 flex-1 flex flex-col">
-                                <p className="text-[12px] font-semibold text-slate-800 dark:text-slate-200 leading-tight line-clamp-2 group-hover:text-violet-600 transition-colors mb-1">
+                                <p className="text-[12px] font-semibold text-slate-800 dark:text-slate-200 leading-tight line-clamp-2 group-hover:text-cyan-600 transition-colors mb-1">
                                   {gt(g).title}
                                 </p>
                                 <span className="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 capitalize mt-auto self-start">
@@ -1040,14 +1040,14 @@ export default function PlayGame() {
                           />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-[12px] font-medium text-slate-700 dark:text-slate-300 leading-tight line-clamp-2 group-hover:text-violet-600 transition-colors">
+                          <p className="text-[12px] font-medium text-slate-700 dark:text-slate-300 leading-tight line-clamp-2 group-hover:text-cyan-600 transition-colors">
                             {gt(related).title}
                           </p>
                           <p className="text-[10px] text-slate-400 capitalize mt-0.5">
                             {t(`category.${related.category}` as any)}
                           </p>
                         </div>
-                        <Play className="w-3 h-3 text-slate-300 group-hover:text-violet-400 transition-colors shrink-0" />
+                        <Play className="w-3 h-3 text-slate-300 group-hover:text-cyan-400 transition-colors shrink-0" />
                       </div>
                     </Link>
                   ))}
@@ -1073,8 +1073,8 @@ export default function PlayGame() {
           <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl max-w-md w-full overflow-hidden">
             <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-800">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-violet-50 flex items-center justify-center">
-                  <Gamepad2 className="w-5 h-5 text-violet-600" />
+                <div className="w-9 h-9 rounded-xl bg-cyan-50 flex items-center justify-center">
+                  <Gamepad2 className="w-5 h-5 text-cyan-600" />
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">{t('game.howToPlay')}</h3>
@@ -1101,7 +1101,7 @@ export default function PlayGame() {
                     setShowControls(false);
                     setGameStarted(true);
                   }}
-                  className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-violet-600 hover:bg-violet-700 text-white rounded-xl text-sm font-semibold transition-colors"
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-xl text-sm font-semibold transition-colors"
                 >
                   <Play className="w-4 h-4 fill-white" />
                   {t('game.startPlaying')}
@@ -1130,7 +1130,7 @@ export default function PlayGame() {
         >
           <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
             {/* Header */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-violet-600 px-6 pt-6 pb-4">
+            <div className="relative overflow-hidden bg-gradient-to-br from-cyan-600 to-teal-600 px-6 pt-6 pb-4">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   <SkipForward className="w-5 h-5 text-white" />
@@ -1214,7 +1214,7 @@ export default function PlayGame() {
               <div className="flex gap-2">
                 <button
                   onClick={() => goToNextGame(nextGame.slug)}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-violet-600 hover:bg-violet-700 text-white rounded-xl text-sm font-semibold transition-colors"
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-cyan-600 hover:bg-cyan-700 text-white rounded-xl text-sm font-semibold transition-colors"
                 >
                   <Play className="w-4 h-4 fill-white" />
                   {t('game.startPlaying')}
@@ -1280,7 +1280,7 @@ export default function PlayGame() {
             {/* Progress bar auto-dismiss */}
             <div className="h-1 bg-slate-700">
               <div
-                className="h-1 bg-violet-500"
+                className="h-1 bg-cyan-500"
                 style={{ animation: 'shrinkWidth 8s linear forwards' }}
               />
             </div>

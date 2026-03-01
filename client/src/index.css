@@ -87,7 +87,7 @@
 
 :root {
   --radius: 0.65rem;
-  /* Primary: electric violet — vibrant gaming palette */
+  /* Primary: electric cyan — vibrant arcade palette */
   --primary: oklch(0.55 0.26 290);
   --primary-foreground: oklch(1 0 0);
   --background: oklch(1 0 0);
@@ -302,7 +302,7 @@
 /* ── Hero element classes ── */
 .hero-bg {
   position: relative;
-  background: linear-gradient(135deg, #312e81 0%, #4c1d95 30%, #6d28d9 60%, #7c3aed 80%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #0c4a6e 0%, #155e75 30%, #0891b2 60%, #06b6d4 80%, #22d3ee 100%);
 }
 
 /* Real <img> tag replaces ::before — discoverable from prerendered HTML */
