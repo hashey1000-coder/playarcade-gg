@@ -12,6 +12,8 @@ const CATEGORY_LINKS = [
   { labelKey: "category.classic", href: "/?category=classic" },
   { labelKey: "category.arcade", href: "/?category=arcade" },
   { labelKey: "category.puzzle", href: "/?category=puzzle" },
+  { labelKey: "category.sports", href: "/?category=sports" },
+  { labelKey: "category.creative", href: "/?category=creative" },
 ];
 
 const QUICK_LINKS = [

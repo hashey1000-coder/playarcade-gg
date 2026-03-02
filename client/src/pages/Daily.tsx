@@ -20,9 +20,9 @@ function getDailyGame() {
   const seasonalPicks: { month: number; dayRange?: [number, number]; slugs: string[] }[] = [
     { month: 1, dayRange: [1, 7], slugs: ['solitaire', 'mahjong', 'sudoku'] },
     { month: 2, dayRange: [10, 15], slugs: ['solitaire', 'chess', 'mahjong', 'tiny-fishing'] },
-    { month: 3, dayRange: [17, 17], slugs: ['8-ball-pool', 'backgammon'] },
-    { month: 6, dayRange: [15, 30], slugs: ['moto-x3m', 'basketball-legends', 'bowling'] },
-    { month: 7, dayRange: [1, 7], slugs: ['fruit-ninja', 'bowling', 'bubble-shooter'] },
+    { month: 3, dayRange: [17, 17], slugs: ['checkers', 'backgammon'] },
+    { month: 6, dayRange: [15, 30], slugs: ['moto-x3m', 'basketball-legends', 'bubble-shooter'] },
+    { month: 7, dayRange: [1, 7], slugs: ['fruit-ninja', 'connect-four', 'bubble-shooter'] },
     { month: 10, dayRange: [25, 31], slugs: ['pac-man', 'chrome-dino', 'among-us', 'cookie-clicker'] },
     { month: 12, dayRange: [15, 28], slugs: ['cookie-clicker', 'tetris', 'wordle', 'freecell'] },
   ];
@@ -104,11 +104,11 @@ export default function Daily() {
   };
 
   const handleShare = async () => {
-    const text = `\ud83c\udfae ${t('daily.shareText' as any)}: "${gameTitle}" \u2014 ${t('daily.shareDesc' as any)}`;
+    const text = `\ud83c\udfae ${t('daily.shareText')}: "${gameTitle}" \u2014 ${t('daily.shareDesc')}`;
     const url = window.location.origin + (locale === 'en' ? '' : `/${locale}`) + "/daily";
     try {
       if (navigator.share) {
-        await navigator.share({ title: t('daily.shareTitle' as any), text, url });
+        await navigator.share({ title: t('daily.shareTitle'), text, url });
       } else {
         await navigator.clipboard.writeText(`${text}\n${url}`);
         setCopied(true);
@@ -132,16 +132,16 @@ export default function Daily() {
   const pad = (n: number) => String(n).padStart(2, "0");
 
   const difficultyColorMap: Record<string, string> = {
-    easy: "text-emerald-600 bg-emerald-50 border-emerald-200",
-    medium: "text-amber-600 bg-amber-50 border-amber-200",
-    hard: "text-rose-600 bg-rose-50 border-rose-200",
+    easy: "text-emerald-600 bg-emerald-50 border-emerald-200 dark:text-emerald-400 dark:bg-emerald-950/50 dark:border-emerald-800",
+    medium: "text-amber-600 bg-amber-50 border-amber-200 dark:text-amber-400 dark:bg-amber-950/50 dark:border-amber-800",
+    hard: "text-rose-600 bg-rose-50 border-rose-200 dark:text-rose-400 dark:bg-rose-950/50 dark:border-rose-800",
   };
-  const difficultyColor = difficultyColorMap[game.difficulty] ?? "text-slate-600 bg-slate-50 border-slate-200";
+  const difficultyColor = difficultyColorMap[game.difficulty] ?? "text-slate-600 bg-slate-50 border-slate-200 dark:text-slate-400 dark:bg-slate-800 dark:border-slate-700";
 
   // SEO — localised page title + meta description + OG tags
   useHead({
-    title: (t('seo.daily.title' as any) as string).replace('{title}', gameTitle),
-    description: (t('seo.daily.description' as any) as string).replace('{title}', gameTitle),
+    title: (t('seo.daily.title') as string).replace('{title}', gameTitle),
+    description: (t('seo.daily.description') as string).replace('{title}', gameTitle),
     routePath: '/daily/',
     ogImage: game.thumbnail,
   });
@@ -150,7 +150,7 @@ export default function Daily() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-orange-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
       {/* Header strip */}
       <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white py-2 px-4 text-center text-sm font-medium">
-        <span className="opacity-90">🎯 {t('daily.challengeLabel' as any)} #{dayNumber} — {getDayLabel()}</span>
+        <span className="opacity-90">🎯 {t('daily.challengeLabel')} #{dayNumber} — {getDayLabel()}</span>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
@@ -164,7 +164,7 @@ export default function Daily() {
 
         {/* Page title */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-lg shadow-amber-200">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50">
             <CalendarDays className="w-6 h-6 text-white" />
           </div>
           <div>
@@ -236,7 +236,7 @@ export default function Daily() {
 
               <div className="flex flex-col gap-3">
                 <Link href={`/play/${game.slug}/`} onClick={handlePlay}>
-                  <span onMouseEnter={() => prefetchGameUrl(game.iframeUrl)} className="flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold text-base hover:from-amber-600 hover:to-orange-600 transition-all shadow-lg shadow-amber-200 active:scale-95 cursor-pointer">
+                  <span onMouseEnter={() => prefetchGameUrl(game.iframeUrl)} className="flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold text-base hover:from-amber-600 hover:to-orange-600 transition-all shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50 active:scale-95 cursor-pointer">
                     <Play className="w-5 h-5 fill-white" />
                     {hasPlayed ? t('game.play') : t('daily.playToday')}
                   </span>
@@ -254,7 +254,7 @@ export default function Daily() {
                     onClick={() => toggleFavourite(game.slug)}
                     className={`flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-medium transition-colors ${
                       isFavourite(game.slug)
-                        ? "bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100"
+                        ? "bg-rose-50 border-rose-200 text-rose-600 hover:bg-rose-100 dark:bg-rose-950/50 dark:border-rose-800 dark:text-rose-400 dark:hover:bg-rose-950"
                         : "border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800"
                     }`}
                   >

@@ -14,7 +14,7 @@ export default function AllGames() {
   const t = useT();
   const gt = useGameTranslate();
   const [searchQuery, setSearchQuery] = useState("");
-  const { favourites, toggleFavourite, isFavourite } = useFavourites();
+  const { toggleFavourite, isFavourite } = useFavourites();
   const letterRefs = useRef<Record<string, HTMLDivElement | null>>({});
   const [sortBy, setSortBy] = useState<'a-z' | 'most-played' | 'highest-rated' | 'newest'>(() => {
     try {
@@ -39,8 +39,8 @@ export default function AllGames() {
 
   // SEO — localised page title + meta description
   useHead({
-    title: t('seo.allGames.title' as any),
-    description: t('seo.allGames.description' as any),
+    title: t('seo.allGames.title'),
+    description: t('seo.allGames.description'),
     routePath: '/games/',
   });
 
@@ -196,11 +196,11 @@ export default function AllGames() {
               >
                 {/* Letter heading */}
                 <div className="flex items-center gap-4 mb-4">
-                  <h2 className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center shadow-md shadow-cyan-200/50 shrink-0">
+                  <h2 className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center shadow-md shadow-cyan-200/50 dark:shadow-cyan-900/50 shrink-0">
                     <span className="text-white font-bold text-lg leading-none">{letter}</span>
                   </h2>
                   <div className="flex-1 h-px bg-slate-200 dark:bg-slate-700" />
-                  <span className="text-xs text-slate-400 font-medium">{grouped[letter].length} {grouped[letter].length === 1 ? (t('allGames.gameCount' as any) || t('allGames.gamesCount')) : t('allGames.gamesCount')}</span>
+                  <span className="text-xs text-slate-400 font-medium">{grouped[letter].length} {grouped[letter].length === 1 ? (t('allGames.gameCount') || t('allGames.gamesCount')) : t('allGames.gamesCount')}</span>
                 </div>
 
                 {/* Games list for this letter */}
@@ -248,9 +248,9 @@ export default function AllGames() {
                               </span>
                               {game.difficulty && (
                                 <span className={`inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${
-                                  game.difficulty === 'easy' ? 'bg-green-50 text-green-600' :
-                                  game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600' :
-                                  'bg-red-50 text-red-600'
+                                  game.difficulty === 'easy' ? 'bg-green-50 text-green-600 dark:bg-green-950/50 dark:text-green-400' :
+                                  game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400' :
+                                  'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                                 }`}>
                                   {t(`difficulty.${game.difficulty}` as any)}
                                 </span>

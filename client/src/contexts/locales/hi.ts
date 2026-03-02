@@ -236,6 +236,7 @@ export const HI: TranslationMap = {
   'allGames.sortMostPlayed': 'सबसे अधिक खेले गए',
   'allGames.sortHighestRated': 'सर्वोच्च रेटेड',
   'allGames.sortNewest': 'नवीनतम',
+  'allGames.gameCount': 'गेम',
   'allGames.gamesCount': 'गेम्स',
   'search.sort': 'क्रमबद्ध',
   'search.sortRelevance': 'प्रासंगिकता',
@@ -312,7 +313,7 @@ export const HI: TranslationMap = {
   'contact.sendAnother': 'एक और संदेश भेजें',
   'contact.gameNotLoading': 'गेम लोड नहीं हो रहा?',
   'contact.missingGame': 'कोई गेम गायब है?',
-  'contact.affiliatedthe original publishers': 'the original publishers से संबद्ध?',
+  'contact.affiliatedGoogle': 'Google से संबद्ध?',
   'privacy.legal': 'कानूनी',
   'privacy.disclaimer': 'अस्वीकरण',
   'privacy.contents': 'विषय-सूची',
@@ -460,6 +461,7 @@ export const HI: TranslationMap = {
   'nav.langTooltip': 'भाषा',
   'nav.lightModeTooltip': 'लाइट मोड में बदलें',
   'nav.openMenu': 'नेविगेशन मेनू खोलें',
+  'nav.mobileMenu': 'मोबाइल मेनू',
   'nav.randomTooltip': 'एक यादृच्छिक खेल खेलें',
   'nav.streakTooltip': 'दिन की लगातार खेल श्रृंखला! जारी रखें।',
   // Milestone
@@ -513,7 +515,7 @@ export const HI: TranslationMap = {
   'about.stats.freeToPlay': 'मुफ्त खेलें',
   'about.stats.playableGames': 'खेलने योग्य खेल',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'नहीं। यह एक स्वतंत्र प्रशंसक साइट है।',
+  'contact.affiliatedGoogleAnswer': 'नहीं। यह एक स्वतंत्र प्रशंसक साइट है।',
   'contact.gameNotLoadingAnswer': 'दूसरा ब्राउज़र आज़माएं या विज्ञापन अवरोधक बंद करें।',
   'contact.missingGameAnswer': 'हम सभी एम्बेड करने योग्य free game कवर करते हैं — कुछ the original publishers द्वारा अवरुद्ध हैं।',
   'contact.subject.broken': '🐛 टूटा हुआ गेम लिंक',
@@ -540,6 +542,13 @@ export const HI: TranslationMap = {
   'seo.contact.title': 'संपर्क करें — Play Arcade',
   'seo.privacy.title': 'गोपनीयता नीति — Play Arcade',
   'seo.notFound.title': 'पेज नहीं मिला — Play Arcade',
+  'seo.sitemap.title': 'साइटमैप — Play Arcade',
+  'seo.sitemap.description': 'पूरा साइटमैप ब्राउज़ करें — Play Arcade पर सभी पेज और गेम।',
+  'sitemap.title': 'साइटमैप',
+  'sitemap.subtitle': 'Play Arcade पर सभी पेज और गेम का पूरा अवलोकन।',
+  'sitemap.mainPages': 'मुख्य पेज',
+  'sitemap.allGames': 'सभी गेम',
+  'common.backToHome': 'होम पर वापस जाएं',
 };
 
 // Turkish

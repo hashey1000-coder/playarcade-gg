@@ -72,8 +72,8 @@ export default function About() {
 
   // SEO — localised page title + meta description
   useHead({
-    title: t('seo.about.title' as any),
-    description: t('about.heroDesc' as any),
+    title: t('seo.about.title'),
+    description: t('about.heroDesc'),
     routePath: '/about/',
   });
 
@@ -216,10 +216,10 @@ export default function About() {
             <div>
               <h2 className="text-lg font-bold text-amber-900 dark:text-amber-300 mb-3">{t('about.disclaimer')}</h2>
               <div className="text-sm text-amber-800 dark:text-amber-400 leading-relaxed space-y-2">
-                <p>{t('about.disclaimer.p1' as any)}</p>
-                <p>{t('about.disclaimer.p2' as any)}</p>
-                <p>{t('about.disclaimer.p3' as any)}</p>
-                <p>{t('about.disclaimer.p4' as any)}</p>
+                <p>{t('about.disclaimer.p1')}</p>
+                <p>{t('about.disclaimer.p2')}</p>
+                <p>{t('about.disclaimer.p3')}</p>
+                <p>{t('about.disclaimer.p4')}</p>
               </div>
             </div>
           </div>

@@ -236,6 +236,7 @@ export const SV: TranslationMap = {
   'allGames.sortMostPlayed': 'Mest Spelade',
   'allGames.sortHighestRated': 'Högst Betyg',
   'allGames.sortNewest': 'Nyaste Först',
+  'allGames.gameCount': 'spel',
   'allGames.gamesCount': 'spel',
   'search.sort': 'Sortera',
   'search.sortRelevance': 'Relevans',
@@ -312,7 +313,7 @@ export const SV: TranslationMap = {
   'contact.sendAnother': 'Skicka ett till meddelande',
   'contact.gameNotLoading': 'Spelet laddas inte?',
   'contact.missingGame': 'Saknas ett spel?',
-  'contact.affiliatedthe original publishers': 'Ansluten till the original publishers?',
+  'contact.affiliatedGoogle': 'Ansluten till Google?',
   'privacy.legal': 'Juridiskt',
   'privacy.disclaimer': 'Ansvarsfriskrivning',
   'privacy.contents': 'Innehåll',
@@ -460,6 +461,7 @@ export const SV: TranslationMap = {
   'nav.langTooltip': 'Språk',
   'nav.lightModeTooltip': 'Byt till ljust läge',
   'nav.openMenu': 'Öppna navigeringsmeny',
+  'nav.mobileMenu': 'Mobilmeny',
   'nav.randomTooltip': 'Spela ett slumpmässigt spel',
   'nav.streakTooltip': 'dagars spelsvit! Fortsätt.',
   // Milestone
@@ -513,7 +515,7 @@ export const SV: TranslationMap = {
   'about.stats.freeToPlay': 'Gratis att Spela',
   'about.stats.playableGames': 'Spelbara Spel',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'Nej. Detta är en oberoende fansida.',
+  'contact.affiliatedGoogleAnswer': 'Nej. Detta är en oberoende fansida.',
   'contact.gameNotLoadingAnswer': 'Prova en annan webbläsare eller inaktivera annonsblockerare.',
   'contact.missingGameAnswer': 'Vi täcker alla inbäddbara free games — en del blockeras av the original publishers.',
   'contact.subject.broken': '🐛 Trasig spellänk',
@@ -540,6 +542,13 @@ export const SV: TranslationMap = {
   'seo.contact.title': 'Kontakt — Play Arcade',
   'seo.privacy.title': 'Integritetspolicy — Play Arcade',
   'seo.notFound.title': 'Sidan Hittades Inte — Play Arcade',
+  'seo.sitemap.title': 'Webbkarta — Play Arcade',
+  'seo.sitemap.description': 'Bläddra i hela webbkartan — alla sidor och spel på Play Arcade.',
+  'sitemap.title': 'Webbkarta',
+  'sitemap.subtitle': 'En fullständig översikt av alla sidor och spel på Play Arcade.',
+  'sitemap.mainPages': 'Huvudsidor',
+  'sitemap.allGames': 'Alla spel',
+  'common.backToHome': 'Tillbaka till startsidan',
 };
 
 // ---------------------------------------------------------------------------

@@ -85,6 +85,7 @@ const STATIC_PATHS = [
   { path: '/about',     priority: '0.5', changefreq: 'monthly' },
   { path: '/contact',   priority: '0.5', changefreq: 'monthly' },
   { path: '/privacy',   priority: '0.4', changefreq: 'monthly' },
+  { path: '/sitemap',   priority: '0.3', changefreq: 'weekly'  },
 ];
 
 /** Per-game routes */

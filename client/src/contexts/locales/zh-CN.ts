@@ -236,6 +236,7 @@ export const ZH_CN: TranslationMap = {
   'allGames.sortMostPlayed': '\u6700\u591a\u4eba\u73a9',
   'allGames.sortHighestRated': '\u8bc4\u5206\u6700\u9ad8',
   'allGames.sortNewest': '\u6700\u65b0',
+  'allGames.gameCount': '个游戏',
   'allGames.gamesCount': '\u4e2a\u6e38\u620f',
   'search.sort': '\u6392\u5e8f',
   'search.sortRelevance': '\u76f8\u5173\u6027',
@@ -312,7 +313,7 @@ export const ZH_CN: TranslationMap = {
   'contact.sendAnother': '\u53d1\u9001\u53e6\u4e00\u6761\u6d88\u606f',
   'contact.gameNotLoading': '\u6e38\u620f\u65e0\u6cd5\u52a0\u8f7d\uff1f',
   'contact.missingGame': '\u7f3a\u5c11\u6e38\u620f\uff1f',
-  'contact.affiliatedthe original publishers': '\u4e0ethe original publishers\u6709\u5173\u8054\uff1f',
+  'contact.affiliatedGoogle': '与Google有关联？',
   'privacy.legal': '\u6cd5\u5f8b\u4fe1\u606f',
   'privacy.disclaimer': '\u514d\u8d23\u58f0\u660e',
   'privacy.contents': '\u76ee\u5f55',
@@ -460,6 +461,7 @@ export const ZH_CN: TranslationMap = {
   'nav.langTooltip': '语言',
   'nav.lightModeTooltip': '切换到浅色模式',
   'nav.openMenu': '打开导航菜单',
+  'nav.mobileMenu': '移动菜单',
   'nav.randomTooltip': '随机玩一个游戏',
   'nav.streakTooltip': '天连续游玩！继续保持。',
   // Milestone
@@ -513,7 +515,7 @@ export const ZH_CN: TranslationMap = {
   'about.stats.freeToPlay': '免费游玩',
   'about.stats.playableGames': '可玩游戏',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': '不是。这是一个独立的粉丝网站。',
+  'contact.affiliatedGoogleAnswer': '不是。这是一个独立的粉丝网站。',
   'contact.gameNotLoadingAnswer': '尝试其他浏览器或禁用广告拦截器。',
   'contact.missingGameAnswer': '我们涵盖所有可嵌入的free game — 部分被the original publishers屏蔽。',
   'contact.subject.broken': '🐛 游戏链接损坏',
@@ -540,6 +542,13 @@ export const ZH_CN: TranslationMap = {
   'seo.contact.title': '联系我们 — Play Arcade',
   'seo.privacy.title': '隐私政策 — Play Arcade',
   'seo.notFound.title': '页面未找到 — Play Arcade',
+  'seo.sitemap.title': '网站地图 — Play Arcade',
+  'seo.sitemap.description': '浏览完整的网站地图 — Play Arcade 上的所有页面和游戏。',
+  'sitemap.title': '网站地图',
+  'sitemap.subtitle': 'Play Arcade 上所有页面和游戏的完整概览。',
+  'sitemap.mainPages': '主要页面',
+  'sitemap.allGames': '所有游戏',
+  'common.backToHome': '返回首页',
 };
 
 // Chinese Traditional

@@ -7,7 +7,7 @@
 import { Link } from 'wouter';
 import { useT } from '@/contexts/LanguageContext';
 import { useHead } from '@/hooks/useHead';
-import { ArrowLeft, Shield, Eye, Cookie, Share2, Lock, Mail, RefreshCw } from 'lucide-react';
+import { Shield, Eye, Cookie, Share2, Lock, Mail, RefreshCw } from 'lucide-react';
 
 const LAST_UPDATED = 'February 21, 2026';
 

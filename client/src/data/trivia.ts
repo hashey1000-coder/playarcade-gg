@@ -84,20 +84,11 @@ export const GAME_TRIVIA: Record<string, string> = {
   'freecell':
     'FreeCell is remarkable because nearly every deal is winnable — out of the original 32,000 numbered deals in Microsoft FreeCell, only deal #11982 is known to be impossible. Jim Horne, who programmed the Windows version, received hundreds of letters from players claiming to have solved it (none had). The game was first implemented by Paul Alfille in 1978 on a PLATO educational computer system.',
 
-  '8-ball-pool':
-    'Eight-ball pool became the most popular billiards game in the world after World War II, when American soldiers spread the game internationally. The standard set of 15 pool balls has been unchanged since the 1920s. In competitive play, professional players can apply up to 15 different types of spin (called "English") to the cue ball. The game\'s name comes from the black 8-ball, which must be pocketed last to win.',
-
   'backgammon':
     'Backgammon is one of the oldest known board games, with origins dating back approximately 5,000 years to ancient Mesopotamia. The Royal Game of Ur (c. 2600 BCE) is considered its ancestor. In 1979, Luigi Villa of Italy programmed the first computer backgammon AI. The doubling cube, introduced in 1920s New York, added a gambling element that transformed competitive play. There are over 1.5 trillion possible backgammon positions.',
 
-  'bowling':
-    'The earliest known form of bowling dates back to ancient Egypt around 3200 BCE — archaeologists discovered a child\'s grave with primitive bowling pins and balls. A perfect game (12 consecutive strikes, score of 300) occurs roughly once in every 11,500 games for professional bowlers. The heaviest regulation bowling ball weighs 16 pounds (7.26 kg). In 2015, Jason Belmonte became the first player to bowl two televised 300 games in a single tournament.',
-
   'hangman':
     'The first known mention of Hangman appeared in 1894 in Alice Bertha Gomme\'s "Traditional Games." Mathematically, the optimal first guess in English Hangman is the letter "E" (appearing in 56.9% of common English words), followed by "A" (43.3%) and "R" (38.6%). With an optimal strategy, a player can correctly guess any word in the standard dictionary in 25 or fewer wrong guesses — well under the typical 6-attempt limit.',
-
-  'daily-crossword':
-    'The first crossword puzzle was published on December 21, 1913, in the New York World newspaper, created by journalist Arthur Wynne from Liverpool, England. The New York Times didn\'t publish crosswords until 1942, but it quickly became the gold standard. Will Shortz has been the NYT crossword editor since 1993 — the only person to hold a college degree in Enigmatology (the study of puzzles). Monday puzzles average 20 minutes to solve; Saturday puzzles average 45 minutes.',
 
   'fruit-ninja':
     'Fruit Ninja was developed by Australian studio Halfbrick Studios and released on April 21, 2010. It became the fastest-selling iOS game at the time, reaching 1 million downloads in just 10 days. The game was inspired by a tech demo showcasing multitouch slicing gestures. By 2020, it had been downloaded over 1 billion times. The "Pomegranate" fruit — which splits into multiple smaller fruits — was added after players requested more satisfying visual feedback.',
@@ -165,6 +156,4 @@ export const GAME_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     'Crazy Chicken (Moorhuhn) was originally created as an advertising game for Johnnie Walker whisky by German developer Phenomedia in 1999. It became a viral sensation in Germany, downloaded over 10 million times in its first year — making it one of the first "viral games" before the term existed. The franchise has spawned over 30 sequels across every platform. At its peak, German employers estimated a loss of €50 million in productivity due to employees playing Moorhuhn at work.',
 
-  'free-rider':
-    'Free Rider HD\'s track editor is based on the mathematical concept of Bézier curves, invented by French engineer Pierre Bézier in 1962 for designing car bodies at Renault. The original Free Rider was a Flash game created by Pete (known as "Belugerin") in 2007. The community has created over 5 million user tracks, with the most popular tracks receiving millions of plays. The physics engine simulates 60 calculations per second for realistic bicycle suspension and momentum.',
 };

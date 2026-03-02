@@ -236,6 +236,7 @@ export const PL: TranslationMap = {
   'allGames.sortMostPlayed': 'Najczęściej Grane',
   'allGames.sortHighestRated': 'Najwyżej Oceniane',
   'allGames.sortNewest': 'Najnowsze',
+  'allGames.gameCount': 'gra',
   'allGames.gamesCount': 'gier',
   'search.sort': 'Sortuj',
   'search.sortRelevance': 'Trafność',
@@ -312,7 +313,7 @@ export const PL: TranslationMap = {
   'contact.sendAnother': 'Wyślij kolejną wiadomość',
   'contact.gameNotLoading': 'Gra się nie ładuje?',
   'contact.missingGame': 'Brakuje gry?',
-  'contact.affiliatedthe original publishers': 'Powiązani z the original publishers?',
+  'contact.affiliatedGoogle': 'Powiązani z Google?',
   'privacy.legal': 'Informacje prawne',
   'privacy.disclaimer': 'Zastrzeżenie',
   'privacy.contents': 'Spis treści',
@@ -460,6 +461,7 @@ export const PL: TranslationMap = {
   'nav.langTooltip': 'Język',
   'nav.lightModeTooltip': 'Przełącz na tryb jasny',
   'nav.openMenu': 'Otwórz menu nawigacji',
+  'nav.mobileMenu': 'Menu mobilne',
   'nav.randomTooltip': 'Zagraj w losową grę',
   'nav.streakTooltip': 'dni gry z rzędu! Tak trzymaj.',
   // Milestone
@@ -513,7 +515,7 @@ export const PL: TranslationMap = {
   'about.stats.freeToPlay': 'Za darmo',
   'about.stats.playableGames': 'Grywalnych Gier',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'Nie. To niezależna strona fanowska.',
+  'contact.affiliatedGoogleAnswer': 'Nie. To niezależna strona fanowska.',
   'contact.gameNotLoadingAnswer': 'Spróbuj innej przeglądarki lub wyłącz blokery reklam.',
   'contact.missingGameAnswer': 'Obejmujemy wszystkie osadzalne free game — niektóre są blokowane przez the original publishers.',
   'contact.subject.broken': '🐛 Uszkodzony link gry',
@@ -540,6 +542,13 @@ export const PL: TranslationMap = {
   'seo.contact.title': 'Kontakt — Play Arcade',
   'seo.privacy.title': 'Polityka Prywatności — Play Arcade',
   'seo.notFound.title': 'Strona Nie Znaleziona — Play Arcade',
+  'seo.sitemap.title': 'Mapa strony — Play Arcade',
+  'seo.sitemap.description': 'Przeglądaj pełną mapę strony — wszystkie strony i gry na Play Arcade.',
+  'sitemap.title': 'Mapa strony',
+  'sitemap.subtitle': 'Pełny przegląd wszystkich stron i gier na Play Arcade.',
+  'sitemap.mainPages': 'Główne strony',
+  'sitemap.allGames': 'Wszystkie gry',
+  'common.backToHome': 'Powrót do strony głównej',
 };
 
 // Swedish

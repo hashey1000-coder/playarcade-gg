@@ -236,6 +236,7 @@ export const AR: TranslationMap = {
   'allGames.sortMostPlayed': 'الأكثر لعباً',
   'allGames.sortHighestRated': 'الأعلى تقييماً',
   'allGames.sortNewest': 'الأحدث',
+  'allGames.gameCount': 'لعبة',
   'allGames.gamesCount': 'ألعاب',
   'search.sort': 'ترتيب',
   'search.sortRelevance': 'الصلة',
@@ -312,7 +313,7 @@ export const AR: TranslationMap = {
   'contact.sendAnother': 'إرسال رسالة أخرى',
   'contact.gameNotLoading': 'اللعبة لا تعمل؟',
   'contact.missingGame': 'لعبة مفقودة؟',
-  'contact.affiliatedthe original publishers': 'تابع لـ the original publishers؟',
+  'contact.affiliatedGoogle': 'تابع لـ Google؟',
   'privacy.legal': 'قانوني',
   'privacy.disclaimer': 'إخلاء المسؤولية',
   'privacy.contents': 'المحتويات',
@@ -460,6 +461,7 @@ export const AR: TranslationMap = {
   'nav.langTooltip': 'اللغة',
   'nav.lightModeTooltip': 'التبديل إلى الوضع الفاتح',
   'nav.openMenu': 'فتح قائمة التنقل',
+  'nav.mobileMenu': 'القائمة المتنقلة',
   'nav.randomTooltip': 'لعب لعبة عشوائية',
   'nav.streakTooltip': 'أيام متتالية! استمر.',
   // Milestone
@@ -513,7 +515,7 @@ export const AR: TranslationMap = {
   'about.stats.freeToPlay': 'مجانية اللعب',
   'about.stats.playableGames': 'ألعاب قابلة للعب',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'لا. هذا موقع معجبين مستقل.',
+  'contact.affiliatedGoogleAnswer': 'لا. هذا موقع معجبين مستقل.',
   'contact.gameNotLoadingAnswer': 'جرب متصفحًا مختلفًا أو عطّل حاجبات الإعلانات.',
   'contact.missingGameAnswer': 'نغطي جميع رسومات the original publishers القابلة للتضمين — بعضها محجوب من the original publishers.',
   'contact.subject.broken': '🐛 رابط لعبة معطل',
@@ -540,6 +542,13 @@ export const AR: TranslationMap = {
   'seo.contact.title': 'اتصل بنا — Play Arcade',
   'seo.privacy.title': 'سياسة الخصوصية — Play Arcade',
   'seo.notFound.title': 'الصفحة غير موجودة — Play Arcade',
+  'seo.sitemap.title': 'خريطة الموقع — Play Arcade',
+  'seo.sitemap.description': 'تصفح خريطة الموقع الكاملة — جميع الصفحات والألعاب في Play Arcade.',
+  'sitemap.title': 'خريطة الموقع',
+  'sitemap.subtitle': 'نظرة شاملة على جميع الصفحات والألعاب في Play Arcade.',
+  'sitemap.mainPages': 'الصفحات الرئيسية',
+  'sitemap.allGames': 'جميع الألعاب',
+  'common.backToHome': 'العودة إلى الرئيسية',
 };
 
 // Hindi

@@ -21,7 +21,7 @@ async function startServer() {
     res.setHeader("X-XSS-Protection", "1; mode=block");
     res.setHeader("Referrer-Policy", "strict-origin-when-cross-origin");
     // Permissions-Policy: disable unused browser features
-    res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=(), interest-cohort=()");
+    res.setHeader("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
     // Vary on encoding for correct CDN caching
     res.setHeader("Vary", "Accept-Encoding");
     next();

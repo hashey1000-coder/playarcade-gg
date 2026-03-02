@@ -236,6 +236,7 @@ export const RU: TranslationMap = {
   'allGames.sortMostPlayed': 'Самые Популярные',
   'allGames.sortHighestRated': 'Лучшие Оценки',
   'allGames.sortNewest': 'Новые',
+  'allGames.gameCount': 'игра',
   'allGames.gamesCount': 'игр',
   'search.sort': 'Сортировка',
   'search.sortRelevance': 'Релевантность',
@@ -312,7 +313,7 @@ export const RU: TranslationMap = {
   'contact.sendAnother': 'Отправить ещё сообщение',
   'contact.gameNotLoading': 'Игра не загружается?',
   'contact.missingGame': 'Не хватает игры?',
-  'contact.affiliatedthe original publishers': 'Связаны с the original publishers?',
+  'contact.affiliatedGoogle': 'Связаны с Google?',
   'privacy.legal': 'Правовая информация',
   'privacy.disclaimer': 'Отказ от ответственности',
   'privacy.contents': 'Содержание',
@@ -460,6 +461,7 @@ export const RU: TranslationMap = {
   'nav.langTooltip': 'Язык',
   'nav.lightModeTooltip': 'Переключить на светлую тему',
   'nav.openMenu': 'Открыть меню навигации',
+  'nav.mobileMenu': 'Мобильное меню',
   'nav.randomTooltip': 'Случайная игра',
   'nav.streakTooltip': 'дней подряд! Продолжайте.',
   // Milestone
@@ -513,7 +515,7 @@ export const RU: TranslationMap = {
   'about.stats.freeToPlay': 'Бесплатно',
   'about.stats.playableGames': 'Играемых игр',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'Нет. Это независимый фанатский сайт.',
+  'contact.affiliatedGoogleAnswer': 'Нет. Это независимый фанатский сайт.',
   'contact.gameNotLoadingAnswer': 'Попробуйте другой браузер или отключите блокировщик рекламы.',
   'contact.missingGameAnswer': 'Мы покрываем все встраиваемые free game — некоторые заблокированы the original publishers.',
   'contact.subject.broken': '🐛 Нерабочая ссылка',
@@ -540,6 +542,13 @@ export const RU: TranslationMap = {
   'seo.contact.title': 'Контакты — Play Arcade',
   'seo.privacy.title': 'Политика Конфиденциальности — Play Arcade',
   'seo.notFound.title': 'Страница Не Найдена — Play Arcade',
+  'seo.sitemap.title': 'Карта сайта — Play Arcade',
+  'seo.sitemap.description': 'Просмотрите полную карту сайта — все страницы и игры на Play Arcade.',
+  'sitemap.title': 'Карта сайта',
+  'sitemap.subtitle': 'Полный обзор всех страниц и игр на Play Arcade.',
+  'sitemap.mainPages': 'Основные страницы',
+  'sitemap.allGames': 'Все игры',
+  'common.backToHome': 'Вернуться на главную',
 };
 
 // Arabic

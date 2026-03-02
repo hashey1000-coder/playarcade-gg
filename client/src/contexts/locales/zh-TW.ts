@@ -236,6 +236,7 @@ export const ZH_TW: TranslationMap = {
   'allGames.sortMostPlayed': '最多人玩',
   'allGames.sortHighestRated': '最高評分',
   'allGames.sortNewest': '最新',
+  'allGames.gameCount': '個遊戲',
   'allGames.gamesCount': '款遊戲',
   'search.sort': '排序',
   'search.sortRelevance': '相關性',
@@ -312,7 +313,7 @@ export const ZH_TW: TranslationMap = {
   'contact.sendAnother': '傳送另一則訊息',
   'contact.gameNotLoading': '遊戲無法載入？',
   'contact.missingGame': '缺少遊戲？',
-  'contact.affiliatedthe original publishers': '與the original publishers有關聯？',
+  'contact.affiliatedGoogle': '與Google有關聯？',
   'privacy.legal': '法律資訊',
   'privacy.disclaimer': '免責聲明',
   'privacy.contents': '目錄',
@@ -460,6 +461,7 @@ export const ZH_TW: TranslationMap = {
   'nav.langTooltip': '語言',
   'nav.lightModeTooltip': '切換到淺色模式',
   'nav.openMenu': '開啟導航選單',
+  'nav.mobileMenu': '行動選單',
   'nav.randomTooltip': '隨機玩一個遊戲',
   'nav.streakTooltip': '天連續遊玩！繼續保持。',
   // Milestone
@@ -513,7 +515,7 @@ export const ZH_TW: TranslationMap = {
   'about.stats.freeToPlay': '免費遊玩',
   'about.stats.playableGames': '可玩遊戲',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': '不是。這是一個獨立的粉絲網站。',
+  'contact.affiliatedGoogleAnswer': '不是。這是一個獨立的粉絲網站。',
   'contact.gameNotLoadingAnswer': '嘗試其他瀏覽器或停用廣告攔截器。',
   'contact.missingGameAnswer': '我們涵蓋所有可嵌入的free game — 部分被the original publishers封鎖。',
   'contact.subject.broken': '🐛 遊戲連結損壞',
@@ -540,6 +542,13 @@ export const ZH_TW: TranslationMap = {
   'seo.contact.title': '聯絡我們 — Play Arcade',
   'seo.privacy.title': '隱私權政策 — Play Arcade',
   'seo.notFound.title': '找不到頁面 — Play Arcade',
+  'seo.sitemap.title': '網站地圖 — Play Arcade',
+  'seo.sitemap.description': '瀏覽完整的網站地圖 — Play Arcade 上的所有頁面和遊戲。',
+  'sitemap.title': '網站地圖',
+  'sitemap.subtitle': 'Play Arcade 上所有頁面和遊戲的完整概覽。',
+  'sitemap.mainPages': '主要頁面',
+  'sitemap.allGames': '所有遊戲',
+  'common.backToHome': '返回首頁',
 };
 
 // Japanese

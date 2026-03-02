@@ -5,7 +5,7 @@ import { Trophy, ThumbsUp, ThumbsDown, ArrowLeft, Medal, TrendingUp, Star } from
 import { GAMES } from "@/data/games";
 import { useGameTranslate } from '@/data/gameTranslations';
 import AnimatedCard from "@/components/AnimatedCard";
-import { CATEGORY_COLORS, CATEGORY_COLORS_BORDERED } from '@/data/categoryColors';
+import { CATEGORY_COLORS } from '@/data/categoryColors';
 import { prefetchGameUrl } from '@/lib/utils';
 import { useHead } from '@/hooks/useHead';
 
@@ -56,8 +56,8 @@ export default function TopRated() {
 
   // SEO — localised page title + meta description
   useHead({
-    title: t('seo.topRated.title' as any),
-    description: t('seo.topRated.description' as any),
+    title: t('seo.topRated.title'),
+    description: t('seo.topRated.description'),
     routePath: '/top-rated/',
   });
 
@@ -105,7 +105,7 @@ export default function TopRated() {
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">{t('topRated.title')}</h1>
               <p className="text-white/70 text-sm max-w-md">
-                {t('topRated.all' as any)} {GAMES.length} {t('topRated.subtitle')}
+                {t('topRated.all')} {GAMES.length} {t('topRated.subtitle')}
               </p>
             </div>
             {/* Stats */}
@@ -273,9 +273,9 @@ export default function TopRated() {
                           {t(`category.${game.category}` as any)}
                         </span>
                         <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded-full ${
-                          game.difficulty === 'easy' ? 'bg-green-50 text-green-600' :
-                          game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600' :
-                          'bg-red-50 text-red-600'
+                          game.difficulty === 'easy' ? 'bg-green-50 text-green-600 dark:bg-green-950/50 dark:text-green-400' :
+                          game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400' :
+                          'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                         }`}>
                           {t(`difficulty.${game.difficulty}` as any)}
                         </span>
@@ -309,7 +309,7 @@ export default function TopRated() {
                         }`}>
                           {ratio}%
                         </span>
-                        <div className="w-12 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                        <div className="w-12 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                           <div
                             className={`h-full rounded-full ${
                               ratio >= 80 ? "bg-green-500" : ratio >= 50 ? "bg-amber-400" : "bg-red-400"

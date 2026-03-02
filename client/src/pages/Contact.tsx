@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { Link } from 'wouter';
 import { useT } from '@/contexts/LanguageContext';
 import { useHead } from '@/hooks/useHead';
-import { Mail, MessageSquare, Bug, Lightbulb, CheckCircle2, ArrowLeft, ExternalLink } from 'lucide-react';
+import { Mail, MessageSquare, Bug, Lightbulb, CheckCircle2 } from 'lucide-react';
 
 interface FormState {
   name: string;
@@ -37,8 +37,8 @@ export default function Contact() {
 
   // SEO — localised page title + meta description
   useHead({
-    title: t('seo.contact.title' as any),
-    description: t('contact.subtitle' as any),
+    title: t('seo.contact.title'),
+    description: t('contact.subtitle'),
     routePath: '/contact/',
   });
 
@@ -127,15 +127,15 @@ export default function Contact() {
             <div className="space-y-3 text-sm text-slate-500 dark:text-white/50">
               <p>
                 <span className="text-slate-700 dark:text-white/80 font-medium">{t('contact.gameNotLoading')}</span>{' '}
-                {t('contact.gameNotLoadingAnswer' as any)}
+                {t('contact.gameNotLoadingAnswer')}
               </p>
               <p>
                 <span className="text-slate-700 dark:text-white/80 font-medium">{t('contact.missingGame')}</span>{' '}
-                {t('contact.missingGameAnswer' as any)}
+                {t('contact.missingGameAnswer')}
               </p>
               <p>
                 <span className="text-slate-700 dark:text-white/80 font-medium">{t('contact.affiliatedGoogle')}</span>{' '}
-                {t('contact.affiliatedGoogleAnswer' as any)}
+                {t('contact.affiliatedGoogleAnswer')}
               </p>
             </div>
           </div>

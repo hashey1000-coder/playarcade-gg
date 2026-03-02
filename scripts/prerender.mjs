@@ -128,7 +128,20 @@ if (!existsSync(templatePath)) {
   console.error('❌ Client build did not produce index.html');
   process.exit(1);
 }
-const template = readFileSync(templatePath, 'utf8');
+let template = readFileSync(templatePath, 'utf8');
+
+// ---------------------------------------------------------------------------
+// Inline critical CSS for above-the-fold content (hero + navbar)
+// Eliminates render-blocking CSS delay → faster FCP/LCP
+// ---------------------------------------------------------------------------
+const CRITICAL_CSS = `<style id="critical-css">
+.hero-bg{position:relative;background:linear-gradient(135deg,#312e81 0%,#4c1d95 30%,#6d28d9 60%,#7c3aed 80%,#8b5cf6 100%);overflow:hidden;border-radius:1.5rem;padding:1.25rem}
+@media(min-width:768px){.hero-bg{padding:3rem}}
+.hero-bg::before{content:'';position:absolute;inset:0;background:url('/hero-bg.webp') center/cover no-repeat;border-radius:inherit;z-index:0}
+.hero-overlay-breathe{position:absolute;inset:0;border-radius:1.5rem}
+.min-h-screen{min-height:100vh}
+</style>`;
+template = template.replace('</head>', `${CRITICAL_CSS}\n  </head>`);
 
 // Import the SSR bundle
 const ssrModule = await import(resolve(SSR_DIR, 'entry-static.js'));

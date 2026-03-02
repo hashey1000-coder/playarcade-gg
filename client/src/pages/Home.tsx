@@ -92,8 +92,8 @@ export default function Home() {
   const gt = useGameTranslate();
   // SEO — localised page title + meta description
   useHead({
-    title: t('seo.home.title' as any),
-    description: t('seo.home.description' as any),
+    title: t('seo.home.title'),
+    description: t('seo.home.description'),
     routePath: '/',
   });
 
@@ -220,7 +220,7 @@ export default function Home() {
         <div
           className="hero-bg relative overflow-hidden rounded-3xl p-5 md:p-12 mb-10"
           role="banner"
-          aria-label={t('home.heroAriaLabel' as any)}
+          aria-label={t('home.heroAriaLabel')}
         >
           {/* Real <img> for the hero background — discoverable from prerendered HTML
               without waiting for CSS to download. Uses srcSet for responsive loading. */}
@@ -310,7 +310,7 @@ export default function Home() {
                 <button
                   onClick={toggleKidsMode}
                   aria-pressed={kidsMode}
-                  aria-label={kidsMode ? t('nav.kidsModeTooltipOn' as any) : t('nav.kidsModeTooltipOff' as any)}
+                  aria-label={kidsMode ? t('nav.kidsModeTooltipOn') : t('nav.kidsModeTooltipOff')}
                   className={`inline-flex items-center justify-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-200 active:scale-95 ${
                     kidsMode
                       ? "bg-green-400 text-green-900 shadow-lg shadow-green-400/30"
@@ -379,9 +379,9 @@ export default function Home() {
                             </span>
                             {game.difficulty && (
                               <span className={`inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${
-                                game.difficulty === 'easy' ? 'bg-green-50 text-green-700' :
-                                game.difficulty === 'medium' ? 'bg-amber-50 text-amber-700' :
-                                'bg-red-50 text-red-600'
+                                game.difficulty === 'easy' ? 'bg-green-50 text-green-700 dark:bg-green-950/50 dark:text-green-400' :
+                                game.difficulty === 'medium' ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400' :
+                                'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                               }`}>
                                 {t(`difficulty.${game.difficulty}` as any)}
                               </span>
@@ -409,7 +409,7 @@ export default function Home() {
                         ? "bg-rose-500 text-white"
                         : "bg-white/90 dark:bg-slate-800/90 text-slate-400 hover:text-rose-400 hover:bg-white dark:hover:bg-slate-700"
                     }`}
-                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites' as any) : t('home.addToFavourites' as any)}
+                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites') : t('home.addToFavourites')}
                   >
                     <Heart className={`w-3.5 h-3.5 ${isFavourite(game.slug) ? "fill-white" : ""}`} />
                   </button>
@@ -433,7 +433,7 @@ export default function Home() {
             }`}
           >
             <span className="text-base">🎮</span>
-            {t('category.all' as any)}
+            {t('category.all')}
           </button>
 
           {/* Favourites tab — placed early so users can always find it */}
@@ -450,7 +450,7 @@ export default function Home() {
             {t('home.favourites')}
             {favourites.length > 0 && (
               <span className={`text-[11px] font-bold px-1.5 py-0.5 rounded-full min-w-[20px] text-center transition-all duration-200 ${
-                activeCategory === "favourites" ? "bg-white/20" : "bg-rose-100 text-rose-600"
+                activeCategory === "favourites" ? "bg-white/20" : "bg-rose-100 text-rose-600 dark:bg-rose-950/50 dark:text-rose-400"
               } ${favPulse ? "scale-125 bg-rose-500 text-white" : ""}`}>
                 {favourites.length}
               </span>
@@ -490,7 +490,7 @@ export default function Home() {
             </button>
           ))}
 
-          <div className="w-px h-6 bg-slate-200 shrink-0 mx-1" />
+          <div className="w-px h-6 bg-slate-200 dark:bg-slate-700 shrink-0 mx-1" />
 
           {/* Tags toggle button */}
           <button
@@ -564,7 +564,7 @@ export default function Home() {
                     onClick={() => toggleTag(tag.id)}
                     className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
                       isActive
-                        ? "bg-cyan-600 text-white shadow-md shadow-cyan-200"
+                        ? "bg-cyan-600 text-white shadow-md shadow-cyan-200/50 dark:shadow-cyan-900/50"
                         : "bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 hover:text-cyan-600 border border-slate-200 dark:border-slate-700 hover:border-cyan-200"
                     }`}
                   >
@@ -660,7 +660,7 @@ export default function Home() {
         <div className="mb-4 flex items-center gap-3 flex-wrap">
           <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">{activeCategory === 'all' ? t('nav.allGames') : activeCategory === 'favourites' ? t('home.favourites') : activeCategory === 'top-rated' ? t('home.topRated') : t(`category.${activeCategory}` as any)}</h2>
           <p className="text-sm text-slate-500 font-medium">
-            {filteredGames.length} {t('home.gamesCount' as any)}{" "}
+            {filteredGames.length} {t('home.gamesCount')}{" "}
             {activeCategory === "favourites"
               ? t('home.favourited')
               : activeCategory === "top-rated"
@@ -670,14 +670,14 @@ export default function Home() {
             {activeTags.length > 0 ? ` · ${activeTags.length} ${t('home.tagFiltersActive')}` : ""}
           </p>
           {activeCategory === "top-rated" && (
-            <span className="text-[11px] bg-amber-50 text-amber-700 border border-amber-100 px-2 py-0.5 rounded-full font-medium">
+            <span className="text-[11px] bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400 border border-amber-100 dark:border-amber-800 px-2 py-0.5 rounded-full font-medium">
               {t('home.localLikes')}
             </span>
           )}
           {/* Link to full leaderboard */}
           {activeCategory === "top-rated" && (
             <Link href="/top-rated/">
-              <span className="text-[11px] bg-cyan-50 text-cyan-600 border border-cyan-100 px-2 py-0.5 rounded-full font-medium hover:bg-cyan-100 transition-colors cursor-pointer">
+              <span className="text-[11px] bg-cyan-50 text-cyan-600 dark:bg-cyan-950/50 dark:text-cyan-400 border border-cyan-100 dark:border-cyan-800 px-2 py-0.5 rounded-full font-medium hover:bg-cyan-100 dark:hover:bg-cyan-950 transition-colors cursor-pointer">
                 {t('home.viewLeaderboard')} →
               </span>
             </Link>
@@ -741,16 +741,16 @@ export default function Home() {
                             </span>
                             {game.difficulty && (
                               <span className={`inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${
-                                game.difficulty === 'easy' ? 'bg-green-50 text-green-700' :
-                                game.difficulty === 'medium' ? 'bg-amber-50 text-amber-700' :
-                                'bg-red-50 text-red-600'
+                                game.difficulty === 'easy' ? 'bg-green-50 text-green-700 dark:bg-green-950/50 dark:text-green-400' :
+                                game.difficulty === 'medium' ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400' :
+                                'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                               }`}>
                                 {t(`difficulty.${game.difficulty}` as any)}
                               </span>
                             )}
                             {/* Like count badge for Top Rated view */}
                             {activeCategory === "top-rated" && likeCount > 0 && (
-                              <span className="inline-flex items-center gap-0.5 text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-amber-50 text-amber-700">
+                              <span className="inline-flex items-center gap-0.5 text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400">
                                 <ThumbsUp className="w-2.5 h-2.5" />
                                 {likeCount}
                               </span>
@@ -794,7 +794,7 @@ export default function Home() {
                         ? "bg-rose-500 text-white opacity-100"
                         : "bg-white/90 dark:bg-slate-800/90 text-slate-400 hover:text-rose-400 hover:bg-white dark:hover:bg-slate-700"
                     }`}
-                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites' as any) : t('home.addToFavourites' as any)}
+                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites') : t('home.addToFavourites')}
                   >
                     <Heart className={`w-3.5 h-3.5 ${isFavourite(game.slug) ? "fill-white" : ""}`} />
                   </button>

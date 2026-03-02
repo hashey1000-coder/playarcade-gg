@@ -236,6 +236,7 @@ export const NL: TranslationMap = {
   'allGames.sortMostPlayed': 'Meest Gespeeld',
   'allGames.sortHighestRated': 'Hoogst Beoordeeld',
   'allGames.sortNewest': 'Nieuwste Eerst',
+  'allGames.gameCount': 'spel',
   'allGames.gamesCount': 'spellen',
   'search.sort': 'Sorteer',
   'search.sortRelevance': 'Relevantie',
@@ -312,7 +313,7 @@ export const NL: TranslationMap = {
   'contact.sendAnother': 'Nog een bericht sturen',
   'contact.gameNotLoading': 'Spel laadt niet?',
   'contact.missingGame': 'Mist er een spel?',
-  'contact.affiliatedthe original publishers': 'Verbonden met the original publishers?',
+  'contact.affiliatedGoogle': 'Verbonden met Google?',
   'privacy.legal': 'Juridisch',
   'privacy.disclaimer': 'Disclaimer',
   'privacy.contents': 'Inhoud',
@@ -460,6 +461,7 @@ export const NL: TranslationMap = {
   'nav.langTooltip': 'Taal',
   'nav.lightModeTooltip': 'Overschakelen naar lichte modus',
   'nav.openMenu': 'Navigatiemenu openen',
+  'nav.mobileMenu': 'Mobiel menu',
   'nav.randomTooltip': 'Speel een willekeurig spel',
   'nav.streakTooltip': 'dagen achter elkaar! Ga zo door.',
   // Milestone
@@ -513,7 +515,7 @@ export const NL: TranslationMap = {
   'about.stats.freeToPlay': 'Gratis te Spelen',
   'about.stats.playableGames': 'Speelbare Spellen',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'Nee. Dit is een onafhankelijke fansite.',
+  'contact.affiliatedGoogleAnswer': 'Nee. Dit is een onafhankelijke fansite.',
   'contact.gameNotLoadingAnswer': 'Probeer een andere browser of schakel adblockers uit.',
   'contact.missingGameAnswer': 'We dekken alle insluitbare free games — sommige worden geblokkeerd door the original publishers.',
   'contact.subject.broken': '🐛 Kapotte spellink',
@@ -540,6 +542,13 @@ export const NL: TranslationMap = {
   'seo.contact.title': 'Contact — Play Arcade',
   'seo.privacy.title': 'Privacybeleid — Play Arcade',
   'seo.notFound.title': 'Pagina Niet Gevonden — Play Arcade',
+  'seo.sitemap.title': 'Sitemap — Play Arcade',
+  'seo.sitemap.description': 'Bekijk de volledige sitemap — alle paginas en spellen op Play Arcade.',
+  'sitemap.title': 'Sitemap',
+  'sitemap.subtitle': 'Een volledig overzicht van alle paginas en spellen op Play Arcade.',
+  'sitemap.mainPages': 'Hoofdpaginas',
+  'sitemap.allGames': 'Alle spellen',
+  'common.backToHome': 'Terug naar home',
 };
 
 // Polish

@@ -31,8 +31,8 @@ export default function Sitemap() {
   const { locale } = useLanguage();
 
   useHead({
-    title: t('seo.sitemap.title' as any),
-    description: t('seo.sitemap.description' as any),
+    title: t('seo.sitemap.title'),
+    description: t('seo.sitemap.description'),
     routePath: '/sitemap/',
   });
 
@@ -63,7 +63,7 @@ export default function Sitemap() {
             <span className="hover:text-cyan-600 transition-colors cursor-pointer">{t('nav.allGames')}</span>
           </Link>
           <span>/</span>
-          <span className="text-slate-600 dark:text-slate-300">{t('sitemap.title' as any)}</span>
+          <span className="text-slate-600 dark:text-slate-300">{t('sitemap.title')}</span>
         </div>
 
         {/* Header */}
@@ -73,11 +73,11 @@ export default function Sitemap() {
               <Map className="w-5 h-5 text-cyan-600" />
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              {t('sitemap.title' as any)}
+              {t('sitemap.title')}
             </h1>
           </div>
           <p className="text-slate-500 dark:text-slate-400 text-sm max-w-2xl">
-            {t('sitemap.subtitle' as any)}
+            {t('sitemap.subtitle')}
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export default function Sitemap() {
         <section className="mb-10">
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
             <Gamepad2 className="w-5 h-5 text-cyan-500" />
-            {t('sitemap.mainPages' as any)}
+            {t('sitemap.mainPages')}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {MAIN_PAGES.map(({ href, icon: Icon, labelKey }) => (
@@ -105,7 +105,7 @@ export default function Sitemap() {
         <section>
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100 mb-6 flex items-center gap-2">
             <LayoutList className="w-5 h-5 text-cyan-500" />
-            {t('sitemap.allGames' as any)}
+            {t('sitemap.allGames')}
             <span className="text-sm font-normal text-slate-400 ml-1">({GAMES.length})</span>
           </h2>
 
@@ -147,7 +147,7 @@ export default function Sitemap() {
           <Link href="/">
             <span className="inline-flex items-center gap-2 text-sm text-cyan-600 hover:text-cyan-700 font-medium transition-colors cursor-pointer">
               <ArrowLeft className="w-4 h-4" />
-              {t('common.backToHome' as any)}
+              {t('common.backToHome')}
             </span>
           </Link>
         </div>

@@ -204,7 +204,7 @@ export default function SpinWheel({ onClose }: SpinWheelProps) {
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
       onKeyDown={(e) => { if (e.key === 'Escape') onClose(); }}
     >
-      <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-in zoom-in-95 duration-300">
+      <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-in zoom-in-95 duration-300">
         {/* Header */}
         <div className="bg-gradient-to-r from-cyan-600 to-cyan-600 px-6 py-4 flex items-center justify-between">
           <div>
@@ -252,17 +252,17 @@ export default function SpinWheel({ onClose }: SpinWheelProps) {
 
           {/* Winner display */}
           {winner ? (
-            <div className="bg-gradient-to-r from-cyan-50 to-cyan-50 border border-cyan-100 rounded-2xl p-4 mb-4 text-center">
+            <div className="bg-gradient-to-r from-cyan-50 to-cyan-50 dark:from-cyan-950/40 dark:to-cyan-950/40 border border-cyan-100 dark:border-cyan-800 rounded-2xl p-4 mb-4 text-center">
               <p className="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-1">🎉 {t('spin.youGot')}</p>
-              <p className="text-lg font-bold text-slate-900 mb-1">{gt(winner).title}</p>
+              <p className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-1">{gt(winner).title}</p>
               <div className="flex items-center justify-center gap-2">
-                <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-100 text-cyan-700 font-medium capitalize">{t(`category.${winner.category}` as any)}</span>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 font-medium">{t(`difficulty.${winner.difficulty}` as any)}</span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-100 dark:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 font-medium capitalize">{t(`category.${winner.category}` as any)}</span>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">{t(`difficulty.${winner.difficulty}` as any)}</span>
               </div>
             </div>
           ) : (
             <div className="h-[88px] flex items-center justify-center mb-4">
-              <p className="text-slate-400 text-sm text-center">
+              <p className="text-slate-400 dark:text-slate-500 text-sm text-center">
                 {spinning ? `${t('spin.spinning')} 🌀` : t('spin.subtitle')}
               </p>
             </div>
@@ -275,13 +275,13 @@ export default function SpinWheel({ onClose }: SpinWheelProps) {
                 <button
                   onClick={spin}
                   disabled={spinning}
-                  className="flex-1 px-4 py-3 rounded-xl border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-colors disabled:opacity-50"
+                  className="flex-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-semibold text-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors disabled:opacity-50"
                 >
                   {t('spin.spinAgain')}
                 </button>
                 <button
                   onClick={handlePlay}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-bold text-sm hover:from-cyan-600 hover:to-cyan-700 transition-all shadow-lg shadow-cyan-200 active:scale-95"
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-bold text-sm hover:from-cyan-600 hover:to-cyan-700 transition-all shadow-lg shadow-cyan-200/50 dark:shadow-cyan-900/50 active:scale-95"
                 >
                   <Play className="w-4 h-4 fill-white" />
                   {t('spin.playNow')}
@@ -291,7 +291,7 @@ export default function SpinWheel({ onClose }: SpinWheelProps) {
               <button
                 onClick={spin}
                 disabled={spinning}
-                className="w-full flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-bold text-base hover:from-cyan-600 hover:to-cyan-700 transition-all shadow-lg shadow-cyan-200 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-bold text-base hover:from-cyan-600 hover:to-cyan-700 transition-all shadow-lg shadow-cyan-200/50 dark:shadow-cyan-900/50 active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {spinning ? t('spin.spinning') : `🎰 ${t('spin.spin')}`}
               </button>

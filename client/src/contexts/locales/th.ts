@@ -236,6 +236,7 @@ export const TH: TranslationMap = {
   'allGames.sortMostPlayed': '\u0e40\u0e25\u0e48\u0e19\u0e21\u0e32\u0e01\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e14',
   'allGames.sortHighestRated': '\u0e04\u0e30\u0e41\u0e19\u0e19\u0e2a\u0e39\u0e07\u0e2a\u0e38\u0e14',
   'allGames.sortNewest': '\u0e43\u0e2b\u0e21\u0e48\u0e2a\u0e38\u0e14',
+  'allGames.gameCount': 'เกม',
   'allGames.gamesCount': '\u0e40\u0e01\u0e21',
   'search.sort': '\u0e40\u0e23\u0e35\u0e22\u0e07\u0e15\u0e32\u0e21',
   'search.sortRelevance': '\u0e04\u0e27\u0e32\u0e21\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07',
@@ -312,7 +313,7 @@ export const TH: TranslationMap = {
   'contact.sendAnother': '\u0e2a\u0e48\u0e07\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e32\u0e21\u0e2d\u0e35\u0e01',
   'contact.gameNotLoading': '\u0e40\u0e01\u0e21\u0e44\u0e21\u0e48\u0e42\u0e2b\u0e25\u0e14?',
   'contact.missingGame': '\u0e40\u0e01\u0e21\u0e2b\u0e32\u0e22\u0e44\u0e1b?',
-  'contact.affiliatedthe original publishers': '\u0e40\u0e01\u0e35\u0e48\u0e22\u0e27\u0e02\u0e49\u0e2d\u0e07\u0e01\u0e31\u0e1a the original publishers?',
+  'contact.affiliatedGoogle': 'เกี่ยวข้องกับ Google?',
   'privacy.legal': '\u0e01\u0e0e\u0e2b\u0e21\u0e32\u0e22',
   'privacy.disclaimer': '\u0e02\u0e49\u0e2d\u0e08\u0e33\u0e01\u0e31\u0e14\u0e04\u0e27\u0e32\u0e21\u0e23\u0e31\u0e1a\u0e1c\u0e34\u0e14\u0e0a\u0e2d\u0e1a',
   'privacy.contents': '\u0e2a\u0e32\u0e23\u0e1a\u0e31\u0e0d',
@@ -460,6 +461,7 @@ export const TH: TranslationMap = {
   'nav.langTooltip': 'ภาษา',
   'nav.lightModeTooltip': 'เปลี่ยนเป็นโหมดสว่าง',
   'nav.openMenu': 'เปิดเมนูนำทาง',
+  'nav.mobileMenu': 'เมนูมือถือ',
   'nav.randomTooltip': 'เล่นเกมสุ่ม',
   'nav.streakTooltip': 'วันเล่นต่อเนื่อง! เล่นต่อไป',
   // Milestone
@@ -513,7 +515,7 @@ export const TH: TranslationMap = {
   'about.stats.freeToPlay': 'เล่นฟรี',
   'about.stats.playableGames': 'เกมที่เล่นได้',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'ไม่ นี่คือเว็บไซต์แฟนอิสระ',
+  'contact.affiliatedGoogleAnswer': 'ไม่ นี่คือเว็บไซต์แฟนอิสระ',
   'contact.gameNotLoadingAnswer': 'ลองเบราว์เซอร์อื่นหรือปิดตัวบล็อกโฆษณา',
   'contact.missingGameAnswer': 'เราครอบคลุม free game ที่ฝังได้ทั้งหมด — บางส่วนถูก the original publishers บล็อก',
   'contact.subject.broken': '🐛 ลิงก์เกมเสีย',
@@ -540,6 +542,13 @@ export const TH: TranslationMap = {
   'seo.contact.title': 'ติดต่อเรา — Play Arcade',
   'seo.privacy.title': 'นโยบายความเป็นส่วนตัว — Play Arcade',
   'seo.notFound.title': 'ไม่พบหน้า — Play Arcade',
+  'seo.sitemap.title': 'แผนผังเว็บไซต์ — Play Arcade',
+  'seo.sitemap.description': 'เรียกดูแผนผังเว็บไซต์ทั้งหมด — ทุกหน้าและเกมบน Play Arcade',
+  'sitemap.title': 'แผนผังเว็บไซต์',
+  'sitemap.subtitle': 'ภาพรวมทั้งหมดของทุกหน้าและเกมบน Play Arcade',
+  'sitemap.mainPages': 'หน้าหลัก',
+  'sitemap.allGames': 'เกมทั้งหมด',
+  'common.backToHome': 'กลับหน้าแรก',
 };
 
 // Chinese Simplified

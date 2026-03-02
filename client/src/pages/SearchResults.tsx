@@ -20,18 +20,16 @@ function getQueryParam(search: string, key: string): string {
 }
 
 const DIFFICULTY_OPTIONS = [
-  { id: "easy", labelKey: "difficulty.easy" as const, color: "bg-green-50 text-green-700 border-green-200 hover:bg-green-100", activeColor: "bg-green-500 text-white border-green-500" },
-  { id: "medium", labelKey: "difficulty.medium" as const, color: "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100", activeColor: "bg-amber-500 text-white border-amber-500" },
-  { id: "hard", labelKey: "difficulty.hard" as const, color: "bg-red-50 text-red-700 border-red-200 hover:bg-red-100", activeColor: "bg-red-500 text-white border-red-500" },
+  { id: "easy", labelKey: "difficulty.easy" as const, color: "bg-green-50 text-green-700 border-green-200 hover:bg-green-100 dark:bg-green-950/50 dark:text-green-400 dark:border-green-800 dark:hover:bg-green-950", activeColor: "bg-green-500 text-white border-green-500" },
+  { id: "medium", labelKey: "difficulty.medium" as const, color: "bg-amber-50 text-amber-700 border-amber-200 hover:bg-amber-100 dark:bg-amber-950/50 dark:text-amber-400 dark:border-amber-800 dark:hover:bg-amber-950", activeColor: "bg-amber-500 text-white border-amber-500" },
+  { id: "hard", labelKey: "difficulty.hard" as const, color: "bg-red-50 text-red-700 border-red-200 hover:bg-red-100 dark:bg-red-950/50 dark:text-red-400 dark:border-red-800 dark:hover:bg-red-950", activeColor: "bg-red-500 text-white border-red-500" },
 ];
 
 export default function SearchResults() {
   const t = useT();
   const gt = useGameTranslate();
   const [location, navigate] = useLocation();
-  const { favourites, toggleFavourite, isFavourite } = useFavourites();
-  const [favPulse, setFavPulse] = useState(false);
-  const pulseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { toggleFavourite, isFavourite } = useFavourites();
   const [activeDifficulty, setActiveDifficulty] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest'>(() => {
     try {
@@ -42,7 +40,6 @@ export default function SearchResults() {
     return 'default';
   });
   const [showSortMenu, setShowSortMenu] = useState(false);
-  const sortMenuRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const sortBtnRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -74,23 +71,17 @@ export default function SearchResults() {
   // SEO — localised page title + meta description
   useHead({
     title: query
-      ? (t('seo.search.titleWithQuery' as any) as string).replace('{query}', query)
-      : t('seo.search.title' as any),
+      ? (t('seo.search.titleWithQuery') as string).replace('{query}', query)
+      : t('seo.search.title'),
     description: query
-      ? (t('search.resultsFor' as any) as string).replace('{query}', query)
-      : t('seo.defaultDescription' as any),
+      ? (t('search.resultsFor') as string).replace('{query}', query)
+      : t('seo.defaultDescription'),
     routePath: '/search/',
   });
 
   const handleToggleFavourite = useCallback((slug: string) => {
-    const wasNotFav = !isFavourite(slug);
     toggleFavourite(slug);
-    if (wasNotFav) {
-      setFavPulse(true);
-      if (pulseTimer.current) clearTimeout(pulseTimer.current);
-      pulseTimer.current = setTimeout(() => setFavPulse(false), 800);
-    }
-  }, [toggleFavourite, isFavourite]);
+  }, [toggleFavourite]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -351,9 +342,9 @@ export default function SearchResults() {
                               </span>
                               {game.difficulty && (
                                 <span className={`inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${
-                                  game.difficulty === 'easy' ? 'bg-green-50 text-green-600' :
-                                  game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600' :
-                                  'bg-red-50 text-red-600'
+                                  game.difficulty === 'easy' ? 'bg-green-50 text-green-600 dark:bg-green-950/50 dark:text-green-400' :
+                                  game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400' :
+                                  'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                                 }`}>
                                   {t(`difficulty.${game.difficulty}` as any)}
                                 </span>

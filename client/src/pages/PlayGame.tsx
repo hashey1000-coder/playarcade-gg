@@ -13,7 +13,7 @@ import GamePageSkeleton from "@/components/GamePageSkeleton";
 import TriviaCard from "@/components/TriviaCard";
 import { useRecentlyPlayed } from "@/hooks/useRecentlyPlayed";
 import { useStreakContext } from "@/contexts/StreakContext";
-import { CATEGORY_COLORS, CATEGORY_COLORS_BORDERED, CATEGORY_ACCENT, CATEGORY_FALLBACK } from '@/data/categoryColors';
+import { CATEGORY_COLORS, CATEGORY_ACCENT, CATEGORY_FALLBACK } from '@/data/categoryColors';
 import { prefetchGameUrl } from '@/lib/utils';
 import { useHead } from '@/hooks/useHead';
 
@@ -421,16 +421,16 @@ export default function PlayGame() {
   const gameSeo = useMemo(() => {
     if (!game) return null;
     const { title: gameTitle, description: gameDesc } = getGameT(locale, game);
-    const pageTitle = (t('seo.play.title' as any) as string).replace('{title}', gameTitle);
-    const pageDesc = (t('seo.play.description' as any) as string)
+    const pageTitle = (t('seo.play.title') as string).replace('{title}', gameTitle);
+    const pageDesc = (t('seo.play.description') as string)
       .replace('{title}', gameTitle)
       .replace('{description}', gameDesc.slice(0, 140));
     return { pageTitle, pageDesc, gameTitle, gameDesc };
   }, [game, locale, t]);
 
   useHead({
-    title: gameSeo?.pageTitle ?? t('seo.defaultTitle' as any),
-    description: gameSeo?.pageDesc ?? t('seo.defaultDescription' as any),
+    title: gameSeo?.pageTitle ?? t('seo.defaultTitle'),
+    description: gameSeo?.pageDesc ?? t('seo.defaultDescription'),
     routePath: game ? `/play/${game.slug}/` : undefined,
     ogImage: game?.thumbnail,
   });
@@ -581,7 +581,7 @@ export default function PlayGame() {
             <button
               onClick={() => setChallengeBannerDismissed(true)}
               className="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors shrink-0"
-              aria-label={t('common.close' as any)}
+              aria-label={t('common.close')}
             >
               <X className="w-3.5 h-3.5" />
             </button>
@@ -613,7 +613,7 @@ export default function PlayGame() {
               ? 'bg-red-50 text-red-700 border-red-200 dark:bg-red-950/40 dark:text-red-400 dark:border-red-800'
               : 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-400 dark:border-amber-800'
           }`}>
-            {game.difficulty === 'easy' ? '😊' : game.difficulty === 'hard' ? '🔥' : '⚡'} {game.difficulty.charAt(0).toUpperCase() + game.difficulty.slice(1)}
+            {game.difficulty === 'easy' ? '😊' : game.difficulty === 'hard' ? '🔥' : '⚡'} {t(`difficulty.${game.difficulty}` as any)}
           </span>
           <span className="text-slate-300 dark:text-slate-400">·</span>
           <span className="text-sm text-slate-500 dark:text-slate-300">
@@ -641,8 +641,8 @@ export default function PlayGame() {
                 <button
                   onClick={isFakeFullscreen ? exitFullscreen : enterFullscreen}
                   className="absolute top-3 right-3 z-20 w-8 h-8 bg-slate-800/70 hover:bg-slate-800 text-white rounded-lg flex items-center justify-center transition-colors backdrop-blur-sm"
-                  title={t('game.fullscreen' as any)}
-                  aria-label={t('game.fullscreen' as any)}
+                  title={t('game.fullscreen')}
+                  aria-label={t('game.fullscreen')}
                 >
                   {isFakeFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
                 </button>
@@ -657,8 +657,8 @@ export default function PlayGame() {
                     setShowPlayNext(true);
                   }}
                   className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-1.5 bg-cyan-600/80 hover:bg-cyan-600 text-white text-xs font-semibold rounded-lg transition-colors backdrop-blur-sm"
-                  title={t('game.suggestNext' as any)}
-                  aria-label={t('game.suggestNext' as any)}
+                  title={t('game.suggestNext')}
+                  aria-label={t('game.suggestNext')}
                 >
                   <SkipForward className="w-3.5 h-3.5" />
                   {t('game.moreGames')}
@@ -693,7 +693,7 @@ export default function PlayGame() {
                     </div>
                     <div className="text-center">
                       <p className="text-white font-bold text-xl drop-shadow-lg">{gt(game).title}</p>
-                      <p className="text-white/70 text-sm mt-1">{iframeLoaded ? t('game.play') : (t('game.loading' as any) || 'Loading...')}</p>
+                      <p className="text-white/70 text-sm mt-1">{iframeLoaded ? t('game.play') : (t('game.loading') || 'Loading...')}</p>
                     </div>
                   </div>
                 </div>
@@ -706,7 +706,7 @@ export default function PlayGame() {
                     <div className="absolute inset-0 rounded-full border-4 border-cyan-500/30" />
                     <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-cyan-500 animate-spin" />
                   </div>
-                  <p className="text-white/90 text-sm font-medium">{t('game.loading' as any) || 'Loading game...'}</p>
+                  <p className="text-white/90 text-sm font-medium">{t('game.loading') || 'Loading game...'}</p>
                 </div>
               )}
 
@@ -716,8 +716,8 @@ export default function PlayGame() {
                   <div className="w-16 h-16 mb-4 rounded-full bg-red-500/20 flex items-center justify-center">
                     <X className="w-8 h-8 text-red-400" />
                   </div>
-                  <p className="text-white font-bold text-lg mb-1">{t('game.loadError' as any)}</p>
-                  <p className="text-white/60 text-sm text-center max-w-xs mb-6">{t('game.loadErrorDesc' as any)}</p>
+                  <p className="text-white font-bold text-lg mb-1">{t('game.loadError')}</p>
+                  <p className="text-white/60 text-sm text-center max-w-xs mb-6">{t('game.loadErrorDesc')}</p>
                   <div className="flex items-center gap-3">
                     <button
                       onClick={() => {
@@ -733,7 +733,7 @@ export default function PlayGame() {
                       }}
                       className="px-5 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-semibold rounded-lg transition-colors"
                     >
-                      {t('game.tryAgain' as any)}
+                      {t('game.tryAgain')}
                     </button>
                     <button
                       onClick={() => {
@@ -779,7 +779,7 @@ export default function PlayGame() {
               {/* Like button */}
               <button
                 onClick={() => vote("like")}
-                aria-label={`${t('game.vote.helpful' as any)} (${votes.likes})`}
+                aria-label={`${t('game.vote.helpful')} (${votes.likes})`}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 ${
                   userVote === "like"
                     ? "bg-emerald-500 text-white shadow-sm"
@@ -793,7 +793,7 @@ export default function PlayGame() {
               {/* Dislike button */}
               <button
                 onClick={() => vote("dislike")}
-                aria-label={`${t('game.vote.notHelpful' as any)} (${votes.dislikes})`}
+                aria-label={`${t('game.vote.notHelpful')} (${votes.dislikes})`}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 ${
                   userVote === "dislike"
                     ? "bg-red-500 text-white shadow-sm"
@@ -812,7 +812,7 @@ export default function PlayGame() {
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 ${
                   challengeCopied
                     ? "bg-amber-500 text-white"
-                    : "bg-amber-50 text-amber-600 hover:bg-amber-100"
+                    : "bg-amber-50 text-amber-600 hover:bg-amber-100 dark:bg-amber-950/50 dark:text-amber-400 dark:hover:bg-amber-950"
                 }`}
                 title={t('game.challengeFriend')}
                 aria-label={t('game.challengeFriend')}
@@ -829,7 +829,7 @@ export default function PlayGame() {
                     ? "bg-emerald-500 text-white"
                     : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
                 }`}
-                title={t('game.shareGame' as any)}
+                title={t('game.shareGame')}
                 aria-label={t('game.share')}
               >
                 {copied ? <Check className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}
@@ -864,9 +864,9 @@ export default function PlayGame() {
                   {t(`category.${game.category}` as any)}
                 </span>
                 <span className={`inline-block text-[11px] font-semibold px-2.5 py-1 rounded-full ${
-                  game.difficulty === 'easy' ? 'bg-green-50 text-green-600' :
-                  game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600' :
-                  'bg-red-50 text-red-600'
+                  game.difficulty === 'easy' ? 'bg-green-50 text-green-600 dark:bg-green-950/50 dark:text-green-400' :
+                  game.difficulty === 'medium' ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400' :
+                  'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                 }`}>
                   {t(`difficulty.${game.difficulty}` as any)}
                 </span>
@@ -948,9 +948,9 @@ export default function PlayGame() {
                                   {gt(g).title}
                                 </p>
                                 <span className={`text-[10px] font-medium px-1.5 py-0.5 rounded-full mt-auto self-start ${
-                                  g.difficulty === 'easy' ? 'bg-green-50 text-green-600' :
-                                  g.difficulty === 'medium' ? 'bg-amber-50 text-amber-600' :
-                                  'bg-red-50 text-red-600'
+                                  g.difficulty === 'easy' ? 'bg-green-50 text-green-600 dark:bg-green-950/50 dark:text-green-400' :
+                                  g.difficulty === 'medium' ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400' :
+                                  'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                                 }`}>
                                   {t(`difficulty.${g.difficulty}` as any)}
                                 </span>
@@ -1083,7 +1083,7 @@ export default function PlayGame() {
               </div>
               <button
                 onClick={() => setShowControls(false)}
-                aria-label={t('common.close' as any)}
+                aria-label={t('common.close')}
                 className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center transition-colors"
               >
                 <X className="w-4 h-4 text-slate-500 dark:text-slate-400" />
@@ -1138,7 +1138,7 @@ export default function PlayGame() {
                 </div>
                 <button
                   onClick={dismissPlayNext}
-                  aria-label={t('common.close' as any)}
+                  aria-label={t('common.close')}
                   className="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors"
                 >
                   <X className="w-3.5 h-3.5 text-white" />
@@ -1200,9 +1200,9 @@ export default function PlayGame() {
                       {t(`category.${nextGame.category}` as any)}
                     </span>
                     <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-                      nextGame.difficulty === 'easy' ? 'bg-green-50 text-green-600' :
-                      nextGame.difficulty === 'medium' ? 'bg-amber-50 text-amber-600' :
-                      'bg-red-50 text-red-600'
+                      nextGame.difficulty === 'easy' ? 'bg-green-50 text-green-600 dark:bg-green-950/50 dark:text-green-400' :
+                      nextGame.difficulty === 'medium' ? 'bg-amber-50 text-amber-600 dark:bg-amber-950/50 dark:text-amber-400' :
+                      'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
                     }`}>
                       {t(`difficulty.${nextGame.difficulty}` as any)}
                     </span>
@@ -1222,8 +1222,8 @@ export default function PlayGame() {
                 <button
                   onClick={refreshNextSuggestion}
                   className="w-10 h-10 flex items-center justify-center bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-xl transition-colors"
-                  title={t('game.suggestAnother' as any)}
-                  aria-label={t('game.suggestAnother' as any)}
+                  title={t('game.suggestAnother')}
+                  aria-label={t('game.suggestAnother')}
                 >
                   <Shuffle className="w-4 h-4" />
                 </button>
@@ -1254,7 +1254,7 @@ export default function PlayGame() {
                 </div>
                 <button
                   onClick={() => dismissExitPrompt(true)}
-                  aria-label={t('common.close' as any)}
+                  aria-label={t('common.close')}
                   className="w-6 h-6 rounded-full bg-slate-700 hover:bg-slate-600 flex items-center justify-center transition-colors shrink-0 mt-0.5"
                 >
                   <X className="w-3 h-3" />

@@ -11,8 +11,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
   envDir: path.resolve(import.meta.dirname),
@@ -39,10 +37,6 @@ export default defineConfig({
           // Icons
           if (id.includes('node_modules/lucide-react/')) {
             return 'icons';
-          }
-          // Charts/carousel (only used on some pages)
-          if (id.includes('node_modules/recharts/') || id.includes('node_modules/embla-carousel')) {
-            return 'charts-carousel';
           }
           // Confetti (only triggered on interaction)
           if (id.includes('node_modules/canvas-confetti/')) {

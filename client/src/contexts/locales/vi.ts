@@ -236,6 +236,7 @@ export const VI: TranslationMap = {
   'allGames.sortMostPlayed': 'Ch\u01a1i Nhi\u1ec1u Nh\u1ea5t',
   'allGames.sortHighestRated': '\u0110\u00e1nh Gi\u00e1 Cao Nh\u1ea5t',
   'allGames.sortNewest': 'M\u1edbi Nh\u1ea5t',
+  'allGames.gameCount': 'trò chơi',
   'allGames.gamesCount': 'game',
   'search.sort': 'S\u1eafp x\u1ebfp',
   'search.sortRelevance': 'Li\u00ean quan',
@@ -312,7 +313,7 @@ export const VI: TranslationMap = {
   'contact.sendAnother': 'G\u1eedi tin nh\u1eafn kh\u00e1c',
   'contact.gameNotLoading': 'Tr\u00f2 ch\u01a1i kh\u00f4ng t\u1ea3i?',
   'contact.missingGame': 'Thi\u1ebfu tr\u00f2 ch\u01a1i?',
-  'contact.affiliatedthe original publishers': 'Li\u00ean k\u1ebft v\u1edbi the original publishers?',
+  'contact.affiliatedGoogle': 'Liên kết với Google?',
   'privacy.legal': 'Ph\u00e1p l\u00fd',
   'privacy.disclaimer': 'Tuy\u00ean b\u1ed1 mi\u1ec5n tr\u1eeb',
   'privacy.contents': 'M\u1ee5c l\u1ee5c',
@@ -460,6 +461,7 @@ export const VI: TranslationMap = {
   'nav.langTooltip': 'Ngôn ngữ',
   'nav.lightModeTooltip': 'Chuyển sang chế độ sáng',
   'nav.openMenu': 'Mở menu điều hướng',
+  'nav.mobileMenu': 'Menu di động',
   'nav.randomTooltip': 'Chơi game ngẫu nhiên',
   'nav.streakTooltip': 'ngày chơi liên tiếp! Tiếp tục nhé.',
   // Milestone
@@ -513,7 +515,7 @@ export const VI: TranslationMap = {
   'about.stats.freeToPlay': 'Miễn Phí',
   'about.stats.playableGames': 'Game Có Thể Chơi',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'Không. Đây là trang fan độc lập.',
+  'contact.affiliatedGoogleAnswer': 'Không. Đây là trang fan độc lập.',
   'contact.gameNotLoadingAnswer': 'Thử trình duyệt khác hoặc tắt trình chặn quảng cáo.',
   'contact.missingGameAnswer': 'Chúng tôi bao gồm tất cả free game có thể nhúng — một số bị the original publishers chặn.',
   'contact.subject.broken': '🐛 Link game bị hỏng',
@@ -540,6 +542,13 @@ export const VI: TranslationMap = {
   'seo.contact.title': 'Liên Hệ — Play Arcade',
   'seo.privacy.title': 'Chính Sách Bảo Mật — Play Arcade',
   'seo.notFound.title': 'Trang Không Tìm Thấy — Play Arcade',
+  'seo.sitemap.title': 'Sơ đồ trang — Play Arcade',
+  'seo.sitemap.description': 'Duyệt sơ đồ trang đầy đủ — tất cả các trang và trò chơi trên Play Arcade.',
+  'sitemap.title': 'Sơ đồ trang',
+  'sitemap.subtitle': 'Tổng quan đầy đủ về tất cả các trang và trò chơi trên Play Arcade.',
+  'sitemap.mainPages': 'Trang chính',
+  'sitemap.allGames': 'Tất cả trò chơi',
+  'common.backToHome': 'Quay lại trang chủ',
 };
 
 // Thai

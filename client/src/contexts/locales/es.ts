@@ -236,6 +236,7 @@ export const ES: TranslationMap = {
   'allGames.sortMostPlayed': 'Más Jugados',
   'allGames.sortHighestRated': 'Mejor Valorados',
   'allGames.sortNewest': 'Más Nuevos',
+  'allGames.gameCount': 'juego',
   'allGames.gamesCount': 'juegos',
   'search.sort': 'Ordenar',
   'search.sortRelevance': 'Relevancia',
@@ -312,7 +313,7 @@ export const ES: TranslationMap = {
   'contact.sendAnother': 'Enviar otro mensaje',
   'contact.gameNotLoading': '¿El juego no carga?',
   'contact.missingGame': '¿Falta un juego?',
-  'contact.affiliatedthe original publishers': '¿Afiliado a the original publishers?',
+  'contact.affiliatedGoogle': '¿Afiliado a Google?',
   'privacy.legal': 'Legal',
   'privacy.disclaimer': 'Aviso legal',
   'privacy.contents': 'Contenido',
@@ -460,6 +461,7 @@ export const ES: TranslationMap = {
   'nav.langTooltip': 'Idioma',
   'nav.lightModeTooltip': 'Cambiar a modo claro',
   'nav.openMenu': 'Abrir menú de navegación',
+  'nav.mobileMenu': 'Menú móvil',
   'nav.randomTooltip': 'Jugar un juego aleatorio',
   'nav.streakTooltip': '¡racha de días jugando! Sigue así.',
   // Milestone
@@ -513,7 +515,7 @@ export const ES: TranslationMap = {
   'about.stats.freeToPlay': 'Gratis para Jugar',
   'about.stats.playableGames': 'Juegos Jugables',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'No. Este es un sitio de fans independiente.',
+  'contact.affiliatedGoogleAnswer': 'No. Este es un sitio de fans independiente.',
   'contact.gameNotLoadingAnswer': 'Prueba con otro navegador o desactiva los bloqueadores de anuncios.',
   'contact.missingGameAnswer': 'Cubrimos todos los free games integrables — algunos están bloqueados por the original publishers.',
   'contact.subject.broken': '🐛 Enlace de juego roto',
@@ -540,6 +542,13 @@ export const ES: TranslationMap = {
   'seo.contact.title': 'Contacto — Play Arcade',
   'seo.privacy.title': 'Política de Privacidad — Play Arcade',
   'seo.notFound.title': 'Página No Encontrada — Play Arcade',
+  'seo.sitemap.title': 'Mapa del sitio — Play Arcade',
+  'seo.sitemap.description': 'Explora el mapa del sitio completo — todas las páginas y juegos en Play Arcade.',
+  'sitemap.title': 'Mapa del sitio',
+  'sitemap.subtitle': 'Una vista completa de todas las páginas y juegos en Play Arcade.',
+  'sitemap.mainPages': 'Páginas principales',
+  'sitemap.allGames': 'Todos los juegos',
+  'common.backToHome': 'Volver al inicio',
 };
 
 // French

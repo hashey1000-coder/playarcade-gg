@@ -236,6 +236,7 @@ export const ID: TranslationMap = {
   'allGames.sortMostPlayed': 'Paling Banyak Dimainkan',
   'allGames.sortHighestRated': 'Rating Tertinggi',
   'allGames.sortNewest': 'Terbaru',
+  'allGames.gameCount': 'permainan',
   'allGames.gamesCount': 'permainan',
   'search.sort': 'Urutkan',
   'search.sortRelevance': 'Relevansi',
@@ -312,7 +313,7 @@ export const ID: TranslationMap = {
   'contact.sendAnother': 'Kirim pesan lain',
   'contact.gameNotLoading': 'Game tidak dimuat?',
   'contact.missingGame': 'Ada game yang hilang?',
-  'contact.affiliatedthe original publishers': 'Berafiliasi dengan the original publishers?',
+  'contact.affiliatedGoogle': 'Berafiliasi dengan Google?',
   'privacy.legal': 'Hukum',
   'privacy.disclaimer': 'Penyangkalan',
   'privacy.contents': 'Daftar Isi',
@@ -460,6 +461,7 @@ export const ID: TranslationMap = {
   'nav.langTooltip': 'Bahasa',
   'nav.lightModeTooltip': 'Beralih ke mode terang',
   'nav.openMenu': 'Buka menu navigasi',
+  'nav.mobileMenu': 'Menu ponsel',
   'nav.randomTooltip': 'Mainkan game acak',
   'nav.streakTooltip': 'hari main berturut-turut! Terus mainkan.',
   // Milestone
@@ -513,7 +515,7 @@ export const ID: TranslationMap = {
   'about.stats.freeToPlay': 'Gratis Dimainkan',
   'about.stats.playableGames': 'Game Dapat Dimainkan',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'Tidak. Ini adalah situs penggemar independen.',
+  'contact.affiliatedGoogleAnswer': 'Tidak. Ini adalah situs penggemar independen.',
   'contact.gameNotLoadingAnswer': 'Coba browser lain atau nonaktifkan pemblokir iklan.',
   'contact.missingGameAnswer': 'Kami mencakup semua free game yang dapat disematkan — beberapa diblokir oleh the original publishers.',
   'contact.subject.broken': '🐛 Tautan game rusak',
@@ -540,6 +542,13 @@ export const ID: TranslationMap = {
   'seo.contact.title': 'Hubungi Kami — Play Arcade',
   'seo.privacy.title': 'Kebijakan Privasi — Play Arcade',
   'seo.notFound.title': 'Halaman Tidak Ditemukan — Play Arcade',
+  'seo.sitemap.title': 'Peta Situs — Play Arcade',
+  'seo.sitemap.description': 'Jelajahi peta situs lengkap — semua halaman dan permainan di Play Arcade.',
+  'sitemap.title': 'Peta Situs',
+  'sitemap.subtitle': 'Tinjauan lengkap semua halaman dan permainan di Play Arcade.',
+  'sitemap.mainPages': 'Halaman Utama',
+  'sitemap.allGames': 'Semua Permainan',
+  'common.backToHome': 'Kembali ke beranda',
 };
 
 // Vietnamese

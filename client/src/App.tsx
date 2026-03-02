@@ -79,7 +79,7 @@ function LocaleRouter() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme="dark">
         <StreakProvider>
           <KidsModeProvider>
             <LanguageProvider>

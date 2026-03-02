@@ -236,6 +236,7 @@ export const TR: TranslationMap = {
   'allGames.sortMostPlayed': 'En Çok Oynanan',
   'allGames.sortHighestRated': 'En Yüksek Puan',
   'allGames.sortNewest': 'En Yeni',
+  'allGames.gameCount': 'oyun',
   'allGames.gamesCount': 'oyun',
   'search.sort': 'Sırala',
   'search.sortRelevance': 'İlgililik',
@@ -312,7 +313,7 @@ export const TR: TranslationMap = {
   'contact.sendAnother': 'Başka bir mesaj gönder',
   'contact.gameNotLoading': 'Oyun yüklenmiyor mu?',
   'contact.missingGame': 'Eksik bir oyun mu var?',
-  'contact.affiliatedthe original publishers': 'the original publishers ile bağlantılı mısınız?',
+  'contact.affiliatedGoogle': 'Google ile bağlantılı mısınız?',
   'privacy.legal': 'Yasal',
   'privacy.disclaimer': 'Sorumluluk Reddi',
   'privacy.contents': 'İçindekiler',
@@ -460,6 +461,7 @@ export const TR: TranslationMap = {
   'nav.langTooltip': 'Dil',
   'nav.lightModeTooltip': 'Açık moda geç',
   'nav.openMenu': 'Navigasyon menüsünü aç',
+  'nav.mobileMenu': 'Mobil menü',
   'nav.randomTooltip': 'Rastgele bir oyun oyna',
   'nav.streakTooltip': 'günlük oyun serisi! Devam et.',
   // Milestone
@@ -513,7 +515,7 @@ export const TR: TranslationMap = {
   'about.stats.freeToPlay': 'Ücretsiz',
   'about.stats.playableGames': 'Oynanabilir Oyunlar',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'Hayır. Bu bağımsız bir hayran sitesidir.',
+  'contact.affiliatedGoogleAnswer': 'Hayır. Bu bağımsız bir hayran sitesidir.',
   'contact.gameNotLoadingAnswer': 'Farklı bir tarayıcı deneyin veya reklam engelleyicileri devre dışı bırakın.',
   'contact.missingGameAnswer': 'Gömülebilir tüm free game\'ları kapsıyoruz — bazıları the original publishers tarafından engelleniyor.',
   'contact.subject.broken': '🐛 Bozuk oyun bağlantısı',
@@ -540,6 +542,13 @@ export const TR: TranslationMap = {
   'seo.contact.title': 'İletişim — Play Arcade',
   'seo.privacy.title': 'Gizlilik Politikası — Play Arcade',
   'seo.notFound.title': 'Sayfa Bulunamadı — Play Arcade',
+  'seo.sitemap.title': 'Site Haritası — Play Arcade',
+  'seo.sitemap.description': 'Tam site haritasına göz atın — Play Arcade üzerindeki tüm sayfalar ve oyunlar.',
+  'sitemap.title': 'Site Haritası',
+  'sitemap.subtitle': 'Play Arcade üzerindeki tüm sayfa ve oyunların eksiksiz bir görünümü.',
+  'sitemap.mainPages': 'Ana Sayfalar',
+  'sitemap.allGames': 'Tüm Oyunlar',
+  'common.backToHome': 'Ana sayfaya dön',
 };
 
 // Dutch

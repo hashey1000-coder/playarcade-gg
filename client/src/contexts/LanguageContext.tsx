@@ -155,7 +155,7 @@ export type TranslationKey =
   | 'category.arcade' | 'category.puzzle' | 'category.sports' | 'category.music'
   | 'category.educational' | 'category.seasonal' | 'category.adventure' | 'category.creative'
   | 'common.loading' | 'common.error' | 'common.retry' | 'common.close'
-  | 'common.back' | 'common.next' | 'common.prev' | 'common.seeAll'
+  | 'common.back' | 'common.next' | 'common.prev' | 'common.seeAll' | 'common.backToHome'
   | 'common.comingSoon' | 'common.new' | 'common.free' | 'common.play'
   | 'common.plays' | 'common.copied'
   // Home extras
@@ -187,7 +187,7 @@ export type TranslationKey =
   | 'topRated.noVotes' | 'topRated.noVotesDesc' | 'topRated.browseGames'
   // AllGames extras
   | 'allGames.sortAZ' | 'allGames.sortMostPlayed'
-  | 'allGames.sortHighestRated' | 'allGames.sortNewest' | 'allGames.gamesCount'
+  | 'allGames.sortHighestRated' | 'allGames.sortNewest' | 'allGames.gamesCount' | 'allGames.gameCount'
   // Search extras
   | 'search.sort' | 'search.sortRelevance' | 'search.sortMostPlayed'
   | 'search.sortHighestRated' | 'search.sortAZ' | 'search.sortNewest'
@@ -282,7 +282,7 @@ export type TranslationKey =
   | 'nav.langTooltip' | 'nav.streakTooltip'
   | 'nav.lightModeTooltip' | 'nav.darkModeTooltip'
   | 'nav.kidsModeTooltipOn' | 'nav.kidsModeTooltipOff'
-  | 'nav.randomTooltip' | 'nav.openMenu'
+  | 'nav.randomTooltip' | 'nav.openMenu' | 'nav.mobileMenu'
   | 'milestone.3.title' | 'milestone.3.body'
   | 'milestone.7.title' | 'milestone.7.body'
   | 'milestone.30.title' | 'milestone.30.body'
@@ -317,7 +317,9 @@ export type TranslationKey =
   | 'seo.search.title' | 'seo.search.titleWithQuery'
   | 'seo.daily.title' | 'seo.daily.description'
   | 'seo.topRated.title' | 'seo.topRated.description'
-  | 'seo.about.title' | 'seo.contact.title' | 'seo.privacy.title' | 'seo.notFound.title';
+  | 'seo.about.title' | 'seo.contact.title' | 'seo.privacy.title' | 'seo.notFound.title'
+  | 'seo.sitemap.title' | 'seo.sitemap.description'
+  | 'sitemap.title' | 'sitemap.subtitle' | 'sitemap.mainPages' | 'sitemap.allGames';
 
 export type TranslationMap = Record<TranslationKey, string>;
 
@@ -805,6 +807,7 @@ const EN: TranslationMap = {
   'nav.kidsModeTooltipOff': 'Turn on Kids Mode (Easy games only)',
   'nav.randomTooltip': 'Play a random game',
   'nav.openMenu': 'Open navigation menu',
+  'nav.mobileMenu': 'Mobile menu',
   'milestone.3.title': '3-Day Streak!',
   'milestone.3.body': "You're on fire! Three days in a row. Keep it up!",
   'milestone.7.title': 'One Week Streak!',
@@ -882,6 +885,13 @@ const EN: TranslationMap = {
   'seo.contact.title': 'Contact Us — Play Arcade',
   'seo.privacy.title': 'Privacy Policy — Play Arcade',
   'seo.notFound.title': 'Page Not Found — Play Arcade',
+  'seo.sitemap.title': 'Sitemap — Play Arcade',
+  'seo.sitemap.description': 'Browse the complete site map — every page and game on Play Arcade.',
+  'sitemap.title': 'Sitemap',
+  'sitemap.subtitle': 'A complete overview of every page and game on Play Arcade.',
+  'sitemap.mainPages': 'Main Pages',
+  'sitemap.allGames': 'All Games',
+  'common.backToHome': 'Back to Home',
 };
 
 // ---------------------------------------------------------------------------
@@ -951,6 +961,20 @@ export function registerTranslations(locale: string, map: Partial<TranslationMap
 
 
 // ---------------------------------------------------------------------------
+// Eager preload — kick off translation fetch at module parse time so the
+// chunk is likely already cached by the time React renders the first frame.
+// ---------------------------------------------------------------------------
+let _eagerDone = false;
+try {
+  const _loc = getLocaleFromPath(window.location.pathname);
+  if (_loc !== 'en') {
+    Promise.all([loadUILocale(_loc), loadGameLocale(_loc), loadTriviaLocale(_loc)])
+      .then(() => { _eagerDone = true; })
+      .catch(() => {});
+  }
+} catch { /* SSR — window not available */ }
+
+// ---------------------------------------------------------------------------
 // Context
 // ---------------------------------------------------------------------------
 
@@ -982,12 +1006,26 @@ export function LanguageProvider({ children, ssrLocale }: { children: React.Reac
   // Incremented after a lazy locale finishes loading → triggers re-render of `t`
   const [, setLoadTick] = useState(0);
 
+  // Gate: block first render until the initial locale's translations are loaded.
+  // Without this, non-English pages flash English text on hard refresh.
+  const [ready, setReady] = useState(() => {
+    if (ssrLocale) return true;            // SSR already has translations
+    try {
+      const fromUrl = getLocaleFromPath(window.location.pathname);
+      return fromUrl === 'en' || !!TRANSLATIONS[fromUrl]; // English is always ready
+    } catch {
+      return true;
+    }
+  });
+
   const localeInfo = SUPPORTED_LOCALES.find(l => l.code === locale) ?? SUPPORTED_LOCALES[0];
 
   // Lazy-load UI + game translations when locale changes
   useEffect(() => {
-    if (locale === 'en') return;
-    Promise.all([loadUILocale(locale), loadGameLocale(locale), loadTriviaLocale(locale)]).then(() => setLoadTick(n => n + 1));
+    if (locale === 'en') { setReady(true); return; }
+    Promise.all([loadUILocale(locale), loadGameLocale(locale), loadTriviaLocale(locale)])
+      .then(() => { setLoadTick(n => n + 1); setReady(true); })
+      .catch(() => { setReady(true); /* translation load failed — keep English fallback */ });
   }, [locale]);
 
   // Listen for URL changes and update locale accordingly
@@ -1012,9 +1050,11 @@ export function LanguageProvider({ children, ssrLocale }: { children: React.Reac
 
   const setLocale = useCallback((code: string) => {
     if (!LOCALE_CODES.has(code)) return;
-    localStorage.setItem(STORAGE_KEY, code);
+    try { localStorage.setItem(STORAGE_KEY, code); } catch { /* storage full or blocked */ }
     // Pre-load the locale so it's ready by the time we re-render
-    Promise.all([loadUILocale(code), loadGameLocale(code), loadTriviaLocale(code)]).then(() => setLoadTick(n => n + 1));
+    Promise.all([loadUILocale(code), loadGameLocale(code), loadTriviaLocale(code)])
+      .then(() => setLoadTick(n => n + 1))
+      .catch(() => { /* translation load failed — keep English fallback */ });
     setLocaleState(code);
 
     // Rewrite the URL to include/remove the locale prefix
@@ -1048,7 +1088,11 @@ export function LanguageProvider({ children, ssrLocale }: { children: React.Reac
 
   return (
     <LanguageContext.Provider value={{ locale, localeInfo, setLocale, t, supportedLocales: SUPPORTED_LOCALES, lp }}>
-      {children}
+      {ready ? children : (
+        <div style={{ opacity: 0, overflow: 'hidden', position: 'fixed', inset: 0, pointerEvents: 'none' }}>
+          {children}
+        </div>
+      )}
     </LanguageContext.Provider>
   );
 }

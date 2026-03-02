@@ -1,27 +1,27 @@
 /**
  * Navbar — Play Arcade
  * Design: Brutalist-editorial, sticky top bar with glass morphism
- * Includes: logo, search, nav links, language selector, dark mode, kids mode, mobile drawer
+ * Includes: logo, search, nav links, language selector, kids mode, mobile drawer
  */
 
 import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { Link, useLocation } from "wouter";
 import {
   Joystick, Shuffle, LayoutList, Search, Baby, X, Trophy,
-  CalendarDays, Sun, Moon, Menu, Home, Info, Heart, Globe, Check, Mail, Shield,
+  CalendarDays, Menu, Home, Info, Heart, Globe, Check, Mail, Shield,
 } from "lucide-react";
 const SpinWheel = lazy(() => import("@/components/SpinWheel"));
 import { GAMES } from "@/data/games";
 import { useKidsMode } from "@/hooks/useKidsMode";
 import { useNewGames } from "@/hooks/useNewGames";
 import { useStreakContext } from "@/contexts/StreakContext";
-import { useDarkMode } from "@/hooks/useDarkMode";
-import { useLanguage, SUPPORTED_LOCALES, useT } from "@/contexts/LanguageContext";
+
+import { useLanguage, SUPPORTED_LOCALES, useT, type TranslationKey } from "@/contexts/LanguageContext";
 
 // Lazy-load confetti to reduce initial JS bundle (only needed on milestone)
 const lazyConfetti = () => import("canvas-confetti").then(m => m.default);
 
-const MILESTONE_MESSAGES: Record<number, { emoji: string; titleKey: string; bodyKey: string }> = {
+const MILESTONE_MESSAGES: Record<number, { emoji: string; titleKey: TranslationKey; bodyKey: TranslationKey }> = {
   3: { emoji: "🔥", titleKey: 'milestone.3.title', bodyKey: 'milestone.3.body' },
   7: { emoji: "⚡", titleKey: 'milestone.7.title', bodyKey: 'milestone.7.body' },
   30: { emoji: "🏆", titleKey: 'milestone.30.title', bodyKey: 'milestone.30.body' },
@@ -48,8 +48,8 @@ function LanguageSelector() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(v => !v)}
-        title={`${t('nav.langTooltip' as any)}: ${current.englishName}`}
-        aria-label={`${t('nav.langTooltip' as any)}: ${current.englishName}`}
+        title={`${t('nav.langTooltip')}: ${current.englishName}`}
+        aria-label={`${t('nav.langTooltip')}: ${current.englishName}`}
         className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors"
       >
         <Globe className="w-3.5 h-3.5 shrink-0" />
@@ -94,7 +94,7 @@ export default function Navbar() {
   const [showMilestone, setShowMilestone] = useState(false);
   const [showSpinWheel, setShowSpinWheel] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { isDark, toggle: toggleDark } = useDarkMode();
+
   const { unseenCount, markAllSeen } = useNewGames();
   const { locale, setLocale } = useLanguage();
   const current = SUPPORTED_LOCALES.find(l => l.code === locale) ?? SUPPORTED_LOCALES[0];
@@ -174,7 +174,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-2 group shrink-0">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center shadow-md shadow-cyan-200/50 group-hover:shadow-cyan-300/60 transition-shadow">
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center">
                 <Joystick className="w-4 h-4 text-white" />
               </div>
               <span className="font-bold text-slate-900 dark:text-white text-[15px] tracking-tight">
@@ -243,7 +243,7 @@ export default function Navbar() {
             {streak >= 1 && (
               <Link href="/top-rated/">
                 <span
-                  title={`${streak} ${t('nav.streakTooltip' as any)}`}
+                  title={`${streak} ${t('nav.streakTooltip')}`}
                   className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-orange-600 text-sm font-bold hover:bg-orange-100 transition-colors cursor-pointer hidden md:flex"
                 >
                   <span className="text-base leading-none">🔥</span>
@@ -257,21 +257,11 @@ export default function Navbar() {
               <LanguageSelector />
             </div>
 
-            {/* Dark mode toggle */}
-            <button
-              onClick={toggleDark}
-              title={isDark ? t('nav.lightModeTooltip' as any) : t('nav.darkModeTooltip' as any)}
-              aria-label={isDark ? t('nav.lightModeTooltip' as any) : t('nav.darkModeTooltip' as any)}
-              className="w-8 h-8 rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-            >
-              {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-            </button>
-
             {/* Kids Mode toggle (desktop) */}
             <button
               onClick={toggleKidsMode}
-              title={kidsMode ? t('nav.kidsModeTooltipOn' as any) : t('nav.kidsModeTooltipOff' as any)}
-              aria-label={kidsMode ? t('nav.kidsModeTooltipOn' as any) : t('nav.kidsModeTooltipOff' as any)}
+              title={kidsMode ? t('nav.kidsModeTooltipOn') : t('nav.kidsModeTooltipOff')}
+              aria-label={kidsMode ? t('nav.kidsModeTooltipOn') : t('nav.kidsModeTooltipOff')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 hidden md:flex ${
                 kidsMode
                   ? "bg-green-100 text-green-700 border border-green-200 hover:bg-green-200"
@@ -286,8 +276,8 @@ export default function Navbar() {
             <button
               onClick={handleRandomGame}
               className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-600 text-white text-sm font-medium hover:from-cyan-600 hover:to-teal-700 transition-all shadow-sm hover:shadow-md hover:shadow-cyan-200/50 active:scale-95"
-              title={t('nav.randomTooltip' as any)}
-              aria-label={t('nav.randomTooltip' as any)}
+              title={t('nav.randomTooltip')}
+              aria-label={t('nav.randomTooltip')}
             >
               <Shuffle className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">{t('nav.surpriseMe')}</span>
@@ -296,7 +286,7 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              aria-label={t('nav.openMenu' as any)}
+              aria-label={t('nav.openMenu')}
               className="md:hidden w-9 h-9 rounded-full flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
               <Menu className="w-5 h-5" />
@@ -310,7 +300,7 @@ export default function Navbar() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={t('nav.mobileMenu' as any)}
+          aria-label={t('nav.mobileMenu')}
           className="fixed inset-0 z-50 flex"
           onClick={(e) => { if (e.target === e.currentTarget) { setMobileMenuOpen(false); setShowLangPanel(false); } }}
           onKeyDown={(e) => { if (e.key === 'Escape') { setMobileMenuOpen(false); setShowLangPanel(false); } }}
@@ -330,7 +320,7 @@ export default function Navbar() {
               </div>
               <button
                 onClick={() => { setMobileMenuOpen(false); setShowLangPanel(false); }}
-                aria-label={t('nav.closeMenu' as any)}
+                aria-label={t('nav.closeMenu')}
                 className="w-8 h-8 rounded-full flex items-center justify-center text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 <X className="w-4 h-4" />
@@ -477,14 +467,6 @@ export default function Navbar() {
                     </span>
                   </button>
 
-                  {/* Dark mode toggle in drawer */}
-                  <button
-                    onClick={toggleDark}
-                    className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
-                  >
-                    {isDark ? <Sun className="w-4 h-4 shrink-0" /> : <Moon className="w-4 h-4 shrink-0" />}
-                    <span>{isDark ? t('nav.lightMode') : t('nav.darkMode')}</span>
-                  </button>
                 </nav>
 
                 {/* Random button at bottom of drawer */}
@@ -508,7 +490,7 @@ export default function Navbar() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={t(milestone.titleKey as any)}
+          aria-label={t(milestone.titleKey)}
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           style={{ background: "rgba(0,0,0,0.55)" }}
           onClick={(e) => { if (e.target === e.currentTarget) handleDismissMilestone(); }}
@@ -517,8 +499,8 @@ export default function Navbar() {
           <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-2xl max-w-sm w-full overflow-hidden text-center animate-in zoom-in-95 duration-300">
             <div className="bg-gradient-to-br from-amber-400 to-orange-500 px-6 pt-8 pb-6">
               <div className="text-6xl mb-3">{milestone.emoji}</div>
-              <h2 className="text-2xl font-bold text-white">{t(milestone.titleKey as any)}</h2>
-              <p className="text-white/80 text-sm mt-1">{t(milestone.bodyKey as any)}</p>
+              <h2 className="text-2xl font-bold text-white">{t(milestone.titleKey)}</h2>
+              <p className="text-white/80 text-sm mt-1">{t(milestone.bodyKey)}</p>
             </div>
             <div className="px-6 py-5">
               <div className="flex items-center justify-center gap-2 mb-4">
@@ -536,7 +518,7 @@ export default function Navbar() {
             </div>
             <button
               onClick={handleDismissMilestone}
-              aria-label={t('common.close' as any)}
+              aria-label={t('common.close')}
               className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors"
               >
               <X className="w-4 h-4 text-white" />

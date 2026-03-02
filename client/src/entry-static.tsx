@@ -193,7 +193,7 @@ export function render(url: string): string {
 
   const html = renderToString(
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme="dark">
         <StreakProvider>
           <KidsModeProvider>
             <LanguageProvider ssrLocale={locale}>

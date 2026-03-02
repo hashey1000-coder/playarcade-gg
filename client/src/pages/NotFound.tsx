@@ -11,8 +11,8 @@ export default function NotFound() {
 
   // SEO — localised page title + meta description
   useHead({
-    title: t('seo.notFound.title' as any),
-    description: t('notFound.desc' as any),
+    title: t('seo.notFound.title'),
+    description: t('notFound.desc'),
   });
 
   const handleGoHome = () => {

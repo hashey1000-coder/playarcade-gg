@@ -98,8 +98,8 @@ export function useHead({ title, description, routePath, ogImage, ogType = 'webs
 
     // --- Cleanup ---
     return () => {
-      const defaultTitle = t('seo.defaultTitle' as any);
-      const defaultDesc = t('seo.defaultDescription' as any);
+      const defaultTitle = t('seo.defaultTitle');
+      const defaultDesc = t('seo.defaultDescription');
       document.title = defaultTitle;
       setMeta('name', 'description', defaultDesc);
 

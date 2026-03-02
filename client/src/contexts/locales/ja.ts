@@ -236,6 +236,7 @@ export const JA: TranslationMap = {
   'allGames.sortMostPlayed': 'プレイ数順',
   'allGames.sortHighestRated': '評価順',
   'allGames.sortNewest': '新しい順',
+  'allGames.gameCount': 'ゲーム',
   'allGames.gamesCount': 'ゲーム',
   'search.sort': '並べ替え',
   'search.sortRelevance': '関連度',
@@ -312,7 +313,7 @@ export const JA: TranslationMap = {
   'contact.sendAnother': '別のメッセージを送信',
   'contact.gameNotLoading': 'ゲームが読み込まれない？',
   'contact.missingGame': 'ゲームが見つからない？',
-  'contact.affiliatedthe original publishers': 'the original publishersと提携していますか？',
+  'contact.affiliatedGoogle': 'Googleと提携していますか？',
   'privacy.legal': '法的情報',
   'privacy.disclaimer': '免責事項',
   'privacy.contents': '目次',
@@ -460,6 +461,7 @@ export const JA: TranslationMap = {
   'nav.langTooltip': '言語',
   'nav.lightModeTooltip': 'ライトモードに切替',
   'nav.openMenu': 'ナビゲーションメニューを開く',
+  'nav.mobileMenu': 'モバイルメニュー',
   'nav.randomTooltip': 'ランダムにゲームをプレイ',
   'nav.streakTooltip': '日連続プレイ中！この調子で。',
   // Milestone
@@ -513,7 +515,7 @@ export const JA: TranslationMap = {
   'about.stats.freeToPlay': '無料プレイ',
   'about.stats.playableGames': 'プレイ可能なゲーム',
   // Contact extras 3
-  'contact.affiliatedthe original publishersAnswer': 'いいえ。独立したファンサイトです。',
+  'contact.affiliatedGoogleAnswer': 'いいえ。独立したファンサイトです。',
   'contact.gameNotLoadingAnswer': '別のブラウザを試すか、広告ブロッカーを無効にしてください。',
   'contact.missingGameAnswer': '埋め込み可能なすべてのfree gameを網羅しています — 一部はthe original publishersによりブロックされています。',
   'contact.subject.broken': '🐛 ゲームリンク不具合',
@@ -540,6 +542,13 @@ export const JA: TranslationMap = {
   'seo.contact.title': 'お問い合わせ — Play Arcade',
   'seo.privacy.title': 'プライバシーポリシー — Play Arcade',
   'seo.notFound.title': 'ページが見つかりません — Play Arcade',
+  'seo.sitemap.title': 'サイトマップ — Play Arcade',
+  'seo.sitemap.description': '完全なサイトマップを閲覧 — Play Arcade のすべてのページとゲーム。',
+  'sitemap.title': 'サイトマップ',
+  'sitemap.subtitle': 'Play Arcade のすべてのページとゲームの完全な概要。',
+  'sitemap.mainPages': 'メインページ',
+  'sitemap.allGames': 'すべてのゲーム',
+  'common.backToHome': 'ホームに戻る',
 };
 
 // Korean

@@ -7,9 +7,6 @@ export const CATEGORY_COLORS: Record<string, string> = {
   arcade: "text-fuchsia-600 bg-fuchsia-50",
   sports: "text-emerald-600 bg-emerald-50",
   puzzle: "text-amber-600 bg-amber-50",
-  adventure: "text-orange-600 bg-orange-50",
-  educational: "text-cyan-600 bg-cyan-50",
-  seasonal: "text-pink-600 bg-pink-50",
   creative: "text-indigo-600 bg-indigo-50",
 };
 
@@ -19,9 +16,6 @@ export const CATEGORY_COLORS_BORDERED: Record<string, string> = {
   arcade: "text-fuchsia-600 bg-fuchsia-50 border border-fuchsia-100",
   sports: "text-emerald-600 bg-emerald-50 border border-emerald-100",
   puzzle: "text-amber-600 bg-amber-50 border border-amber-100",
-  adventure: "text-orange-600 bg-orange-50 border border-orange-100",
-  educational: "text-cyan-600 bg-cyan-50 border border-cyan-100",
-  seasonal: "text-pink-600 bg-pink-50 border border-pink-100",
   creative: "text-indigo-600 bg-indigo-50 border border-indigo-100",
 };
 
@@ -31,9 +25,6 @@ export const CATEGORY_ACCENT: Record<string, string> = {
   arcade: "bg-fuchsia-500",
   sports: "bg-emerald-500",
   puzzle: "bg-amber-500",
-  adventure: "bg-orange-500",
-  educational: "bg-cyan-500",
-  seasonal: "bg-pink-500",
   creative: "bg-indigo-500",
 };
 
