@@ -34,13 +34,21 @@ export default defineConfig({
           if (id.includes('node_modules/@radix-ui/')) {
             return 'radix-ui';
           }
-          // Icons
+          // Icons — only download icon definitions when needed
           if (id.includes('node_modules/lucide-react/')) {
             return 'icons';
           }
           // Confetti (only triggered on interaction)
           if (id.includes('node_modules/canvas-confetti/')) {
             return 'confetti';
+          }
+          // Toast notifications (only shown on interaction)
+          if (id.includes('node_modules/sonner/')) {
+            return 'sonner';
+          }
+          // Translation data — split per locale (already lazy-loaded)
+          if (id.includes('/contexts/locales/') || id.includes('/data/translations/')) {
+            return 'translations';
           }
         },
       },

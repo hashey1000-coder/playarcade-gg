@@ -31,16 +31,18 @@ export default function SearchResults() {
   const [location, navigate] = useLocation();
   const { toggleFavourite, isFavourite } = useFavourites();
   const [activeDifficulty, setActiveDifficulty] = useState<string | null>(null);
-  const [sortBy, setSortBy] = useState<'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest'>(() => {
+  const [sortBy, setSortBy] = useState<'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest'>('default');
+  const [showSortMenu, setShowSortMenu] = useState(false);
+  const sortBtnRef = useRef<HTMLDivElement>(null);
+
+  // Hydration-safe: read persisted sort preference after mount
+  useEffect(() => {
     try {
       const saved = localStorage.getItem('doodle-sort-by');
       const valid = ['default', 'most-played', 'highest-rated', 'a-z', 'newest'];
-      if (valid.includes(saved ?? '')) return saved as 'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest';
+      if (valid.includes(saved ?? '')) setSortBy(saved as typeof sortBy);
     } catch {}
-    return 'default';
-  });
-  const [showSortMenu, setShowSortMenu] = useState(false);
-  const sortBtnRef = useRef<HTMLDivElement>(null);
+  }, []);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {

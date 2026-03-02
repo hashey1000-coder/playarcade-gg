@@ -16,16 +16,18 @@ export default function AllGames() {
   const [searchQuery, setSearchQuery] = useState("");
   const { toggleFavourite, isFavourite } = useFavourites();
   const letterRefs = useRef<Record<string, HTMLDivElement | null>>({});
-  const [sortBy, setSortBy] = useState<'a-z' | 'most-played' | 'highest-rated' | 'newest'>(() => {
+  const [sortBy, setSortBy] = useState<'a-z' | 'most-played' | 'highest-rated' | 'newest'>('a-z');
+  const [showSortMenu, setShowSortMenu] = useState(false);
+  const sortMenuRef = useRef<HTMLDivElement>(null);
+
+  // Hydration-safe: read persisted sort preference after mount
+  useEffect(() => {
     try {
       const saved = localStorage.getItem('doodle-sort-by');
       const valid = ['a-z', 'most-played', 'highest-rated', 'newest'];
-      if (valid.includes(saved ?? '')) return saved as 'a-z' | 'most-played' | 'highest-rated' | 'newest';
+      if (valid.includes(saved ?? '')) setSortBy(saved as typeof sortBy);
     } catch {}
-    return 'a-z';
-  });
-  const [showSortMenu, setShowSortMenu] = useState(false);
-  const sortMenuRef = useRef<HTMLDivElement>(null);
+  }, []);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -104,7 +106,7 @@ export default function AllGames() {
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <div>
               <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">{t('allGames.title')}</h1>
-              <p className="text-slate-500 dark:text-slate-400 mt-1">{GAMES.length} {t('allGames.gamesCount')} — {t('allGames.subtitle')}</p>
+              <p className="text-slate-600 dark:text-slate-400 mt-1">{GAMES.length} {t('allGames.gamesCount')} — {t('allGames.subtitle')}</p>
             </div>
             <div className="flex items-center gap-2">
               {/* Sort dropdown */}

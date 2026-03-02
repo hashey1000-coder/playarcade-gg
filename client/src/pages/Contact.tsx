@@ -38,7 +38,7 @@ export default function Contact() {
   // SEO — localised page title + meta description
   useHead({
     title: t('seo.contact.title'),
-    description: t('contact.subtitle'),
+    description: t('seo.contact.description'),
     routePath: '/contact/',
   });
 

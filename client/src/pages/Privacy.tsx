@@ -24,7 +24,7 @@ export default function Privacy() {
   // SEO — localised page title + meta description
   useHead({
     title: t('seo.privacy.title'),
-    description: t('privacy.subtitle'),
+    description: t('seo.privacy.description'),
     routePath: '/privacy/',
   });
 

@@ -45,11 +45,9 @@ const STATIC_PATHS = [
   '/contact',
   '/privacy',
   '/sitemap',
-  '/leaderboard',
-  '/a-z',
-  '/az',
-  '/kids',
   '/404',
+  // NOTE: /leaderboard, /a-z, /az, /kids, /privacy-policy are NOT pre-rendered.
+  // They are handled as 301 redirects by .htaccess / server/index.ts directly.
 ];
 
 // Game paths
@@ -187,17 +185,45 @@ const PAGE_SEO_MAP = {
   '/': { titleKey: 'seo.home.title', descKey: 'seo.home.description' },
   '/games': { titleKey: 'seo.allGames.title', descKey: 'seo.allGames.description' },
   '/top-rated': { titleKey: 'seo.topRated.title', descKey: 'seo.topRated.description' },
-  '/daily': { titleKey: 'seo.daily.title', descKey: 'seo.daily.description' },
-  '/about': { titleKey: 'seo.about.title', descKey: null },
-  '/contact': { titleKey: 'seo.contact.title', descKey: null },
-  '/privacy': { titleKey: 'seo.privacy.title', descKey: null },
+  '/daily': { titleKey: 'seo.daily.title', descKey: 'seo.daily.description', isDynamic: true },
+  '/about': { titleKey: 'seo.about.title', descKey: 'seo.about.description' },
+  '/contact': { titleKey: 'seo.contact.title', descKey: 'seo.contact.description' },
+  '/privacy': { titleKey: 'seo.privacy.title', descKey: 'seo.privacy.description' },
   '/sitemap': { titleKey: 'seo.sitemap.title', descKey: 'seo.sitemap.description' },
   '/404': { titleKey: 'seo.notFound.title', descKey: null, noindex: true },
-  '/leaderboard': { titleKey: 'seo.topRated.title', descKey: null, noindex: true },
-  '/a-z': { titleKey: 'seo.allGames.title', descKey: null, noindex: true },
-  '/az': { titleKey: 'seo.allGames.title', descKey: null, noindex: true },
-  '/kids': { titleKey: 'seo.home.title', descKey: null, noindex: true },
 };
+
+/**
+ * Get the daily challenge game — same deterministic logic as Daily.tsx
+ * so pre-rendered meta tags show the correct game title.
+ */
+function getDailyGame() {
+  const now = new Date();
+  const month = now.getMonth() + 1;
+  const day = now.getDate();
+  const seed = now.getFullYear() * 10000 + month * 100 + day;
+
+  const seasonalPicks = [
+    { month: 1, dayRange: [1, 7], slugs: ['solitaire', 'mahjong', 'sudoku'] },
+    { month: 2, dayRange: [10, 15], slugs: ['solitaire', 'chess', 'mahjong', 'tiny-fishing'] },
+    { month: 3, dayRange: [17, 17], slugs: ['checkers', 'backgammon'] },
+    { month: 6, dayRange: [15, 30], slugs: ['moto-x3m', 'basketball-legends', 'bubble-shooter'] },
+    { month: 7, dayRange: [1, 7], slugs: ['fruit-ninja', 'connect-four', 'bubble-shooter'] },
+    { month: 10, dayRange: [25, 31], slugs: ['pac-man', 'chrome-dino', 'among-us', 'cookie-clicker'] },
+    { month: 12, dayRange: [15, 28], slugs: ['cookie-clicker', 'tetris', 'wordle', 'freecell'] },
+  ];
+
+  const seasonal = seasonalPicks.find(
+    (s) => s.month === month && (!s.dayRange || (day >= s.dayRange[0] && day <= s.dayRange[1]))
+  );
+
+  if (seasonal) {
+    const matching = GAMES.filter((g) => seasonal.slugs.includes(g.slug));
+    if (matching.length > 0) return matching[seed % matching.length];
+  }
+
+  return GAMES[seed % GAMES.length];
+}
 
 /**
  * Build per-page metadata (title, description, og/twitter tags, JSON-LD)
@@ -307,10 +333,18 @@ function buildPageMeta(routePath, locale) {
   // ----- Static pages -----
   const seoMap = PAGE_SEO_MAP[normalizedPath];
   if (seoMap) {
-    const title = getTranslation(locale, seoMap.titleKey);
-    const description = seoMap.descKey
+    let title = getTranslation(locale, seoMap.titleKey);
+    let description = seoMap.descKey
       ? getTranslation(locale, seoMap.descKey)
       : getTranslation(locale, 'seo.defaultDescription');
+
+    // Daily challenge page: replace {title} placeholder with today's game title
+    if (seoMap.isDynamic && normalizedPath === '/daily') {
+      const dailyGame = getDailyGame();
+      const { title: dailyTitle } = getGameT(locale, dailyGame);
+      title = title.replace('{title}', dailyTitle);
+      description = description.replace('{title}', dailyTitle);
+    }
 
     return {
       title,

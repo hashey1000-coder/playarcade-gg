@@ -113,6 +113,9 @@ function getOrigin(url: string): string | null {
 }
 
 export default function PlayGame() {
+  // Detect SSR: no window object means we're rendering on the server
+  const isSSR = typeof window === 'undefined';
+
   // --- Fullscreen helpers ---
 
   // CSS-based fullscreen: React controls the class via isFakeFullscreen state.
@@ -168,8 +171,15 @@ export default function PlayGame() {
   const { locale } = useLanguage();
   const { slug: routeSlug } = useParams<{ slug: string }>();
   const [, navigate] = useLocation();
-  const [game, setGame] = useState<Game | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  // During SSR, resolve game immediately to render content (title, description, h1)
+  const [game, setGame] = useState<Game | null>(() => {
+    if (routeSlug) {
+      const found = GAMES.find((g) => g.slug === routeSlug);
+      return found ?? null;
+    }
+    return null;
+  });
+  const [isLoading, setIsLoading] = useState(!game);
   const [gameStarted, setGameStarted] = useState(false);
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [iframeError, setIframeError] = useState(false);

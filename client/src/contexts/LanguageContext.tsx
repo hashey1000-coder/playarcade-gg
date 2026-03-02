@@ -317,7 +317,7 @@ export type TranslationKey =
   | 'seo.search.title' | 'seo.search.titleWithQuery'
   | 'seo.daily.title' | 'seo.daily.description'
   | 'seo.topRated.title' | 'seo.topRated.description'
-  | 'seo.about.title' | 'seo.contact.title' | 'seo.privacy.title' | 'seo.notFound.title'
+  | 'seo.about.title' | 'seo.about.description' | 'seo.contact.title' | 'seo.contact.description' | 'seo.privacy.title' | 'seo.privacy.description' | 'seo.notFound.title'
   | 'seo.sitemap.title' | 'seo.sitemap.description'
   | 'sitemap.title' | 'sitemap.subtitle' | 'sitemap.mainPages' | 'sitemap.allGames';
 
@@ -882,8 +882,11 @@ const EN: TranslationMap = {
   'seo.topRated.title': 'Top Rated Games — Play Arcade',
   'seo.topRated.description': 'The most-loved games, ranked by the community. Play free online.',
   'seo.about.title': 'About — Play Arcade',
+  'seo.about.description': 'Learn about Play Arcade — a free online gaming destination with 75+ instant-play browser games. No downloads, no sign-ups.',
   'seo.contact.title': 'Contact Us — Play Arcade',
+  'seo.contact.description': 'Get in touch with the Play Arcade team. Report broken games, suggest new ones, or ask a question.',
   'seo.privacy.title': 'Privacy Policy — Play Arcade',
+  'seo.privacy.description': 'Read the Play Arcade privacy policy. We respect your privacy — no accounts, no tracking cookies, just free games.',
   'seo.notFound.title': 'Page Not Found — Play Arcade',
   'seo.sitemap.title': 'Sitemap — Play Arcade',
   'seo.sitemap.description': 'Browse the complete site map — every page and game on Play Arcade.',
