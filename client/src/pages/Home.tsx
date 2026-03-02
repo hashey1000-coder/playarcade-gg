@@ -40,11 +40,25 @@ function getLikeCount(slug: string): number {
 }
 
 export default function Home() {
-  const [activeCategory, setActiveCategory] = useState<string>("all");
+  const [activeCategory, setActiveCategory] = useState<string>(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get("category");
+      if (cat) return cat;
+    } catch { /* SSR */ }
+    return "all";
+  });
   const [searchQuery, setSearchQuery] = useState("");
   const [favPulse, setFavPulse] = useState(false);
   const [activeTags, setActiveTags] = useState<string[]>([]);
-  const [sortBy, setSortBy] = useState<'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest'>('default');
+  const [sortBy, setSortBy] = useState<'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest'>(() => {
+    try {
+      const saved = localStorage.getItem('arcade-sort-by');
+      const valid = ['default', 'most-played', 'highest-rated', 'a-z', 'newest'];
+      if (valid.includes(saved ?? '')) return saved as 'default' | 'most-played' | 'highest-rated' | 'a-z' | 'newest';
+    } catch { /* SSR */ }
+    return 'default';
+  });
 
   const [showSortMenu, setShowSortMenu] = useState(false);
   const sortMenuRef = useRef<HTMLDivElement>(null);
@@ -58,20 +72,6 @@ export default function Home() {
   const [, navigate] = useLocation();
   const searchStr = useSearch();
   const t = useT();
-
-  // Hydration-safe: read persisted values after mount to avoid SSR mismatch
-  useEffect(() => {
-    try {
-      const params = new URLSearchParams(window.location.search);
-      const cat = params.get("category");
-      if (cat) setActiveCategory(cat);
-    } catch { /* SSR */ }
-    try {
-      const saved = localStorage.getItem('arcade-sort-by');
-      const valid = ['default', 'most-played', 'highest-rated', 'a-z', 'newest'];
-      if (valid.includes(saved ?? '')) setSortBy(saved as typeof sortBy);
-    } catch { /* SSR */ }
-  }, []);
 
   // Sync activeCategory when URL query param changes (e.g. footer category links)
   useEffect(() => {
@@ -659,7 +659,7 @@ export default function Home() {
         {/* Games count + context — below sort */}
         <div className="mb-4 flex items-center gap-3 flex-wrap">
           <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100">{activeCategory === 'all' ? t('nav.allGames') : activeCategory === 'favourites' ? t('home.favourites') : activeCategory === 'top-rated' ? t('home.topRated') : t(`category.${activeCategory}` as any)}</h2>
-          <p className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+          <p className="text-sm text-slate-500 font-medium">
             {filteredGames.length} {t('home.gamesCount')}{" "}
             {activeCategory === "favourites"
               ? t('home.favourited')

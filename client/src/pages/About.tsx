@@ -73,7 +73,7 @@ export default function About() {
   // SEO — localised page title + meta description
   useHead({
     title: t('seo.about.title'),
-    description: t('seo.about.description'),
+    description: t('about.heroDesc'),
     routePath: '/about/',
   });
 
