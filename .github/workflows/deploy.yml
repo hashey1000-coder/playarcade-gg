@@ -16,17 +16,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: pnpm
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 10.4.1
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build project
-        run: pnpm run build:static
+        run: pnpm run build
 
       - name: Setup SSH
         run: |
@@ -35,7 +36,7 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p 22 ${{ secrets.CPANEL_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy public folder contents
+      - name: Deploy site
         run: |
           scp -P 22 -r dist/public/. \
           ${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}:/home/juliaspl/playarcade.gg/
