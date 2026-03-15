@@ -5,7 +5,7 @@ import { SessionHistory } from "@/components/SessionHistory";
 const lazyConfetti = () => import("canvas-confetti").then(m => m.default);
 import { toast } from "sonner";
 import { Link, useParams, useLocation, useSearch } from "wouter";
-import { Maximize2, ChevronLeft, Play, ThumbsUp, ThumbsDown, Gamepad2, X, Share2, Check, ArrowRight, Shuffle, Trophy, Star } from "lucide-react";
+import { Maximize2, Volume2, VolumeX, ChevronLeft, Play, ThumbsUp, ThumbsDown, Gamepad2, X, Share2, Check, ArrowRight, Shuffle, Trophy, Star } from "lucide-react";
 import { GAMES, type Game } from "@/data/games";
 import { useGameTranslate, getGameT } from '@/data/gameTranslations';
 import { GAME_TRIVIA } from "@/data/trivia";
@@ -66,6 +66,19 @@ export default function PlayGame() {
     setIsFakeFullscreen(false);
   }
 
+  function toggleMute() {
+    const next = !isMuted;
+    setIsMuted(next);
+    // Best-effort: many HTML5 game frames honour this standard postMessage shape.
+    // Cross-origin iframes can't be muted via DOM — postMessage is the only safe API.
+    try {
+      iframeRef.current?.contentWindow?.postMessage(
+        { type: next ? 'mute' : 'unmute', muted: next, volume: next ? 0 : 1 },
+        '*',
+      );
+    } catch { /* sandboxed / blocked — no-op */ }
+  }
+
   async function enterFullscreen() {
     const container = document.getElementById("game-player-container");
     if (!container) { enterCSSFullscreen(); return; }
@@ -115,6 +128,7 @@ export default function PlayGame() {
   const [iframeError, setIframeError] = useState(false);
   const [showControls, setShowControls] = useState(false);
   const [isFakeFullscreen, setIsFakeFullscreen] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
   const [moreGames, setMoreGames] = useState<Game[]>([]);
 
   // Play Next overlay state
@@ -721,16 +735,31 @@ export default function PlayGame() {
 
             {/* Action bar: Like, Dislike, Controls */}
             <div className="mt-3 bg-white dark:bg-slate-900 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm px-3 sm:px-4 py-3 flex items-center gap-2 sm:gap-3 flex-wrap">
-              {/* Fullscreen button — only shown when not already in fullscreen */}
+              {/* Fullscreen + Mute buttons — only shown when game is active */}
               {gameStarted && !isFakeFullscreen && (
-                <button
-                  onClick={enterFullscreen}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
-                  title={t('game.fullscreen')}
-                  aria-label={t('game.fullscreen')}
-                >
-                  <Maximize2 className="w-4 h-4" />
-                </button>
+                <>
+                  <button
+                    onClick={enterFullscreen}
+                    className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+                    title={t('game.fullscreen')}
+                    aria-label={t('game.fullscreen')}
+                  >
+                    <Maximize2 className="w-4 h-4" />
+                  </button>
+                  <button
+                    onClick={toggleMute}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 ${
+                      isMuted
+                        ? 'bg-red-100 dark:bg-red-950/50 text-red-600 dark:text-red-400 hover:bg-red-200 dark:hover:bg-red-950'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                    }`}
+                    title={isMuted ? 'Unmute' : 'Mute'}
+                    aria-label={isMuted ? 'Unmute' : 'Mute'}
+                    aria-pressed={isMuted}
+                  >
+                    {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                  </button>
+                </>
               )}
               {/* Like button */}
               <button
