@@ -34,17 +34,15 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p 22 ${{ secrets.CPANEL_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Install lftp
-        run: sudo apt-get install -y lftp
-
       - name: Deploy site
         run: |
-          lftp -e "
-            set sftp:connect-program 'ssh -a -x -p 22 -i $HOME/.ssh/id_ed25519 -o StrictHostKeyChecking=no';
-            open sftp://${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }};
-            mirror --reverse --delete --parallel=5 --verbose dist/public/ /home/juliaspl/playarcade.gg/;
-            bye
-          "
+          tar czf site.tar.gz -C dist/public .
+          scp -P 22 -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no \
+            site.tar.gz \
+            ${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}:~/site.tar.gz
+          ssh -p 22 -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no \
+            ${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }} \
+            "cd /home/juliaspl/playarcade.gg && find . -not -name '.' -delete && tar xzf ~/site.tar.gz && rm ~/site.tar.gz"
 
       - name: Submit new URLs to Bing IndexNow
         continue-on-error: true
