@@ -375,12 +375,14 @@ export default function Home() {
                             <h3 className="text-[13px] font-semibold text-slate-800 dark:text-slate-100 leading-tight line-clamp-2">
                               {gt(game).title}
                             </h3>
-                            <div className="flex items-center gap-0.5 shrink-0 mt-0.5">
-                              <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                              <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tabular-nums">
-                                {liveRatings[game.slug]?.count ? liveRatings[game.slug].average.toFixed(1) : game.rating.toFixed(1)}
-                              </span>
-                            </div>
+                            {liveRatings[game.slug]?.count > 0 && (
+                              <div className="flex items-center gap-0.5 shrink-0 mt-0.5">
+                                <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+                                <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tabular-nums">
+                                  {liveRatings[game.slug].average.toFixed(1)}
+                                </span>
+                              </div>
+                            )}
                           </div>
                           <div className="flex items-center gap-2 flex-wrap">
                             <span
@@ -738,12 +740,14 @@ export default function Home() {
                             <h3 className="text-[13px] font-semibold text-slate-800 dark:text-slate-100 leading-tight line-clamp-2">
                               {gt(game).title}
                             </h3>
-                            <div className="flex items-center gap-0.5 shrink-0 mt-0.5">
-                              <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                              <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tabular-nums">
-                                {liveRatings[game.slug]?.count ? liveRatings[game.slug].average.toFixed(1) : game.rating.toFixed(1)}
-                              </span>
-                            </div>
+                            {liveRatings[game.slug]?.count > 0 && (
+                              <div className="flex items-center gap-0.5 shrink-0 mt-0.5">
+                                <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+                                <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tabular-nums">
+                                  {liveRatings[game.slug].average.toFixed(1)}
+                                </span>
+                              </div>
+                            )}
                           </div>
                           <div className="flex items-center gap-1.5 flex-wrap mb-1.5">
                             <span
