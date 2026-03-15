@@ -845,11 +845,6 @@ export default function PlayGame() {
                   {ratingCount.toLocaleString()} {t('game.ratings')}
                 </span>
               )}
-              {userStar > 0 && (
-                <span className="ml-auto text-[11px] text-amber-600 dark:text-amber-400 font-medium">
-                  {'★'.repeat(userStar)}
-                </span>
-              )}
             </div>
 
             {/* About section */}

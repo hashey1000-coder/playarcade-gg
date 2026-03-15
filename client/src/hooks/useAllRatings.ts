@@ -1,15 +1,13 @@
 /**
- * useAllRatings — one-shot fetch of every game's star-rating aggregate.
+ * useAllRatings — real-time subscription to every game's star-rating aggregate.
  *
- * Reads the entire `ratings/` tree from Firebase RTDB once on mount and
- * returns a map of slug → { average, count }.
- *
- * Used by listing pages (Home, AllGames) to show live community averages
- * on game cards without subscribing to dozens of individual listeners.
+ * Subscribes to the entire `ratings/` tree via onValue so that Home/AllGames
+ * card ratings update automatically whenever any game is rated — no need to
+ * reload the page.
  */
 
 import { useState, useEffect } from 'react';
-import { ref, get } from 'firebase/database';
+import { ref, onValue } from 'firebase/database';
 import { db } from '@/lib/firebase';
 
 export interface GameRatingSummary {
@@ -28,8 +26,9 @@ export function useAllRatings(): { ratings: RatingsMap; loading: boolean } {
       setLoading(false);
       return;
     }
-    get(ref(db, 'ratings'))
-      .then((snap) => {
+    const unsub = onValue(
+      ref(db, 'ratings'),
+      (snap) => {
         if (snap.exists()) {
           const raw = snap.val() as Record<
             string,
@@ -45,14 +44,19 @@ export function useAllRatings(): { ratings: RatingsMap; loading: boolean } {
             };
           }
           setRatings(result);
+        } else {
+          setRatings({});
         }
         setLoading(false);
-      })
-      .catch((err) => {
-        console.error('[useAllRatings] fetch failed:', err);
+      },
+      (err) => {
+        console.error('[useAllRatings] listener error:', err);
         setLoading(false);
-      });
+      },
+    );
+    return unsub;
   }, []);
 
   return { ratings, loading };
 }
+
