@@ -1,6 +1,6 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { Link, useLocation, useSearch } from "wouter";
-import { Search, Gamepad2, Clock, Play, Heart, ThumbsUp, Baby, X, Tag, ChevronDown, ChevronUp, Star, ArrowUpDown } from "lucide-react";
+import { Search, Gamepad2, Clock, Play, Heart, ThumbsUp, Baby, X, Tag, ChevronDown, ChevronUp, ArrowUpDown } from "lucide-react";
 import { GAMES, CATEGORIES, ALL_TAGS } from "@/data/games";
 import { useRecentlyPlayed } from "@/hooks/useRecentlyPlayed";
 import { useFavourites } from "@/hooks/useFavourites";
@@ -14,7 +14,7 @@ import { useGameTranslate } from '@/data/gameTranslations';
 import { CATEGORY_COLORS } from '@/data/categoryColors';
 import { prefetchGameUrl } from '@/lib/utils';
 import { useHead } from '@/hooks/useHead';
-import { useAllRatings } from '@/hooks/useAllRatings';
+import { useAllVotes } from '@/hooks/useAllVotes';
 
 function formatPlayCount(n: number): string {
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
@@ -73,7 +73,7 @@ export default function Home() {
   const [, navigate] = useLocation();
   const searchStr = useSearch();
   const t = useT();
-  const { ratings: liveRatings } = useAllRatings();
+  const { votes: liveVotes } = useAllVotes();
 
   // Sync activeCategory when URL query param changes (e.g. footer category links)
   useEffect(() => {
@@ -375,11 +375,11 @@ export default function Home() {
                             <h3 className="text-[13px] font-semibold text-slate-800 dark:text-slate-100 leading-tight line-clamp-2">
                               {gt(game).title}
                             </h3>
-                            {liveRatings[game.slug]?.count > 0 && (
+                            {(liveVotes[game.slug]?.likes ?? 0) > 0 && (
                               <div className="flex items-center gap-0.5 shrink-0 mt-0.5">
-                                <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                                <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tabular-nums">
-                                  {liveRatings[game.slug].average.toFixed(1)}
+                                <ThumbsUp className="w-3 h-3 fill-emerald-500 text-emerald-500" />
+                                <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 tabular-nums">
+                                  {formatPlayCount(liveVotes[game.slug].likes)}
                                 </span>
                               </div>
                             )}
@@ -740,11 +740,11 @@ export default function Home() {
                             <h3 className="text-[13px] font-semibold text-slate-800 dark:text-slate-100 leading-tight line-clamp-2">
                               {gt(game).title}
                             </h3>
-                            {liveRatings[game.slug]?.count > 0 && (
+                            {(liveVotes[game.slug]?.likes ?? 0) > 0 && (
                               <div className="flex items-center gap-0.5 shrink-0 mt-0.5">
-                                <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
-                                <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tabular-nums">
-                                  {liveRatings[game.slug].average.toFixed(1)}
+                                <ThumbsUp className="w-3 h-3 fill-emerald-500 text-emerald-500" />
+                                <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 tabular-nums">
+                                  {formatPlayCount(liveVotes[game.slug].likes)}
                                 </span>
                               </div>
                             )}

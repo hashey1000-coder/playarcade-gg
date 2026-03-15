@@ -5,7 +5,7 @@ import { SessionHistory } from "@/components/SessionHistory";
 const lazyConfetti = () => import("canvas-confetti").then(m => m.default);
 import { toast } from "sonner";
 import { Link, useParams, useLocation, useSearch } from "wouter";
-import { Maximize2, Volume2, VolumeX, ChevronLeft, Play, ThumbsUp, ThumbsDown, Gamepad2, X, Share2, Check, ArrowRight, Shuffle, Trophy, Star } from "lucide-react";
+import { Maximize2, Volume2, VolumeX, ChevronLeft, Play, ThumbsUp, ThumbsDown, Gamepad2, X, Share2, Check, ArrowRight, Shuffle, Trophy } from "lucide-react";
 import { GAMES, type Game } from "@/data/games";
 import { useGameTranslate, getGameT } from '@/data/gameTranslations';
 import { GAME_TRIVIA } from "@/data/trivia";
@@ -17,7 +17,6 @@ import { CATEGORY_COLORS, CATEGORY_ACCENT, CATEGORY_FALLBACK } from '@/data/cate
 import { prefetchGameUrl } from '@/lib/utils';
 import { useHead } from '@/hooks/useHead';
 import { useVotes } from '@/hooks/useVotes';
-import { useStarRating } from '@/hooks/useStarRating';
 
 // Get related games: same category first, then random
 function getRelatedGames(game: Game, count = 20): Game[] {
@@ -367,8 +366,6 @@ export default function PlayGame() {
 
   const gameSlug = routeSlug ?? game?.slug ?? "";
   const { votes, userVote, vote, loading: votesLoading, submitting: voteSubmitting } = useVotes(gameSlug);
-  const { average: starAverage, count: ratingCount, userRating: userStar, rate: rateStar, loading: starLoading, submitting: starSubmitting } = useStarRating(gameSlug);
-  const [hoverStar, setHoverStar] = useState(0);
   const [copied, setCopied] = useState(false);
 
   // SEO — useHead manages title, meta, OG, twitter, hreflang, canonical
@@ -834,48 +831,6 @@ export default function PlayGame() {
               </button>
             </div>
 
-            {/* Star rating bar */}
-            <div className="mt-2 bg-white dark:bg-slate-900 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm px-3 sm:px-4 py-2.5 flex items-center gap-3 flex-wrap">
-              <span className="text-xs font-medium text-slate-500 dark:text-slate-400 shrink-0">
-                {t('game.rate')}:
-              </span>
-              {/* 5 interactive stars */}
-              <div
-                className="flex items-center gap-0.5"
-                onMouseLeave={() => setHoverStar(0)}
-              >
-                {[1, 2, 3, 4, 5].map((n) => {
-                  const filled = n <= (hoverStar || userStar);
-                  return (
-                    <button
-                      key={n}
-                      onClick={() => rateStar(n as 1 | 2 | 3 | 4 | 5)}
-                      onMouseEnter={() => setHoverStar(n)}
-                      disabled={starSubmitting}
-                      aria-label={`${n} star${n > 1 ? 's' : ''}`}
-                      className={`transition-transform duration-100 disabled:cursor-not-allowed ${hoverStar ? 'hover:scale-125' : ''}`}
-                    >
-                      <Star
-                        className={`w-5 h-5 transition-colors duration-100 ${
-                          filled
-                            ? 'fill-amber-400 text-amber-400'
-                            : 'fill-none text-slate-300 dark:text-slate-600'
-                        }`}
-                      />
-                    </button>
-                  );
-                })}
-              </div>
-              {/* Live average + count */}
-              {!starLoading && ratingCount > 0 && (
-                <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
-                  <span className="font-bold text-amber-600 dark:text-amber-400">{starAverage.toFixed(1)}</span>
-                  {' · '}
-                  {ratingCount.toLocaleString()} {t('game.ratings')}
-                </span>
-              )}
-            </div>
-
             {/* About section */}
             <div className="mt-3 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm p-5">
               <h2 className="text-base font-semibold text-slate-800 dark:text-slate-100 mb-2">{t('game.details')}</h2>
@@ -1279,7 +1234,6 @@ export default function PlayGame() {
               <div className="flex items-start justify-between gap-3 mb-3">
                 <div>
                   <p className="font-bold text-sm">{t('game.exitPrompt')}</p>
-                  <p className="text-slate-400 text-xs mt-0.5">{t('game.ratePrompt')}</p>
                 </div>
                 <button
                   onClick={() => dismissExitPrompt(true)}
