@@ -415,7 +415,7 @@ export default function Home() {
                         ? "bg-rose-500 text-white"
                         : "bg-white/90 dark:bg-slate-800/90 text-slate-400 hover:text-rose-400 hover:bg-white dark:hover:bg-slate-700"
                     }`}
-                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites') : t('home.addToFavourites')}}
+                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites') : t('home.addToFavourites')}
                   >
                     <Heart className={`w-3.5 h-3.5 ${isFavourite(game.slug) ? "fill-white" : ""}`} />
                   </button>
