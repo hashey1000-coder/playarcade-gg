@@ -365,4 +365,74 @@ Sprunki Playground menghilangkan semua hambatan progres dan memberikan akses lan
 Crazy Chicken (Moorhuhn) muncul pada tahun 1999 sebagai gim iklan dan menjadi sensasi viral dengan lebih dari 10 juta unduhan.`,
     controls: `Gerakkan mouse untuk membidik. Klik untuk menembak. Cari target bonus tersembunyi. Ayam emas memberikan poin ekstra.`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Manajer Football Amerika',
+    description: `Kelola tim football Amerika bergaya retro. Rekrut pemain, susun strategi, dan pimpin timmu meraih kemenangan di Retro Bowl. Grafis piksel membawa nuansa era keemasan gim.
+
+Retro Bowl menggabungkan manajemen tim dengan aksi permainan yang seru di lapangan. Buat keputusan penting soal skuad, jaga semangat tim, dan mainkan pertandingan menegangkan menuju gelar juara.`,
+    controls: `Geser atau gunakan mouse untuk melempar bola ke penerima. Kendalikan pelari dengan tombol panah atau sentuhan layar.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Pelari Luar Angkasa Tanpa Akhir',
+    description: `Berlari dan melompat melalui terowongan di luar angkasa yang runtuh di bawah kakimu. Putar dinding, hindari lubang, dan temukan jalur baru dalam gim platform yang bikin ketagihan ini.
+
+Run 3 menawarkan puluhan level dengan tingkat kesulitan yang meningkat dan berbagai karakter yang bisa dibuka, masing-masing dengan kemampuan unik. Mode tanpa batas memberikan permainan yang tak pernah habis.`,
+    controls: `Panah kiri/kanan: bergerak ke samping. Spasi atau panah atas: lompat. Berlari di dinding untuk mengubah orientasi terowongan.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Lompatan Tanpa Akhir',
+    description: `Antar karaktermu menyeberangi jalan raya yang ramai, rel kereta, dan sungai deras. Hindari mobil, kereta, dan rintangan lainnya dalam versi modern dari Frogger klasik.
+
+Crossy Road menawarkan ratusan karakter yang bisa dibuka, masing-masing dengan dunia dan tema unik. Mekanik lompat yang sederhana membuat gim ini mudah dipelajari tapi sulit dikuasai.`,
+    controls: `Geser ke atas untuk melompat maju. Geser ke kiri, kanan, atau bawah untuk bergerak. Hindari rintangan dan kumpulkan koin!`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Beri Om Nom Permen',
+    description: `Potong tali di saat yang tepat untuk mengirim permen langsung ke mulut Om Nom. Pecahkan teka-teki fisika, kumpulkan bintang, dan temukan mekanik baru di setiap level.
+
+Cut the Rope adalah gim puzzle pemenang banyak penghargaan yang telah memikat jutaan pemain di seluruh dunia. Setiap paket level memperkenalkan elemen baru seperti bantal udara, teleporter, dan topi ajaib.`,
+    controls: `Geser atau klik dan seret untuk memotong tali. Sentuh bantal udara dan gelembung untuk mengarahkan permen ke Om Nom.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Berayun & Terbang',
+    description: `Kaitkan diri ke titik pegangan dan berayun seperti pahlawan laba-laba melewati level yang penuh warna. Lepaskan di momen sempurna untuk mendapatkan momentum dan sampai ke garis akhir.
+
+Stickman Hook adalah gim berbasis fisika pendulum di mana ketepatan waktu adalah kunci keberhasilan. Ratusan level dengan kesulitan yang meningkat dan karakter yang bisa dibuka menantimu.`,
+    controls: `Klik atau sentuh layar untuk mengait. Lepaskan untuk terlepas dan terbang lebih jauh. Ketepatan waktu adalah segalanya!`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Tantangan Mengemudi Gila',
+    description: `Kendarai mobilmu melewati lintasan rintangan gila yang penuh tanjakan, putaran, dan bagian berbahaya. Jaga kendaraan tetap tegak dan sampai ke garis akhir dalam keadaan utuh.
+
+Drive Mad menguji kemampuan keseimbanganmu dan kontrol gas. Setiap level menawarkan susunan rintangan baru yang mengejutkan dan membutuhkan ketepatan serta kesabaran.`,
+    controls: `Panah atas: gas. Panah bawah: mundur. Seimbangkan kendaraan agar tidak terbalik di bagian yang sulit!`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Penaklukan Wilayah',
+    description: `Keluar dari zonamu, gambar area, dan kembali untuk merebutnya. Perluas wilayahmu sambil bertahan dari pemain lain yang bisa memotong jejakmu.
+
+Paper.io 2 adalah gim .io yang dinamis di mana strategi dan keberanian menentukan kemenangan. Semakin besar risiko yang kamu ambil, semakin banyak wilayah yang kamu dapatkan — tapi satu kesalahan berarti tamat.`,
+    controls: `Gunakan tombol panah atau mouse untuk mengarahkan gerak karakter. Gambar area dan kembali ke wilayahmu untuk merebutnya.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Pelari Kereta Tanpa Akhir',
+    description: `Mainkan sebagai Jake dan kabur dari penjaga yang galak beserta anjingnya di sepanjang rel kereta. Kumpulkan koin, gunakan hoverboard dan power-up untuk berlari sejauh mungkin.
+
+Subway Surfers adalah salah satu gim mobile terpopuler di dunia dengan miliaran unduhan. Lokasi yang diperbarui secara rutin membawa pemain ke kota-kota dari seluruh dunia.`,
+    controls: `Geser kiri/kanan: pindah jalur. Geser ke atas: lompat. Geser ke bawah: meluncur. Kumpulkan koin dan power-up saat berlari!`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Aksi Jetpack Tanpa Akhir',
+    description: `Naik jetpack sebagai Barry Steakfries dan terbang melewati laboratorium yang penuh rintangan. Kumpulkan koin, dapatkan kendaraan spesial, dan hindari rudal serta laser.
+
+Jetpack Joyride adalah gim aksi yang dinamis di mana setiap penerbangan berbeda berkat misi acak dan mesin slot setelah setiap ronde. Buka jetpack, kostum, dan peningkatan baru.`,
+    controls: `Sentuh layar atau klik dan tahan untuk naik. Lepaskan untuk turun. Hindari laser, rudal, dan medan listrik!`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Tantangan Presisi Tertinggi",
+    description: `Arahkan kotak merah melewati labirin bola biru sambil mengumpulkan koin kuning. Kedengarannya mudah? Ini adalah salah satu gim tersulit yang pernah dibuat — membutuhkan presisi mutlak dan ketepatan waktu yang sempurna.
+
+World's Hardest Game adalah legenda di kalangan gim browser, terkenal karena membuat pemain frustasi. Setiap dari 30 level menuntut koordinasi sempurna dan ketenangan baja.`,
+    controls: `Tombol panah: gerakkan kotak merah. Hindari bola biru, kumpulkan koin kuning, dan capai zona hijau!`,
+  },
 };

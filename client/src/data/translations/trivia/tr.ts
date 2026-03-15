@@ -155,5 +155,35 @@ export const TR_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Biliyor muydunuz? Crazy Chicken (Moorhuhn), 1999 yılında Almanya'da bir bira markası için reklam oyunu olarak geliştirilmiştir. Beklenmedik bir şekilde viral olmuş ve Avrupa'nın en çok indirilen oyunlarından biri haline gelmiştir.`,
 
+  'retro-bowl':
+    `Biliyor muydunuz? Retro Bowl, New Star Games tarafından Ocak 2020'de geliştirilmiştir. TikTok'ta viral olmasının ardından 2022'de ABD App Store'da zirveye çıkmış ve 100 milyondan fazla indirilmiştir. Piksel sanatı, NES'teki Tecmo Bowl'dan (1987) esinlenmiştir. "Retro Bowl unblocked" ABD okullarında en çok aranan terimlerden biri olmuştur. Oyunda yalnızca hücum oynarsınız — savunma simüle edilir.`,
+
+  'run-3':
+    `Biliyor muydunuz? Run 3, Joseph Cloutier (Player 03) tarafından tek başına geliştirilmiş ve Kongregate tarafından yayımlanmıştır. 300'den fazla seviye ve kendine özgü fizik mekaniklerine sahip 9 açılabilir karakter içerir. Tünel dönüşü Inception filminden esinlenmiştir. 1 milyardan fazla oynanmıştır. Run 2, türe duvar koşusu mekaniğini kazandırmıştır.`,
+
+  'crossy-road':
+    `Biliyor muydunuz? Crossy Road, Avustralyalı Matt Hall ve Andy Sum (Hipster Whale) tarafından yaratılmıştır. Yalnızca kozmetik mikro işlemlerle 90 günde 10 milyon dolar kazanmıştır. Frogger'dan (1981) esinlenilmiştir. 300'den fazla açılabilir karakter bulunur. Gizli karakter "Cai Shen" altın sikkeler düşürür.`,
+
+  'cut-the-rope':
+    `Biliyor muydunuz? Cut the Rope, Rusya'dan Semyon ve Efim Voskresenskiy (ZeptoLab) tarafından Ekim 2010'da yaratılmıştır. 10 günde 1 milyon kopya satmış ve franchise toplam 1 milyardan fazla indirilmiştir. Om Nom, yeme seslerinden adını almıştır. 3.000'den fazla seviye tasarımı test edilmiş, yalnızca 275'i seçilmiştir. BAFTA ödülü kazanmıştır ve YouTube serisi 20 milyardan fazla izlenmiştir.`,
+
+  'stickman-hook':
+    `Biliyor muydunuz? Stickman Hook, Fransız stüdyosu Madbox tarafından geliştirilmiştir. Gerçek zamanlı sarkaç momentumu içeren özel bir fizik motoru kullanır. İlk yılında 100 milyon indirilmiştir. Tek dokunuşla kontrol, Spider-Man'in ağ sallanmasından esinlenmiştir. İlk prototipte küçük bir örümcek karakter kullanılmıştır. Karakterin 8 bağlantılı eklemi vardır ve uzuvları 3 katına kadar uzayabilir.`,
+
+  'drive-mad':
+    `Biliyor muydunuz? Drive Mad, gerçekçi tork ve ağırlık merkezi hesaplamalarına dayanan fizik mekanikleri kullanır. 150'den fazla elle tasarlanmış seviye içerir. Speedrunner'lar oyunu 20 dakikanın altında bitirebilir. 1,5 milyar indirmeye ulaşan Hill Climb Racing'den ilham almıştır.`,
+
+  'paper-io-2':
+    `Biliyor muydunuz? Paper.io 2, toplam 6 milyardan fazla indirmeye sahip Fransız stüdyosu Voodoo tarafından geliştirilmiştir. Bölge mekaniği, MÖ 2500'den kalma Go oyunundaki "çevreleme" kavramından esinlenmiştir. Yapay zekâ, modifiye edilmiş A* yol bulma algoritması kullanır. Dairesel spiral hareketler, düz çizgilere göre %23 daha verimlidir.`,
+
+  'subway-surfers':
+    `Biliyor muydunuz? Subway Surfers, Kiloo ve SYBO Games tarafından Mayıs 2012'de birlikte yaratılmıştır. 2018'de Google Play'de 1 milyar indirmeye ulaşan ilk oyun olmuş ve şu anda toplam 4 milyarı aşmıştır. Ortak yaratıcı Sylvester Rishøj'un gençliğinde tren raylarında koşmasından esinlenilmiştir. "World Tour" 100'den fazla şehri ziyaret etmiştir.`,
+
+  'jetpack-joyride':
+    `Biliyor muydunuz? Jetpack Joyride, Halfbrick Studios tarafından Eylül 2011'de yaratılmıştır. Barry Steakfries'ın adı Facebook hayran oylamasıyla belirlenmiştir. Machine Gun Jetpack, geri tepme ile uçuş konseptinden esinlenmiştir. Bilim insanlarının 40'tan fazla animasyonu vardır. 750 milyondan fazla indirilmiştir. Oyun neredeyse "Jetpack Joyride: Lab of Doom" adıyla çıkacaktı.`,
+
+  'worlds-hardest-game':
+    `Biliyor muydunuz? World's Hardest Game, Stephen Critoph tarafından yaratılmış ve 2008'de AddictingGames'te yayımlanmıştır. 30 seviye içerir ve çoğu oyuncu 15. seviyede takılır. Son seviyenin tamamlanma oranı %0,1'in altındadır. Mavi düşmanlar sinüzoidal hareket kullanır. Speedrunner'lar oyunu ölmeden 5 dakikanın altında bitirebilir. Devam oyununda 50 yeni seviye eklenmiştir.`,
+
 
 };

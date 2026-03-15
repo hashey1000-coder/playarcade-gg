@@ -365,4 +365,74 @@ Sprunki Playground elimina tutte le barriere di progressione e dà accesso immed
 Crazy Chicken (Moorhuhn) è nato come gioco promozionale nel 1999 ed è diventato una sensazione virale con oltre 10 milioni di download.`,
     controls: `Muovi il mouse per mirare. Clicca per sparare. Cerca obiettivi bonus nascosti. I polli dorati valgono punti extra.`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Manager di Football Americano',
+    description: `Gestisci la tua squadra di football americano in questo manageriale sportivo in stile retrò. Scegli i giocatori, pianifica le giocate e guida la tua squadra fino al campionato.
+
+Retro Bowl combina gestione strategica del roster con azione sul campo in pixel art. Ogni decisione fuori dal campo influenza le prestazioni della tua squadra in partita.`,
+    controls: `Scorri per lanciare il pallone ai ricevitori. Tocca per schivare i difensori. Usa i menu per gestire il roster e le tattiche.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Corsa Infinita nello Spazio',
+    description: `Corri, salta e sfida la gravità in tunnel sospesi nello spazio. Cambia le pareti su cui corri per evitare le voragini e sopravvivere il più a lungo possibile.
+
+Run 3 amplia la serie con nuovi personaggi, centinaia di livelli e una modalità infinita. La rotazione del tunnel rende ogni salto una sfida unica.`,
+    controls: `Frecce sinistra/destra per muoverti. Barra spaziatrice per saltare. R per ricominciare il livello.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Attraversamento Infinito',
+    description: `Attraversa strade trafficate, fiumi e binari ferroviari in questo coloratissimo gioco di abilità ispirato a Frogger. Ogni passo potrebbe essere l'ultimo!
+
+Crossy Road offre centinaia di personaggi sbloccabili e scenari generati casualmente. Il suo stile voxel e il gameplay immediato lo rendono irresistibile.`,
+    controls: `Tocca o premi la freccia su per avanzare. Frecce laterali per spostarti. Non restare fermo troppo a lungo!`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Dai le Caramelle a Om Nom',
+    description: `Taglia le corde al momento giusto per far cadere la caramella nella bocca di Om Nom. Usa la fisica, le bolle d'aria e i cuscini per risolvere ogni rompicapo.
+
+Cut the Rope è un puzzle fisico pluripremiato con centinaia di livelli che mettono alla prova logica e tempismo. Raccogli tutte le stelle per il punteggio perfetto.`,
+    controls: `Scorri per tagliare le corde. Tocca le bolle per gonfiarle. Interagisci con gli elementi del livello per guidare la caramella.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Dondolati e Vola',
+    description: `Agganciati ai punti di ancoraggio e dondolati come un acrobata per raggiungere il traguardo. Rilascia al momento giusto per volare tra un punto e l'altro.
+
+Stickman Hook è un gioco fisico dal ritmo frenetico con livelli sempre più impegnativi. La fisica del dondolio è semplice da imparare ma difficile da padroneggiare.`,
+    controls: `Tieni premuto per agganciarti al punto più vicino. Rilascia per staccarti e volare. Il tempismo è tutto!`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Sfida di Guida Fisica',
+    description: `Guida il tuo veicolo su percorsi pieni di ostacoli assurdi senza ribaltarti. Bilancia velocità e inclinazione per arrivare al traguardo.
+
+Drive Mad mette alla prova la tua abilità con rampe folli, piattaforme mobili e terreni imprevedibili. Ogni livello richiede precisione e pazienza.`,
+    controls: `Freccia su per accelerare. Freccia giù per frenare. Bilancia l'inclinazione del veicolo per non capovolgerti.`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Conquista del Territorio',
+    description: `Espandi il tuo territorio tracciando linee sulla mappa e tornando nella tua zona. Taglia il percorso degli avversari per eliminarli e dominare l'arena.
+
+Paper.io 2 è un gioco .io competitivo in cui strategia e tempismo fanno la differenza. Più rischi allontanandoti dalla tua area, più grande sarà la ricompensa.`,
+    controls: `Usa le frecce direzionali o trascina per muoverti. Esci dal tuo territorio per conquistare nuova area, poi rientra per reclamarla.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Corsa Infinita sui Binari',
+    description: `Corri a perdifiato lungo i binari della metropolitana insieme a Jake e i suoi amici, schivando treni e ostacoli mentre raccogli monete e potenziamenti.
+
+Subway Surfers è uno degli endless runner più famosi al mondo, con ambientazioni che cambiano periodicamente e decine di personaggi e tavole da skateboard da sbloccare.`,
+    controls: `Scorri lateralmente per cambiare corsia. Scorri in alto per saltare, in basso per scivolare. Raccogli le monete e i potenziamenti speciali.`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Azione Infinita col Jetpack',
+    description: `Indossa il jetpack rubato e sfreccia attraverso il laboratorio schivando laser, missili e campi elettrici. Raccogli monete e veicoli speciali lungo il percorso.
+
+Jetpack Joyride segue le avventure di Barry Steakfries in un endless runner adrenalinico. Sblocca jetpack unici e completa missioni per guadagnare ricompense.`,
+    controls: `Tieni premuto per attivare il jetpack e salire. Rilascia per scendere. Evita gli ostacoli e raccogli potenziamenti.`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Sfida di Precisione Estrema",
+    description: `Guida il quadrato rosso attraverso labirinti pieni di sfere blu in movimento. Un solo tocco e si ricomincia. Solo i giocatori più abili arriveranno alla fine.
+
+World's Hardest Game è un gioco di precisione leggendario che richiede riflessi perfetti e una pazienza infinita. Ogni livello è progettato per metterti alla prova.`,
+    controls: `Usa le frecce direzionali per muovere il quadrato rosso. Raccogli le monete gialle ed evita ogni sfera blu per completare il livello.`,
+  },
 };

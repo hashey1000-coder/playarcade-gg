@@ -365,4 +365,74 @@ Sprunki Playground to tryb piaskownicy, który daje pełną swobodę twórczą. 
 Crazy Chicken (Moorhuhn) to kultowa niemiecka gra z 1999 roku, która stała się fenomenem internetowym w Europie. Oryginalna wersja była pobierana miliony razy i sparaliżowała produktywność w wielu biurach.`,
     controls: `Celuj myszką i kliknij, aby strzelać do kurczaków. Celuj w dalsze cele, aby zdobyć więcej punktów. Nie przegap żadnego kurczaka!`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Menedżer Futbolu Amerykańskiego',
+    description: `Zarządzaj drużyną futbolu amerykańskiego w stylu retro. Rekrutuj zawodników, opracowuj strategie i prowadź swój zespół do zwycięstwa w Retro Bowl. Pikselowa grafika przywodzi na myśl złotą erę gier.
+
+Retro Bowl łączy zarządzanie drużyną z dynamiczną rozgrywką na boisku. Podejmuj kluczowe decyzje kadrowe, dbaj o morale zespołu i rozgrywaj emocjonujące mecze w drodze po mistrzostwo.`,
+    controls: `Przesuń palcem lub użyj myszy, aby podać piłkę do odbiorców. Steruj biegaczem za pomocą strzałek lub dotknięcia ekranu.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Kosmiczny Bieg Bez Końca',
+    description: `Biegnij i skacz przez tunele w kosmosie, które rozpadają się pod Twoimi stopami. Obracaj ściany, unikaj dziur i odkrywaj nowe trasy w tej wciągającej grze platformowej.
+
+Run 3 oferuje dziesiątki poziomów z rosnącym poziomem trudności oraz różne postacie do odblokowania, z których każda posiada unikalne umiejętności. Tryb nieskończony zapewnia rozgrywkę bez końca.`,
+    controls: `Strzałki lewo/prawo: ruch na boki. Spacja lub strzałka w górę: skok. Biegnij po ścianach, aby zmienić orientację tunelu.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Nieskończone Przeskakiwanie',
+    description: `Przeprowadź swoją postać przez ruchliwe drogi, torach kolejowe i rwące rzeki. Unikaj samochodów, pociągów i innych przeszkód w tej nowoczesnej wersji klasycznego Froggera.
+
+Crossy Road oferuje setki postaci do odblokowania, każda z unikalnymi światami i tematami. Prosta mechanika hop-hop sprawia, że gra jest łatwa do nauki, ale trudna do opanowania.`,
+    controls: `Przesuń w górę, aby skoczyć do przodu. Przesuń w lewo, prawo lub w dół, aby się poruszać. Unikaj przeszkód i zbieraj monety!`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Nakarm Om Noma Cukierkami',
+    description: `Przecinaj liny we właściwym momencie, aby dostarczyć cukierka prosto do pyszczka Om Noma. Rozwiązuj łamigłówki fizyczne, zbieraj gwiazdki i odkrywaj nowe mechaniki na każdym poziomie.
+
+Cut the Rope to wielokrotnie nagradzana gra logiczna, która zdobyła serca milionów graczy na całym świecie. Każdy pakiet poziomów wprowadza nowe elementy, takie jak poduszki powietrzne, teleporty i magiczne kapelusze.`,
+    controls: `Przesuń palcem lub kliknij i przeciągnij, aby przeciąć linę. Dotknij poduszek powietrznych i bąbelków, aby skierować cukierka do Om Noma.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Huśtaj się i Lataj',
+    description: `Chwytaj się punktów zaczepienia i huśtaj się jak pajęczak przez kolorowe poziomy. Puszczaj się w idealnym momencie, aby nabrać rozpędu i dolecieć do mety.
+
+Stickman Hook to gra oparta na fizyce wahadła, w której wyczucie czasu jest kluczem do sukcesu. Setki poziomów o rosnącej trudności i odblokowane postacie czekają na Ciebie.`,
+    controls: `Kliknij lub dotknij ekranu, aby zaczepić się o punkt. Puść, aby się odczepić i lecieć dalej. Wyczucie czasu jest kluczowe!`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Szalone Wyzwanie Jazdy',
+    description: `Prowadź samochód przez szalone tory przeszkód pełne ramp, pętli i niebezpiecznych odcinków. Utrzymaj pojazd w pionie i dotrzyj do mety w jednym kawałku.
+
+Drive Mad testuje Twoje umiejętności balansowania i wyczucie gazu. Każdy poziom oferuje nowy, zaskakujący układ przeszkód, który wymaga precyzji i cierpliwości.`,
+    controls: `Strzałka w górę: gaz. Strzałka w dół: cofanie. Balansuj pojazdem, aby nie przewrócić się na trudnych odcinkach!`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Podbój Terytorium',
+    description: `Wyjdź ze swojej strefy, zakreśl obszar i wróć, aby go przejąć. Powiększaj swoje terytorium, jednocześnie broniąc się przed innymi graczami, którzy mogą przeciąć Twój ślad.
+
+Paper.io 2 to dynamiczna gra .io, w której strategia i odwaga decydują o zwycięstwie. Im większe ryzyko podejmiesz, tym więcej terytorium zdobędziesz — ale jeden błąd oznacza koniec gry.`,
+    controls: `Używaj strzałek lub myszy, aby kierować ruchem postaci. Zakreślaj obszary i wracaj na swoje terytorium, aby je przejąć.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Nieskończony Bieg po Torach',
+    description: `Wciel się w Jake'a i uciekaj przed złośliwym dozorcą i jego psem po torach metra. Zbieraj monety, używaj deskorolki i power-upów, aby biec jak najdalej.
+
+Subway Surfers to jedna z najpopularniejszych gier mobilnych na świecie z miliardami pobrań. Regularnie aktualizowane lokacje przenoszą gracza do miast z całego globu.`,
+    controls: `Przesuń w lewo/prawo: zmiana toru. Przesuń w górę: skok. Przesuń w dół: ślizg. Zbieraj monety i power-upy podczas biegu!`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Szalona Przygoda z Plecakiem Odrzutowym',
+    description: `Wskocz na plecak odrzutowy jako Barry Steakfries i leć przez laboratorium pełne przeszkód. Zbieraj monety, zdobywaj pojazdy specjalne i unikaj pocisków i laserów.
+
+Jetpack Joyride to dynamiczna gra akcji, w której każdy lot jest inny dzięki losowym misjom i nagrodzie z automatu po każdej rozgrywce. Odblokuj nowe plecaki, kostiumy i ulepszenia.`,
+    controls: `Dotknij ekranu lub kliknij i przytrzymaj, aby wznosić się. Puść, aby opadać. Unikaj laserów, rakiet i pól elektrycznych!`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Wyzwanie Najwyższej Precyzji",
+    description: `Poprowadź czerwony kwadrat przez labirynt niebieskich kul, zbierając żółte monety. Brzmi prosto? To jedna z najtrudniejszych gier, jakie kiedykolwiek powstały — wymaga absolutnej precyzji i idealnego wyczucia czasu.
+
+World's Hardest Game to legenda wśród gier przeglądarkowych, znana z doprowadzania graczy do szału. Każdy z 30 poziomów wymaga perfekcyjnej koordynacji i żelaznych nerwów.`,
+    controls: `Strzałki: ruch czerwonym kwadratem. Unikaj niebieskich kul, zbieraj żółte monety i dotrzyj do zielonej strefy!`,
+  },
 };

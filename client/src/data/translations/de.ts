@@ -365,4 +365,74 @@ Sprunki Playground entfernt alle Fortschrittsbarrieren und gibt sofortigen Zugan
 Crazy Chicken (Moorhuhn) entstand 1999 als Werbespiel und wurde mit über 10 Millionen Downloads zur viralen Sensation.`,
     controls: `Bewege die Maus zum Zielen. Klicke zum Schießen. Suche nach versteckten Bonuszielen. Goldene Hühner geben Extrapunkte.`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — American-Football-Manager',
+    description: `Leite dein eigenes American-Football-Team in diesem Sportsimulator im Retro-Stil. Rekrutiere Spieler, entwickle Taktiken und führe dein Franchise zum Meistertitel.
+
+Retro Bowl verbindet Team-Management mit Arcade-Gameplay auf dem Feld. Steuere Pässe und Laufspielzüge und kümmere dich gleichzeitig um Kabine, Verträge und Teammoral.`,
+    controls: `Wische, um den Ball zu deinen Empfängern zu werfen. Tippe, um Verteidigern beim Laufen auszuweichen. Verwalte deinen Kader zwischen den Spielen.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Endloser Weltraumlauf',
+    description: `Renne, springe und trotze der Schwerkraft durch schwebende Tunnel im Weltall. Wechsle zwischen Wänden und Decke, um den Lücken auf deinem Weg auszuweichen.
+
+Run 3 erweitert die Serie mit Dutzenden neuer Level, mehreren freischaltbaren Charakteren und einem endlosen Erkundungsmodus. Jeder Charakter hat einzigartige Fähigkeiten, die dein Spielerlebnis verändern.`,
+    controls: `Verwende Pfeiltasten oder A/D zum Bewegen. Drücke LEERTASTE oder HOCH zum Springen. Laufe an Wänden entlang, um die Schwerkraft zu ändern.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Endloser Hüpfer',
+    description: `Überquere verkehrsreiche Straßen, reißende Flüsse und Bahngleise in diesem endlosen Hüpfspiel im Frogger-Stil. Komme so weit wie möglich, ohne überfahren zu werden.
+
+Crossy Road bietet Hunderte sammelbare Charaktere und abwechslungsreiche Schauplätze. Jeder Versuch ist dank prozeduraler Geländegenerierung einzigartig.`,
+    controls: `Tippe oder drücke LEERTASTE, um nach vorne zu hüpfen. Verwende Pfeiltasten, um dich seitlich zu bewegen. Bleib nicht zu lange stehen, sonst schnappt dich der Adler.`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Füttere Om Nom mit Bonbons',
+    description: `Schneide die Seile im richtigen Moment durch, damit das Bonbon in Om Noms Mund fällt. Löse immer kniffligere Physik-Rätsel.
+
+Cut the Rope führt Luftblasen, Luftkissen, Teleporter und weitere Mechaniken über Hunderte von Leveln ein. Sammle alle drei Sterne pro Level für die perfekte Wertung.`,
+    controls: `Wische mit dem Finger oder der Maus, um Seile durchzuschneiden. Tippe auf Blasen, um sie zum Platzen zu bringen. Time deine Schnitte, um alle Sterne zu sammeln.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Schwingen & Fliegen',
+    description: `Schwinge dich von Haken zu Haken als akrobatisches Strichmännchen. Lass im perfekten Moment los, um durch die Luft zu fliegen und das Ziel zu erreichen.
+
+Stickman Hook bietet Hunderte Level mit steigendem Schwierigkeitsgrad und Dutzende freischaltbare Charaktere. Die Schwungphysik ist intuitiv, aber schwer zu meistern.`,
+    controls: `Halte gedrückt, um dich am nächsten Punkt einzuhaken. Loslassen, um dich zu lösen und zu fliegen. Time deine Schwünge, um Schwung aufzubauen.`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Physik-Fahrherausforderung',
+    description: `Steuere Fahrzeuge über Strecken voller unmöglicher Hindernisse in diesem Physik-Fahrspiel. Halte die Balance und vermeide es umzukippen, um das Ziel zu erreichen.
+
+Drive Mad stellt deine Geduld und dein Geschick auf die Probe — mit steilen Rampen, wackeligen Plattformen und Präzisionssprüngen. Jedes Level ist ein eigenes Fahr-Puzzle.`,
+    controls: `Verwende Pfeiltasten oder W/S zum Beschleunigen und Bremsen. Halte das Fahrzeug im Gleichgewicht, damit es nicht umkippt. Erreiche die Zielflagge, um das Level abzuschließen.`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Gebietseroberung',
+    description: `Erweitere dein Territorium, indem du den Boden auf deinem Weg einfärbst, in diesem .io-Mehrspieler-Spiel. Kehre in deine sichere Zone zurück, um das umschlossene Gebiet zu beanspruchen.
+
+Paper.io 2 ist ein Echtzeit-Strategiespiel, in dem du Ehrgeiz und Vorsicht abwägen musst. Je weiter du dich von deinem Gebiet entfernst, desto größer die Belohnung — aber auch das Risiko.`,
+    controls: `Verwende Pfeiltasten oder wische, um die Richtung zu ändern. Umschließe leere Flächen und kehre zu deinem Gebiet zurück, um sie zu beanspruchen. Lass niemanden deine Spur kreuzen.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Endloser U-Bahn-Lauf',
+    description: `Rase mit Höchstgeschwindigkeit über die Gleise und weiche Zügen, Barrieren und Hindernissen aus — mit Jake und seinen Freunden. Sammle Münzen und Power-ups, um deinen Rekord zu brechen.
+
+Subway Surfers ist eines der meistgeladenen Handyspiele aller Zeiten, mit regelmäßig wechselnden Themen-Schauplätzen und speziellen Surfbrettern mit einzigartigen Fähigkeiten.`,
+    controls: `Wische seitlich, um die Spur zu wechseln. Wische nach oben zum Springen und nach unten zum Rutschen. Sammle Power-ups wie den Münzmagnet und das Jetpack.`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Endlose Jetpack-Action',
+    description: `Schnall dir Barry Steakfries' Jetpack um und flieg durch ein Geheimlabor — vorbei an Lasern, Raketen und Elektrofeldern. Sammle Münzen und Spezialfahrzeuge.
+
+Jetpack Joyride verbindet rasante Action mit Sammel-Mechaniken. Schalte verschiedene Jetpacks mit einzigartigen visuellen Effekten frei und erfülle Missionen für Extrabelohnungen.`,
+    controls: `Halte gedrückt, um das Jetpack zu aktivieren und aufzusteigen. Loslassen, um zu sinken. Weiche Hindernissen aus und sammle Spezialfahrzeuge für vorübergehenden Schutz.`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Ultimative Präzisionsherausforderung",
+    description: `Führe dein rotes Quadrat durch Labyrinthe voller blauer Bälle in Bewegung. Eine einzige Berührung schickt dich zurück zum Start. Nur die Geduldigsten schaffen es.
+
+World's Hardest Game macht seinem Namen alle Ehre — mit 30 Leveln von brutaler Schwierigkeit. Jedes Level erfordert perfektes Timing und das Auswendiglernen der Feindmuster.`,
+    controls: `Verwende Pfeiltasten, um das rote Quadrat zu bewegen. Sammle die gelben Kreise und erreiche die grüne Zielzone. Vermeide jede Berührung mit den blauen Bällen.`,
+  },
 };

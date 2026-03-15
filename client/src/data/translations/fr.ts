@@ -365,4 +365,74 @@ Sprunki Playground élimine toutes les barrières de progression et donne accès
 Crazy Chicken (Moorhuhn) est né comme jeu promotionnel en 1999 et est devenu une sensation virale avec plus de 10 millions de téléchargements.`,
     controls: `Déplacez la souris pour viser. Cliquez pour tirer. Cherchez les cibles bonus cachées. Les poulets dorés valent des points supplémentaires.`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Manager de Football Américain',
+    description: `Prenez les commandes de votre propre équipe de football américain dans ce simulateur sportif au style rétro. Recrutez des joueurs, élaborez des stratégies et menez votre franchise au championnat.
+
+Retro Bowl allie gestion d'équipe et gameplay arcade sur le terrain. Contrôlez les passes et les courses tout en gérant le vestiaire, les contrats et le moral de l'équipe.`,
+    controls: `Glissez pour lancer le ballon vers vos receveurs. Touchez pour esquiver les défenseurs en courant. Gérez votre effectif entre les matchs.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Course Spatiale Infinie',
+    description: `Courez, sautez et défiez la gravité à travers des tunnels flottants dans l'espace. Passez d'un mur à l'autre et au plafond pour éviter les trous sur votre chemin.
+
+Run 3 enrichit la série avec des dizaines de nouveaux niveaux, plusieurs personnages déblocables et un mode exploration infinie. Chaque personnage possède des capacités uniques qui changent votre façon de jouer.`,
+    controls: `Utilisez les flèches ou A/D pour vous déplacer. Appuyez sur ESPACE ou HAUT pour sauter. Courez sur les murs pour changer la gravité.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Sauteur Infini',
+    description: `Traversez des routes encombrées, des rivières tumultueuses et des voies ferrées dans ce jeu de saut infini inspiré de Frogger. Allez le plus loin possible sans vous faire écraser.
+
+Crossy Road propose des centaines de personnages à collectionner et des décors variés. Chaque tentative est unique grâce à la génération procédurale du terrain.`,
+    controls: `Touchez ou appuyez sur ESPACE pour sauter en avant. Utilisez les flèches pour vous déplacer latéralement. Ne restez pas immobile trop longtemps ou l'aigle vous attrapera.`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Nourrissez Om Nom de Bonbons',
+    description: `Coupez les cordes au bon moment pour faire tomber le bonbon dans la bouche de l'adorable Om Nom. Résolvez des casse-têtes de physique de plus en plus astucieux.
+
+Cut the Rope introduit des bulles d'air, des coussins gonflables, des téléporteurs et d'autres mécaniques au fil de centaines de niveaux. Récoltez les trois étoiles de chaque niveau pour le compléter à 100 %.`,
+    controls: `Glissez le doigt ou la souris pour couper les cordes. Touchez les bulles pour les éclater. Chronométrez vos coupes pour récolter toutes les étoiles.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Balancez-vous et Envolez-vous',
+    description: `Balancez-vous de crochet en crochet en tant que stickman acrobate. Lâchez au moment parfait pour vous envoler et atteindre l'arrivée.
+
+Stickman Hook propose des centaines de niveaux à difficulté croissante et des dizaines de personnages à débloquer. La physique du balancement est intuitive mais difficile à maîtriser.`,
+    controls: `Maintenez appuyé pour vous accrocher au point le plus proche. Relâchez pour vous lâcher et voler. Chronométrez vos balancements pour gagner de l'élan.`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Défi de Conduite Physique',
+    description: `Pilotez des véhicules sur des parcours truffés d'obstacles impossibles dans ce jeu de physique automobile. Gardez l'équilibre et évitez de vous retourner pour atteindre l'arrivée.
+
+Drive Mad met votre patience et votre habileté à rude épreuve avec des rampes abruptes, des plateformes instables et des sauts de précision. Chaque niveau est un puzzle de conduite différent.`,
+    controls: `Utilisez les flèches ou W/S pour accélérer et freiner. Maintenez l'équilibre du véhicule pour ne pas basculer. Atteignez le drapeau d'arrivée pour terminer le niveau.`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Conquête de Territoire',
+    description: `Agrandissez votre territoire en peignant le sol sur votre passage dans ce jeu .io multijoueur. Revenez dans votre zone pour revendiquer le terrain que vous avez encerclé.
+
+Paper.io 2 est un jeu de stratégie en temps réel où vous devez doser ambition et prudence. Plus vous vous éloignez de votre territoire, plus la récompense est grande, mais aussi le risque.`,
+    controls: `Utilisez les flèches ou glissez pour changer de direction. Encerclez des zones vides et revenez sur votre territoire pour les revendiquer. Ne laissez personne croiser votre traînée.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Course Infinie dans le Métro',
+    description: `Foncez à toute allure sur les voies ferrées en esquivant trains, barrières et obstacles avec Jake et ses amis. Ramassez des pièces et des bonus pour battre votre record.
+
+Subway Surfers est l'un des jeux mobiles les plus téléchargés de l'histoire, avec des décors thématiques qui changent régulièrement et des planches de surf spéciales dotées de capacités uniques.`,
+    controls: `Glissez sur les côtés pour changer de voie. Glissez vers le haut pour sauter et vers le bas pour glisser. Ramassez des bonus comme l'aimant à pièces et le jetpack.`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Action Infinie au Jetpack',
+    description: `Enfilez le jetpack de Barry Steakfries et foncez à travers un laboratoire secret en esquivant lasers, missiles et champs électriques. Ramassez des pièces et des véhicules spéciaux.
+
+Jetpack Joyride mêle action effrénée et mécaniques de collection. Débloquez différents jetpacks aux effets visuels uniques et accomplissez des missions pour gagner des récompenses supplémentaires.`,
+    controls: `Maintenez appuyé pour activer le jetpack et monter. Relâchez pour descendre. Esquivez les obstacles et ramassez des véhicules spéciaux pour une protection temporaire.`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Défi de Précision Ultime",
+    description: `Guidez votre carré rouge à travers des labyrinthes remplis de billes bleues en mouvement. Un seul contact vous ramène au départ. Seuls les plus patients en viendront à bout.
+
+World's Hardest Game porte bien son nom avec 30 niveaux d'une difficulté redoutable. Chaque niveau exige un timing parfait et la mémorisation des trajectoires ennemies.`,
+    controls: `Utilisez les flèches pour déplacer le carré rouge. Récoltez les cercles jaunes et atteignez la zone verte d'arrivée. Évitez tout contact avec les billes bleues.`,
+  },
 };

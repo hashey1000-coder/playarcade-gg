@@ -5,7 +5,7 @@ import { SessionHistory } from "@/components/SessionHistory";
 const lazyConfetti = () => import("canvas-confetti").then(m => m.default);
 import { toast } from "sonner";
 import { Link, useParams, useLocation, useSearch } from "wouter";
-import { Maximize2, Minimize2, ChevronLeft, Play, ThumbsUp, ThumbsDown, Gamepad2, X, Share2, Check, ArrowRight, Shuffle, SkipForward, Trophy } from "lucide-react";
+import { Maximize2, ChevronLeft, Play, ThumbsUp, ThumbsDown, Gamepad2, X, Share2, Check, ArrowRight, Shuffle, Trophy } from "lucide-react";
 import { GAMES, type Game } from "@/data/games";
 import { useGameTranslate, getGameT } from '@/data/gameTranslations';
 import { GAME_TRIVIA } from "@/data/trivia";
@@ -16,71 +16,7 @@ import { useStreakContext } from "@/contexts/StreakContext";
 import { CATEGORY_COLORS, CATEGORY_ACCENT, CATEGORY_FALLBACK } from '@/data/categoryColors';
 import { prefetchGameUrl } from '@/lib/utils';
 import { useHead } from '@/hooks/useHead';
-
-// Persist likes/dislikes in localStorage — seeded from game.rating
-function useLikeDislike(slug: string) {
-  const storageKey = `game-votes-${slug}`;
-  const userVoteKey = `game-uservote-${slug}`;
-
-  const getSeededVotes = () => {
-    // Seed realistic initial vote counts from the game's rating/playCount
-    const game = GAMES.find((g) => g.slug === slug);
-    if (!game) return { likes: 0, dislikes: 0 };
-    // Generate a base vote count from rating & popularity
-    const baseLikes = Math.round(game.rating * (game.playCount || 50) / 100);
-    const baseDislikes = Math.round(baseLikes * (1 - game.rating / 5) * 0.3);
-    return { likes: Math.max(baseLikes, 1), dislikes: Math.max(baseDislikes, 0) };
-  };
-
-  const getVotes = () => {
-    try {
-      const stored = localStorage.getItem(storageKey);
-      return stored ? JSON.parse(stored) : getSeededVotes();
-    } catch {
-      return getSeededVotes();
-    }
-  };
-
-  const getUserVote = (): "like" | "dislike" | null => {
-    try {
-      return (localStorage.getItem(userVoteKey) as "like" | "dislike" | null);
-    } catch {
-      return null;
-    }
-  };
-
-  const [votes, setVotes] = useState(getVotes);
-  const [userVote, setUserVote] = useState<"like" | "dislike" | null>(getUserVote);
-
-  useEffect(() => {
-    setVotes(getVotes());
-    setUserVote(getUserVote());
-  }, [slug]);
-
-  const vote = (type: "like" | "dislike") => {
-    const current = getVotes();
-    const currentUserVote = getUserVote();
-    let newVotes = { ...current };
-
-    if (currentUserVote === type) {
-      newVotes[type === "like" ? "likes" : "dislikes"] = Math.max(0, newVotes[type === "like" ? "likes" : "dislikes"] - 1);
-      localStorage.removeItem(userVoteKey);
-      setUserVote(null);
-    } else {
-      if (currentUserVote === "like") newVotes.likes = Math.max(0, newVotes.likes - 1);
-      if (currentUserVote === "dislike") newVotes.dislikes = Math.max(0, newVotes.dislikes - 1);
-      if (type === "like") newVotes.likes += 1;
-      else newVotes.dislikes += 1;
-      localStorage.setItem(userVoteKey, type);
-      setUserVote(type);
-    }
-
-    localStorage.setItem(storageKey, JSON.stringify(newVotes));
-    setVotes(newVotes);
-  };
-
-  return { votes, userVote, vote };
-}
+import { useVotes } from '@/hooks/useVotes';
 
 // Get related games: same category first, then random
 function getRelatedGames(game: Game, count = 20): Game[] {
@@ -136,8 +72,11 @@ export default function PlayGame() {
       // requestFullscreen rejects on iOS for iframe-containing divs — catch it
       if (container.requestFullscreen) {
         await container.requestFullscreen();
+        // Mark fullscreen so iframe switches to w-full h-full inside the native FS container
+        setIsFakeFullscreen(true);
       } else if ((container as any).webkitRequestFullscreen) {
         await (container as any).webkitRequestFullscreen();
+        setIsFakeFullscreen(true);
       } else {
         enterCSSFullscreen();
       }
@@ -209,12 +148,10 @@ export default function PlayGame() {
     return () => { link.remove(); };
   }, [gameOrigin]);
 
-  // Preload the game document at high priority as soon as we know the URL.
-  // This tells the browser to start fetching the iframe HTML immediately,
-  // often shaving seconds off the load because the request is queued before
-  // the iframe element even renders in the DOM.
+  // Preload the game document only after the user has clicked Play
+  // (we no longer eagerly load the iframe, so preload is only useful once started)
   useEffect(() => {
-    if (!game?.iframeUrl) return;
+    if (!gameStarted || !game?.iframeUrl) return;
     const id = 'preload-game-doc';
     if (document.getElementById(id)) {
       (document.getElementById(id) as HTMLLinkElement).href = game.iframeUrl;
@@ -227,7 +164,7 @@ export default function PlayGame() {
     link.href = game.iframeUrl;
     document.head.appendChild(link);
     return () => { link.remove(); };
-  }, [game?.iframeUrl]);
+  }, [gameStarted, game?.iframeUrl]);
 
   // Reset iframe-loaded flag when game changes
   useEffect(() => { setIframeLoaded(false); setIframeError(false); }, [routeSlug]);
@@ -414,7 +351,7 @@ export default function PlayGame() {
   }, [isFakeFullscreen]);
 
   const gameSlug = routeSlug ?? game?.slug ?? "";
-  const { votes, userVote, vote } = useLikeDislike(gameSlug);
+  const { votes, userVote, vote, loading: votesLoading, submitting: voteSubmitting } = useVotes(gameSlug);
   const [copied, setCopied] = useState(false);
 
   // SEO — useHead manages title, meta, OG, twitter, hreflang, canonical
@@ -512,6 +449,32 @@ export default function PlayGame() {
   useEffect(() => { gameStartedRef.current = gameStarted; }, [gameStarted]);
   useEffect(() => { userVoteRef.current = userVote ?? null; }, [userVote]);
   useEffect(() => { exitPromptDismissedRef.current = exitPromptDismissed; }, [exitPromptDismissed]);
+
+  // Sync isFakeFullscreen when native fullscreen exits (e.g. user presses ESC)
+  useEffect(() => {
+    function onFSChange() {
+      const inFS = !!(
+        document.fullscreenElement ||
+        (document as any).webkitFullscreenElement ||
+        (document as any).mozFullScreenElement ||
+        (document as any).msFullscreenElement
+      );
+      if (!inFS) {
+        setIsFakeFullscreen(false);
+        document.body.style.overflow = "";
+      }
+    }
+    document.addEventListener('fullscreenchange', onFSChange);
+    document.addEventListener('webkitfullscreenchange', onFSChange);
+    document.addEventListener('mozfullscreenchange', onFSChange);
+    document.addEventListener('MSFullscreenChange', onFSChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', onFSChange);
+      document.removeEventListener('webkitfullscreenchange', onFSChange);
+      document.removeEventListener('mozfullscreenchange', onFSChange);
+      document.removeEventListener('MSFullscreenChange', onFSChange);
+    };
+  }, []);
 
   // Navigation interception: intercept Link clicks to show exit prompt if no vote yet
   useEffect(() => {
@@ -615,14 +578,7 @@ export default function PlayGame() {
           }`}>
             {game.difficulty === 'easy' ? '😊' : game.difficulty === 'hard' ? '🔥' : '⚡'} {t(`difficulty.${game.difficulty}` as any)}
           </span>
-          <span className="text-slate-300 dark:text-slate-400">·</span>
-          <span className="text-sm text-slate-500 dark:text-slate-300">
-            {game.playCount >= 1_000_000
-              ? `${(game.playCount / 1_000_000).toFixed(1)}M ${t('common.plays')}`
-              : game.playCount >= 1_000
-              ? `${(game.playCount / 1_000).toFixed(0)}K ${t('common.plays')}`
-              : `${game.playCount} ${t('common.plays')}`}
-          </span>
+
         </div>
 
         {/* Main layout: Game + Sidebar */}
@@ -636,34 +592,9 @@ export default function PlayGame() {
                 ? 'fullscreen-container'
                 : 'overflow-hidden rounded-2xl'
             }`}>
-              {/* Fullscreen / Exit fullscreen button */}
-              {gameStarted && (
-                <button
-                  onClick={isFakeFullscreen ? exitFullscreen : enterFullscreen}
-                  className="absolute top-3 right-3 z-20 w-8 h-8 bg-slate-800/70 hover:bg-slate-800 text-white rounded-lg flex items-center justify-center transition-colors backdrop-blur-sm"
-                  title={t('game.fullscreen')}
-                  aria-label={t('game.fullscreen')}
-                >
-                  {isFakeFullscreen ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-                </button>
-              )}
 
-              {/* Play Next button (visible while playing) */}
-              {gameStarted && (
-                <button
-                  onClick={() => {
-                    if (isFakeFullscreen) exitFullscreen();
-                    setNextGame(getNextSuggestion(game));
-                    setShowPlayNext(true);
-                  }}
-                  className="absolute top-3 left-3 z-20 flex items-center gap-1.5 px-3 py-1.5 bg-cyan-600/80 hover:bg-cyan-600 text-white text-xs font-semibold rounded-lg transition-colors backdrop-blur-sm"
-                  title={t('game.suggestNext')}
-                  aria-label={t('game.suggestNext')}
-                >
-                  <SkipForward className="w-3.5 h-3.5" />
-                  {t('game.moreGames')}
-                </button>
-              )}
+
+
 
               {/* Click-to-play overlay */}
               {!gameStarted && (
@@ -749,13 +680,12 @@ export default function PlayGame() {
                 </div>
               )}
 
-              {/* Game iframe — loads eagerly so it's ready when the user clicks Play.
-                  pointer-events disabled while overlay is showing to prevent accidental
-                  interaction and to stop the iframe from stealing scroll/touch events. */}
+              {/* Game iframe — src is only set after the user clicks Play to prevent
+                  the game from running in the background before interaction. */}
               <iframe
                 ref={iframeRef}
                 id="game-iframe"
-                src={game.iframeUrl}
+                src={gameStarted ? game.iframeUrl : undefined}
                 title={gt(game).title}
                 className={isFakeFullscreen
                   ? 'w-full h-full'
@@ -772,36 +702,61 @@ export default function PlayGame() {
                 fetchpriority="high"
                 onLoad={() => setIframeLoaded(true)}
               />
+
+              {/* Floating exit button — inside container so it's reachable during fullscreen */}
+              {isFakeFullscreen && (
+                <button
+                  onClick={exitFullscreen}
+                  className="absolute top-3 right-3 z-[10000] w-8 h-8 rounded-full bg-black/20 hover:bg-black/50 text-white/50 hover:text-white/90 flex items-center justify-center transition-all duration-150"
+                  title={t('common.close')}
+                  aria-label={t('common.close')}
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
             </div>
 
             {/* Action bar: Like, Dislike, Controls */}
             <div className="mt-3 bg-white dark:bg-slate-900 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm px-3 sm:px-4 py-3 flex items-center gap-2 sm:gap-3 flex-wrap">
+              {/* Fullscreen button — only shown when not already in fullscreen */}
+              {gameStarted && !isFakeFullscreen && (
+                <button
+                  onClick={enterFullscreen}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
+                  title={t('game.fullscreen')}
+                  aria-label={t('game.fullscreen')}
+                >
+                  <Maximize2 className="w-4 h-4" />
+                </button>
+              )}
               {/* Like button */}
               <button
                 onClick={() => vote("like")}
+                disabled={votesLoading || voteSubmitting}
                 aria-label={`${t('game.vote.helpful')} (${votes.likes})`}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed ${
                   userVote === "like"
                     ? "bg-emerald-500 text-white shadow-sm"
                     : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 hover:text-emerald-600"
                 }`}
               >
                 <ThumbsUp className="w-4 h-4" />
-                <span>{votes.likes}</span>
+                <span>{votesLoading ? '—' : votes.likes}</span>
               </button>
 
               {/* Dislike button */}
               <button
                 onClick={() => vote("dislike")}
+                disabled={votesLoading || voteSubmitting}
                 aria-label={`${t('game.vote.notHelpful')} (${votes.dislikes})`}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed ${
                   userVote === "dislike"
                     ? "bg-red-500 text-white shadow-sm"
                     : "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-red-50 dark:hover:bg-red-900/30 hover:text-red-500"
                 }`}
               >
                 <ThumbsDown className="w-4 h-4" />
-                <span>{votes.dislikes}</span>
+                <span>{votesLoading ? '—' : votes.dislikes}</span>
               </button>
 
               <div className="flex-1" />

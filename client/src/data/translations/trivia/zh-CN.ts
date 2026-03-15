@@ -155,5 +155,35 @@ export const ZH_CN_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `你知道吗？Crazy Chicken（Moorhuhn）是1999年德国的Johnnie Walker广告游戏。第一年下载量超过1000万次。有超过30个续作。`,
 
+  'retro-bowl':
+    `你知道吗？Retro Bowl由New Star Games于2020年1月开发。2022年通过TikTok登顶美国App Store，下载量超过1亿次。像素风格灵感来自NES上的Tecmo Bowl（1987年）。"Retro Bowl unblocked"曾是美国学校中最热门的搜索词之一。玩家只能操控进攻——防守由模拟完成。`,
+
+  'run-3':
+    `你知道吗？Run 3由Joseph Cloutier（Player 03）独立开发，由Kongregate发行。拥有300多个关卡和9个可解锁角色，每个角色具有独特的物理特性。隧道旋转机制灵感来自电影《盗梦空间》。总游玩次数超过10亿。Run 2首次将墙壁奔跑引入了该类型游戏。`,
+
+  'crossy-road':
+    `你知道吗？Crossy Road由Matt Hall和Andy Sum（澳大利亚Hipster Whale工作室）创作。通过纯装饰性微交易在90天内赚取了1000万美元。灵感来自1981年的Frogger。拥有300多个可解锁角色。隐藏角色"Cai Shen"会掉落金币。`,
+
+  'cut-the-rope':
+    `你知道吗？Cut the Rope由Semyon和Efim Voskresenskiy（俄罗斯ZeptoLab工作室）于2010年10月创作。10天内售出100万份，系列总下载量超过10亿次。Om Nom的名字来源于吃东西的声音。团队测试了3000多个关卡设计，最终选用了275个。曾获BAFTA大奖。YouTube系列观看量超过200亿次。`,
+
+  'stickman-hook':
+    `你知道吗？Stickman Hook由法国Madbox工作室开发。采用实时钟摆动量的自定义物理引擎。首年下载量超过1亿次。单指操控灵感来自Spider-Man的蛛网摆荡。早期原型使用的是一只小蜘蛛角色。火柴人由8个相连关节组成，四肢可拉伸至3倍长度。`,
+
+  'drive-mad':
+    `你知道吗？Drive Mad的物理系统基于真实的扭矩和重心模拟。拥有150多个手工设计的关卡。速通玩家可在20分钟内通关。灵感来自Hill Climb Racing（下载量超15亿次）。`,
+
+  'paper-io-2':
+    `你知道吗？Paper.io 2由法国Voodoo工作室开发，其产品组合总下载量超过60亿次。领地机制基于围棋（公元前2500年）的"围地"概念。AI使用改良的A*寻路算法。螺旋形圈地比直线路径效率高23%。`,
+
+  'subway-surfers':
+    `你知道吗？Subway Surfers由Kiloo和SYBO Games于2012年5月联合开发。2018年成为首款在Google Play达到10亿下载量的游戏，目前总下载量已超40亿次。灵感来自联合创始人Sylvester Rishøj少年时在火车轨道上奔跑的经历。"世界巡回"模式已收录100多个城市。`,
+
+  'jetpack-joyride':
+    `你知道吗？Jetpack Joyride由Halfbrick Studios于2011年9月开发。主角Barry Steakfries的名字是通过Facebook粉丝投票选出的。Machine Gun Jetpack的灵感来自后坐力驱动飞行的概念。游戏中的科学家有40多种动画。下载量超过7.5亿次。这款游戏差点被命名为"Jetpack Joyride: Lab of Doom"。`,
+
+  'worlds-hardest-game':
+    `你知道吗？World's Hardest Game由Stephen Critoph创作，于2008年在AddictingGames上发布。共30个关卡，大多数玩家卡在第15关。最终关卡的通过率不到0.1%。蓝色敌人使用正弦波运动模式。速通玩家可在5分钟内零死亡通关。续作增加了50个关卡。`,
+
 
 };

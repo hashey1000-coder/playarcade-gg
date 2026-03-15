@@ -155,5 +155,35 @@ export const VI_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Bạn có biết? Crazy Chicken (Moorhuhn) là trò chơi quảng cáo Johnnie Walker ở Đức năm 1999. Hơn 10 triệu lượt tải trong năm đầu tiên. Hơn 30 phần tiếp theo.`,
 
+  'retro-bowl':
+    `Bạn có biết? Retro Bowl được phát triển bởi New Star Games vào tháng 1 năm 2020. Trò chơi đứng đầu US App Store vào năm 2022 nhờ lan truyền trên TikTok và đã có hơn 100 triệu lượt tải. Đồ họa pixel art lấy cảm hứng từ Tecmo Bowl (NES, 1987). "Retro Bowl unblocked" là một trong những từ khóa tìm kiếm hàng đầu tại các trường học Mỹ. Người chơi chỉ điều khiển tấn công — phòng thủ được mô phỏng tự động.`,
+
+  'run-3':
+    `Bạn có biết? Run 3 được phát triển một mình bởi Joseph Cloutier (Player 03) và phát hành bởi Kongregate. Trò chơi có hơn 300 cấp độ và 9 nhân vật mở khóa được, mỗi nhân vật có vật lý riêng biệt. Hiệu ứng xoay đường hầm lấy cảm hứng từ phim Inception. Trò chơi đã có hơn 1 tỷ lượt chơi. Run 2 là tựa game đầu tiên giới thiệu cơ chế chạy trên tường trong thể loại này.`,
+
+  'crossy-road':
+    `Bạn có biết? Crossy Road được tạo bởi Matt Hall và Andy Sum (Hipster Whale, Úc). Trò chơi kiếm được 10 triệu đô la trong 90 ngày chỉ từ giao dịch vi mô trang trí. Lấy cảm hứng từ Frogger (1981), trò chơi có hơn 300 nhân vật mở khóa được. Nhân vật ẩn "Cai Shen" thả rơi tiền vàng khi chơi.`,
+
+  'cut-the-rope':
+    `Bạn có biết? Cut the Rope được tạo bởi Semyon và Efim Voskresenskiy (ZeptoLab, Nga) vào tháng 10 năm 2010. Trò chơi bán được 1 triệu bản trong 10 ngày và thương hiệu đã đạt hơn 1 tỷ lượt tải. Om Nom được đặt tên theo âm thanh nhai thức ăn. Trong hơn 3.000 thiết kế cấp độ được thử nghiệm, chỉ 275 được chọn. Trò chơi đoạt giải BAFTA và series YouTube đã có hơn 20 tỷ lượt xem.`,
+
+  'stickman-hook':
+    `Bạn có biết? Stickman Hook được phát triển bởi Madbox (Pháp). Trò chơi sử dụng vật lý tùy chỉnh với động lượng con lắc thời gian thực và đạt 100 triệu lượt tải trong năm đầu tiên. Điều khiển một chạm lấy cảm hứng từ cú đu dây của Spider-Man. Bản thử nghiệm ban đầu sử dụng nhân vật nhện nhỏ. Nhân vật có 8 khớp nối và các chi có thể co giãn gấp 3 lần.`,
+
+  'drive-mad':
+    `Bạn có biết? Drive Mad sử dụng vật lý dựa trên mô-men xoắn thực tế và trọng tâm. Trò chơi có hơn 150 cấp độ thiết kế thủ công. Các speedrunner hoàn thành trong chưa đến 20 phút. Trò chơi lấy cảm hứng từ Hill Climb Racing với 1,5 tỷ lượt tải.`,
+
+  'paper-io-2':
+    `Bạn có biết? Paper.io 2 được phát triển bởi Voodoo (Pháp), công ty có tổng cộng hơn 6 tỷ lượt tải trên toàn bộ danh mục trò chơi. Cơ chế chiếm lãnh thổ dựa trên khái niệm "bao vây" từ cờ vây (2500 TCN). AI sử dụng thuật toán A* cải tiến. Xoắn ốc tròn hiệu quả hơn 23% so với đường thẳng trong việc chiếm đất.`,
+
+  'subway-surfers':
+    `Bạn có biết? Subway Surfers được đồng sáng tạo bởi Kiloo và SYBO Games vào tháng 5 năm 2012. Đây là trò chơi đầu tiên đạt 1 tỷ lượt tải trên Google Play (2018) và hiện đã vượt 4 tỷ lượt tải tổng cộng. Trò chơi lấy cảm hứng từ việc đồng sáng tạo Sylvester Rishøj chạy trên đường ray tàu hỏa khi còn thiếu niên. Tính năng "World Tour" đã giới thiệu hơn 100 thành phố.`,
+
+  'jetpack-joyride':
+    `Bạn có biết? Jetpack Joyride được tạo bởi Halfbrick Studios vào tháng 9 năm 2011. Tên Barry Steakfries được chọn qua cuộc bình chọn của người hâm mộ trên Facebook. Machine Gun Jetpack lấy cảm hứng từ khái niệm bay bằng lực giật lùi. Các nhà khoa học trong trò chơi có hơn 40 hoạt ảnh. Trò chơi đã có hơn 750 triệu lượt tải và suýt được đặt tên là "Jetpack Joyride: Lab of Doom."`,
+
+  'worlds-hardest-game':
+    `Bạn có biết? World's Hardest Game được tạo bởi Stephen Critoph và phát hành trên AddictingGames vào năm 2008. Trò chơi có 30 cấp độ và hầu hết người chơi bị kẹt ở cấp 15. Tỷ lệ hoàn thành cấp cuối cùng dưới 0,1%. Kẻ địch xanh di chuyển theo mô hình hình sin. Các speedrunner hoàn thành không chết trong chưa đến 5 phút. Phần tiếp theo thêm 50 cấp độ mới.`,
+
 
 };

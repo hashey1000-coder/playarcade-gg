@@ -155,5 +155,35 @@ export const PL_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Czy wiesz, że Crazy Chicken (Moorhuhn) to kultowa niemiecka gra z 1999 roku, która stała się fenomenem internetowym w Europie? W Niemczech gra sparaliżowała produktywność biurową i była pobierana miliony razy w epoce wolnego internetu.`,
 
+  'retro-bowl':
+    `Czy wiesz, że Retro Bowl został stworzony przez New Star Games w styczniu 2020 roku? Dzięki TikTokowi gra dotarła na szczyt amerykańskiego App Store w 2022 roku i osiągnęła ponad 100 milionów pobrań. Grafika pikselowa inspirowana jest grą Tecmo Bowl (NES, 1987). „Retro Bowl unblocked" było jednym z najczęściej wyszukiwanych haseł w amerykańskich szkołach. Gracz steruje tylko atakiem — obrona jest symulowana.`,
+
+  'run-3':
+    `Czy wiesz, że Run 3 został stworzony samodzielnie przez Josepha Cloutiera (Player 03) i wydany przez Kongregate? Gra zawiera ponad 300 poziomów i 9 odblokowywalnych postaci z unikatową fizyką. Rotacja tunelu inspirowana jest filmem Inception. Gra została zagrana ponad miliard razy. Run 2 wprowadził mechanikę biegania po ścianach do gatunku.`,
+
+  'crossy-road':
+    `Czy wiesz, że Crossy Road został stworzony przez Matta Halla i Andy'ego Suma (Hipster Whale, Australia)? Gra zarobiła 10 milionów dolarów w 90 dni dzięki wyłącznie kosmetycznym mikrotransakcjom. Inspiracją był Frogger (1981). Dostępnych jest ponad 300 odblokowywalnych postaci. Ukryta postać „Cai Shen" upuszcza złote monety.`,
+
+  'cut-the-rope':
+    `Czy wiesz, że Cut the Rope został stworzony przez Semyona i Efima Voskresenskiy (ZeptoLab, Rosja) w październiku 2010 roku? Gra sprzedała milion kopii w 10 dni, a cała seria przekroczyła miliard pobrań. Om Nom zawdzięcza swoje imię odgłosom jedzenia. Przetestowano ponad 3000 projektów poziomów, z których wybrano 275. Gra zdobyła nagrodę BAFTA, a seria na YouTube ma ponad 20 miliardów wyświetleń.`,
+
+  'stickman-hook':
+    `Czy wiesz, że Stickman Hook został stworzony przez francuskie studio Madbox? Gra wykorzystuje autorski silnik fizyczny z obliczeniami momentu wahadłowego w czasie rzeczywistym. W pierwszym roku osiągnęła 100 milionów pobrań. Sterowanie jednym palcem inspirowane jest huśtaniem się Spider-Mana na pajęczynie. Wczesny prototyp wykorzystywał postać małego pająka. Postać ma 8 połączonych stawów, a kończyny mogą rozciągać się trzykrotnie.`,
+
+  'drive-mad':
+    `Czy wiesz, że fizyka w Drive Mad oparta jest na realistycznym momencie obrotowym i środku ciężkości? Gra zawiera ponad 150 ręcznie zaprojektowanych poziomów. Speedrunnerzy kończą ją w mniej niż 20 minut. Inspiracją była gra Hill Climb Racing, która osiągnęła 1,5 miliarda pobrań.`,
+
+  'paper-io-2':
+    `Czy wiesz, że Paper.io 2 zostało stworzone przez Voodoo (Francja), które ma łącznie ponad 6 miliardów pobrań w całym swoim portfolio? Mechanika terytorialna bazuje na koncepcji „otoczenia" z gry Go (2500 p.n.e.). Sztuczna inteligencja wykorzystuje zmodyfikowany algorytm wyszukiwania ścieżek A*. Spiralne ruchy kołowe są o 23% wydajniejsze niż proste ścieżki.`,
+
+  'subway-surfers':
+    `Czy wiesz, że Subway Surfers zostało stworzone wspólnie przez Kiloo i SYBO Games w maju 2012 roku? Była to pierwsza gra, która osiągnęła miliard pobrań w Google Play (2018), a łączna liczba przekroczyła już 4 miliardy. Gra została zainspirowana wspomnieniami współtwórcy Sylvestra Rishøja z biegania po torach kolejowych w młodości. „World Tour" odwiedziło ponad 100 miast.`,
+
+  'jetpack-joyride':
+    `Czy wiesz, że Jetpack Joyride został stworzony przez Halfbrick Studios we wrześniu 2011 roku? Imię Barry Steakfries zostało wybrane w głosowaniu fanów na Facebooku. Machine Gun Jetpack inspirowany jest koncepcją lotu napędzanego odrzutem. Naukowcy w grze mają ponad 40 animacji. Gra ma ponad 750 milionów pobrań i prawie nosiła nazwę „Jetpack Joyride: Lab of Doom".`,
+
+  'worlds-hardest-game':
+    `Czy wiesz, że World's Hardest Game została stworzona przez Stephena Critopha i wydana na AddictingGames w 2008 roku? Gra ma 30 poziomów, a większość graczy utyka na poziomie 15. Współczynnik ukończenia ostatniego poziomu wynosi poniżej 0,1%. Niebiescy wrogowie poruszają się po torze sinusoidalnym. Speedrunnerzy kończą grę bezbłędnie w mniej niż 5 minut. Kontynuacja dodała 50 nowych poziomów.`,
+
 
 };

@@ -365,4 +365,74 @@ Sprunki Playground loại bỏ mọi rào cản tiến trình và cho truy cập
 Crazy Chicken (Moorhuhn) xuất hiện năm 1999 như một trò chơi quảng cáo và trở thành hiện tượng lan truyền với hơn 10 triệu lượt tải.`,
     controls: `Di chuột để ngắm. Nhấp để bắn. Tìm mục tiêu thưởng ẩn. Gà vàng cho thêm điểm.`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Quản Lý Bóng Bầu Dục Mỹ',
+    description: `Quản lý đội bóng bầu dục Mỹ phong cách retro. Tuyển cầu thủ, lên chiến thuật và dẫn dắt đội đến chiến thắng trong Retro Bowl. Đồ họa pixel gợi nhớ thời hoàng kim của trò chơi điện tử.
+
+Retro Bowl kết hợp quản lý đội bóng với lối chơi hành động sôi động trên sân. Đưa ra quyết định quan trọng về đội hình, giữ tinh thần đội và thi đấu những trận đấu kịch tính trên con đường chinh phục chức vô địch.`,
+    controls: `Vuốt hoặc dùng chuột để ném bóng cho người nhận. Điều khiển cầu thủ chạy bằng phím mũi tên hoặc chạm màn hình.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Chạy Bất Tận Trong Không Gian',
+    description: `Chạy và nhảy qua những đường hầm trong vũ trụ đang sụp đổ dưới chân bạn. Xoay tường, né lỗ hổng và khám phá những tuyến đường mới trong trò chơi nền tảng gây nghiện này.
+
+Run 3 cung cấp hàng chục màn chơi với độ khó tăng dần cùng nhiều nhân vật có thể mở khóa, mỗi nhân vật có khả năng riêng biệt. Chế độ vô tận mang lại trải nghiệm chơi không giới hạn.`,
+    controls: `Mũi tên trái/phải: di chuyển sang bên. Phím cách hoặc mũi tên lên: nhảy. Chạy trên tường để thay đổi hướng đường hầm.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Nhảy Bất Tận',
+    description: `Đưa nhân vật của bạn băng qua những con đường đông đúc, đường ray xe lửa và dòng sông chảy xiết. Tránh ô tô, tàu hỏa và các chướng ngại vật trong phiên bản hiện đại của Frogger kinh điển.
+
+Crossy Road có hàng trăm nhân vật để mở khóa, mỗi nhân vật đi kèm thế giới và chủ đề riêng. Cơ chế nhảy đơn giản khiến trò chơi dễ học nhưng khó thành thạo.`,
+    controls: `Vuốt lên để nhảy về phía trước. Vuốt trái, phải hoặc xuống để di chuyển. Tránh chướng ngại vật và thu thập xu!`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Cho Om Nom Ăn Kẹo',
+    description: `Cắt dây đúng thời điểm để đưa viên kẹo thẳng vào miệng Om Nom. Giải các câu đố vật lý, thu thập sao và khám phá cơ chế mới ở mỗi màn chơi.
+
+Cut the Rope là trò chơi giải đố từng đoạt nhiều giải thưởng và chinh phục hàng triệu người chơi trên toàn thế giới. Mỗi gói màn chơi giới thiệu các yếu tố mới như đệm khí, cổng dịch chuyển và mũ phép thuật.`,
+    controls: `Vuốt hoặc nhấp và kéo để cắt dây. Chạm vào đệm khí và bong bóng để hướng kẹo đến Om Nom.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Đu Dây & Bay',
+    description: `Móc vào các điểm neo và đu mình như người nhện qua các màn chơi đầy màu sắc. Thả tay đúng lúc để lấy đà và bay tới đích.
+
+Stickman Hook là trò chơi vật lý con lắc, nơi cảm giác thời gian là chìa khóa thành công. Hàng trăm màn chơi với độ khó tăng dần và nhiều nhân vật để mở khóa đang chờ bạn.`,
+    controls: `Nhấp hoặc chạm màn hình để móc vào điểm neo. Thả ra để buông và bay tiếp. Canh thời gian là tất cả!`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Thử Thách Lái Xe Điên Cuồng',
+    description: `Lái xe vượt qua các đường đua chướng ngại vật điên rồ đầy dốc, vòng xoay và đoạn đường nguy hiểm. Giữ xe thăng bằng và về đích nguyên vẹn.
+
+Drive Mad thử thách khả năng giữ thăng bằng và kiểm soát ga của bạn. Mỗi màn chơi mang đến bố cục chướng ngại vật mới đầy bất ngờ, đòi hỏi sự chính xác và kiên nhẫn.`,
+    controls: `Mũi tên lên: tăng ga. Mũi tên xuống: lùi. Giữ thăng bằng xe để không bị lật ở những đoạn khó!`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Chinh Phục Lãnh Thổ',
+    description: `Rời khỏi vùng đất của bạn, vẽ một khu vực và quay về để chiếm lấy nó. Mở rộng lãnh thổ đồng thời phòng thủ trước những người chơi khác có thể cắt ngang đường đi của bạn.
+
+Paper.io 2 là trò chơi .io năng động, nơi chiến thuật và sự dũng cảm quyết định thắng thua. Rủi ro càng lớn, lãnh thổ càng nhiều — nhưng chỉ một sai lầm là kết thúc.`,
+    controls: `Dùng phím mũi tên hoặc chuột để điều hướng nhân vật. Vẽ khu vực và quay về lãnh thổ của bạn để chiếm nó.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Chạy Bất Tận Trên Đường Ray',
+    description: `Vào vai Jake và chạy trốn khỏi bác bảo vệ cáu kỉnh cùng chú chó của ông ta dọc theo đường ray tàu điện. Thu thập xu, sử dụng ván trượt và vật phẩm tăng sức mạnh để chạy xa nhất có thể.
+
+Subway Surfers là một trong những trò chơi di động phổ biến nhất thế giới với hàng tỷ lượt tải. Các địa điểm được cập nhật thường xuyên đưa người chơi đến các thành phố trên khắp thế giới.`,
+    controls: `Vuốt trái/phải: đổi làn. Vuốt lên: nhảy. Vuốt xuống: trượt. Thu thập xu và vật phẩm khi đang chạy!`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Hành Trình Jetpack Bất Tận',
+    description: `Nhảy lên jetpack với vai Barry Steakfries và bay xuyên qua phòng thí nghiệm đầy chướng ngại vật. Thu thập xu, giành phương tiện đặc biệt và né tránh tên lửa cùng tia laser.
+
+Jetpack Joyride là trò chơi hành động sôi động, mỗi chuyến bay đều khác nhờ nhiệm vụ ngẫu nhiên và máy đánh bạc sau mỗi lượt chơi. Mở khóa jetpack, trang phục và nâng cấp mới.`,
+    controls: `Chạm màn hình hoặc nhấp và giữ để bay lên. Thả ra để hạ xuống. Né tránh laser, tên lửa và vùng điện!`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Thử Thách Chính Xác Tuyệt Đối",
+    description: `Điều khiển ô vuông đỏ qua mê cung bóng xanh trong khi thu thập đồng xu vàng. Nghe đơn giản? Đây là một trong những trò chơi khó nhất từng được tạo ra — đòi hỏi sự chính xác tuyệt đối và canh thời gian hoàn hảo.
+
+World's Hardest Game là huyền thoại trong giới trò chơi trình duyệt, nổi tiếng vì khiến người chơi phát điên. Mỗi màn trong 30 màn chơi đều đòi hỏi phối hợp hoàn hảo và thần kinh thép.`,
+    controls: `Phím mũi tên: di chuyển ô vuông đỏ. Tránh bóng xanh, thu thập xu vàng và đến vùng xanh lá!`,
+  },
 };

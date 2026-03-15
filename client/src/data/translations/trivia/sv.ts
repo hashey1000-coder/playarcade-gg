@@ -155,5 +155,35 @@ export const SV_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Crazy Chicken (Moorhuhn) var ett Johnnie Walker-reklamspel i Tyskland 1999. Över 10 miljoner nedladdningar det första året. Mer än 30 uppföljare.`,
 
+  'retro-bowl':
+    `Retro Bowl utvecklades av New Star Games i januari 2020. Tack vare TikTok toppade spelet den amerikanska App Store 2022 och har laddats ner mer än 100 miljoner gånger. Pixelgrafiken är inspirerad av Tecmo Bowl (NES, 1987). "Retro Bowl unblocked" var en av de mest sökta termerna på amerikanska skolor. Man spelar bara anfall — försvaret simuleras.`,
+
+  'run-3':
+    `Run 3 utvecklades ensam av Joseph Cloutier (Player 03) och publicerades av Kongregate. Spelet har över 300 nivåer och 9 upplåsbara karaktärer med unik fysik. Tunnelrotationen är inspirerad av filmen Inception. Spelet har spelats mer än 1 miljard gånger. Run 2 introducerade väggspring i genren.`,
+
+  'crossy-road':
+    `Crossy Road skapades av Matt Hall och Andy Sum (Hipster Whale, Australien). Spelet tjänade 10 miljoner dollar på 90 dagar genom enbart kosmetiska mikrotransaktioner. Det är inspirerat av Frogger (1981) och har mer än 300 upplåsbara karaktärer. Den dolda karaktären "Cai Shen" släpper guldmynt.`,
+
+  'cut-the-rope':
+    `Cut the Rope skapades av Semyon och Efim Voskresenskiy (ZeptoLab, Ryssland) i oktober 2010. Spelet sålde 1 miljon exemplar på 10 dagar och franchisen har laddats ner mer än 1 miljard gånger. Om Nom fick sitt namn från ätljud. Över 3 000 nivådesigner testades och 275 valdes ut. Spelet vann en BAFTA och YouTube-serien har mer än 20 miljarder visningar.`,
+
+  'stickman-hook':
+    `Stickman Hook utvecklades av franska studion Madbox. Spelet använder en specialbyggd fysikmotor med pendelmomentum i realtid. Under första året laddades det ner mer än 100 miljoner gånger. Enfingerkontrollen är inspirerad av Spider-Mans webbsvängning. Den tidiga prototypen använde en liten spindelkaraktär. Figuren har 8 sammanlänkade leder och lemmarna kan sträckas ut tre gånger sin längd.`,
+
+  'drive-mad':
+    `Drive Mads fysik bygger på realistiskt vridmoment och tyngdpunktsberäkningar. Spelet har mer än 150 handgjorda nivåer. Speedrunnare klarar det på under 20 minuter. Det är inspirerat av Hill Climb Racing som har 1,5 miljarder nedladdningar.`,
+
+  'paper-io-2':
+    `Paper.io 2 utvecklades av Voodoo (Frankrike), som har totalt mer än 6 miljarder nedladdningar i sin portfölj. Territoriemekaniken bygger på "inneslutnings"-konceptet från Go (2500 f.Kr.). AI:n använder en modifierad A*-sökalgoritm. Cirkulära spiraler är 23 % effektivare än raka banor.`,
+
+  'subway-surfers':
+    `Subway Surfers skapades av Kiloo och SYBO Games i maj 2012. Det var det första spelet att nå 1 miljard nedladdningar på Google Play (2018) och har nu mer än 4 miljarder totalt. Spelet är inspirerat av medskaparen Sylvester Rishøj som sprang på tågspår som tonåring. "World Tour" har besökt mer än 100 städer.`,
+
+  'jetpack-joyride':
+    `Jetpack Joyride skapades av Halfbrick Studios i september 2011. Barry Steakfries fick sitt namn genom en fandomröstning på Facebook. Machine Gun Jetpack är inspirerad av konceptet att flyga med rekylkraft. Forskarna har mer än 40 animationer. Spelet har laddats ner mer än 750 miljoner gånger och skulle nästan ha hetat "Jetpack Joyride: Lab of Doom".`,
+
+  'worlds-hardest-game':
+    `World's Hardest Game skapades av Stephen Critoph och släpptes på AddictingGames 2008. Spelet har 30 nivåer och de flesta spelare fastnar vid nivå 15. Slutnivåns avklarningsgrad är under 0,1 %. Blå fiender rör sig sinusformigt. Speedrunnare klarar spelet utan att dö på under 5 minuter. Uppföljaren lade till 50 nya nivåer.`,
+
 
 };

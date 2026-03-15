@@ -155,5 +155,35 @@ export const IT_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Crazy Chicken (Moorhuhn) era un gioco promozionale di Johnnie Walker del 1999 in Germania. Scaricato oltre 10 milioni di volte nel primo anno. Oltre 30 sequel.`,
 
+  'retro-bowl':
+    `Sviluppato da New Star Games nel gennaio 2020, Retro Bowl ha raggiunto il primo posto nell'App Store statunitense nel 2022 grazie a TikTok, superando i 100 milioni di download. La pixel art è ispirata a Tecmo Bowl (NES, 1987). "Retro Bowl unblocked" è stata una delle ricerche più popolari nelle scuole americane. Si gioca solo in attacco — la difesa è simulata.`,
+
+  'run-3':
+    `Sviluppato in solitaria da Joseph Cloutier (Player 03) e pubblicato da Kongregate, Run 3 offre oltre 300 livelli e 9 personaggi sbloccabili con fisiche uniche. La rotazione del tunnel è ispirata a Inception. Ha superato un miliardo di partite giocate. Run 2 ha introdotto la corsa sulle pareti nel genere.`,
+
+  'crossy-road':
+    `Creato da Matt Hall e Andy Sum (Hipster Whale, Australia), Crossy Road ha guadagnato 10 milioni di dollari in 90 giorni tramite microtransazioni puramente cosmetiche. Ispirato a Frogger (1981), offre oltre 300 personaggi sbloccabili. Il personaggio nascosto "Cai Shen" fa cadere monete d'oro.`,
+
+  'cut-the-rope':
+    `Creato da Semyon ed Efim Voskresenskiy (ZeptoLab, Russia) nell'ottobre 2010, ha venduto un milione di copie in 10 giorni e il franchise supera il miliardo di download. Om Nom prende il nome dai suoni della masticazione. Di oltre 3.000 design di livelli testati, ne sono stati selezionati 275. Ha vinto un BAFTA. La serie YouTube ha superato i 20 miliardi di visualizzazioni.`,
+
+  'stickman-hook':
+    `Sviluppato da Madbox (Francia), Stickman Hook utilizza una fisica personalizzata con impulso pendolare in tempo reale. Ha raggiunto 100 milioni di download nel primo anno. Il controllo a un tocco è ispirato all'oscillazione di Spider-Man. Il prototipo originale usava un piccolo personaggio ragno. Le sue 8 articolazioni connesse permettono agli arti di allungarsi fino a 3 volte.`,
+
+  'drive-mad':
+    `La fisica di Drive Mad si basa su coppia motrice realistica e centro di gravità. Conta oltre 150 livelli progettati a mano. Gli speedrunner lo completano in meno di 20 minuti. È ispirato a Hill Climb Racing, che ha superato 1,5 miliardi di download.`,
+
+  'paper-io-2':
+    `Sviluppato da Voodoo (Francia), il cui portfolio supera i 6 miliardi di download totali. La meccanica del territorio si basa sul concetto di "accerchiamento" del Go (2500 a.C.). L'IA usa un algoritmo A* modificato. Le spirali circolari sono il 23 % più efficienti delle linee rette.`,
+
+  'subway-surfers':
+    `Co-creato da Kiloo e SYBO Games nel maggio 2012, è stato il primo gioco a raggiungere un miliardo di download su Google Play (2018), superando ora i 4 miliardi totali. Ispirato dal co-creatore Sylvester Rishøj, che da adolescente correva sui binari del treno. Il "World Tour" ha presentato oltre 100 città.`,
+
+  'jetpack-joyride':
+    `Creato da Halfbrick Studios nel settembre 2011. Barry Steakfries è stato nominato tramite un sondaggio tra i fan su Facebook. Il Machine Gun Jetpack è ispirato al concetto di volo a rinculo. Gli scienziati hanno oltre 40 animazioni. Oltre 750 milioni di download. Stava per chiamarsi "Jetpack Joyride: Lab of Doom".`,
+
+  'worlds-hardest-game':
+    `Creato da Stephen Critoph e pubblicato su AddictingGames nel 2008. Ha 30 livelli e la maggior parte dei giocatori si blocca al livello 15. Il tasso di completamento dell'ultimo livello è inferiore allo 0,1 %. I nemici blu usano movimento sinusoidale. Gli speedrunner lo completano senza morire in meno di 5 minuti. Il sequel ha aggiunto 50 livelli.`,
+
 
 };

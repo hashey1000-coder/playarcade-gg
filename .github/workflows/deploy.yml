@@ -38,3 +38,8 @@ jobs:
         run: |
           scp -P 22 -r dist/public/. \
           ${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}:/home/juliaspl/playarcade.gg/
+
+      - name: Submit new URLs to Bing IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/indexnow.mjs

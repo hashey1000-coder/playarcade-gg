@@ -155,5 +155,35 @@ export const PT_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Crazy Chicken (Moorhuhn) era um jogo promocional da Johnnie Walker de 1999 na Alemanha. Baixado mais de 10 milhões de vezes no primeiro ano. Mais de 30 sequências foram lançadas.`,
 
+  'retro-bowl':
+    `Desenvolvido pela New Star Games em janeiro de 2020, Retro Bowl liderou a App Store dos EUA em 2022 graças ao TikTok, acumulando mais de 100 milhões de downloads. Sua arte em pixel art é inspirada em Tecmo Bowl (NES, 1987). "Retro Bowl unblocked" foi uma das pesquisas mais populares em escolas americanas. O jogador controla apenas o ataque — a defesa é simulada automaticamente.`,
+
+  'run-3':
+    `Desenvolvido sozinho por Joseph Cloutier (Player 03) e publicado pela Kongregate, Run 3 possui mais de 300 níveis e 9 personagens desbloqueáveis, cada um com física única. A rotação do túnel foi inspirada pelo filme Inception. O jogo acumula mais de 1 bilhão de partidas jogadas. Run 2 introduziu a mecânica de correr pelas paredes ao gênero.`,
+
+  'crossy-road':
+    `Criado por Matt Hall e Andy Sum (Hipster Whale, Austrália), Crossy Road faturou US$ 10 milhões em 90 dias usando apenas microtransações cosméticas. Inspirado em Frogger (1981), oferece mais de 300 personagens desbloqueáveis. O personagem secreto "Cai Shen" faz moedas de ouro caírem do céu.`,
+
+  'cut-the-rope':
+    `Criado por Semyon e Efim Voskresenskiy (ZeptoLab, Rússia) em outubro de 2010, Cut the Rope vendeu 1 milhão de cópias em 10 dias e acumula mais de 1 bilhão de downloads na franquia. Om Nom recebeu esse nome por causa dos sons de mastigação. Mais de 3.000 designs de fases foram testados, com 275 selecionados. Ganhou o prêmio BAFTA. A série no YouTube tem mais de 20 bilhões de visualizações.`,
+
+  'stickman-hook':
+    `Desenvolvido pela Madbox (França), Stickman Hook utiliza física personalizada com momento pendular em tempo real. Alcançou 100 milhões de downloads no primeiro ano. O controle de um toque foi inspirado no balanço de teias do Spider-Man. O protótipo inicial usava um pequeno personagem de aranha. O boneco tem 8 articulações conectadas e os membros se esticam até 3 vezes.`,
+
+  'drive-mad':
+    `A física de Drive Mad é baseada em torque realista e centro de gravidade. O jogo possui mais de 150 fases projetadas à mão. Speedrunners completam todas as fases em menos de 20 minutos. Inspirado em Hill Climb Racing, que acumula 1,5 bilhão de downloads.`,
+
+  'paper-io-2':
+    `Desenvolvido pela Voodoo (França), que tem mais de 6 bilhões de downloads totais em seu portfólio. A mecânica de território do Paper.io 2 é baseada no conceito de "cercamento" do Go (2500 a.C.). A IA usa um algoritmo A* modificado. Espirais circulares são 23% mais eficientes que caminhos retos para conquistar território.`,
+
+  'subway-surfers':
+    `Co-criado pela Kiloo e SYBO Games em maio de 2012, Subway Surfers foi o primeiro jogo a atingir 1 bilhão de downloads no Google Play (2018), com mais de 4 bilhões no total. Inspirado nas aventuras do co-criador Sylvester Rishøj correndo sobre trilhos de trem na adolescência. O "World Tour" já apresentou mais de 100 cidades.`,
+
+  'jetpack-joyride':
+    `Criado pela Halfbrick Studios em setembro de 2011, Jetpack Joyride tem como protagonista Barry Steakfries, cujo nome foi escolhido por votação de fãs no Facebook. A Machine Gun Jetpack foi inspirada no conceito de voo movido por recuo. Os cientistas do jogo têm mais de 40 animações. Acumula mais de 750 milhões de downloads. Quase se chamou "Jetpack Joyride: Lab of Doom".`,
+
+  'worlds-hardest-game':
+    `Criado por Stephen Critoph e lançado no AddictingGames em 2008, World's Hardest Game tem 30 níveis e a maioria dos jogadores fica presa no nível 15. A taxa de conclusão do último nível é inferior a 0,1%. Os inimigos azuis se movem em padrões sinusoidais. Speedrunners completam o jogo sem morrer em menos de 5 minutos. A sequência adicionou 50 novos níveis.`,
+
 
 };

@@ -365,4 +365,74 @@ Sprunki Playground elimina todas las barreras de progresión y da acceso inmedia
 Crazy Chicken (Moorhuhn) se originó como juego promocional en 1999 y se convirtió en una sensación viral con más de 10 millones de descargas.`,
     controls: `Mueve el ratón para apuntar. Haz clic para disparar. Busca objetivos bonus ocultos. Los pollos dorados valen puntos extra.`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Manager de Fútbol Americano',
+    description: `Dirige tu propio equipo de fútbol americano en este simulador deportivo con estilo retro. Recluta jugadores, diseña tácticas y lleva a tu franquicia al campeonato.
+
+Retro Bowl combina gestión de equipo con jugabilidad arcade en el campo. Controla los pases y las carreras mientras administras el vestuario, los contratos y la moral del equipo.`,
+    controls: `Desliza para lanzar el balón hacia tus receptores. Toca para esquivar defensores al correr. Gestiona tu plantilla entre partidos.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Corredor Espacial Infinito',
+    description: `Corre, salta y desafía la gravedad a través de túneles flotantes en el espacio exterior. Cambia entre paredes y techo para evitar los huecos que aparecen en tu camino.
+
+Run 3 amplía la serie con docenas de niveles nuevos, múltiples personajes desbloqueables y un modo exploración infinita. Cada personaje tiene habilidades únicas que cambian tu forma de jugar.`,
+    controls: `Usa las flechas o A/D para moverte. Pulsa ESPACIO o ARRIBA para saltar. Corre por las paredes para cambiar la gravedad.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Saltador Infinito',
+    description: `Cruza carreteras con tráfico, ríos caudalosos y vías de tren en este juego de saltos infinitos inspirado en Frogger. Avanza lo más lejos posible sin ser atropellado.
+
+Crossy Road ofrece cientos de personajes coleccionables y escenarios variados. Cada intento es único gracias a la generación procedural del terreno.`,
+    controls: `Toca o pulsa ESPACIO para saltar hacia adelante. Usa las flechas para moverte a los lados. No te quedes quieto demasiado tiempo o el águila te atrapará.`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Dale Caramelos a Om Nom',
+    description: `Corta las cuerdas en el momento justo para que el caramelo caiga en la boca del adorable Om Nom. Resuelve puzles de física cada vez más ingeniosos.
+
+Cut the Rope introduce burbujas de aire, cojines inflables, teletransportadores y más mecánicas a lo largo de cientos de niveles. Recoge las tres estrellas de cada nivel para completarlo al máximo.`,
+    controls: `Desliza el dedo o el ratón para cortar las cuerdas. Toca las burbujas para reventarlas. Cronometra tus cortes para recoger todas las estrellas.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Balancéate y Vuela',
+    description: `Balancéate de gancho en gancho como un stickman acrobático. Suelta en el momento perfecto para volar por los aires y alcanzar la meta.
+
+Stickman Hook ofrece cientos de niveles con dificultad creciente y docenas de personajes desbloqueables. La física del balanceo es intuitiva pero difícil de dominar.`,
+    controls: `Mantén pulsado para engancharte al punto más cercano. Suelta para soltarte y volar. Cronometra tus balanceos para ganar impulso.`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Desafío de Conducción Física',
+    description: `Conduce vehículos por circuitos llenos de obstáculos imposibles en este juego de física vehicular. Mantén el equilibrio y evita volcar para llegar a la meta.
+
+Drive Mad pone a prueba tu paciencia y habilidad con rampas empinadas, plataformas inestables y saltos de precisión. Cada nivel es un puzle de conducción diferente.`,
+    controls: `Usa las flechas o W/S para acelerar y frenar. Mantén el equilibrio del vehículo para no volcar. Llega a la bandera de meta para superar el nivel.`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Conquista de Territorio',
+    description: `Expande tu territorio pintando el suelo a tu paso en este juego .io multijugador. Vuelve a tu zona segura para reclamar el terreno que has rodeado.
+
+Paper.io 2 es un juego de estrategia en tiempo real donde debes equilibrar la ambición con la prudencia. Cuanto más te alejes de tu territorio, mayor será la recompensa, pero también el riesgo.`,
+    controls: `Usa las flechas o desliza para cambiar de dirección. Rodea áreas vacías y vuelve a tu territorio para reclamarlas. No dejes que otros crucen tu estela.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Corredor Infinito del Metro',
+    description: `Corre a toda velocidad por las vías del tren esquivando trenes, barreras y obstáculos como Jake y sus amigos. Recoge monedas y potenciadores para batir tu récord.
+
+Subway Surfers es uno de los juegos móviles más descargados de la historia, con escenarios temáticos que cambian periódicamente y tablas de surf especiales con habilidades únicas.`,
+    controls: `Desliza hacia los lados para cambiar de carril. Desliza hacia arriba para saltar y hacia abajo para deslizarte. Recoge potenciadores como el imán de monedas y el jetpack.`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Acción Infinita con Jetpack',
+    description: `Ponte el jetpack de Barry Steakfries y vuela a través de un laboratorio secreto esquivando láseres, misiles y campos eléctricos. Recoge monedas y vehículos especiales.
+
+Jetpack Joyride combina acción frenética con mecánicas de colección. Desbloquea jetpacks diferentes, cada uno con efectos visuales únicos, y completa misiones para ganar recompensas extra.`,
+    controls: `Mantén pulsado para activar el jetpack y subir. Suelta para descender. Esquiva obstáculos y recoge vehículos especiales para protección temporal.`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Desafío de Precisión Extrema",
+    description: `Guía tu cuadrado rojo a través de laberintos repletos de bolas azules en movimiento. Un solo contacto te devuelve al inicio. Solo los más pacientes lo superarán.
+
+World's Hardest Game hace honor a su nombre con 30 niveles de dificultad brutal. Cada nivel requiere cronometrar tus movimientos a la perfección y memorizar los patrones de los enemigos.`,
+    controls: `Usa las flechas para mover el cuadrado rojo. Recoge los círculos amarillos y llega a la zona verde de meta. Evita todo contacto con las bolas azules.`,
+  },
 };

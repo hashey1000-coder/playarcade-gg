@@ -365,4 +365,74 @@ Sprunki Playground biedt een vrije creatieve ruimte waar spelers naar hartenlust
 Crazy Chicken (Moorhuhn) is een klassieke Duitse spellenreeks die in 1999 begon als marketingcampagne en uitgroeide tot een geliefd franchise. De 3D-versie brengt het vertrouwde kippenschietplezier naar een modern jasje.`,
     controls: `Gebruik de <strong>muis</strong> om te richten en <strong>klik</strong> om te schieten. Zoek verborgen kippen voor bonuspunten. Schiet zoveel mogelijk kippen voor de tijd op is!`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Amerikaans Voetbal Manager',
+    description: `Retro Bowl is een retro Amerikaans voetbalmanagementspel. Neem de leiding over je team, maak tactische beslissingen en leid je ploeg naar het kampioenschap. Gooi passes en scoor touchdowns in spannende wedstrijden.
+
+Combineert teammanagement buiten het veld met actie op het veld. Contracteer spelers, ontwikkel hun vaardigheden en beheer het budget om je droomteam te bouwen en de Retro Bowl te winnen.`,
+    controls: `Veeg om te passen en richt op ontvangers. Beheer je team via het managementmenu tussen wedstrijden door.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Eindeloze Ruimtetunnel Runner',
+    description: `Run 3 is een eindeloos rennend spel in veranderende ruimtetunnels. Ren over muren en plafonds, ontwijk gaten en trotseer steeds moeilijkere levels.
+
+Dankzij het unieke rotatiesysteem kun je over elk oppervlak van de tunnel rennen. Ontgrendel meerdere personages met verschillende vaardigheden en verken tientallen levels in de verken- en eindeloze modus.`,
+    controls: `Gebruik de pijltjestoetsen of A/D om naar links en rechts te bewegen. Druk op spatie of pijltje omhoog om te springen.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Eindeloos Oversteken',
+    description: `Crossy Road is een eindeloos overstekend spel geïnspireerd op het klassieke Frogger. Steek drukke wegen, spoorlijnen en rivieren over met goed getimede sprongen.
+
+Met schattige voxelgraphics en tientallen te ontgrendelen personages. Elk personage geeft het spel een unieke uitstraling. Probeer je afstandsrecord te verbreken!`,
+    controls: `Klik of druk op spatie om vooruit te springen. Gebruik de pijltjestoetsen om naar links en rechts te bewegen. Pas op voor auto's en treinen!`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Voer Om Nom Snoep',
+    description: `Cut the Rope is een vermakelijk natuurkundepuzzelspel. Knip de touwen slim door om het snoepje naar de hongerige Om Nom te brengen en verzamel alle drie de sterren per level.
+
+Honderden levels met gevarieerde mechanismen zoals luchtbellen, kussens en magische portalen. Elke levelgroep voegt een nieuw element toe dat je creatief denken uitdaagt.`,
+    controls: `Sleep met je muis of veeg om touwen door te knippen. Gebruik omgevingselementen zoals bellen en pompen om het snoep te sturen. Verzamel alle drie de sterren!`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Slingerend Vliegen',
+    description: `Stickman Hook is een snel fysica-slingerspel. Slinger van punt naar punt met perfecte timing om levels op spectaculaire acrobatische wijze te voltooien.
+
+Realistische slingerphysica met creatief levelontwerp. Ontgrendel kleurrijke personages en test je timingvaardigheden in honderden levels.`,
+    controls: `Klik of druk op spatie om je aan het volgende slingerpunt vast te grijpen. Laat op het juiste moment los om de juiste richting op te vliegen. Timing is alles!`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Natuurkunde Rijuitdaging',
+    description: `Drive Mad is een op fysica gebaseerd rijspel vol gekke obstakels. Rijd over banen met hellingen, loopings en barrières zonder om te slaan.
+
+Elk level vereist een nauwkeurige balans tussen snelheid en controle. De obstakels worden steeds moeilijker met onverwachte verrassingen.`,
+    controls: `Gebruik pijltje omhoog of W om gas te geven en pijltje omlaag of S om te remmen. Houd je auto in balans op hellingen om niet om te slaan!`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Gebiedsverovering',
+    description: `Paper.io 2 is een competitief .io-spel waarin je zoveel mogelijk grondgebied moet veroveren. Verlaat je gebied om een pad te tekenen en keer terug om het ingesloten gebied te claimen.
+
+Simpel maar uiterst competitief. Bescherm je staart terwijl je uitbreidt en snijd de paden van tegenstanders door om hen uit te schakelen en hun land te stelen.`,
+    controls: `Gebruik de pijltjestoetsen of veeg om van richting te veranderen. Verlaat je grondgebied, teken een pad en keer terug om gebied te claimen.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Eindeloze Metro Runner',
+    description: `Subway Surfers is een populair eindeloos rennend spel. Help Jake te ontsnappen aan de metrobewaker en zijn hond over de spoorlijnen. Verzamel munten en gebruik je hoverboard voor bescherming.
+
+Met wisselende wereldlocaties en levendige graphics. Ontgrendel diverse personages en hoverboards en gebruik power-ups om zo ver mogelijk te komen.`,
+    controls: `Veeg naar links en rechts om van baan te wisselen. Veeg omhoog om te springen en omlaag om te glijden.`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Eindeloze Jetpack Actie',
+    description: `In Jetpack Joyride breekt Barry Steakfries met een jetpack in een geheim laboratorium in. Ontwijk obstakels, verzamel munten en rijd op bijzondere voertuigen.
+
+Diverse voertuigen en power-ups houden de gameplay fris. Voltooi missies om beloningen te verdienen en koop upgrades om elke poging te verbeteren.`,
+    controls: `Klik of houd ingedrukt om de jetpack te activeren en te stijgen. Laat los om te dalen. Gebruik korte tikken om je hoogte nauwkeurig te regelen.`,
+  },
+  'worlds-hardest-game': {
+    title: 'World\'s Hardest Game — Ultieme Precisie-uitdaging',
+    description: `World's Hardest Game staat bekend als een van de moeilijkste spellen ooit. Beweeg het rode vierkant langs blauwe ballen, verzamel gele cirkels en bereik het groene gebied.
+
+Vereist uitzonderlijk geduld, concentratie en perfecte timing. Elk level test je grenzen met complexe bewegingspatronen die steeds moeilijker worden.`,
+    controls: `Gebruik de pijltjestoetsen of WASD om het rode vierkant te bewegen. Bestudeer de patronen van de blauwe ballen en beweeg op het juiste moment.`,
+  },
 };

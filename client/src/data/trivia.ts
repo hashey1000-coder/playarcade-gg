@@ -156,4 +156,34 @@ export const GAME_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     'Crazy Chicken (Moorhuhn) was originally created as an advertising game for Johnnie Walker whisky by German developer Phenomedia in 1999. It became a viral sensation in Germany, downloaded over 10 million times in its first year — making it one of the first "viral games" before the term existed. The franchise has spawned over 30 sequels across every platform. At its peak, German employers estimated a loss of €50 million in productivity due to employees playing Moorhuhn at work.',
 
+  'retro-bowl':
+    'Retro Bowl was developed by New Star Games and released in January 2020. It topped the US App Store charts in 2022 after going viral on TikTok, eventually surpassing 100 million downloads. The game\'s pixel-art style was directly inspired by Tecmo Bowl on the NES (1987). "Retro Bowl unblocked" became one of the most searched gaming terms in US schools. The game only lets you play offense — the defense is entirely simulated based on your team\'s defensive stats.',
+
+  'run-3':
+    'Run 3 was developed solo by Joseph Cloutier (Player 03) and published by Kongregate. The game features over 300 hand-designed levels and 9 unlockable characters, each with unique physics — the Skater slides on ice, the Lizard can jump incredibly far, and the Pastafarian has a "light bridge" ability. The tunnel-rotation mechanic was inspired by the movie Inception. Run 3 has been played over 1 billion times, and its predecessor Run 2 introduced wall-running to the genre.',
+
+  'crossy-road':
+    'Crossy Road was created by Australian developers Matt Hall and Andy Sum of Hipster Whale, earning over $10 million in its first 90 days through cosmetic-only microtransactions — proving free-to-play could work without pay-to-win. The game was directly inspired by Frogger (1981) but with procedurally generated terrain. Over 300 unlockable characters include references to pop culture, like a chicken modelled after the "Why did the chicken cross the road?" joke. One hidden character, the "Cai Shen," drops gold coins instead of regular ones.',
+
+  'cut-the-rope':
+    'Cut the Rope was created by Russian brothers Semyon and Efim Voskresenskiy of ZeptoLab and launched in October 2010. It sold 1 million copies in its first 10 days and has since surpassed 1 billion downloads across the franchise. The character Om Nom was named after the onomatopoeia for eating sounds. Each physics puzzle was hand-tuned — ZeptoLab tested over 3,000 level designs before selecting the final 275. The game won a BAFTA award and spawned an animated YouTube series with over 20 billion total views.',
+
+  'stickman-hook':
+    'Stickman Hook was developed by French studio Madbox using a custom physics engine that calculates pendulum swing momentum in real-time. The game reached 100 million downloads within its first year. The one-tap control scheme was inspired by Spider-Man\'s web-swinging — in early prototypes, the character was actually a tiny spider. The ragdoll physics use a system of 8 connected joints, and the stickman\'s limbs can stretch up to 3x their resting length during high-speed swings.',
+
+  'drive-mad':
+    'Drive Mad uses a physics engine based on realistic torque and center-of-gravity calculations — the car\'s engine produces a fixed amount of force, and the player must balance acceleration against the vehicle\'s tipping point. The game has over 150 levels, each hand-designed to introduce a new obstacle type. Speedrunners have completed the entire game in under 20 minutes. The game was inspired by Hill Climb Racing, which has been downloaded over 1.5 billion times.',
+
+  'paper-io-2':
+    'Paper.io 2 was developed by French studio Voodoo, which specialises in "hyper-casual" games and has surpassed 6 billion total downloads across its portfolio. The game\'s territory-claiming mechanic is based on the mathematical concept of "enclosure" — the same principle used in the ancient strategy game Go (c. 2500 BCE). The AI opponents use a modified A* pathfinding algorithm to hunt players. Mathematically, claiming territory in circular spirals is 23% more efficient than straight-line paths.',
+
+  'subway-surfers':
+    'Subway Surfers was co-created by Kiloo Games and SYBO Games, launched in May 2012. It became the first game to reach 1 billion downloads on Google Play (2018) and has since surpassed 4 billion total downloads — making it one of the most downloaded games in history. The game was inspired by a real event: co-creator Sylvester Rishøj ran on train tracks as a teenager in Denmark. The "World Tour" updates the setting to a new city every month, with over 100 cities featured so far.',
+
+  'jetpack-joyride':
+    'Jetpack Joyride was created by Halfbrick Studios (also behind Fruit Ninja) and released in September 2011. The game\'s protagonist, Barry Steakfries, was named through a fan poll on Facebook. The "Machine Gun Jetpack" — the default vehicle — was inspired by a real concept: recoil-powered flight. The scientists in the background have over 40 unique animations and react dynamically to Barry\'s jetpack blast. The game has been downloaded over 750 million times and was originally going to be called "Jetpack Joyride: Lab of Doom."',
+
+  'worlds-hardest-game':
+    'World\'s Hardest Game was created by Stephen Critoph and released on AddictingGames in 2008. The game has 30 levels, but most players never get past level 15. Completion rates for the final levels drop below 0.1%. The blue enemies follow perfectly predictable patterns — they use sinusoidal (wave-based) movement — meaning every level is theoretically solvable with memorisation. Speedrunners complete the entire game deathless in under 5 minutes. The sequel, World\'s Hardest Game 2, added 50 levels and moving walls.',
+
 };

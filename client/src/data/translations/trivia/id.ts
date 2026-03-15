@@ -155,5 +155,35 @@ export const ID_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Tahukah kamu? Crazy Chicken (Moorhuhn) adalah gim iklan Johnnie Walker di Jerman pada tahun 1999. Lebih dari 10 juta unduhan di tahun pertama. Lebih dari 30 sekuel.`,
 
+  'retro-bowl':
+    `Tahukah kamu? Retro Bowl dikembangkan oleh New Star Games pada Januari 2020. Gim ini menduduki puncak US App Store pada tahun 2022 berkat viralnya di TikTok dan telah diunduh lebih dari 100 juta kali. Grafik pixel art-nya terinspirasi dari Tecmo Bowl (NES, 1987). "Retro Bowl unblocked" menjadi salah satu pencarian teratas di sekolah-sekolah AS. Pemain hanya memainkan sisi ofensif — pertahanan disimulasikan secara otomatis.`,
+
+  'run-3':
+    `Tahukah kamu? Run 3 dikembangkan seorang diri oleh Joseph Cloutier (Player 03) dan diterbitkan oleh Kongregate. Gim ini memiliki lebih dari 300 level dan 9 karakter yang bisa dibuka, masing-masing dengan fisika unik. Rotasi terowongannya terinspirasi dari film Inception. Gim ini telah dimainkan lebih dari 1 miliar kali. Run 2 memperkenalkan konsep berlari di dinding ke genre ini.`,
+
+  'crossy-road':
+    `Tahukah kamu? Crossy Road dibuat oleh Matt Hall dan Andy Sum (Hipster Whale, Australia). Gim ini menghasilkan 10 juta dolar dalam 90 hari hanya dari mikrotransaksi kosmetik. Terinspirasi dari Frogger (1981), gim ini memiliki lebih dari 300 karakter yang bisa dibuka. Karakter tersembunyi "Cai Shen" menjatuhkan koin emas saat dimainkan.`,
+
+  'cut-the-rope':
+    `Tahukah kamu? Cut the Rope dibuat oleh Semyon dan Efim Voskresenskiy (ZeptoLab, Rusia) pada Oktober 2010. Gim ini terjual 1 juta kopi dalam 10 hari dan waralabanya telah diunduh lebih dari 1 miliar kali. Om Nom dinamai berdasarkan suara makan. Dari lebih dari 3.000 desain level yang diuji, hanya 275 yang dipilih. Gim ini memenangkan penghargaan BAFTA, dan serial YouTube-nya telah ditonton lebih dari 20 miliar kali.`,
+
+  'stickman-hook':
+    `Tahukah kamu? Stickman Hook dikembangkan oleh Madbox (Prancis). Gim ini menggunakan fisika kustom dengan momentum pendulum secara real-time dan telah diunduh 100 juta kali dalam tahun pertama. Kontrol satu ketukan terinspirasi dari ayunan jaring Spider-Man. Prototipe awal menggunakan karakter laba-laba kecil. Karakter memiliki 8 sendi terhubung dan anggota tubuh yang bisa meregang hingga 3 kali lipat.`,
+
+  'drive-mad':
+    `Tahukah kamu? Drive Mad menggunakan fisika berbasis torsi realistis dan pusat gravitasi. Gim ini memiliki lebih dari 150 level yang dirancang secara manual. Para speedrunner bisa menyelesaikannya dalam waktu kurang dari 20 menit. Gim ini terinspirasi dari Hill Climb Racing yang telah diunduh 1,5 miliar kali.`,
+
+  'paper-io-2':
+    `Tahukah kamu? Paper.io 2 dikembangkan oleh Voodoo (Prancis) yang portofolio gimnya telah diunduh lebih dari 6 miliar kali secara total. Mekanik wilayahnya didasarkan pada konsep "pengepungan" dari permainan Go (2500 SM). AI-nya menggunakan algoritma A* yang dimodifikasi. Spiral melingkar 23% lebih efisien daripada jalur lurus untuk merebut wilayah.`,
+
+  'subway-surfers':
+    `Tahukah kamu? Subway Surfers dibuat bersama oleh Kiloo dan SYBO Games pada Mei 2012. Ini adalah gim pertama yang mencapai 1 miliar unduhan di Google Play (2018) dan kini telah melampaui 4 miliar unduhan total. Gim ini terinspirasi dari pengalaman salah satu penciptanya, Sylvester Rishøj, yang suka berlari di rel kereta api saat remaja. Fitur "World Tour" telah menampilkan lebih dari 100 kota.`,
+
+  'jetpack-joyride':
+    `Tahukah kamu? Jetpack Joyride dibuat oleh Halfbrick Studios pada September 2011. Nama Barry Steakfries dipilih melalui jajak pendapat penggemar di Facebook. Machine Gun Jetpack terinspirasi dari konsep penerbangan bertenaga rekoil. Para ilmuwan dalam gim memiliki lebih dari 40 animasi. Gim ini telah diunduh lebih dari 750 juta kali dan hampir dinamai "Jetpack Joyride: Lab of Doom."`,
+
+  'worlds-hardest-game':
+    `Tahukah kamu? World's Hardest Game dibuat oleh Stephen Critoph dan dirilis di AddictingGames pada tahun 2008. Gim ini memiliki 30 level dan kebanyakan pemain terjebak di level 15. Tingkat penyelesaian level terakhir kurang dari 0,1%. Musuh biru bergerak menggunakan pola sinusoidal. Para speedrunner bisa menyelesaikannya tanpa mati dalam waktu kurang dari 5 menit. Sekuelnya menambahkan 50 level baru.`,
+
 
 };

@@ -365,20 +365,20 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                        <div className="p-3 flex-1 flex flex-col">
-                          <h3 className="text-[13px] font-semibold text-slate-800 dark:text-slate-100 leading-tight line-clamp-2 mb-1.5">
+                        <div className="p-3.5 flex-1 flex flex-col">
+                          <h3 className="text-[13px] font-semibold text-slate-800 dark:text-slate-100 leading-tight line-clamp-2 mb-2">
                             {gt(game).title}
                           </h3>
-                          <div className="flex items-center gap-1.5 flex-wrap mb-1.5">
+                          <div className="flex items-center gap-2 flex-wrap mb-2">
                             <span
-                              className={`inline-block text-[11px] font-medium px-2 py-0.5 rounded-full capitalize ${
+                              className={`inline-block text-[11px] font-medium px-2.5 py-0.5 rounded-full capitalize ${
                                 CATEGORY_COLORS[game.category] || "text-cyan-600 bg-cyan-50"
                               }`}
                             >
                               {t(`category.${game.category}` as any)}
                             </span>
                             {game.difficulty && (
-                              <span className={`inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${
+                              <span className={`inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full ${
                                 game.difficulty === 'easy' ? 'bg-green-50 text-green-700 dark:bg-green-950/50 dark:text-green-400' :
                                 game.difficulty === 'medium' ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400' :
                                 'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
@@ -387,12 +387,11 @@ export default function Home() {
                               </span>
                             )}
                           </div>
-                          <div className="flex items-center justify-between mt-auto">
-                            <div className="flex items-center gap-0.5">
-                              <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+                          <div className="flex items-center mt-auto pt-1">
+                            <div className="flex items-center gap-1">
+                              <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                               <span className="text-[11px] font-bold text-amber-700 dark:text-amber-500">{game.rating.toFixed(1)}</span>
                             </div>
-                            <span className="text-[10px] text-slate-500 dark:text-slate-400">{formatPlayCount(game.playCount)} {t('common.plays')}</span>
                           </div>
                         </div>
                       </div>
@@ -740,7 +739,7 @@ export default function Home() {
                               {t(`category.${game.category}` as any)}
                             </span>
                             {game.difficulty && (
-                              <span className={`inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-full ${
+                              <span className={`inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full ${
                                 game.difficulty === 'easy' ? 'bg-green-50 text-green-700 dark:bg-green-950/50 dark:text-green-400' :
                                 game.difficulty === 'medium' ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400' :
                                 'bg-red-50 text-red-600 dark:bg-red-950/50 dark:text-red-400'
@@ -769,13 +768,12 @@ export default function Home() {
                               })}
                             </div>
                           )}
-                          {/* Rating + play count row */}
-                          <div className="flex items-center justify-between mt-auto">
-                            <div className="flex items-center gap-0.5">
-                              <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+                          {/* Rating row */}
+                          <div className="flex items-center mt-auto pt-1">
+                            <div className="flex items-center gap-1">
+                              <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                               <span className="text-[11px] font-bold text-amber-700 dark:text-amber-500">{game.rating.toFixed(1)}</span>
                             </div>
-                            <span className="text-[10px] text-slate-500 dark:text-slate-400">{formatPlayCount(game.playCount)} {t('common.plays')}</span>
                           </div>
                         </div>
                       </div>

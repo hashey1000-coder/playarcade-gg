@@ -155,5 +155,35 @@ export const NL_TRIVIA: Record<string, string> = {
   'crazy-chicken-3d':
     `Wist je dat? Moorhuhn (Crazy Chicken) begon in 1999 als een reclamespel voor Johnnie Walker whisky in Duitsland. Het werd zo populair dat het uitgroeide tot een franchise met meer dan 30 spellen.`,
 
+  'retro-bowl':
+    `Wist je dat? Retro Bowl is ontwikkeld door New Star Games in januari 2020. Dankzij TikTok bereikte het in 2022 de top van de Amerikaanse App Store en heeft het meer dan 100 miljoen downloads. De pixelart is geïnspireerd op Tecmo Bowl (NES, 1987). "Retro Bowl unblocked" was een van de populairste zoektermen op Amerikaanse scholen. Je speelt alleen aanval — de verdediging wordt gesimuleerd.`,
+
+  'run-3':
+    `Wist je dat? Run 3 is in zijn eentje ontwikkeld door Joseph Cloutier (Player 03) en uitgegeven door Kongregate. Het spel bevat meer dan 300 levels en 9 ontgrendelbare personages, elk met unieke fysica. De tunnelrotatie is geïnspireerd op de film Inception. Het spel is meer dan 1 miljard keer gespeeld. Run 2 introduceerde het lopen op muren in het genre.`,
+
+  'crossy-road':
+    `Wist je dat? Crossy Road is gemaakt door Matt Hall en Andy Sum (Hipster Whale, Australië). Het verdiende 10 miljoen dollar in 90 dagen met uitsluitend cosmetische microtransacties. Het spel is geïnspireerd op Frogger (1981) en bevat meer dan 300 ontgrendelbare personages. Het verborgen personage "Cai Shen" laat gouden munten vallen.`,
+
+  'cut-the-rope':
+    `Wist je dat? Cut the Rope is gemaakt door Semyon en Efim Voskresenskiy (ZeptoLab, Rusland) in oktober 2010. Het verkocht 1 miljoen exemplaren in 10 dagen en de franchise heeft meer dan 1 miljard downloads. Om Nom is vernoemd naar eetgeluiden. Er werden meer dan 3.000 levelontwerpen getest, waarvan er 275 werden geselecteerd. Het spel won een BAFTA en de YouTube-serie heeft meer dan 20 miljard weergaven.`,
+
+  'stickman-hook':
+    `Wist je dat? Stickman Hook is ontwikkeld door de Franse studio Madbox. Het gebruikt een aangepaste fysica-engine met realtime slingermomentum. In het eerste jaar werd het meer dan 100 miljoen keer gedownload. De eenvingerbesturing is geïnspireerd op Spider-Man's webslingeren. Het vroege prototype gebruikte een klein spinnenkarakter. Het personage heeft 8 verbonden gewrichten en de ledematen kunnen tot 3 keer hun lengte uitrekken.`,
+
+  'drive-mad':
+    `Wist je dat? De fysica van Drive Mad is gebaseerd op realistisch koppel en zwaartepuntberekeningen. Het spel bevat meer dan 150 handontworpen levels. Speedrunners voltooien het in minder dan 20 minuten. Het is geïnspireerd op Hill Climb Racing, dat 1,5 miljard downloads heeft.`,
+
+  'paper-io-2':
+    `Wist je dat? Paper.io 2 is ontwikkeld door Voodoo (Frankrijk), dat in totaal meer dan 6 miljard downloads heeft in zijn portfolio. De gebiedsmechanica is gebaseerd op het "omsingelings"-concept uit Go (2500 v.Chr.). De AI gebruikt een aangepast A*-padzoekalgoritme. Cirkelvormige spiralen zijn 23% efficiënter dan rechte paden.`,
+
+  'subway-surfers':
+    `Wist je dat? Subway Surfers is in mei 2012 gezamenlijk gemaakt door Kiloo en SYBO Games. Het was het eerste spel dat 1 miljard downloads bereikte op Google Play (2018) en heeft nu meer dan 4 miljard in totaal. Het is geïnspireerd op medeoprichter Sylvester Rishøj, die als tiener op treinsporen rende. De "World Tour" heeft meer dan 100 steden aangedaan.`,
+
+  'jetpack-joyride':
+    `Wist je dat? Jetpack Joyride is gemaakt door Halfbrick Studios in september 2011. Barry Steakfries kreeg zijn naam via een fanpoll op Facebook. De Machine Gun Jetpack is geïnspireerd op het concept van vliegen door terugslag. De wetenschappers hebben meer dan 40 animaties. Het spel heeft meer dan 750 miljoen downloads en zou bijna "Jetpack Joyride: Lab of Doom" hebben geheten.`,
+
+  'worlds-hardest-game':
+    `Wist je dat? World's Hardest Game is gemaakt door Stephen Critoph en uitgebracht op AddictingGames in 2008. Het heeft 30 levels en de meeste spelers blijven hangen bij level 15. Het voltooiingspercentage van het laatste level is minder dan 0,1%. De blauwe vijanden bewegen sinusoïdaal. Speedrunners voltooien het zonder te sterven in minder dan 5 minuten. Het vervolg voegde 50 nieuwe levels toe.`,
+
 
 };

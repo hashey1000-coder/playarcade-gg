@@ -42,6 +42,10 @@ export default defineConfig({
           if (id.includes('node_modules/canvas-confetti/')) {
             return 'confetti';
           }
+          // Firebase — large SDK, split out for long-term caching
+          if (id.includes('node_modules/firebase/') || id.includes('node_modules/@firebase/')) {
+            return 'firebase';
+          }
         },
       },
     },

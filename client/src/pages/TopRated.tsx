@@ -8,29 +8,8 @@ import AnimatedCard from "@/components/AnimatedCard";
 import { CATEGORY_COLORS } from '@/data/categoryColors';
 import { prefetchGameUrl } from '@/lib/utils';
 import { useHead } from '@/hooks/useHead';
-
-function readAllVotes(): Record<string, { likes: number; dislikes: number }> {
-  const result: Record<string, { likes: number; dislikes: number }> = {};
-  for (const game of GAMES) {
-    try {
-      const stored = localStorage.getItem(`game-votes-${game.slug}`);
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        result[game.slug] = { likes: parsed.likes || 0, dislikes: parsed.dislikes || 0 };
-      } else {
-        // Seed from game data when no user votes exist
-        const baseLikes = Math.max(Math.round(game.rating * (game.playCount || 50) / 100), 1);
-        const baseDislikes = Math.max(Math.round(baseLikes * (1 - game.rating / 5) * 0.3), 0);
-        result[game.slug] = { likes: baseLikes, dislikes: baseDislikes };
-      }
-    } catch {
-      const baseLikes = Math.max(Math.round(game.rating * (game.playCount || 50) / 100), 1);
-      const baseDislikes = Math.max(Math.round(baseLikes * (1 - game.rating / 5) * 0.3), 0);
-      result[game.slug] = { likes: baseLikes, dislikes: baseDislikes };
-    }
-  }
-  return result;
-}
+import { ref, get } from 'firebase/database';
+import { db } from '@/lib/firebase';
 
 function getRatioPercent(likes: number, dislikes: number): number {
   const total = likes + dislikes;
@@ -47,11 +26,22 @@ const RANK_STYLES = [
 export default function TopRated() {
   const t = useT();
   const gt = useGameTranslate();
-  // Read votes fresh on every mount so navigation from a game page shows updated data
-  const [allVotes, setAllVotes] = useState<Record<string, { likes: number; dislikes: number }>>(() => readAllVotes());
+  const [allVotes, setAllVotes] = useState<Record<string, { likes: number; dislikes: number }>>({});
 
+  // Fetch all vote counts from RTDB once on mount
   useEffect(() => {
-    setAllVotes(readAllVotes());
+    get(ref(db, 'votes'))
+      .then((snap) => {
+        const result: Record<string, { likes: number; dislikes: number }> = {};
+        if (snap.exists()) {
+          const data = snap.val() as Record<string, { likes?: number; dislikes?: number }>;
+          for (const [slug, counts] of Object.entries(data)) {
+            result[slug] = { likes: counts.likes ?? 0, dislikes: counts.dislikes ?? 0 };
+          }
+        }
+        setAllVotes(result);
+      })
+      .catch((err) => console.error('[TopRated] failed to load votes:', err));
   }, []);
 
   // SEO — localised page title + meta description

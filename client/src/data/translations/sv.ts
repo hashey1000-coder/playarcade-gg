@@ -365,4 +365,74 @@ Sprunki Playground tar bort alla framstegsbarriärer och ger omedelbar tillgång
 Crazy Chicken (Moorhuhn) uppstod 1999 som ett reklamspel och blev en viral sensation med över 10 miljoner nedladdningar.`,
     controls: `Rör musen för att sikta. Klicka för att skjuta. Leta efter dolda bonusmål. Guldhönor ger extrapoäng.`,
   },
+  'retro-bowl': {
+    title: 'Retro Bowl — Amerikansk Fotbollsmanager',
+    description: `Ta över ett amerikanskt fotbollslag i retrostil. Rekrytera spelare, planera strategier och led ditt lag till seger i Retro Bowl. Pixelgrafiken tar dig tillbaka till spelets guldålder.
+
+Retro Bowl kombinerar laghantering med intensiv spelaction på planen. Fatta avgörande beslut om spelartruppen, håll moralen uppe och spela spännande matcher på vägen mot mästerskapet.`,
+    controls: `Svep eller använd musen för att kasta bollen till mottagare. Styr löparen med piltangenterna eller genom att svepa.`,
+  },
+  'run-3': {
+    title: 'Run 3 — Ändlös Rymdlöpare',
+    description: `Spring och hoppa genom tunnlar i rymden som faller sönder under dina fötter. Rotera väggar, undvik hål och upptäck nya banor i detta beroendeframkallande plattformsspel.
+
+Run 3 erbjuder dussintals nivåer med stigande svårighetsgrad och flera karaktärer att låsa upp, var och en med unika förmågor. Det ändlösa läget ger oändlig spelbarhet.`,
+    controls: `Vänster-/högerpil: rör dig i sidled. Mellanslag eller uppåtpil: hoppa. Spring på väggar för att ändra tunnelns orientering.`,
+  },
+  'crossy-road': {
+    title: 'Crossy Road — Ändlös Hoppare',
+    description: `Lotsa din figur över trafikerade vägar, järnvägsspår och forsande floder. Undvik bilar, tåg och andra hinder i denna moderna version av klassiska Frogger.
+
+Crossy Road erbjuder hundratals karaktärer att låsa upp, alla med unika världar och teman. Den enkla hopp-mekaniken gör spelet lätt att lära sig men svårt att bemästra.`,
+    controls: `Svep uppåt för att hoppa framåt. Svep vänster, höger eller nedåt för att röra dig. Undvik hinder och samla mynt!`,
+  },
+  'cut-the-rope': {
+    title: 'Cut the Rope — Mata Om Nom med Godis',
+    description: `Klipp repet i rätt ögonblick för att leverera godiset rakt i munnen på Om Nom. Lös fysikpussel, samla stjärnor och upptäck nya mekaniker på varje nivå.
+
+Cut the Rope är ett prisbelönt pusselspel som erövrat miljontals spelares hjärtan världen över. Varje nivåpaket introducerar nya element som luftkuddar, teleportar och magiska hattar.`,
+    controls: `Svep eller klicka och dra för att klippa repet. Tryck på luftkuddar och bubblor för att styra godiset till Om Nom.`,
+  },
+  'stickman-hook': {
+    title: 'Stickman Hook — Svinga & Flyg',
+    description: `Haka fast i fästpunkter och svinga dig som en spindelhjälte genom färgglada banor. Släpp i det perfekta ögonblicket för att få fart och nå mållinjen.
+
+Stickman Hook är ett fysikbaserat pendelspel där tajming är nyckeln till framgång. Hundratals nivåer med stigande svårighetsgrad och upplåsbara karaktärer väntar.`,
+    controls: `Klicka eller tryck på skärmen för att haka fast. Släpp för att lossa och flyga vidare. Tajming är allt!`,
+  },
+  'drive-mad': {
+    title: 'Drive Mad — Fysikbaserat Körutmaning',
+    description: `Kör din bil genom galna hinder­banor fyllda med ramper, loopar och farliga avsnitt. Håll fordonet upprätt och nå mållinjen i ett stycke.
+
+Drive Mad testar din balansförmåga och gaskontroll. Varje nivå erbjuder en ny, överraskande hinderbana som kräver precision och tålamod.`,
+    controls: `Uppåtpil: gas. Nedåtpil: backa. Balansera fordonet så det inte välter på svåra avsnitt!`,
+  },
+  'paper-io-2': {
+    title: 'Paper.io 2 — Erövra Territorium',
+    description: `Lämna din zon, rita ett område och återvänd för att erövra det. Utöka ditt territorium samtidigt som du försvarar dig mot andra spelare som kan skära av ditt spår.
+
+Paper.io 2 är ett dynamiskt .io-spel där strategi och mod avgör segern. Ju större risk du tar, desto mer mark erövrar du — men ett enda misstag innebär game over.`,
+    controls: `Använd piltangenterna eller musen för att styra din figur. Rita områden och återvänd till ditt territorium för att erövra det.`,
+  },
+  'subway-surfers': {
+    title: 'Subway Surfers — Ändlös Tunnelbanelöpare',
+    description: `Spela som Jake och fly från den butter vaktmästaren och hans hund längs tågspåren. Samla mynt, använd hoverboard och power-ups för att springa så långt som möjligt.
+
+Subway Surfers är ett av världens mest populära mobilspel med miljarder nedladdningar. Regelbundet uppdaterade platser tar spelaren till städer runt hela jorden.`,
+    controls: `Svep vänster/höger: byt spår. Svep uppåt: hoppa. Svep nedåt: glid. Samla mynt och power-ups medan du springer!`,
+  },
+  'jetpack-joyride': {
+    title: 'Jetpack Joyride — Ändlös Jetpack-action',
+    description: `Hoppa på en jetpack som Barry Steakfries och flyg genom ett laboratorium fullt av hinder. Samla mynt, erövra specialfordon och undvik missiler och lasrar.
+
+Jetpack Joyride är ett actionfyllt spel där varje flygning är unik tack vare slumpmässiga uppdrag och en slotmaskin efter varje runda. Lås upp nya jetpacks, kostymer och uppgraderingar.`,
+    controls: `Tryck på skärmen eller klicka och håll inne för att stiga. Släpp för att sjunka. Undvik lasrar, raketer och elektriska fält!`,
+  },
+  'worlds-hardest-game': {
+    title: "World's Hardest Game — Ultimat Precisionsutmaning",
+    description: `Styr den röda fyrkanten genom en labyrint av blå bollar och samla gula mynt. Låter enkelt? Det här är ett av de svåraste spelen som någonsin skapats — det kräver absolut precision och perfekt tajming.
+
+World's Hardest Game är en legend bland webbläsarspel, känt för att driva spelare till vansinne. Var och en av de 30 nivåerna kräver perfekt koordination och nerver av stål.`,
+    controls: `Piltangenter: styr den röda fyrkanten. Undvik blå bollar, samla gula mynt och nå den gröna zonen!`,
+  },
 };
