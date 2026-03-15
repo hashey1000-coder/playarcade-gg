@@ -9,7 +9,7 @@
  *  - xhtml:link hreflang alternates for every URL
  */
 
-import { writeFileSync, readFileSync, mkdirSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -98,6 +98,32 @@ const GAME_PATHS = slugs.map((slug) => ({
 const ALL_PATHS = [...STATIC_PATHS, ...GAME_PATHS];
 
 // ---------------------------------------------------------------------------
+// Per-path last-modification dates
+// sitemap-dates.json is committed to the repo so dates survive CI rebuilds.
+// A path's date is set once (when it first appears) and never bumped again
+// unless you manually edit the file — this prevents Bing seeing every deploy
+// as a site-wide content change.
+// ---------------------------------------------------------------------------
+const DATES_FILE = resolve(ROOT, 'scripts/sitemap-dates.json');
+let pathDates = {};
+if (existsSync(DATES_FILE)) {
+  pathDates = JSON.parse(readFileSync(DATES_FILE, 'utf8'));
+}
+
+let datesChanged = false;
+for (const { path } of ALL_PATHS) {
+  if (!pathDates[path]) {
+    pathDates[path] = today;
+    datesChanged = true;
+  }
+}
+
+if (datesChanged) {
+  writeFileSync(DATES_FILE, JSON.stringify(pathDates, null, 2) + '\n', 'utf8');
+  console.log(`📅  sitemap-dates.json updated with ${Object.keys(pathDates).length} paths`);
+}
+
+// ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
 
@@ -129,6 +155,7 @@ function stripLocalePrefix(path) {
  */
 function buildUrlBlock(path, priority, changefreq, locale) {
   const loc = localeUrl(locale, path);
+  const lastmod = pathDates[path] ?? today;
 
   const hreflangs = LOCALES.map((alt) => {
     const href = localeUrl(alt, path);
@@ -141,7 +168,7 @@ function buildUrlBlock(path, priority, changefreq, locale) {
 
   return `  <url>
     <loc>${loc}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
 ${[...hreflangs, xDefault].join('\n')}

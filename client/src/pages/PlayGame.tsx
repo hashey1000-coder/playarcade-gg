@@ -555,15 +555,15 @@ export default function PlayGame() {
         )}
 
         {/* Breadcrumb */}
-        <div className="flex items-center gap-2 mb-4 text-sm">
+        <div className="flex items-center gap-2 mb-4 text-sm min-w-0 overflow-hidden">
           <Link href="/">
-            <span className="flex items-center gap-1 text-cyan-600 hover:text-cyan-700 transition-colors font-medium">
+            <span className="flex items-center gap-1 text-cyan-600 hover:text-cyan-700 transition-colors font-medium shrink-0">
               <ChevronLeft className="w-4 h-4" />
               {t('nav.allGames')}
             </span>
           </Link>
-          <span className="text-slate-300 dark:text-slate-400">/</span>
-          <span className="text-slate-600 dark:text-slate-300 truncate max-w-[200px]">{gt(game).title}</span>
+          <span className="text-slate-300 dark:text-slate-400 shrink-0">/</span>
+          <span className="text-slate-600 dark:text-slate-300 truncate min-w-0">{gt(game).title}</span>
         </div>
 
         {/* Title */}
