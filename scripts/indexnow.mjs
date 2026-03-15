@@ -141,6 +141,18 @@ for (let i = 0; i < urlList.length; i += BATCH_SIZE) {
     console.log(`✅  Batch ${Math.floor(i / BATCH_SIZE) + 1}: submitted ${batch.length} URLs (HTTP ${res.status})`);
   } else {
     const text = await res.text();
+    let parsed = {};
+    try { parsed = JSON.parse(text); } catch { /* not JSON */ }
+
+    // Bing hasn't crawled the key file yet — this happens on the first deploy.
+    // Treat as a soft warning: don't save state so all URLs are retried next time.
+    if (parsed.errorCode === 'SiteVerificationNotCompleted') {
+      console.warn('⚠️   Bing site verification is still pending (key file was just deployed).');
+      console.warn('   URLs were NOT saved to state — they will be retried on the next deploy.');
+      console.warn(`   Verify manually: https://${HOST}/${INDEXNOW_KEY}.txt`);
+      process.exit(0);
+    }
+
     console.error(`❌  Batch failed: HTTP ${res.status}`);
     console.error(`   Response: ${text}`);
     console.error('   Possible causes:');

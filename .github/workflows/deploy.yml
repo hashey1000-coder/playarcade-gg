@@ -25,7 +25,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build project
-        run: pnpm run build
+        run: pnpm run build:static
 
       - name: Setup SSH
         run: |
@@ -36,10 +36,13 @@ jobs:
 
       - name: Deploy site
         run: |
-          scp -P 22 -r dist/public/. \
-          ${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}:/home/juliaspl/playarcade.gg/
+          rsync -avz --delete --checksum \
+            -e "ssh -p 22 -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" \
+            dist/public/. \
+            ${{ secrets.CPANEL_USER }}@${{ secrets.CPANEL_HOST }}:/home/juliaspl/playarcade.gg/
 
       - name: Submit new URLs to Bing IndexNow
+        continue-on-error: true
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: node scripts/indexnow.mjs
