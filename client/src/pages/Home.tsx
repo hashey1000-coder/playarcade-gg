@@ -14,6 +14,7 @@ import { useGameTranslate } from '@/data/gameTranslations';
 import { CATEGORY_COLORS } from '@/data/categoryColors';
 import { prefetchGameUrl } from '@/lib/utils';
 import { useHead } from '@/hooks/useHead';
+import { useAllRatings } from '@/hooks/useAllRatings';
 
 function formatPlayCount(n: number): string {
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
@@ -72,6 +73,7 @@ export default function Home() {
   const [, navigate] = useLocation();
   const searchStr = useSearch();
   const t = useT();
+  const { ratings: liveRatings } = useAllRatings();
 
   // Sync activeCategory when URL query param changes (e.g. footer category links)
   useEffect(() => {
@@ -393,7 +395,9 @@ export default function Home() {
                           <div className="flex items-center mt-auto pt-1">
                             <div className="flex items-center gap-1">
                               <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                              <span className="text-[11px] font-bold text-amber-700 dark:text-amber-500">{game.rating.toFixed(1)}</span>
+                              <span className="text-[11px] font-bold text-amber-700 dark:text-amber-500">
+                                {liveRatings[game.slug]?.count ? liveRatings[game.slug].average.toFixed(1) : game.rating.toFixed(1)}
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -411,7 +415,7 @@ export default function Home() {
                         ? "bg-rose-500 text-white"
                         : "bg-white/90 dark:bg-slate-800/90 text-slate-400 hover:text-rose-400 hover:bg-white dark:hover:bg-slate-700"
                     }`}
-                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites') : t('home.addToFavourites')}
+                    aria-label={isFavourite(game.slug) ? t('home.removeFromFavourites') : t('home.addToFavourites')}}
                   >
                     <Heart className={`w-3.5 h-3.5 ${isFavourite(game.slug) ? "fill-white" : ""}`} />
                   </button>
@@ -775,7 +779,9 @@ export default function Home() {
                           <div className="flex items-center mt-auto pt-1">
                             <div className="flex items-center gap-1">
                               <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                              <span className="text-[11px] font-bold text-amber-700 dark:text-amber-500">{game.rating.toFixed(1)}</span>
+                              <span className="text-[11px] font-bold text-amber-700 dark:text-amber-500">
+                                {liveRatings[game.slug]?.count ? liveRatings[game.slug].average.toFixed(1) : game.rating.toFixed(1)}
+                              </span>
                             </div>
                           </div>
                         </div>

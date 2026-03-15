@@ -50,6 +50,8 @@ export const RU: TranslationMap = {
   'game.notFoundDesc': 'Мы не можем найти эту игру. Она может быть удалена или URL неверный.',
   'game.backToGames': 'Вернуться ко Всем Играм',
   'game.vote.helpful': 'Полезно',
+  'game.rate': 'Оценить игру',
+  'game.ratings': 'оценок',
   'game.vote.notHelpful': 'Не Полезно',
   'game.fullscreen': 'Полный Экран',
   'game.exitFullscreen': 'Выход из Полноэкранного Режима',

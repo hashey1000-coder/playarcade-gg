@@ -50,6 +50,8 @@ export const KO: TranslationMap = {
   'game.notFoundDesc': '그 게임을 찾을 수 없습니다. 삭제되었거나 URL이 유효하지 않을 수 있습니다.',
   'game.backToGames': '모든 게임으로 돌아가기',
   'game.vote.helpful': '도움이 됨',
+  'game.rate': '이 게임 평가하기',
+  'game.ratings': '평가',
   'game.vote.notHelpful': '도움이 되지 않음',
   'game.fullscreen': '전체화면',
   'game.exitFullscreen': '전체화면 종료',

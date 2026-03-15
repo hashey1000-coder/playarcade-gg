@@ -50,6 +50,8 @@ export const SV: TranslationMap = {
   'game.notFoundDesc': 'Vi kunde inte hitta det spelet. Det kan ha tagits bort eller URL:en är felaktig.',
   'game.backToGames': 'Tillbaka till Alla Spel',
   'game.vote.helpful': 'Användbar',
+  'game.rate': 'Betygsätt detta spel',
+  'game.ratings': 'betyg',
   'game.vote.notHelpful': 'Inte Användbar',
   'game.fullscreen': 'Fullskärm',
   'game.exitFullscreen': 'Avsluta Fullskärm',

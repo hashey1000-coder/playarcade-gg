@@ -50,6 +50,8 @@ export const PL: TranslationMap = {
   'game.notFoundDesc': 'Nie mogliśmy znaleźć tej gry. Mogła zostać usunięta lub URL jest nieprawidłowy.',
   'game.backToGames': 'Powróć do Wszystkich Gier',
   'game.vote.helpful': 'Przydatne',
+  'game.rate': 'Oceń tę grę',
+  'game.ratings': 'oceny',
   'game.vote.notHelpful': 'Nieprzydatne',
   'game.fullscreen': 'Pełny Ekran',
   'game.exitFullscreen': 'Wyjdź z Pełnego Ekranu',

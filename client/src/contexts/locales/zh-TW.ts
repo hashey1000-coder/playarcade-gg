@@ -50,6 +50,8 @@ export const ZH_TW: TranslationMap = {
   'game.notFoundDesc': '我們找不到這個遊戲。它可能已被刪除或URL無效。',
   'game.backToGames': '返回所有遊戲',
   'game.vote.helpful': '有幫助',
+  'game.rate': '評價此遊戲',
+  'game.ratings': '條評價',
   'game.vote.notHelpful': '沒有幫助',
   'game.fullscreen': '全螢幕',
   'game.exitFullscreen': '退出全螢幕',

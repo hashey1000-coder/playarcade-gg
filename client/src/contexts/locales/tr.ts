@@ -50,6 +50,8 @@ export const TR: TranslationMap = {
   'game.notFoundDesc': 'Bu oyunu bulamadık. Silinmiş olabilir veya URL hatalı olabilir.',
   'game.backToGames': 'Tüm Oyunlara Dön',
   'game.vote.helpful': 'Faydalı',
+  'game.rate': 'Bu oyunu değerlendir',
+  'game.ratings': 'değerlendirme',
   'game.vote.notHelpful': 'Faydalı Değil',
   'game.fullscreen': 'Tam Ekran',
   'game.exitFullscreen': 'Tam Ekrandan Çık',

@@ -50,6 +50,8 @@ export const VI: TranslationMap = {
   'game.notFoundDesc': 'Chúng tôi không thể tìm thấy trò chơi đó. Trò chơi có thể đã bị xóa hoặc URL không hợp lệ.',
   'game.backToGames': 'Quay Lại Tất Cả Trò Chơi',
   'game.vote.helpful': 'Hữu Ích',
+  'game.rate': 'Đánh giá game này',
+  'game.ratings': 'đánh giá',
   'game.vote.notHelpful': 'Không Hữu Ích',
   'game.fullscreen': 'Toàn Màn Hình',
   'game.exitFullscreen': 'Thoát Toàn Màn Hình',

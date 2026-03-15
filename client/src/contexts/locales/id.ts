@@ -50,6 +50,8 @@ export const ID: TranslationMap = {
   'game.notFoundDesc': 'Kami tidak dapat menemukan game tersebut. Game mungkin telah dihapus atau URL tidak valid.',
   'game.backToGames': 'Kembali ke Semua Game',
   'game.vote.helpful': 'Membantu',
+  'game.rate': 'Nilai game ini',
+  'game.ratings': 'penilaian',
   'game.vote.notHelpful': 'Tidak Membantu',
   'game.fullscreen': 'Layar Penuh',
   'game.exitFullscreen': 'Keluar dari Layar Penuh',

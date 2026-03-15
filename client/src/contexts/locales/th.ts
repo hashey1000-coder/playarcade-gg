@@ -50,6 +50,8 @@ export const TH: TranslationMap = {
   'game.notFoundDesc': 'เราไม่พบเกมนั้น อาจถูกลบหรือ URL ไม่ถูกต้อง',
   'game.backToGames': 'กลับไปยังเกมทั้งหมด',
   'game.vote.helpful': 'มีประโยชน์',
+  'game.rate': 'ให้คะแนนเกมนี้',
+  'game.ratings': 'การให้คะแนน',
   'game.vote.notHelpful': 'ไม่มีประโยชน์',
   'game.fullscreen': 'เต็มหน้าจอ',
   'game.exitFullscreen': 'ออกจากเต็มหน้าจอ',

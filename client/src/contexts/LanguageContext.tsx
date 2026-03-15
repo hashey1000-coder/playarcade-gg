@@ -319,7 +319,9 @@ export type TranslationKey =
   | 'seo.topRated.title' | 'seo.topRated.description'
   | 'seo.about.title' | 'seo.contact.title' | 'seo.privacy.title' | 'seo.notFound.title'
   | 'seo.sitemap.title' | 'seo.sitemap.description'
-  | 'sitemap.title' | 'sitemap.subtitle' | 'sitemap.mainPages' | 'sitemap.allGames';
+  | 'sitemap.title' | 'sitemap.subtitle' | 'sitemap.mainPages' | 'sitemap.allGames'
+  // Star rating
+  | 'game.rate' | 'game.ratings';
 
 export type TranslationMap = Record<TranslationKey, string>;
 
@@ -378,6 +380,8 @@ const EN: TranslationMap = {
   'game.backToGames': 'Back to All Games',
   'game.vote.helpful': 'Helpful',
   'game.vote.notHelpful': 'Not Helpful',
+  'game.rate': 'Rate this game',
+  'game.ratings': 'ratings',
   'game.fullscreen': 'Fullscreen',
   'game.exitFullscreen': 'Exit Fullscreen',
   'game.loading': 'Loading Game',

@@ -50,6 +50,8 @@ export const AR: TranslationMap = {
   'game.notFoundDesc': 'لا يمكننا العثور على هذه اللعبة. قد تكون قد حذفت أو قد يكون عنوان URL غير صحيح.',
   'game.backToGames': 'العودة إلى جميع الألعاب',
   'game.vote.helpful': 'مفيد',
+  'game.rate': 'قيّم هذه اللعبة',
+  'game.ratings': 'تقييمات',
   'game.vote.notHelpful': 'غير مفيد',
   'game.fullscreen': 'ملء الشاشة',
   'game.exitFullscreen': 'خروج ملء الشاشة',

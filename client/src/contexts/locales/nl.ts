@@ -50,6 +50,8 @@ export const NL: TranslationMap = {
   'game.notFoundDesc': 'We kunnen dit spel niet vinden. Het kan zijn verwijderd of de URL is onjuist.',
   'game.backToGames': 'Terug naar Alle Spellen',
   'game.vote.helpful': 'Nuttig',
+  'game.rate': 'Dit spel beoordelen',
+  'game.ratings': 'beoordelingen',
   'game.vote.notHelpful': 'Niet Nuttig',
   'game.fullscreen': 'Volledig Scherm',
   'game.exitFullscreen': 'Volledig Scherm Afsluiten',

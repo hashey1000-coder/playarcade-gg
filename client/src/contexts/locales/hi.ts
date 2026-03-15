@@ -50,6 +50,8 @@ export const HI: TranslationMap = {
   'game.notFoundDesc': 'हम इस गेम को नहीं ढूंढ सके। इसे हटाया जा सकता है या URL गलत हो सकता है।',
   'game.backToGames': 'सभी गेम्स पर वापस जाएं',
   'game.vote.helpful': 'सहायक',
+  'game.rate': 'इस गेम को रेट करें',
+  'game.ratings': 'रेटिंग',
   'game.vote.notHelpful': 'सहायक नहीं',
   'game.fullscreen': 'पूर्ण स्क्रीन',
   'game.exitFullscreen': 'पूर्ण स्क्रीन से बाहर निकलें',

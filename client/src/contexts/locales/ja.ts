@@ -50,6 +50,8 @@ export const JA: TranslationMap = {
   'game.notFoundDesc': 'そのゲームが見つかりません。削除されているか、URL が無効な可能性があります。',
   'game.backToGames': 'すべてのゲームに戻る',
   'game.vote.helpful': '役に立つ',
+  'game.rate': 'ゲームを評価',
+  'game.ratings': '件の評価',
   'game.vote.notHelpful': '役に立たない',
   'game.fullscreen': 'フルスクリーン',
   'game.exitFullscreen': 'フルスクリーンを終了',
