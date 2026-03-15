@@ -34,6 +34,9 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p 22 ${{ secrets.CPANEL_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Install rsync
+        run: sudo apt-get install -y rsync
+
       - name: Deploy site
         run: |
           rsync -avz --delete --checksum \
