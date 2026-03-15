@@ -187,6 +187,9 @@ export default function Home() {
         games = [...games].sort((a, b) => a.title.localeCompare(b.title));
       } else if (sortBy === 'newest') {
         games = [...games].sort((a, b) => (a.isNew === b.isNew ? 0 : a.isNew ? -1 : 1));
+      } else {
+        // default: new games first, preserve original relative order for the rest
+        games = [...games].sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
       }
     }
 
