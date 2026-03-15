@@ -182,6 +182,36 @@ export const DE_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `Jetpack Joyride wurde von Halfbrick Studios im September 2011 entwickelt. Barry Steakfries wurde durch eine Facebook-Fanumfrage benannt. Das Machine Gun Jetpack ist vom Konzept des rückstoßbetriebenen Flugs inspiriert. Die Wissenschaftler haben über 40 Animationen. Über 750 Millionen Downloads. Es hätte fast „Jetpack Joyride: Lab of Doom" geheißen.`,
 
+  'fireboy-and-watergirl':
+    `Wusstest du? Fireboy and Watergirl wurde 2009 von Oslo Albet veröffentlicht. Das Spiel hat 32 Level und fünf Teile, wurde über 500 Millionen Mal gespielt und wird in Schulen weltweit als Teamwork-Übung eingesetzt.`,
+
+  'ovo':
+    `Wusstest du? OvO wurde von Dedragames entwickelt und wurde 2021 viral. Der Kern-Trick ist der „Dive-Slide": Drücke in der Luft nach unten und lande im Sprint, um zu gleiten. Speedrunner schaffen das gesamte Spiel in unter 3 Minuten.`,
+
+  'basketball-stars':
+    `Wusstest du? Basketball Stars wurde von Madpuffers entwickelt. Der optimale Abwurfmoment ist auf dem Höhepunkt des Sprungs – genau wie echte NBA-Spieler es tun. Die Charaktere sind von Basketballstars inspiriert.`,
+
+  'monkey-mart':
+    `Wusstest du? Monkey Mart wurde von TinyDobbins in nur drei Monaten entwickelt und seit 2022 über 100 Millionen Mal gespielt. Die Hauptfigur kann automatisch ernten und auffüllen, indem sie einfach über die richtigen Bereiche läuft.`,
+
+  'short-life':
+    `Wusstest du? Short Life wurde von RHM Interactive entwickelt und enthält 20 Level mit einer Physik-Engine, die jeden Tod anders macht. Die Ragdoll-Physik zeigt übertriebene Reaktionen auf jeden Treffer.`,
+
+  '1v1-lol':
+    `Wusstest du? 1v1.LOL erreichte 200 Millionen registrierte Nutzer ohne Marketingbudget. Es verbreitete sich viral durch Schulen. Das Build-System lehnt sich an Fortnite an und ist im Browser kostenlos zugänglich.`,
+
+  'smash-karts':
+    `Wusstest du? Smash Karts überstieg 2023 150 Millionen Spiele. Es läuft auf dedizierten Servern für ein nahtloses Multiplayer-Erlebnis. Jede Runde dauert drei Minuten.`,
+
+  'penalty-shooters-2':
+    `Wusstest du? Penalty Shooters 2 wurde über 200 Millionen Mal gespielt. Das Spiel hat über 50 Nationalmannschaften. Der Schlüssel zum Elfmeter ist das Beobachten, auf welche Seite der Torhüter sich lehnt.`,
+
+  'getaway-shootout':
+    `Wusstest du? Getaway Shootout wurde von New Eich Games entwickelt. Die Steuerung ist absichtlich unhandlich – man kann nicht direkt springen, sondern muss abwechselnd links und rechts hüpfen, was jedes Rennen zu einer Komödie macht.`,
+
+  'big-tower-tiny-square':
+    `Wusstest du? Big Tower Tiny Square enthält über 110 handgefertigte Räume. Der durchschnittliche Spieler stirbt über 2.000 Mal. Das ultimative Ziel ist eine Ananas an der Turmspitze, die von einer bösen Kraft versteckt wurde.`,
+
   'worlds-hardest-game':
     `World's Hardest Game wurde 2008 von Stephen Critoph erstellt und auf AddictingGames veröffentlicht. Es hat 30 Level, und die meisten Spieler bleiben bei Level 15 hängen. Die Abschlussrate des letzten Levels liegt unter 0,1 %. Blaue Gegner verwenden sinusförmige Bewegungen. Speedrunner schaffen es ohne Tod in unter 5 Minuten. Die Fortsetzung fügte 50 Level hinzu.`,
 

@@ -428,6 +428,76 @@ Subway Surfers adalah salah satu gim mobile terpopuler di dunia dengan miliaran 
 Jetpack Joyride adalah gim aksi yang dinamis di mana setiap penerbangan berbeda berkat misi acak dan mesin slot setelah setiap ronde. Buka jetpack, kostum, dan peningkatan baru.`,
     controls: `Sentuh layar atau klik dan tahan untuk naik. Lepaskan untuk turun. Hindari laser, rudal, dan medan listrik!`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Kuil Hutan',
+    description: `Pandu dua pahlawan elemen yang berlawanan melalui 32 level puzzle kooperatif. Fireboy kebal terhadap api, Watergirl kebal terhadap air — sentuh elemen yang salah dan kamu mati seketika. Tarik tuas untuk membuka pintu dan bawa keduanya ke pintu keluar secara bersamaan.
+
+Dirilis tahun 2009, ini adalah salah satu franchise game browser paling dicintai dengan lebih dari 500 juta permainan di lima seri. Guru di seluruh dunia menggunakannya sebagai latihan kerja tim.`,
+    controls: `Pemain 1 (Fireboy): tombol panah untuk bergerak dan melompat. Pemain 2 (Watergirl): WASD untuk bergerak. Fireboy mati di air, Watergirl mati di api. Keduanya mati di lendir hijau. Bawa keduanya ke pintu keluar warna yang sesuai secara bersamaan.`,
+  },
+  'ovo': {
+    title: 'OvO — Platformer Parkour',
+    description: `Sprint, seluncur, dan lompat melalui lebih dari 40 level platform presisi. Kuasai dive-slam untuk melewati bawah rintangan dan wall-jump untuk membuat pintasan.
+
+Dibuat oleh Dedragames dan viral pada 2021. Speedrunner menyelesaikan seluruh game dalam kurang dari 3 menit.`,
+    controls: `Panah atau WASD untuk berlari. Spasi atau ↑ untuk melompat. ↓ di udara untuk dive-slam. Dive-slam saat berlari untuk slide. Lompat di dekat dinding untuk wall-jump.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — Basket 1 lawan 1',
+    description: `Tantang AI atau teman dalam basket satu lawan satu. Tipu defender dan pilih momen sempurna untuk three-pointer atau dunk yang menggelegar.
+
+Dikembangkan oleh Madpuffers. Roster karakter terinspirasi dari superstar NBA dan dimainkan ratusan ribu pemain setiap hari.`,
+    controls: `Pemain 1: A/D gerak, W lompat, S bertahan/curi. B atau klik untuk menembak. Pemain 2: panah gerak, ↑ lompat, ↓ bertahan. L atau klik menembak.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Manajer Supermarket',
+    description: `Jalankan supermarketmu sendiri sebagai monyet yang menggemaskan! Panen produk, isi rak, dan layani pelanggan sebelum mereka kehabisan kesabaran. Rekrut monyet pembantu untuk mengotomatiskan tugas.
+
+Lebih dari 100 juta permainan sejak 2022. Dibangun hanya dalam tiga bulan oleh developer indie TinyDobbins.`,
+    controls: `Panah atau WASD untuk berjalan. Jalan di atas lahan untuk memanen. Jalan ke rak kosong untuk mengisinya. Keluarkan koin untuk bagian baru dan pembantu.`,
+  },
+  'short-life': {
+    title: 'Short Life — Rintangan Mematikan',
+    description: `Pandu karakter ragdoll melalui rintangan mematikan penuh gergaji berputar, palu, dan ranjau. Judulnya bukan kiasan — mati, tertawa, dan coba lagi seketika.
+
+Dikembangkan oleh RHM Interactive. 20 level dengan tingkat brutalitas yang meningkat.`,
+    controls: `Panah atau WASD untuk bergerak dan melompat. Semua bahaya mematikan seketika. Capai bendera di akhir setiap level untuk lanjut. Restart instan setelah setiap kematian.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Bangun dan Tembak',
+    description: `Bertarung di arena build-and-battle di mana bertahan hidup butuh menembak tepat dan membangun lebih cepat. Pasang dinding dan lereng untuk keuntungan tinggi lalu kalahkan lawan.
+
+Lebih dari 200 juta pengguna terdaftar tanpa anggaran pemasaran. Viral di sekolah-sekolah seluruh dunia.`,
+    controls: `WASD bergerak. Mouse bidik/tembak. Q dinding, E lantai, R lereng, F atap. Shift sprint. Scroll mouse ganti senjata.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Battle Kart Multiplayer',
+    description: `Masuk ke kart dan hancurkan lawan dengan roket, senapan mesin, dan bom di arena pertempuran cepat. Kumpulkan kotak senjata dan jadilah kart terakhir.
+
+Lebih dari 150 juta permainan pada 2023. Server khusus memastikan latensi rendah.`,
+    controls: `WASD atau panah untuk mengemudi. Mouse untuk membidik. Spasi atau klik untuk menembak. Kumpulkan kotak senjata. Eliminasi terbanyak saat waktu habis menang.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Tendangan Penalti',
+    description: `Hadapi tekanan sepak bola tertinggi dalam adu penalti 8 turnamen internasional. Sebagai penyerang, perhatikan kemiringan kiper. Sebagai kiper, baca arah tembakan.
+
+Lebih dari 200 juta permainan. Lebih dari 50 tim nasional dengan warna jersey autentik.`,
+    controls: `Sebagai penyerang: mouse untuk bidik, klik untuk tendang. Kiper miring — gunakan petunjuk. Sebagai kiper: klik sisi yang benar untuk diving.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Balapan Penuh Kekacauan',
+    description: `Lompat, tembak, dan tersandung menuju kendaraan kabur sebelum lawan dalam brawler kacau ini. Kontrol sengaja kikuk — lompat bergantian kiri-kanan — menjadikan setiap balapan komedi.
+
+Dikembangkan oleh New Eich Games. Senjata acak memastikan setiap pertandingan unik.`,
+    controls: `Pemain 1: W lompat kiri, E lompat kanan, R gunakan item. Pemain 2: I kiri, O kanan, P item. Pertama ke kendaraan menang babak.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Platformer Vertikal',
+    description: `Daki menara yang sangat tinggi sebagai kotak kecil, satu ruangan mematikan sekaligus. Setiap lantai membawa jebakan lebih jahat. Tujuanmu adalah nanas di puncak.
+
+Lebih dari 110 ruangan buatan tangan. Pemain rata-rata butuh 3–5 jam dan lebih dari 2.000 kematian untuk sampai atas.`,
+    controls: `Panah atau WASD untuk bergerak. Spasi, W, atau ↑ untuk melompat. Ketuk ganda arah di udara untuk dorongan kecil. Bahaya apa pun mematikan seketika dan hanya mereset ruangan saat ini.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Tantangan Presisi Tertinggi",
     description: `Arahkan kotak merah melewati labirin bola biru sambil mengumpulkan koin kuning. Kedengarannya mudah? Ini adalah salah satu gim tersulit yang pernah dibuat — membutuhkan presisi mutlak dan ketepatan waktu yang sempurna.

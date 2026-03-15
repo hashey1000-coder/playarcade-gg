@@ -428,6 +428,76 @@ Subway Surfers är ett av världens mest populära mobilspel med miljarder nedla
 Jetpack Joyride är ett actionfyllt spel där varje flygning är unik tack vare slumpmässiga uppdrag och en slotmaskin efter varje runda. Lås upp nya jetpacks, kostymer och uppgraderingar.`,
     controls: `Tryck på skärmen eller klicka och håll inne för att stiga. Släpp för att sjunka. Undvik lasrar, raketer och elektriska fält!`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Skogens tempel',
+    description: `Led två motsatta elementala hjältar genom 32 kooperativa pusselnivåer. Fireboy är immun mot eld, Watergirl mot vatten — rör fel element och du dör omedelbart. Aktivera spakar för att öppna dörrar och led båda till utgångarna samtidigt.
+
+Utgivet 2009, är det en av de mest älskade webbläsarspelsfranchiserna med över 500 miljoner partier i fem delar. Lärare världen över använder det som en lagarbetsövning.`,
+    controls: `Spelare 1 (Fireboy): piltangenter för att röra sig och hoppa. Spelare 2 (Watergirl): WASD för att röra sig. Fireboy dör i vatten, Watergirl i eld. Båda dör i grön slem. Led båda samtidigt till utgångarna i rätt färg.`,
+  },
+  'ovo': {
+    title: 'OvO — Parkour-plattformsspel',
+    description: `Springa, glid och hoppa genom mer än 40 precisionsplattformsnivåer. Bemästra dykslaggen för att glida under hinder och vägghopp för genvägar.
+
+Skapat av Dedragames och viralt 2021. Speedrunners klarar hela spelet på under 3 minuter.`,
+    controls: `Pilar eller WASD för att springa. Mellanslag eller ↑ för att hoppa. ↓ i luften för dykslagg. Dykslagg under löpning för glid. Hopp nära vägg för vägghopp.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — 1 mot 1 Basket',
+    description: `Utmana AI eller en vän i en-mot-en basket. Lura din försvarare och välj det perfekta ögonblicket för en trepoängare eller en spektakulär dunkning.
+
+Utvecklat av Madpuffers. Karaktärsroster inspirerad av NBA-superstjärnor och hundratusentals spelare dagligen.`,
+    controls: `Spelare 1: A/D röra sig, W hoppa, S försvara/stjäla. B eller klick för att skjuta. Spelare 2: pilar, ↑ hoppa, ↓ försvara. L eller klick för att skjuta.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Snabbköpschef',
+    description: `Driv din egen snabbköpsbutik som en gullig apa! Skörda produkter, fyll på hyllor och betjäna kunder innan de förlorar tålamodet. Anställ hjälp-apor för att automatisera uppgifter.
+
+Mer än 100 miljoner partier sedan 2022. Byggt på bara tre månader av indie-utvecklaren TinyDobbins.`,
+    controls: `Pilar eller WASD för att gå. Gå över fält för att skörda. Gå till tomma hyllor för att fylla på. Spendera mynt på nya sektioner och hjälpare.`,
+  },
+  'short-life': {
+    title: 'Short Life — Hinderbaneöverlevnad',
+    description: `Led en ragdoll-karaktär genom dödliga hinderbanebanor fulla av roterande sågar, hammare och minor. Namnet är ingen överdrift — dö, skratta och försök igen omedelbart.
+
+Utvecklat av RHM Interactive. 20 nivåer med ökande brutalitet med en fysikmotor som gör varje död unik.`,
+    controls: `Pilar eller WASD för att röra sig och hoppa. Alla faror dödar omedelbart. Nå flaggan i slutet av varje nivå för att fortsätta. Omedelbar omstart efter varje död.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Bygg och Skjut',
+    description: `Slåss i bygg-och-slåss-arenor där det krävs precisa skott och ännu snabbare byggande för att överleva. Placera väggar och ramper för höjdfördel och eliminera sedan motståndaren.
+
+Mer än 200 miljoner registrerade användare utan marknadsföringsbudget. Viralt via skolor världen över.`,
+    controls: `WASD röra sig. Mus sikta/skjuta. Q vägg, E golv, R ramp, F tak. Shift sprinta. Mushjul byta vapen.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Multiplayer Kartbatalj',
+    description: `Hoppa i en kart och eliminera motståndare med raketer, kulsprutor och minor i denna snabba stridararena. Samla vapenboxar och bli sista kartet.
+
+Mer än 150 miljoner partier 2023. Dedikerade servrar säkerställer låg latens.`,
+    controls: `WASD eller pilar för att köra. Mus för att sikta. Mellanslag eller klick för att skjuta. Samla vapenboxar. Flest elimineringar när tiden är slut vinner.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Fotboll Straffar',
+    description: `Ta emot det ultimata fotbollstrycket i straffläggningar i 8 internationella turneringar. Som anfallare, se målvaktens lutning. Som målvakt, läs skjutriktningen.
+
+Mer än 200 miljoner partier. Mer än 50 landslag med autentiska dräktfärger.`,
+    controls: `Som anfallare: mus för att sikta, klick för att skjuta. Målvakten lutar — använd tipset. Som målvakt: klicka på rätt sida för att kasta dig.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Kaotisk Flyktlopp',
+    description: `Hoppa, skjut och snubbla mot flyktfordonet innan motståndarna i denna kaotiska brawler. Kontrollerna är medvetet klumpiga — alternerande vänster-höger-hopp — vilket gör varje lopp till en komedi.
+
+Utvecklat av New Eich Games. Slumpmässigt spawnade vapen garanterar unika matcher.`,
+    controls: `Spelare 1: W hoppa vänster, E hoppa höger, R använd föremål. Spelare 2: I vänster, O höger, P föremål. Första till fordonet vinner rundan.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Vertikal Plattformsspel',
+    description: `Klättra upp ett farligt högt torn som en liten fyrkant, ett dödligt rum i taget. Varje våning ger elakare fällor. Ditt mål är ananasen längst upp.
+
+Mer än 110 handgjorda rum. Den genomsnittliga spelaren behöver 3–5 timmar och mer än 2 000 dödsfall för att nå toppen.`,
+    controls: `Pilar eller WASD för att röra sig. Mellanslag, W eller ↑ för att hoppa. Dubbelklick riktning i luften för liten boost. Vilken fara som helst dödar omedelbart och återställer bara det aktuella rummet.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Ultimat Precisionsutmaning",
     description: `Styr den röda fyrkanten genom en labyrint av blå bollar och samla gula mynt. Låter enkelt? Det här är ett av de svåraste spelen som någonsin skapats — det kräver absolut precision och perfekt tajming.

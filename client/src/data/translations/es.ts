@@ -428,6 +428,76 @@ Subway Surfers es uno de los juegos móviles más descargados de la historia, co
 Jetpack Joyride combina acción frenética con mecánicas de colección. Desbloquea jetpacks diferentes, cada uno con efectos visuales únicos, y completa misiones para ganar recompensas extra.`,
     controls: `Mantén pulsado para activar el jetpack y subir. Suelta para descender. Esquiva obstáculos y recoge vehículos especiales para protección temporal.`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Templo del Bosque',
+    description: `Guía a dos héroes elementales opuestos por 32 niveles de puzzle cooperativo. Fireboy es inmune al fuego y Watergirl al agua — toca el elemento equivocado y mueres al instante. Acciona palancas para abrir puertas y lleva ambos personajes a sus salidas simultáneamente.
+
+Publicada en 2009, es una de las franquicias de juegos de navegador más queridas con más de 500 millones de partidas en sus cinco entregas. Profesores de todo el mundo la usan como ejercicio de trabajo en equipo.`,
+    controls: `Jugador 1 (Fireboy): flechas para moverse y saltar. Jugador 2 (Watergirl): WASD para moverse. Fireboy muere en el agua, Watergirl en el fuego. Ambos mueren en el limo verde. Guía a ambos a sus puertas de salida del color correspondiente al mismo tiempo.`,
+  },
+  'ovo': {
+    title: 'OvO — Plataformero Parkour',
+    description: `Corre, deslízate y salta por más de 40 niveles de plataformas de precisión. Domina el golpe de buceo para deslizarte bajo barreras y el salto de pared para crear atajos.
+
+Creado por Dedragames y viral en 2021. Los speedrunners completan el juego entero en menos de 3 minutos.`,
+    controls: `Flechas o WASD para correr. Espacio o ↑ para saltar. ↓ en el aire para golpe de buceo. Golpe de buceo en tierra para deslizarse. Salto junto a pared para salto en pared.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — Baloncesto 1 contra 1',
+    description: `Desafía a la IA o a un amigo en baloncesto uno contra uno. Engaña a tu defensor y elige el momento perfecto para un triple o una volcada demoledora.
+
+Desarrollado por Madpuffers. El elenco de personajes está inspirado en superestrellas de la NBA y cuenta con cientos de miles de jugadores diarios.`,
+    controls: `Jugador 1: A/D moverse, W saltar, S defender/robar. B o clic para tirar. Jugador 2: flechas moverse, ↑ saltar, ↓ defender. L o clic para tirar.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Gerente de Supermercado',
+    description: `¡Dirige tu propio supermercado como un adorable mono! Cosecha productos, llena estantes y atiende clientes antes de que pierdan la paciencia. Contrata monos ayudantes para automatizar tareas.
+
+Más de 100 millones de partidas desde 2022. Construido en solo tres meses por el desarrollador independiente TinyDobbins.`,
+    controls: `Flechas o WASD para caminar. Camina sobre parcelas para cosechar. Camina a estantes vacíos para reponerlos. Gasta monedas en nuevas secciones y monos ayudantes.`,
+  },
+  'short-life': {
+    title: 'Short Life — Supervivencia en Obstáculos',
+    description: `Guía a un personaje ragdoll por cursos de obstáculos letales llenos de sierras giratorias, martillos y minas. El nombre no es metáfora — muere, ríete y vuelve a intentarlo.
+
+Desarrollado por RHM Interactive. 20 niveles de brutalidad creciente con un motor de física que hace cada muerte diferente.`,
+    controls: `Flechas o WASD para moverse y saltar. Todas las trampas matan al instante. Llega a la bandera al final de cada nivel para avanzar. Reinicio instantáneo tras cada muerte.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Construir y Disparar',
+    description: `Combate en arenas de construcción y batalla donde sobrevivir exige disparar recto y construir más rápido. Coloca paredes y rampas para ganar altura y elimina a tu oponente.
+
+Más de 200 millones de usuarios registrados sin presupuesto de marketing. Se hizo viral en escuelas de todo el mundo.`,
+    controls: `WASD moverse. Ratón apuntar/disparar. Q pared, E suelo, R rampa, F techo. Shift correr. Rueda ratón cambiar armas.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Batalla de Karts Multijugador',
+    description: `Salta a un kart y elimina oponentes con cohetes, ametralladoras y minas en esta arena de batalla rápida. Recoge cajas de armas y sé el último kart en pie.
+
+Más de 150 millones de partidas en 2023. Servidores dedicados garantizan baja latencia.`,
+    controls: `WASD o flechas para conducir. Ratón para apuntar. Espacio o clic para disparar. Recoge cajas de armas. Más eliminaciones al acabar el tiempo gana.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Penaltis de Fútbol',
+    description: `Soporta la presión máxima del fútbol en tandas de penaltis de 8 torneos internacionales. Como delantero observa el giro del portero. Como portero lee la dirección del disparo.
+
+Más de 200 millones de partidas. Más de 50 selecciones nacionales con colores de camiseta auténticos.`,
+    controls: `Como delantero: mueve el ratón para apuntar y haz clic para chutar. El portero se inclina — usa el indicio. Como portero: haz clic en el lado correcto para lanzarte.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Carrera Caótica',
+    description: `Salta, dispara y tropieza hacia el vehículo de escape antes que tus oponentes en este caótico brawler. Los controles son deliberadamente torpes — saltos alternos — lo que convierte cada carrera en una comedia.
+
+Desarrollado por New Eich Games. Armas de aparición aleatoria garantizan partidas únicas.`,
+    controls: `Jugador 1: W saltar izquierda, E saltar derecha, R usar objeto. Jugador 2: I izquierda, O derecha, P objeto. El primero en llegar al vehículo gana la ronda.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Plataformero Vertical',
+    description: `Escala una torre traicioneramente alta como un cuadrado diminuto, una habitación mortal a la vez. Cada piso trae trampas más crueles. Tu objetivo es la piña en la cima.
+
+Más de 110 habitaciones hechas a mano. El jugador promedio necesita 3–5 horas y más de 2.000 muertes para llegar.`,
+    controls: `Flechas o WASD para moverse. Espacio, W o ↑ para saltar. Doble toque dirección en el aire para impulso. Cualquier peligro mata al instante y reinicia solo la habitación actual.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Desafío de Precisión Extrema",
     description: `Guía tu cuadrado rojo a través de laberintos repletos de bolas azules en movimiento. Un solo contacto te devuelve al inicio. Solo los más pacientes lo superarán.

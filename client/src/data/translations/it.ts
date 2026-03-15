@@ -428,6 +428,76 @@ Subway Surfers è uno degli endless runner più famosi al mondo, con ambientazio
 Jetpack Joyride segue le avventure di Barry Steakfries in un endless runner adrenalinico. Sblocca jetpack unici e completa missioni per guadagnare ricompense.`,
     controls: `Tieni premuto per attivare il jetpack e salire. Rilascia per scendere. Evita gli ostacoli e raccogli potenziamenti.`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Tempio della Foresta',
+    description: `Guida due eroi elementali opposti attraverso 32 livelli puzzle cooperativi. Fireboy è immune al fuoco, Watergirl all'acqua — tocca l'elemento sbagliato e muori subito. Aziona leve per aprire porte e porta entrambi i personaggi alle uscite contemporaneamente.
+
+Pubblicato nel 2009, è uno dei franchise di giochi browser più amati con oltre 500 milioni di partite in cinque episodi. Gli insegnanti di tutto il mondo lo usano come esercizio di lavoro di squadra.`,
+    controls: `Giocatore 1 (Fireboy): frecce per muoversi e saltare. Giocatore 2 (Watergirl): WASD per muoversi. Fireboy muore nell'acqua, Watergirl nel fuoco. Entrambi muoiono nel fango verde. Porta entrambi alle uscite del colore corrispondente contemporaneamente.`,
+  },
+  'ovo': {
+    title: 'OvO — Platformer Parkour',
+    description: `Corri, scivola e salta attraverso oltre 40 livelli platform di precisione. Padroneggia il dive-slam per passare sotto le barriere e i wall-jump per creare scorciatoie.
+
+Creato da Dedragames e virale nel 2021. Gli speedrunner completano il gioco in meno di 3 minuti.`,
+    controls: `Frecce o WASD per correre. Spazio o ↑ per saltare. ↓ in aria per dive-slam. Dive-slam correndo per scivolare. Salto vicino al muro per wall-jump.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — Basket 1 contro 1',
+    description: `Sfida l'IA o un amico nel basket uno contro uno. Inganna il tuo difensore e scegli il momento perfetto per un tiro da tre o una schiacciata spettacolare.
+
+Sviluppato da Madpuffers. Il roster dei personaggi è ispirato alle superstar NBA e conta centinaia di migliaia di giocatori al giorno.`,
+    controls: `Giocatore 1: A/D muoversi, W saltare, S difendere/rubare. B o clic per tirare. Giocatore 2: frecce, ↑ saltare, ↓ difendere. L o clic per tirare.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Gestore del Supermercato',
+    description: `Gestisci il tuo supermercato come un adorabile scimmietta! Raccogli prodotti, rifornisci gli scaffali e servi i clienti prima che perdano la pazienza. Assumi scimmie assistenti per automatizzare i compiti.
+
+Oltre 100 milioni di partite dal 2022. Costruito in soli tre mesi dallo sviluppatore indie TinyDobbins.`,
+    controls: `Frecce o WASD per camminare. Cammina sui campi per raccogliere. Vai agli scaffali vuoti per rifornire. Spendi monete per nuove sezioni e assistenti.`,
+  },
+  'short-life': {
+    title: 'Short Life — Sopravvivenza al Percorso',
+    description: `Guida un personaggio ragdoll attraverso percorsi ad ostacoli letali pieni di seghe rotanti, martelli e mine. Il nome non è una metafora — muori, ridi e riprova subito.
+
+Sviluppato da RHM Interactive. 20 livelli di brutalità crescente con un motore fisico che rende ogni morte diversa.`,
+    controls: `Frecce o WASD per muoversi e saltare. Tutti i pericoli uccidono all'istante. Raggiungi la bandiera alla fine di ogni livello per avanzare. Ripartenza istantanea dopo ogni morte.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Costruire e Sparare',
+    description: `Combatti in arene costruisci-e-spara dove sopravvivere richiede di sparare giusto e costruire ancora più veloce. Posiziona muri e rampe per l'alta quota poi elimina l'avversario.
+
+Oltre 200 milioni di utenti registrati senza budget di marketing. Virale nelle scuole di tutto il mondo.`,
+    controls: `WASD muoversi. Mouse mirare/sparare. Q muro, E pavimento, R rampa, F tetto. Shift correre. Rotella mouse cambiare armi.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Battaglia di Kart Multiplayer',
+    description: `Salta su un kart ed elimina i nemici con razzi, mitragliatrici e mine in questa rapida arena di battaglia. Raccogli casse di armi e sii l'ultimo kart in piedi.
+
+Oltre 150 milioni di partite nel 2023. Server dedicati garantiscono bassa latenza.`,
+    controls: `WASD o frecce per guidare. Mouse per mirare. Spazio o clic per sparare. Raccogli casse di armi. Maggiori eliminazioni alla fine del tempo vince.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Calci di Rigore',
+    description: `Affronta la massima pressione calcistica nei calci di rigore in 8 tornei internazionali. Come attaccante, osserva l'inclinazione del portiere. Come portiere, leggi la direzione del tiro.
+
+Oltre 200 milioni di partite. Oltre 50 nazionali con colori della maglia autentici.`,
+    controls: `Come attaccante: mouse per mirare, clic per calciare. Il portiere si inclina — usa il suggerimento. Come portiere: clic sul lato giusto per tuffarti.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Gara Caotica',
+    description: `Salta, spara e inciampa verso il veicolo di fuga prima degli avversari in questo brawler caotico. I controlli sono deliberatamente goffi — salti alternati sinistra-destra — rendendo ogni gara una commedia.
+
+Sviluppato da New Eich Games. Armi a comparsa casuale garantiscono partite uniche.`,
+    controls: `Giocatore 1: W salto sinistro, E salto destro, R usa oggetto. Giocatore 2: I sinistra, O destra, P oggetto. Il primo al veicolo vince il round.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Platformer Verticale',
+    description: `Scala una torre pericolosamente alta come un quadratino, una stanza mortale alla volta. Ogni piano porta trappole più crudeli. Il tuo obiettivo è l'ananas in cima.
+
+Oltre 110 stanze artigianali. Il giocatore medio ha bisogno di 3–5 ore e oltre 2.000 morti per arrivare in cima.`,
+    controls: `Frecce o WASD per muoversi. Spazio, W o ↑ per saltare. Doppia pressione direzione in aria per piccola spinta. Qualsiasi pericolo uccide all'istante e resetta solo la stanza attuale.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Sfida di Precisione Estrema",
     description: `Guida il quadrato rosso attraverso labirinti pieni di sfere blu in movimento. Un solo tocco e si ricomincia. Solo i giocatori più abili arriveranno alla fine.

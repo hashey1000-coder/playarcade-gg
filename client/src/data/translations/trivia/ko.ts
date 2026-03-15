@@ -182,6 +182,36 @@ export const KO_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `알고 계셨나요? Jetpack Joyride는 Halfbrick Studios가 2011년 9월에 개발했습니다. 주인공 Barry Steakfries의 이름은 Facebook 팬 투표로 결정되었습니다. Machine Gun Jetpack은 반동 추진 비행 개념에서 영감을 받았습니다. 과학자들에게는 40가지 이상의 애니메이션이 있습니다. 다운로드 수는 7억 5천만 회를 넘었습니다. 원래 "Jetpack Joyride: Lab of Doom"이라는 이름이 될 뻔했습니다.`,
 
+  'fireboy-and-watergirl':
+    `알고 계셨나요? Fireboy and Watergirl은 2009년 Oslo Albet이 만들었습니다. 32개의 레벨과 5개 시리즈가 있으며, 5억 회 이상 플레이되었고 전 세계 교사들이 팀워크 훈련으로 활용합니다.`,
+
+  'ovo':
+    `알고 계셨나요? OvO는 Dedragames가 만들었으며 2021년에 바이럴이 되었습니다. 핵심 기술은 "다이브 슬라이드": 공중에서 아래를 누르고 달리면서 착지하면 미끄러집니다. 스피드런너는 3분 이내에 클리어합니다.`,
+
+  'basketball-stars':
+    `알고 계셨나요? Basketball Stars는 Madpuffers가 개발했습니다. 최적의 슛 타이밍은 점프 최고점, 실제 NBA 선수들처럼. 캐릭터는 농구 스타들에서 영감을 받았습니다.`,
+
+  'monkey-mart':
+    `알고 계셨나요? Monkey Mart는 TinyDobbins가 단 3개월 만에 만들었으며 2022년 이후 1억 회 이상 플레이되었습니다. 주인공은 올바른 구역 위를 걸어가는 것만으로 자동으로 수확하고 보충할 수 있습니다.`,
+
+  'short-life':
+    `알고 계셨나요? Short Life는 RHM Interactive가 개발했으며 20개 레벨과 매 죽음마다 다르게 만드는 물리 엔진이 있습니다. 래그돌 물리학이 각 충격에 과장된 반응을 보여줍니다.`,
+
+  '1v1-lol':
+    `알고 계셨나요? 1v1.LOL은 마케팅 예산 없이 2억 명의 등록 사용자에 도달했습니다. 학교를 통해 바이럴로 퍼졌습니다. 건설 시스템은 Fortnite에서 영감을 받았습니다.`,
+
+  'smash-karts':
+    `알고 계셨나요? Smash Karts는 2023년에 1.5억 게임을 넘었습니다. 전용 서버에서 실행되며 원활한 멀티플레이어 경험을 제공합니다. 각 라운드는 3분입니다.`,
+
+  'penalty-shooters-2':
+    `알고 계셨나요? Penalty Shooters 2는 2억 회 이상 플레이되었습니다. 50개 이상의 국가 대표팀이 있습니다. 페널티킥의 핵심은 골키퍼가 슛 전에 어느 쪽으로 기울어지는지 관찰하는 것입니다.`,
+
+  'getaway-shootout':
+    `알고 계셨나요? Getaway Shootout은 New Eich Games가 만들었습니다. 컨트롤은 의도적으로 어색하게 설계되어 있습니다: 직접 앞으로 점프할 수 없고, 왼쪽과 오른쪽으로 번갈아 점프해야 하며, 이로 인해 매 레이스가 코미디가 됩니다.`,
+
+  'big-tower-tiny-square':
+    `알고 계셨나요? Big Tower Tiny Square에는 110개 이상의 수제 방이 있습니다. 평균 플레이어는 2,000회 이상 사망합니다. 최종 목표는 악의 세력이 숨긴 탑 꼭대기의 파인애플입니다.`,
+
   'worlds-hardest-game':
     `알고 계셨나요? World's Hardest Game은 Stephen Critoph가 제작하여 2008년 AddictingGames에서 공개했습니다. 총 30개 레벨로, 대부분의 플레이어는 레벨 15에서 막힙니다. 최종 레벨의 클리어율은 0.1% 미만입니다. 파란색 적은 사인파 운동을 합니다. 스피드러너는 무사망으로 5분 이내에 클리어합니다. 후속작에서는 50개 레벨이 추가되었습니다.`,
 

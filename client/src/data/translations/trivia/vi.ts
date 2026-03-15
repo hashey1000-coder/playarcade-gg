@@ -182,6 +182,36 @@ export const VI_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `Bạn có biết? Jetpack Joyride được tạo bởi Halfbrick Studios vào tháng 9 năm 2011. Tên Barry Steakfries được chọn qua cuộc bình chọn của người hâm mộ trên Facebook. Machine Gun Jetpack lấy cảm hứng từ khái niệm bay bằng lực giật lùi. Các nhà khoa học trong trò chơi có hơn 40 hoạt ảnh. Trò chơi đã có hơn 750 triệu lượt tải và suýt được đặt tên là "Jetpack Joyride: Lab of Doom."`,
 
+  'fireboy-and-watergirl':
+    `Bạn có biết không? Fireboy and Watergirl được tạo ra năm 2009 bởi Oslo Albet. Trò chơi có 32 cấp độ và năm phần, được chơi hơn 500 triệu lần và được giáo viên khắp thế giới sử dụng như bài tập làm việc nhóm.`,
+
+  'ovo':
+    `Bạn có biết không? OvO được tạo bởi Dedragames và lan truyền vào năm 2021. Kỹ thuật chính là "dive-slide": nhấn xuống trong không khí và hạ cánh khi đang chạy để trượt. Speedrunner hoàn thành toàn bộ game trong chưa đầy 3 phút.`,
+
+  'basketball-stars':
+    `Bạn có biết không? Basketball Stars được phát triển bởi Madpuffers. Thời điểm tối ưu để ném là ở đỉnh của cú nhảy, giống như các cầu thủ NBA thực sự làm. Các nhân vật được lấy cảm hứng từ các ngôi sao bóng rổ.`,
+
+  'monkey-mart':
+    `Bạn có biết không? Monkey Mart được phát triển bởi TinyDobbins chỉ trong ba tháng và được chơi hơn 100 triệu lần kể từ năm 2022. Nhân vật chính có thể tự động thu hoạch và bổ sung chỉ bằng cách đi qua các khu vực phù hợp.`,
+
+  'short-life':
+    `Bạn có biết không? Short Life được phát triển bởi RHM Interactive với 20 cấp độ và engine vật lý làm cho mỗi lần chết khác nhau. Vật lý ragdoll hiển thị phản ứng phóng đại với mỗi cú va chạm.`,
+
+  '1v1-lol':
+    `Bạn có biết không? 1v1.LOL đạt 200 triệu người dùng đăng ký mà không có ngân sách tiếp thị. Lan truyền virally qua các trường học. Hệ thống xây dựng lấy cảm hứng từ Fortnite và miễn phí trên trình duyệt.`,
+
+  'smash-karts':
+    `Bạn có biết không? Smash Karts vượt 150 triệu game vào năm 2023. Chạy trên máy chủ chuyên dụng cho trải nghiệm nhiều người chơi mượt mà. Mỗi vòng kéo dài ba phút.`,
+
+  'penalty-shooters-2':
+    `Bạn có biết không? Penalty Shooters 2 được chơi hơn 200 triệu lần. Game có hơn 50 đội tuyển quốc gia. Chìa khóa của cú sút phạt là quan sát thủ môn nghiêng về phía nào trước khi sút.`,
+
+  'getaway-shootout':
+    `Bạn có biết không? Getaway Shootout được tạo bởi New Eich Games. Điều khiển được thiết kế cố tình vụng về: bạn không thể nhảy thẳng về phía trước, bạn phải luân phiên nhảy trái và phải, điều này biến mỗi cuộc đua thành hài kịch.`,
+
+  'big-tower-tiny-square':
+    `Bạn có biết không? Big Tower Tiny Square chứa hơn 110 phòng thủ công. Người chơi trung bình chết hơn 2.000 lần. Mục tiêu cuối cùng là một quả dứa trên đỉnh tháp, bị ẩn bởi một thế lực xấu xa.`,
+
   'worlds-hardest-game':
     `Bạn có biết? World's Hardest Game được tạo bởi Stephen Critoph và phát hành trên AddictingGames vào năm 2008. Trò chơi có 30 cấp độ và hầu hết người chơi bị kẹt ở cấp 15. Tỷ lệ hoàn thành cấp cuối cùng dưới 0,1%. Kẻ địch xanh di chuyển theo mô hình hình sin. Các speedrunner hoàn thành không chết trong chưa đến 5 phút. Phần tiếp theo thêm 50 cấp độ mới.`,
 

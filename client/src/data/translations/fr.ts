@@ -428,6 +428,76 @@ Subway Surfers est l'un des jeux mobiles les plus téléchargés de l'histoire, 
 Jetpack Joyride mêle action effrénée et mécaniques de collection. Débloquez différents jetpacks aux effets visuels uniques et accomplissez des missions pour gagner des récompenses supplémentaires.`,
     controls: `Maintenez appuyé pour activer le jetpack et monter. Relâchez pour descendre. Esquivez les obstacles et ramassez des véhicules spéciaux pour une protection temporaire.`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Temple de la Forêt',
+    description: `Guidez deux héros élémentaires opposés à travers 32 niveaux coopératifs. Fireboy est immunisé contre le feu, Watergirl contre l'eau — touchez le mauvais élément et vous mourez. Actionnez des leviers pour ouvrir des portes et guidez les deux personnages vers leurs sorties en même temps.
+
+Publié en 2009, c'est l'une des franchises de jeux navigateur les plus aimées avec plus de 500 millions de parties sur cinq épisodes. Les enseignants du monde entier l'utilisent comme exercice de travail d'équipe.`,
+    controls: `Joueur 1 (Fireboy) : flèches pour se déplacer et sauter. Joueur 2 (Watergirl) : WASD pour se déplacer. Fireboy meurt dans l'eau, Watergirl dans le feu. Les deux meurent dans la boue verte. Guidez les deux vers leurs portes de sortie couleur assortie simultanément.`,
+  },
+  'ovo': {
+    title: 'OvO — Plateforme Parkour',
+    description: `Sprintez, glissez et sautez à travers plus de 40 niveaux de plateforme de précision. Maîtrisez le plongeon-glisse pour passer sous des barrières et les sauts muraux.
+
+Créé par Dedragames et viral en 2021. Les speedrunners terminent le jeu en moins de 3 minutes.`,
+    controls: `Flèches ou WASD pour courir. Espace ou ↑ pour sauter. ↓ en l'air pour plonger au sol. Plongeon au sol en courant pour glisser. Saut contre un mur pour saut mural.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — Basket 1 contre 1',
+    description: `Défiez l'IA ou un ami au basket un contre un. Feintez votre défenseur et choisissez le moment parfait pour un tir à trois points ou un dunk spectaculaire.
+
+Développé par Madpuffers. Le roster de personnages est inspiré des superstars NBA et compte des centaines de milliers de joueurs quotidiens.`,
+    controls: `Joueur 1 : A/D se déplacer, W sauter, S défendre/voler. B ou clic pour tirer. Joueur 2 : flèches, ↑ sauter, ↓ défendre. L ou clic pour tirer.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Gérant de Supermarché',
+    description: `Gérez votre propre supermarché en tant que singe adorable ! Récoltez des produits, remplissez les rayons et servez les clients avant qu'ils perdent patience. Embauchez des singes assistants pour automatiser les tâches.
+
+Plus de 100 millions de parties depuis 2022. Construit en seulement trois mois par le développeur indépendant TinyDobbins.`,
+    controls: `Flèches ou WASD pour marcher. Marcher sur les parcelles pour récolter. Aller aux rayons vides pour les remplir. Dépenser des pièces pour de nouvelles sections et des assistants.`,
+  },
+  'short-life': {
+    title: 'Short Life — Survie au Parcours Mortel',
+    description: `Guidez un personnage ragdoll à travers des parcours d'obstacles mortels remplis de scies rotatives, marteaux et mines. Le nom n'est pas une métaphore — mourez, riez et réessayez immédiatement.
+
+Développé par RHM Interactive. 20 niveaux de brutalité croissante avec un moteur physique qui rend chaque mort différente.`,
+    controls: `Flèches ou WASD pour se déplacer et sauter. Tous les pièges tuent instantanément. Atteignez le drapeau en fin de niveau pour progresser. Redémarrage instantané après chaque mort.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Construire et Tirer',
+    description: `Combattez dans des arènes de construction où survivre exige de tirer juste et de construire encore plus vite. Posez murs et rampes pour prendre de la hauteur puis éliminez votre adversaire.
+
+Plus de 200 millions d'utilisateurs enregistrés sans budget marketing. Viral dans les écoles du monde entier.`,
+    controls: `WASD se déplacer. Souris viser/tirer. Q mur, E sol, R rampe, F toit. Shift sprint. Molette changer d'armes.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Battle de Karts Multijoueur',
+    description: `Sautez dans un kart et éliminez des adversaires avec des roquettes, mitrailleuses et mines dans cette arène de bataille rapide. Collectez des caisses d'armes et soyez le dernier kart debout.
+
+Plus de 150 millions de parties en 2023. Des serveurs dédiés garantissent une faible latence.`,
+    controls: `WASD ou flèches pour conduire. Souris pour viser. Espace ou clic pour tirer. Collecter les caisses d'armes. Le plus d'éliminations à la fin du temps gagne.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Tirs au But',
+    description: `Affrontez la pression ultime du football dans des tirs au but sur 8 tournois internationaux. En tant que tireur, observez l'inclinaison du gardien. En tant que gardien, lisez la direction du tir.
+
+Plus de 200 millions de parties. Plus de 50 équipes nationales avec des couleurs de maillot authentiques.`,
+    controls: `En tant que tireur : souris pour viser, clic pour tirer. Le gardien s'incline — utilisez l'indice. En tant que gardien : cliquez du bon côté pour plonger.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Course Chaotique',
+    description: `Bondissez, tirez et trébuchez vers le véhicule de fuite avant vos adversaires dans ce brawler chaotique. Les contrôles sont délibérément maladroits — sauts gauche-droite alternés — faisant de chaque course une comédie.
+
+Développé par New Eich Games. Les armes à apparition aléatoire garantissent des parties uniques.`,
+    controls: `Joueur 1 : W sauter gauche, E sauter droite, R utiliser objet. Joueur 2 : I gauche, O droite, P objet. Le premier au véhicule gagne la manche.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Plateforme Vertical',
+    description: `Escaladez une tour dangereusement haute en tant que petit carré, une salle mortelle à la fois. Chaque étage apporte des pièges plus vicieux. Votre objectif est l'ananas au sommet.
+
+Plus de 110 salles artisanales. Le joueur moyen a besoin de 3 à 5 heures et plus de 2 000 morts pour atteindre le sommet.`,
+    controls: `Flèches ou WASD pour se déplacer. Espace, W ou ↑ pour sauter. Double appui direction en l'air pour petit boost. Tout danger tue instantanément et réinitialise seulement la salle actuelle.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Défi de Précision Ultime",
     description: `Guidez votre carré rouge à travers des labyrinthes remplis de billes bleues en mouvement. Un seul contact vous ramène au départ. Seuls les plus patients en viendront à bout.

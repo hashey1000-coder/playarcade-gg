@@ -182,6 +182,36 @@ export const SV_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `Jetpack Joyride skapades av Halfbrick Studios i september 2011. Barry Steakfries fick sitt namn genom en fandomröstning på Facebook. Machine Gun Jetpack är inspirerad av konceptet att flyga med rekylkraft. Forskarna har mer än 40 animationer. Spelet har laddats ner mer än 750 miljoner gånger och skulle nästan ha hetat "Jetpack Joyride: Lab of Doom".`,
 
+  'fireboy-and-watergirl':
+    `Visste du att? Fireboy and Watergirl skapades 2009 av Oslo Albet. Spelet har 32 nivåer och fem delar, har spelats mer än 500 miljoner gånger och används av lärare världen över som en teamwork-övning.`,
+
+  'ovo':
+    `Visste du att? OvO skapades av Dedragames och blev viralt 2021. Det viktigaste tricket är "dive-slide": tryck nedåt i luften och landa medan du sprintar för att glida. Speedrunners klarar hela spelet på under 3 minuter.`,
+
+  'basketball-stars':
+    `Visste du att? Basketball Stars utvecklades av Madpuffers. Det optimala ögonblicket att skjuta är på toppen av hoppet, precis som riktiga NBA-spelare gör. Karaktärerna är inspirerade av basketballstjärnor.`,
+
+  'monkey-mart':
+    `Visste du att? Monkey Mart utvecklades av TinyDobbins på bara tre månader och har spelats mer än 100 miljoner gånger sedan 2022. Huvudkaraktären kan automatiskt skörda och fylla på bara genom att gå över rätt områden.`,
+
+  'short-life':
+    `Visste du att? Short Life utvecklades av RHM Interactive med 20 nivåer och en fysikmotor som gör varje död annorlunda. Ragdoll-fysiken visar överdrivna reaktioner på varje träff.`,
+
+  '1v1-lol':
+    `Visste du att? 1v1.LOL nådde 200 miljoner registrerade användare utan marknadsföringsbudget. Det spred sig viralt genom skolor. Byggsystemet är inspirerat av Fortnite och är gratis i webbläsaren.`,
+
+  'smash-karts':
+    `Visste du att? Smash Karts översteg 150 miljoner spel 2023. Det körs på dedikerade servrar för en smidig multiplayer-upplevelse. Varje omgång varar i tre minuter.`,
+
+  'penalty-shooters-2':
+    `Visste du att? Penalty Shooters 2 har spelats mer än 200 miljoner gånger. Spelet har mer än 50 landslag. Nyckeln till straffet är att observera åt vilket håll målvakten lutar sig innan man skjuter.`,
+
+  'getaway-shootout':
+    `Visste du att? Getaway Shootout skapades av New Eich Games. Styrningen är avsiktligt klumpig: du kan inte hoppa direkt framåt, du måste alternera hopp till vänster och höger, vilket förvandlar varje lopp till en komedi.`,
+
+  'big-tower-tiny-square':
+    `Visste du att? Big Tower Tiny Square innehåller mer än 110 handgjorda rum. Den genomsnittlige spelaren dör mer än 2 000 gånger. Det ultimata målet är en ananas längst upp i tornet, gömd av en ond kraft.`,
+
   'worlds-hardest-game':
     `World's Hardest Game skapades av Stephen Critoph och släpptes på AddictingGames 2008. Spelet har 30 nivåer och de flesta spelare fastnar vid nivå 15. Slutnivåns avklarningsgrad är under 0,1 %. Blå fiender rör sig sinusformigt. Speedrunnare klarar spelet utan att dö på under 5 minuter. Uppföljaren lade till 50 nya nivåer.`,
 

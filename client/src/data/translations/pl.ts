@@ -428,6 +428,76 @@ Subway Surfers to jedna z najpopularniejszych gier mobilnych na świecie z milia
 Jetpack Joyride to dynamiczna gra akcji, w której każdy lot jest inny dzięki losowym misjom i nagrodzie z automatu po każdej rozgrywce. Odblokuj nowe plecaki, kostiumy i ulepszenia.`,
     controls: `Dotknij ekranu lub kliknij i przytrzymaj, aby wznosić się. Puść, aby opadać. Unikaj laserów, rakiet i pól elektrycznych!`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Świątynia Leśna',
+    description: `Prowadź dwóch przeciwstawnych elementarnych bohaterów przez 32 poziomy kooperacyjnych zagadek. Fireboy jest odporny na ogień, Watergirl na wodę — dotknij złego elementu i natychmiast giniesz. Aktywuj dźwignie, by otwierać drzwi i prowadź oboje do wyjść jednocześnie.
+
+Wydany w 2009 roku, to jedna z najbardziej lubianych franczyz gier przeglądarkowych z ponad 500 milionami rozgrywek w pięciu częściach. Nauczyciele na całym świecie używają go jako ćwiczenia z pracy zespołowej.`,
+    controls: `Gracz 1 (Fireboy): strzałki do poruszania się i skakania. Gracz 2 (Watergirl): WASD do poruszania się. Fireboy ginie w wodzie, Watergirl w ogniu. Oboje giną w zielonym szlamie. Prowadź oboje jednocześnie do wyjść we właściwym kolorze.`,
+  },
+  'ovo': {
+    title: 'OvO — Platformer Parkour',
+    description: `Biegnij, ślizgaj się i skacz przez ponad 40 precyzyjnych poziomów platformowych. Opanuj dive-slam, by prześlizgnąć się pod barierami, i wall-jump, by tworzyć skróty.
+
+Stworzone przez Dedragames, wirusowe w 2021 roku. Speedrunnerzy kończą całą grę w mniej niż 3 minuty.`,
+    controls: `Strzałki lub WASD do biegu. Spacja lub ↑ do skoku. ↓ w powietrzu to dive-slam. Dive-slam podczas biegu to ślizg. Skok przy ścianie to wall-jump.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — Koszykówka 1 na 1',
+    description: `Zmierz się z AI lub znajomym w koszykówce jeden na jeden. Zmyl obrońcę i wybierz idealny moment na trójkę lub efektowny wsad.
+
+Stworzone przez Madpuffers. Roster postaci inspirowany gwiazdami NBA, codziennie grają setki tysięcy graczy.`,
+    controls: `Gracz 1: A/D ruch, W skok, S obrona/kradzież. B lub klik do rzutu. Gracz 2: strzałki, ↑ skok, ↓ obrona. L lub klik do rzutu.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Menadżer Supermarketu',
+    description: `Prowadź własny supermarket jako uroczy małpiszon! Zbieraj plony, uzupełniaj półki i obsługuj klientów, zanim stracą cierpliwość. Zatrudniaj pomocnicze małpki, by automatyzować zadania.
+
+Ponad 100 milionów rozgrywek od 2022 roku. Zbudowane w zaledwie trzy miesiące przez niezależnego dewelopera TinyDobbins.`,
+    controls: `Strzałki lub WASD do chodzenia. Chód po polach zbiera plony. Podejście do pustej półki uzupełnia ją. Wydaj monety na nowe sekcje i pomocników.`,
+  },
+  'short-life': {
+    title: 'Short Life — Przetrwanie Toru Przeszkód',
+    description: `Prowadź postać ragdoll przez śmiercionośne tory przeszkód pełne obracających się pił, młotów i min. Tytuł nie jest przesadą — giń, śmiej się i od razu próbuj ponownie.
+
+Stworzone przez RHM Interactive. 20 poziomów rosnącej brutalności z silnikiem fizycznym, który sprawia, że każda śmierć jest inna.`,
+    controls: `Strzałki lub WASD do poruszania się i skakania. Wszystkie zagrożenia zabijają natychmiast. Dotrzyj do flagi na końcu każdego poziomu, by przejść dalej. Natychmiastowy restart po każdej śmierci.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Buduj i Strzelaj',
+    description: `Walcz w arenach buduj-i-walcz, gdzie przetrwanie wymaga celnego strzelania i jeszcze szybszego budowania. Stawiaj ściany i rampy, by zdobyć przewagę wysokości, a potem wyeliminuj przeciwnika.
+
+Ponad 200 milionów zarejestrowanych użytkowników bez budżetu marketingowego. Wirusowo rozszerzył się przez szkoły na całym świecie.`,
+    controls: `WASD ruch. Mysz celowanie/strzelanie. Q ściana, E podłoga, R rampa, F dach. Shift sprint. Kółko myszy zmiana broni.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Wieloosobowa Bitwa na Kartach',
+    description: `Wskocz do karta i eliminuj przeciwników rakietami, karabinami maszynowymi i minami w tej szybkiej arenie bitwy. Zbieraj skrzynie z bronią i bądź ostatnim kartem.
+
+Ponad 150 milionów rozgrywek w 2023 roku. Dedykowane serwery gwarantują niskie opóźnienia.`,
+    controls: `WASD lub strzałki do jazdy. Mysz do celowania. Spacja lub klik do strzelania. Zbieraj skrzynie z bronią. Najwięcej eliminacji po czasie wygrywa.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Rzuty Karne',
+    description: `Zmierz się z ostateczną presją piłkarską w seriach rzutów karnych w 8 międzynarodowych turniejach. Jako napastnik obserwuj pochylenie bramkarza. Jako bramkarz czytaj kierunek strzału.
+
+Ponad 200 milionów rozgrywek. Ponad 50 drużyn narodowych z autentycznymi kolorami koszulek.`,
+    controls: `Jako napastnik: mysz do celowania, klik do strzału. Bramkarz się pochyla — użyj wskazówki. Jako bramkarz: kliknij po właściwej stronie, by się rzucić.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Chaotyczny Wyścig',
+    description: `Skacz, strzelaj i potykaj się w stronę pojazdu ucieczki przed przeciwnikami w tym chaotycznym brawlerze. Sterowanie jest celowo niezgrabne — naprzemienne skoki lewo-prawo — co sprawia, że każdy wyścig to komedia.
+
+Stworzone przez New Eich Games. Losowo pojawiające się bronie gwarantują wyjątkowe mecze.`,
+    controls: `Gracz 1: W skok w lewo, E skok w prawo, R użyj przedmiotu. Gracz 2: I lewo, O prawo, P przedmiot. Pierwszy do pojazdu wygrywa rundę.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Pionowy Platformer',
+    description: `Wspinaj się na niebezpiecznie wysoką wieżę jako mały kwadracik, jedna śmiercionośna komnata na raz. Każde piętro przynosi okrutniejsze pułapki. Twoim celem jest ananas na samym szczycie.
+
+Ponad 110 ręcznie stworzonych komnat. Przeciętny gracz potrzebuje 3–5 godzin i ponad 2000 śmierci, by dotrzeć na szczyt.`,
+    controls: `Strzałki lub WASD do ruchu. Spacja, W lub ↑ do skoku. Podwójne naciśnięcie kierunku w powietrzu daje mały impuls. Każde zagrożenie zabija natychmiast i resetuje tylko bieżącą komnatę.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Wyzwanie Najwyższej Precyzji",
     description: `Poprowadź czerwony kwadrat przez labirynt niebieskich kul, zbierając żółte monety. Brzmi prosto? To jedna z najtrudniejszych gier, jakie kiedykolwiek powstały — wymaga absolutnej precyzji i idealnego wyczucia czasu.

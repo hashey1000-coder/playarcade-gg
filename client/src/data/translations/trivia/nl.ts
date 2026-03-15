@@ -182,6 +182,36 @@ export const NL_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `Wist je dat? Jetpack Joyride is gemaakt door Halfbrick Studios in september 2011. Barry Steakfries kreeg zijn naam via een fanpoll op Facebook. De Machine Gun Jetpack is geïnspireerd op het concept van vliegen door terugslag. De wetenschappers hebben meer dan 40 animaties. Het spel heeft meer dan 750 miljoen downloads en zou bijna "Jetpack Joyride: Lab of Doom" hebben geheten.`,
 
+  'fireboy-and-watergirl':
+    `Wist je dat? Fireboy and Watergirl werd in 2009 gemaakt door Oslo Albet. Het spel heeft 32 niveaus en vijf delen, werd meer dan 500 miljoen keer gespeeld en wordt door leraren wereldwijd gebruikt als teamwork-oefening.`,
+
+  'ovo':
+    `Wist je dat? OvO werd gemaakt door Dedragames en werd viraal in 2021. De sleuteltruc is de "dive-slide": druk omlaag in de lucht en land terwijl je sprint om te glijden. Speedrunners voltooien het hele spel in minder dan 3 minuten.`,
+
+  'basketball-stars':
+    `Wist je dat? Basketball Stars werd ontwikkeld door Madpuffers. Het optimale moment om te schieten is op het hoogtepunt van de sprong, precies zoals echte NBA-spelers dat doen. De personages zijn geïnspireerd op basketbalsterren.`,
+
+  'monkey-mart':
+    `Wist je dat? Monkey Mart werd door TinyDobbins in slechts drie maanden ontwikkeld en meer dan 100 miljoen keer gespeeld sinds 2022. Het hoofdpersonage kan automatisch oogsten en aanvullen door gewoon over de juiste gebieden te lopen.`,
+
+  'short-life':
+    `Wist je dat? Short Life werd ontwikkeld door RHM Interactive met 20 niveaus en een fysica-engine die elke dood anders maakt. De ragdoll-fysica toont overdreven reacties op elke inslag.`,
+
+  '1v1-lol':
+    `Wist je dat? 1v1.LOL bereikte 200 miljoen geregistreerde gebruikers zonder marketingbudget. Het verspreidde zich viraal via scholen. Het bouwsysteem is geïnspireerd op Fortnite en is gratis in de browser.`,
+
+  'smash-karts':
+    `Wist je dat? Smash Karts overtrof in 2023 de 150 miljoen spellen. Het werkt op dedicated servers voor een vloeiende multiplayer-ervaring. Elke ronde duurt drie minuten.`,
+
+  'penalty-shooters-2':
+    `Wist je dat? Penalty Shooters 2 werd meer dan 200 miljoen keer gespeeld. Het spel heeft meer dan 50 nationale teams. De sleutel tot de strafschop is observeren naar welke kant de keeper leunt voor het schieten.`,
+
+  'getaway-shootout':
+    `Wist je dat? Getaway Shootout werd gemaakt door New Eich Games. De besturing is bewust onhandig ontworpen: je kunt niet direct naar voren springen, je moet afwisselend naar links en rechts springen, waardoor elke race een komedie wordt.`,
+
+  'big-tower-tiny-square':
+    `Wist je dat? Big Tower Tiny Square bevat meer dan 110 handgemaakte kamers. De gemiddelde speler sterft meer dan 2.000 keer. Het uiteindelijke doel is een ananas bovenaan de toren, verborgen door een kwade kracht.`,
+
   'worlds-hardest-game':
     `Wist je dat? World's Hardest Game is gemaakt door Stephen Critoph en uitgebracht op AddictingGames in 2008. Het heeft 30 levels en de meeste spelers blijven hangen bij level 15. Het voltooiingspercentage van het laatste level is minder dan 0,1%. De blauwe vijanden bewegen sinusoïdaal. Speedrunners voltooien het zonder te sterven in minder dan 5 minuten. Het vervolg voegde 50 nieuwe levels toe.`,
 

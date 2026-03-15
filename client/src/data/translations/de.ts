@@ -428,6 +428,76 @@ Subway Surfers ist eines der meistgeladenen Handyspiele aller Zeiten, mit regelm
 Jetpack Joyride verbindet rasante Action mit Sammel-Mechaniken. Schalte verschiedene Jetpacks mit einzigartigen visuellen Effekten frei und erfülle Missionen für Extrabelohnungen.`,
     controls: `Halte gedrückt, um das Jetpack zu aktivieren und aufzusteigen. Loslassen, um zu sinken. Weiche Hindernissen aus und sammle Spezialfahrzeuge für vorübergehenden Schutz.`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Waldtempel',
+    description: `Steuere zwei gegensätzliche Helden durch 32 kooperative Rätsellevel. Fireboy ist feuerresistent, Watergirl wasserresistent — berühre das falsche Element und du stirbst sofort. Betätige Hebel, um Tore zu öffnen, und führe beide Charaktere gleichzeitig zu ihren Ausgängen.
+
+Das Spiel wurde 2009 veröffentlicht und ist einer der beliebtesten Browserspiele aller Zeiten mit über 500 Millionen Spielen in fünf Teilen. Weltweit nutzen Lehrer es als Teamarbeit-Übung.`,
+    controls: `Spieler 1 (Fireboy): Pfeiltasten zum Bewegen und Springen. Spieler 2 (Watergirl): WASD zum Bewegen. Fireboy stirbt in Wasser, Watergirl in Feuer. Beide sterben in grünem Schleim. Führt beide gleichzeitig zu den farblich passenden Ausgangstüren.`,
+  },
+  'ovo': {
+    title: 'OvO — Parkour-Plattformer',
+    description: `Sprinte, gleite und springe durch über 40 präzise Plattformlevel. Meistere den Tauchstoß zum Gleiten unter Hindernissen und Wandsprünge für kürzere Routen.
+
+Von Dedragames entwickelt und 2021 viral. Speedrunner schaffen das gesamte Spiel in unter 3 Minuten.`,
+    controls: `Pfeiltasten oder WASD zum Laufen. Leertaste oder ↑ zum Springen. ↓ beim Fallen für Tauchstoß. Im Laufen Tauchstoß für Slide. An Wand springen für Wandsprung.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — 1-gegen-1 Basketball',
+    description: `Fordere die KI oder einen Freund im 1-gegen-1-Basketball heraus. Täusche deinen Verteidiger und wähle den perfekten Moment für einen Dreipunktwurf oder Dunking.
+
+Entwickelt von Madpuffers. Das Charakter-Lineup ist von NBA-Superstars inspiriert und wird täglich von Hunderttausenden gespielt.`,
+    controls: `Spieler 1: A/D Bewegung, W Sprung, S Verteidigung/Diebstahl. B oder Klick zum Schießen. Spieler 2: Pfeiltasten, ↑ Sprung, ↓ Verteidigung. L oder Klick zum Schießen.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Supermarkt-Manager',
+    description: `Führe deinen eigenen Supermarkt als niedlicher Affe! Ernte Produkte, befülle Regale und bediene Kunden. Stelle Helfer-Affen ein, um Aufgaben zu automatisieren.
+
+Über 100 Millionen Spiele seit 2022. Vom Indie-Entwickler TinyDobbins in nur drei Monaten gebaut.`,
+    controls: `Pfeiltasten oder WASD zum Gehen. Über Felder laufen zum Ernten. Zu leeren Regalen gehen zum Auffüllen. Münzen ausgeben für neue Bereiche und Helfer.`,
+  },
+  'short-life': {
+    title: 'Short Life — Hindernisparcours-Überleben',
+    description: `Führe eine Ragdoll-Figur durch tödliche Hindernisparcours mit rotierenden Sägeblättern, Hämmern und Minen. Der Name ist keine Übertreibung — stirb, lache und versuche es sofort wieder.
+
+Von RHM Interactive entwickelt. 20 Level mit zunehmendem Brutalitätsgrad warten auf dich.`,
+    controls: `Pfeiltasten oder WASD für Bewegung und Sprung. Alle Gefahren töten sofort. Ziel ist die Flagge am Ende jedes Levels. Nach jedem Tod sofort neustart.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Bauen und Schießen',
+    description: `Kämpfe in Bau-und-Kampf-Arenen, wo Überleben schnelles Schießen und noch schnelleres Bauen bedeutet. Platziere Wände und Rampen für Höhenvorteil.
+
+Über 200 Millionen registrierte Nutzer ohne Marketingbudget. In Schulen weltweit viral durch Mundpropaganda.`,
+    controls: `WASD Bewegen. Maus Zielen/Schießen. Q Wand, E Boden, R Rampe, F Dach. Shift Sprinten. Mausrad Waffen wechseln.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Mehrspieler-Kartbattle',
+    description: `Spring in ein Kart und vernichte Gegner mit Raketen, Maschinengewehren und Minen in dieser schnellen Battle-Arena. Sammle Waffenkisten und sei das letzte Kart.
+
+Über 150 Millionen Spiele 2023. Dedizierte Server sorgen für niedrige Latenz.`,
+    controls: `WASD oder Pfeiltasten zum Fahren. Maus zum Zielen. Leertaste oder Klick zum Feuern. Waffenkisten aufsammeln. Meiste Abschüsse bei Zeitende gewinnt.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Fußball-Elfmeter',
+    description: `Meistere den ultimativen Fußballdruck in Elfmeterschießen über 8 Turniere. Als Schütze beobachte das Neigen des Torwarts. Als Torwart lies die Körpersprache.
+
+Über 200 Millionen Spiele. Über 50 Nationalmannschaften mit authentischen Trikotfarben.`,
+    controls: `Als Schütze: Maus für Ziel, Klick zum Schießen. Torwart neigt sich — nutze den Hinweis. Als Torwart: Klicke die richtige Seite zum Hechten.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Chaotisches Rennen',
+    description: `Hüpfe, schieße und stolpere zum Fluchtfahrzeug, bevor deine Gegner ankommen. Steuerung ist absichtlich unbeholfen — abwechselnde Links-Rechts-Hüpfer machen jedes Rennen zur Komödie.
+
+Von New Eich Games entwickelt. Zufällig spawnende Waffen sorgen für einzigartiges Spielerlebnis.`,
+    controls: `Spieler 1: W links hüpfen, E rechts hüpfen, R Item nutzen. Spieler 2: I links, O rechts, P Item. Erst zum Fluchtfahrzeug gewinnt die Runde.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Vertikaler Plattformer',
+    description: `Erklimme einen gefährlich hohen Turm als winziges Quadrat, einen tödlichen Raum nach dem anderen. Jeder Stock bringt gemeinere Fallen. Dein Ziel ist die Ananas ganz oben.
+
+Über 110 handgefertigte Räume. Der durchschnittliche Spieler braucht 3–5 Stunden und über 2.000 Tode.`,
+    controls: `Pfeiltasten oder WASD bewegen. Leertaste oder W oder ↑ springen. Doppelklick Richtung in der Luft für kleinen Schub. Jede Gefahr tötet sofort und setzt nur im aktuellen Raum zurück.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Ultimative Präzisionsherausforderung",
     description: `Führe dein rotes Quadrat durch Labyrinthe voller blauer Bälle in Bewegung. Eine einzige Berührung schickt dich zurück zum Start. Nur die Geduldigsten schaffen es.

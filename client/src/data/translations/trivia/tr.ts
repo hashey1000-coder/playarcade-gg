@@ -182,6 +182,36 @@ export const TR_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `Biliyor muydunuz? Jetpack Joyride, Halfbrick Studios tarafından Eylül 2011'de yaratılmıştır. Barry Steakfries'ın adı Facebook hayran oylamasıyla belirlenmiştir. Machine Gun Jetpack, geri tepme ile uçuş konseptinden esinlenmiştir. Bilim insanlarının 40'tan fazla animasyonu vardır. 750 milyondan fazla indirilmiştir. Oyun neredeyse "Jetpack Joyride: Lab of Doom" adıyla çıkacaktı.`,
 
+  'fireboy-and-watergirl':
+    `Biliyor muydunuz? Fireboy and Watergirl 2009 yılında Oslo Albet tarafından yapıldı. Oyunun 32 seviyesi ve beş bölümü var, 500 milyondan fazla kez oynandı ve tüm dünyadan öğretmenler takım çalışması egzersizi olarak kullanıyor.`,
+
+  'ovo':
+    `Biliyor muydunuz? OvO Dedragames tarafından yapıldı ve 2021'de viral oldu. Temel teknik "dive-slide": havada aşağı basın ve sprint yaparken inin, kayacaksınız. Speedrunner'lar tüm oyunu 3 dakikanın altında tamamlıyor.`,
+
+  'basketball-stars':
+    `Biliyor muydunuz? Basketball Stars Madpuffers tarafından geliştirildi. Atış için en iyi an zıplamanın zirvesi — gerçek NBA oyuncularının yaptığı gibi. Karakterler basketbol yıldızlarından ilham aldı.`,
+
+  'monkey-mart':
+    `Biliyor muydunuz? Monkey Mart TinyDobbins tarafından yalnızca üç ayda yapıldı ve 2022'den bu yana 100 milyondan fazla kez oynandı. Ana karakter doğru alanlarda yürüyerek otomatik olarak hasat yapabilir ve stok doldurabilir.`,
+
+  'short-life':
+    `Biliyor muydunuz? Short Life RHM Interactive tarafından 20 seviye ve her ölümü farklı kılan bir fizik motoru ile geliştirildi. Ragdoll fiziği her darbeye abartılı tepkiler gösteriyor.`,
+
+  '1v1-lol':
+    `Biliyor muydunuz? 1v1.LOL pazarlama bütçesi olmadan 200 milyon kayıtlı kullanıcıya ulaştı. Okullar aracılığıyla viral olarak yayıldı. İnşaat sistemi Fortnite'tan ilham aldı ve tarayıcıda ücretsiz.`,
+
+  'smash-karts':
+    `Biliyor muydunuz? Smash Karts 2023'te 150 milyon oyunu geçti. Sorunsuz bir çok oyunculu deneyim için özel sunucularda çalışıyor. Her tur üç dakika sürüyor.`,
+
+  'penalty-shooters-2':
+    `Biliyor muydunuz? Penalty Shooters 2 200 milyondan fazla kez oynandı. Oyunun 50'den fazla milli takımı var. Penaltının sırrı, vuruştan önce kalecinin hangi tarafa yaslandığını gözlemlemek.`,
+
+  'getaway-shootout':
+    `Biliyor muydunuz? Getaway Shootout New Eich Games tarafından yapıldı. Kontroller kasıtlı olarak beceriksiz: doğrudan ileriye atlayamazsın, sola ve sağa atlayışları sırayla yapman gerekiyor, bu da her yarışı komediye dönüştürüyor.`,
+
+  'big-tower-tiny-square':
+    `Biliyor muydunuz? Big Tower Tiny Square 110'dan fazla el yapımı oda içeriyor. Ortalama oyuncu 2.000'den fazla kez ölüyor. Nihai hedef, kötü bir güç tarafından saklanan kulenin tepesindeki bir ananastır.`,
+
   'worlds-hardest-game':
     `Biliyor muydunuz? World's Hardest Game, Stephen Critoph tarafından yaratılmış ve 2008'de AddictingGames'te yayımlanmıştır. 30 seviye içerir ve çoğu oyuncu 15. seviyede takılır. Son seviyenin tamamlanma oranı %0,1'in altındadır. Mavi düşmanlar sinüzoidal hareket kullanır. Speedrunner'lar oyunu ölmeden 5 dakikanın altında bitirebilir. Devam oyununda 50 yeni seviye eklenmiştir.`,
 

@@ -428,6 +428,76 @@ Met wisselende wereldlocaties en levendige graphics. Ontgrendel diverse personag
 Diverse voertuigen en power-ups houden de gameplay fris. Voltooi missies om beloningen te verdienen en koop upgrades om elke poging te verbeteren.`,
     controls: `Klik of houd ingedrukt om de jetpack te activeren en te stijgen. Laat los om te dalen. Gebruik korte tikken om je hoogte nauwkeurig te regelen.`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Bostempel',
+    description: `Leid twee tegengestelde elementaire helden door 32 coöperatieve puzzelniveaus. Fireboy is immuun voor vuur, Watergirl voor water — raak het verkeerde element aan en je sterft onmiddellijk. Activeer hefbomen om deuren te openen en leid beide personages tegelijk naar hun uitgang.
+
+Uitgebracht in 2009, is het een van de meest geliefde browserspelfranchises met meer dan 500 miljoen spellen in vijf delen. Leraren wereldwijd gebruiken het als teamwork-oefening.`,
+    controls: `Speler 1 (Fireboy): pijltjestoetsen om te bewegen en springen. Speler 2 (Watergirl): WASD om te bewegen. Fireboy sterft in water, Watergirl in vuur. Beiden sterven in groen slijk. Leid beide tegelijk naar de bijpassende kleur uitgangsdeuren.`,
+  },
+  'ovo': {
+    title: 'OvO — Parkour Platformer',
+    description: `Sprint, glij en spring door meer dan 40 precisie-platformniveaus. Beheers de duikslam om onder barrières door te gaan en muursprongen voor snelkoppelingen.
+
+Gemaakt door Dedragames en viraal in 2021. Speedrunners voltooien het volledige spel in minder dan 3 minuten.`,
+    controls: `Pijltjes of WASD om te rennen. Spatie of ↑ om te springen. ↓ in de lucht voor duikslam. Duikslam tijdens rennen voor glijden. Sprong naast muur voor muursprong.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — 1 tegen 1 Basketbal',
+    description: `Daag de AI of een vriend uit in een-op-een basketbal. Misleid je verdediger en kies het perfecte moment voor een driepunter of een spectaculaire dunk.
+
+Ontwikkeld door Madpuffers. Het karakterroster is geïnspireerd op NBA-superstars en kent dagelijks honderdduizenden spelers.`,
+    controls: `Speler 1: A/D bewegen, W springen, S verdedigen/stelen. B of klik om te schieten. Speler 2: pijltjes, ↑ springen, ↓ verdedigen. L of klik om te schieten.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Supermarktmanager',
+    description: `Beheer je eigen supermarkt als een schattige aap! Oogst producten, vul schappen bij en bedien klanten voordat ze hun geduld verliezen. Huur hulp-apen in om taken te automatiseren.
+
+Meer dan 100 miljoen spellen sinds 2022. Gebouwd in slechts drie maanden door indie-ontwikkelaar TinyDobbins.`,
+    controls: `Pijltjes of WASD om te lopen. Lopen over velden om te oogsten. Ga naar lege schappen om bij te vullen. Geef munten uit voor nieuwe secties en helpers.`,
+  },
+  'short-life': {
+    title: 'Short Life — Hindernisbaan Overleven',
+    description: `Leid een ragdoll-figuur door dodelijke hindernisbanen vol roterende zagen, hamers en mijnen. De naam is geen overdrijving — sterf, lach en probeer het onmiddellijk opnieuw.
+
+Ontwikkeld door RHM Interactive. 20 niveaus met toenemende brutaliteit met een fysische motor die elke dood anders maakt.`,
+    controls: `Pijltjes of WASD voor bewegen en springen. Alle gevaren doden onmiddellijk. Bereik de vlag aan het einde van elk niveau om door te gaan. Onmiddellijk herstart na elke dood.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Bouwen en Schieten',
+    description: `Vecht in bouw-en-vecht-arenas waar overleven vereist dat je snel schiet en nog sneller bouwt. Plaats muren en hellingen voor hoogtevoordeel en elimineer dan je tegenstander.
+
+Meer dan 200 miljoen geregistreerde gebruikers zonder marketingbudget. Viraal verspreid via scholen wereldwijd.`,
+    controls: `WASD bewegen. Muis richten/schieten. Q muur, E vloer, R helling, F dak. Shift sprinten. Muiswiel wapens wisselen.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Multiplayer Kartgevecht',
+    description: `Spring in een kart en elimineer tegenstanders met raketten, machinegeweren en mijnen in deze snelle strijdarena. Verzamel wapenkisten en wees de laatste kart.
+
+Meer dan 150 miljoen spellen in 2023. Dedicated servers zorgen voor lage latentie.`,
+    controls: `WASD of pijltjes voor rijden. Muis voor richten. Spatie of klik voor schieten. Wapenkisten verzamelen. Meeste eliminaties bij het einde van de tijd wint.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Voetbal Strafschoppen',
+    description: `Doorsta de ultieme voetbaldruk in strafschoppenreeksen van 8 internationale toernooien. Als aanvaller, let op de kanteling van de keeper. Als keeper, lees de schietrichting.
+
+Meer dan 200 miljoen spellen. Meer dan 50 nationale teams met authentieke truitkleuren.`,
+    controls: `Als aanvaller: muis voor richten, klik om te schieten. Keeper kantelt — gebruik de hint. Als keeper: klik aan de juiste kant om te duiken.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Chaotische Race',
+    description: `Spring, schiet en struikel naar het vluchtvaartuig voordat je tegenstanders in deze chaotische brawler. Besturing is bewust onhandig — afwisselende links-rechts sprongen — waardoor elke race een komedie wordt.
+
+Ontwikkeld door New Eich Games. Willekeurig gespawnde wapens zorgen voor unieke potjes.`,
+    controls: `Speler 1: W springen links, E springen rechts, R item gebruiken. Speler 2: I links, O rechts, P item. Eerste bij het voertuig wint de ronde.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Verticale Platformer',
+    description: `Beklim een gevaarlijk hoge toren als een klein vierkantje, een dodelijke kamer tegelijk. Elke verdieping brengt gemeanere vallen. Je doel is de ananas helemaal bovenaan.
+
+Meer dan 110 handgemaakte kamers. De gemiddelde speler heeft 3–5 uur en meer dan 2.000 doden nodig om de top te bereiken.`,
+    controls: `Pijltjes of WASD voor bewegen. Spatie, W of ↑ voor springen. Dubbeltik richting in de lucht voor kleine boost. Elk gevaar doodt onmiddellijk en reset alleen de huidige kamer.`,
+  },
   'worlds-hardest-game': {
     title: 'World\'s Hardest Game — Ultieme Precisie-uitdaging',
     description: `World's Hardest Game staat bekend als een van de moeilijkste spellen ooit. Beweeg het rode vierkant langs blauwe ballen, verzamel gele cirkels en bereik het groene gebied.

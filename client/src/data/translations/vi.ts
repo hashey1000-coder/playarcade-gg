@@ -428,6 +428,76 @@ Subway Surfers là một trong những trò chơi di động phổ biến nhất
 Jetpack Joyride là trò chơi hành động sôi động, mỗi chuyến bay đều khác nhờ nhiệm vụ ngẫu nhiên và máy đánh bạc sau mỗi lượt chơi. Mở khóa jetpack, trang phục và nâng cấp mới.`,
     controls: `Chạm màn hình hoặc nhấp và giữ để bay lên. Thả ra để hạ xuống. Né tránh laser, tên lửa và vùng điện!`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Đền Rừng',
+    description: `Điều khiển hai anh hùng nguyên tố đối lập qua 32 cấp độ câu đố hợp tác. Fireboy miễn nhiễm với lửa, Watergirl miễn nhiễm với nước — chạm vào nguyên tố sai và bạn chết ngay lập tức. Kích hoạt đòn bẩy để mở cửa và dẫn cả hai đến lối ra cùng lúc.
+
+Ra mắt năm 2009, đây là một trong những franchise game trình duyệt được yêu thích nhất với hơn 500 triệu lần chơi trong năm phần. Giáo viên khắp thế giới sử dụng nó như bài tập làm việc nhóm.`,
+    controls: `Người chơi 1 (Fireboy): phím mũi tên để di chuyển và nhảy. Người chơi 2 (Watergirl): WASD để di chuyển. Fireboy chết trong nước, Watergirl chết trong lửa. Cả hai chết trong nhớt xanh. Dẫn cả hai đồng thời đến lối ra màu tương ứng.`,
+  },
+  'ovo': {
+    title: 'OvO — Platformer Parkour',
+    description: `Chạy nhanh, trượt và nhảy qua hơn 40 cấp độ nền tảng chính xác. Nắm vững dive-slam để lướt dưới các rào cản và wall-jump để tạo đường tắt.
+
+Được tạo bởi Dedragames và lan truyền vào năm 2021. Speedrunner hoàn thành toàn bộ game trong chưa đầy 3 phút.`,
+    controls: `Mũi tên hoặc WASD để chạy. Cách hoặc ↑ để nhảy. ↓ trên không để dive-slam. Dive-slam khi đang chạy để trượt. Nhảy gần tường để wall-jump.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — Bóng Rổ 1 đối 1',
+    description: `Thách thức AI hoặc bạn bè trong bóng rổ một đối một. Đánh lừa hậu vệ và chọn thời điểm hoàn hảo cho cú ném ba điểm hoặc cú đập bóng ngoạn mục.
+
+Phát triển bởi Madpuffers. Danh sách nhân vật lấy cảm hứng từ siêu sao NBA và có hàng trăm nghìn người chơi mỗi ngày.`,
+    controls: `Người chơi 1: A/D di chuyển, W nhảy, S phòng thủ/cướp bóng. B hoặc nhấp để ném. Người chơi 2: mũi tên, ↑ nhảy, ↓ phòng thủ. L hoặc nhấp để ném.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Quản Lý Siêu Thị',
+    description: `Quản lý siêu thị của riêng bạn với tư cách là một chú khỉ dễ thương! Thu hoạch sản phẩm, bổ sung kệ hàng và phục vụ khách hàng trước khi họ mất kiên nhẫn. Thuê khỉ trợ lý để tự động hóa công việc.
+
+Hơn 100 triệu lần chơi kể từ năm 2022. Được xây dựng chỉ trong ba tháng bởi nhà phát triển indie TinyDobbins.`,
+    controls: `Mũi tên hoặc WASD để đi bộ. Đi trên cánh đồng để thu hoạch. Tiếp cận kệ trống để bổ sung. Chi tiêu xu cho các khu vực mới và trợ lý.`,
+  },
+  'short-life': {
+    title: 'Short Life — Vượt Chướng Ngại Vật',
+    description: `Điều khiển nhân vật ragdoll qua các chướng ngại vật chết người đầy cưa quay, búa và mìn. Tên không phải là phóng đại — chết, cười và thử lại ngay lập tức.
+
+Phát triển bởi RHM Interactive. 20 cấp độ tàn bạo tăng dần với engine vật lý làm cho mỗi lần chết khác nhau.`,
+    controls: `Mũi tên hoặc WASD để di chuyển và nhảy. Tất cả nguy hiểm đều giết chết ngay lập tức. Đến cờ ở cuối mỗi cấp độ để tiếp tục. Khởi động lại ngay sau mỗi lần chết.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — Xây Dựng và Bắn',
+    description: `Chiến đấu trong đấu trường xây dựng-và-chiến đấu nơi sự sống còn đòi hỏi bắn chính xác và xây dựng còn nhanh hơn. Đặt tường và dốc để có lợi thế về độ cao rồi tiêu diệt đối thủ.
+
+Hơn 200 triệu người dùng đăng ký mà không có ngân sách tiếp thị. Lan truyền qua các trường học trên toàn thế giới.`,
+    controls: `WASD di chuyển. Chuột nhắm/bắn. Q tường, E sàn, R dốc, F mái. Shift chạy nhanh. Cuộn chuột đổi vũ khí.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Trận Chiến Kart Nhiều Người',
+    description: `Nhảy vào kart và tiêu diệt đối thủ bằng tên lửa, súng máy và mìn trong đấu trường chiến đấu nhanh này. Thu thập hộp vũ khí và là kart cuối cùng còn lại.
+
+Hơn 150 triệu lần chơi vào năm 2023. Máy chủ chuyên dụng đảm bảo độ trễ thấp.`,
+    controls: `WASD hoặc mũi tên để lái. Chuột để nhắm. Cách hoặc nhấp để bắn. Thu thập hộp vũ khí. Nhiều tiêu diệt nhất khi hết giờ thắng.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Đá Phạt Đền',
+    description: `Đối mặt với áp lực bóng đá tối cao trong loạt đá phạt của 8 giải đấu quốc tế. Là người đá, quan sát độ nghiêng của thủ môn. Là thủ môn, đọc hướng cú sút.
+
+Hơn 200 triệu lần chơi. Hơn 50 đội tuyển quốc gia với màu áo xác thực.`,
+    controls: `Là người đá: chuột để nhắm, nhấp để đá. Thủ môn nghiêng — dùng gợi ý. Là thủ môn: nhấp vào bên đúng để lao người.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Cuộc Đua Hỗn Loạn',
+    description: `Nhảy, bắn và vấp ngã về phía phương tiện trốn thoát trước đối thủ trong trò chơi brawler hỗn loạn này. Điều khiển được thiết kế cố tình vụng về — nhảy xen kẽ trái-phải — làm cho mỗi cuộc đua thành hài kịch.
+
+Phát triển bởi New Eich Games. Vũ khí xuất hiện ngẫu nhiên đảm bảo các trận đấu độc đáo.`,
+    controls: `Người chơi 1: W nhảy trái, E nhảy phải, R dùng vật phẩm. Người chơi 2: I trái, O phải, P vật phẩm. Người đến phương tiện trước thắng vòng.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Platformer Dọc',
+    description: `Leo lên tòa tháp cao nguy hiểm với tư cách là hình vuông nhỏ, một phòng chết người mỗi lần. Mỗi tầng mang bẫy tàn nhẫn hơn. Mục tiêu của bạn là dứa ở trên đỉnh.
+
+Hơn 110 phòng thủ công. Người chơi trung bình cần 3–5 giờ và hơn 2.000 lần chết để đến đỉnh.`,
+    controls: `Mũi tên hoặc WASD để di chuyển. Cách, W hoặc ↑ để nhảy. Nhấn đúp hướng trên không để có cú đẩy nhỏ. Bất kỳ nguy hiểm nào đều giết chết ngay lập tức và chỉ reset phòng hiện tại.`,
+  },
   'worlds-hardest-game': {
     title: "World's Hardest Game — Thử Thách Chính Xác Tuyệt Đối",
     description: `Điều khiển ô vuông đỏ qua mê cung bóng xanh trong khi thu thập đồng xu vàng. Nghe đơn giản? Đây là một trong những trò chơi khó nhất từng được tạo ra — đòi hỏi sự chính xác tuyệt đối và canh thời gian hoàn hảo.

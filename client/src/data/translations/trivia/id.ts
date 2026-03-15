@@ -182,6 +182,36 @@ export const ID_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `Tahukah kamu? Jetpack Joyride dibuat oleh Halfbrick Studios pada September 2011. Nama Barry Steakfries dipilih melalui jajak pendapat penggemar di Facebook. Machine Gun Jetpack terinspirasi dari konsep penerbangan bertenaga rekoil. Para ilmuwan dalam gim memiliki lebih dari 40 animasi. Gim ini telah diunduh lebih dari 750 juta kali dan hampir dinamai "Jetpack Joyride: Lab of Doom."`,
 
+  'fireboy-and-watergirl':
+    `Tahukah kamu? Fireboy and Watergirl dibuat pada 2009 oleh Oslo Albet. Game ini memiliki 32 level dan lima seri, dimainkan lebih dari 500 juta kali dan digunakan oleh guru di seluruh dunia sebagai latihan kerja tim.`,
+
+  'ovo':
+    `Tahukah kamu? OvO dibuat oleh Dedragames dan menjadi viral pada 2021. Trik utamanya adalah "dive-slide": tekan ke bawah di udara dan mendarat saat berlari untuk meluncur. Speedrunner menyelesaikan keseluruhan game dalam kurang dari 3 menit.`,
+
+  'basketball-stars':
+    `Tahukah kamu? Basketball Stars dikembangkan oleh Madpuffers. Waktu optimal untuk menembak adalah di puncak lompatan, persis seperti yang dilakukan pemain NBA sungguhan. Karakter-karakternya terinspirasi dari bintang bola basket.`,
+
+  'monkey-mart':
+    `Tahukah kamu? Monkey Mart dikembangkan oleh TinyDobbins hanya dalam tiga bulan dan dimainkan lebih dari 100 juta kali sejak 2022. Karakter utama bisa memanen dan mengisi ulang otomatis hanya dengan berjalan di atas area yang tepat.`,
+
+  'short-life':
+    `Tahukah kamu? Short Life dikembangkan oleh RHM Interactive dengan 20 level dan mesin fisika yang membuat setiap kematian berbeda. Fisika ragdoll menampilkan reaksi berlebihan terhadap setiap benturan.`,
+
+  '1v1-lol':
+    `Tahukah kamu? 1v1.LOL mencapai 200 juta pengguna terdaftar tanpa anggaran pemasaran. Menyebar secara viral melalui sekolah-sekolah. Sistem bangunan terinspirasi dari Fortnite dan gratis di browser.`,
+
+  'smash-karts':
+    `Tahukah kamu? Smash Karts melampaui 150 juta game pada 2023. Berjalan di server khusus untuk pengalaman multiplayer yang mulus. Setiap ronde berlangsung tiga menit.`,
+
+  'penalty-shooters-2':
+    `Tahukah kamu? Penalty Shooters 2 dimainkan lebih dari 200 juta kali. Memiliki lebih dari 50 tim nasional. Kunci tendangan penalti adalah mengamati ke arah mana kiper condong sebelum menembak.`,
+
+  'getaway-shootout':
+    `Tahukah kamu? Getaway Shootout dibuat oleh New Eich Games. Kontrolnya sengaja dibuat canggung: kamu tidak bisa melompat langsung ke depan, melainkan harus bergantian melompat ke kiri dan kanan, yang membuat setiap balapan jadi komedi.`,
+
+  'big-tower-tiny-square':
+    `Tahukah kamu? Big Tower Tiny Square memiliki lebih dari 110 ruangan buatan tangan. Pemain rata-rata mati lebih dari 2.000 kali. Tujuan akhirnya adalah nanas di puncak menara yang disembunyikan oleh kekuatan jahat.`,
+
   'worlds-hardest-game':
     `Tahukah kamu? World's Hardest Game dibuat oleh Stephen Critoph dan dirilis di AddictingGames pada tahun 2008. Gim ini memiliki 30 level dan kebanyakan pemain terjebak di level 15. Tingkat penyelesaian level terakhir kurang dari 0,1%. Musuh biru bergerak menggunakan pola sinusoidal. Para speedrunner bisa menyelesaikannya tanpa mati dalam waktu kurang dari 5 menit. Sekuelnya menambahkan 50 level baru.`,
 

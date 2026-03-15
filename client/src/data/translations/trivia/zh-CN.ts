@@ -182,6 +182,36 @@ export const ZH_CN_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `你知道吗？Jetpack Joyride由Halfbrick Studios于2011年9月开发。主角Barry Steakfries的名字是通过Facebook粉丝投票选出的。Machine Gun Jetpack的灵感来自后坐力驱动飞行的概念。游戏中的科学家有40多种动画。下载量超过7.5亿次。这款游戏差点被命名为"Jetpack Joyride: Lab of Doom"。`,
 
+  'fireboy-and-watergirl':
+    `你知道吗？Fireboy and Watergirl 由 Oslo Albet 于 2009 年创作。游戏有 32 个关卡和五个系列，已被游玩超过 5 亿次，全球教师将其用作团队协作训练。`,
+
+  'ovo':
+    `你知道吗？OvO 由 Dedragames 创作，2021 年病毒式传播。核心技巧是"俯冲滑行"：在空中向下按，落地时保持冲刺状态即可滑行。速通玩家可在 3 分钟内通关。`,
+
+  'basketball-stars':
+    `你知道吗？Basketball Stars 由 Madpuffers 开发。投篮的最佳时机是跳跃顶点，就像真实的 NBA 球员一样。角色以篮球明星为灵感。`,
+
+  'monkey-mart':
+    `你知道吗？Monkey Mart 由 TinyDobbins 仅用三个月开发完成，自 2022 年以来已被游玩超过 1 亿次。主角只需走过正确区域即可自动收割和补货。`,
+
+  'short-life':
+    `你知道吗？Short Life 由 RHM Interactive 开发，拥有 20 个关卡和让每次死亡都不同的物理引擎。布娃娃物理对每次撞击都会显示夸张的反应。`,
+
+  '1v1-lol':
+    `你知道吗？1v1.LOL 在没有营销预算的情况下达到 2 亿注册用户。它通过学校病毒式传播。建造系统受 Fortnite 启发，在浏览器中免费使用。`,
+
+  'smash-karts':
+    `你知道吗？Smash Karts 在 2023 年突破 1.5 亿局游戏。在专用服务器上运行，提供流畅的多人游戏体验。每局持续三分钟。`,
+
+  'penalty-shooters-2':
+    `你知道吗？Penalty Shooters 2 已被游玩超过 2 亿次。游戏拥有超过 50 支国家队。点球的关键是观察守门员在射门前倾向哪一侧。`,
+
+  'getaway-shootout':
+    `你知道吗？Getaway Shootout 由 New Eich Games 创作。操控被故意设计得笨拙：你不能直接向前跳，必须交替左右跳跃，这让每场比赛都成为一场喜剧。`,
+
+  'big-tower-tiny-square':
+    `你知道吗？Big Tower Tiny Square 包含超过 110 个手工制作的房间。普通玩家平均死亡超过 2,000 次。最终目标是被邪恶力量藏在塔顶的一颗菠萝。`,
+
   'worlds-hardest-game':
     `你知道吗？World's Hardest Game由Stephen Critoph创作，于2008年在AddictingGames上发布。共30个关卡，大多数玩家卡在第15关。最终关卡的通过率不到0.1%。蓝色敌人使用正弦波运动模式。速通玩家可在5分钟内零死亡通关。续作增加了50个关卡。`,
 

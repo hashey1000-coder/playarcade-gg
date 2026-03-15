@@ -182,6 +182,36 @@ export const FR_TRIVIA: Record<string, string> = {
   'jetpack-joyride':
     `Créé par Halfbrick Studios en septembre 2011. Barry Steakfries a été nommé via un sondage auprès des fans sur Facebook. Le Machine Gun Jetpack est inspiré du concept de vol propulsé par recul. Les scientifiques possèdent plus de 40 animations. Plus de 750 millions de téléchargements. Il a failli s'appeler « Jetpack Joyride: Lab of Doom ».`,
 
+  'fireboy-and-watergirl':
+    `Le saviez-vous ? Fireboy and Watergirl a été créé en 2009 par Oslo Albet. Le jeu compte 32 niveaux et cinq épisodes, a été joué plus de 500 millions de fois et est utilisé par des enseignants du monde entier comme exercice de travail d'équipe.`,
+
+  'ovo':
+    `Le saviez-vous ? OvO a été créé par Dedragames et est devenu viral en 2021. L'astuce clé est le « dive-slide » : appuyez vers le bas dans les airs et atterrissez en sprint pour glisser. Les speedrunners finissent le jeu en moins de 3 minutes.`,
+
+  'basketball-stars':
+    `Le saviez-vous ? Basketball Stars a été développé par Madpuffers. Le moment optimal pour tirer est au sommet du saut, exactement comme les vrais joueurs NBA. Les personnages sont inspirés de stars du basketball.`,
+
+  'monkey-mart':
+    `Le saviez-vous ? Monkey Mart a été développé par TinyDobbins en seulement trois mois et joué plus de 100 millions de fois depuis 2022. Le personnage principal peut récolter et réapprovisionner automatiquement en marchant sur les bonnes zones.`,
+
+  'short-life':
+    `Le saviez-vous ? Short Life a été développé par RHM Interactive avec 20 niveaux et un moteur physique qui rend chaque mort différente. La physique ragdoll affiche des réactions exagérées à chaque impact.`,
+
+  '1v1-lol':
+    `Le saviez-vous ? 1v1.LOL a atteint 200 millions d'utilisateurs inscrits sans budget marketing. Il s'est répandu de manière virale dans les écoles. Le système de construction s'inspire de Fortnite et est gratuit dans le navigateur.`,
+
+  'smash-karts':
+    `Le saviez-vous ? Smash Karts a dépassé les 150 millions de parties en 2023. Il fonctionne sur des serveurs dédiés pour une expérience multijoueur fluide. Chaque partie dure trois minutes.`,
+
+  'penalty-shooters-2':
+    `Le saviez-vous ? Penalty Shooters 2 a été joué plus de 200 millions de fois. Le jeu compte plus de 50 équipes nationales. La clé du penalty est d'observer de quel côté le gardien se penche avant de tirer.`,
+
+  'getaway-shootout':
+    `Le saviez-vous ? Getaway Shootout a été créé par New Eich Games. Les contrôles sont délibérément maladroits : vous ne pouvez pas sauter directement en avant, vous devez alterner les sauts gauche et droite, ce qui transforme chaque course en comédie.`,
+
+  'big-tower-tiny-square':
+    `Le saviez-vous ? Big Tower Tiny Square contient plus de 110 pièces faites à la main. Le joueur moyen meurt plus de 2 000 fois. L'objectif final est un ananas au sommet de la tour, caché par une force maléfique.`,
+
   'worlds-hardest-game':
     `Créé par Stephen Critoph et publié sur AddictingGames en 2008. Il comporte 30 niveaux et la plupart des joueurs restent bloqués au niveau 15. Le taux de complétion du dernier niveau est inférieur à 0,1 %. Les ennemis bleus utilisent un mouvement sinusoïdal. Les speedrunners le terminent sans mourir en moins de 5 minutes. La suite a ajouté 50 niveaux.`,
 

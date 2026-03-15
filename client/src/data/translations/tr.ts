@@ -428,6 +428,76 @@ Değişen dünya lokasyonları ve canlı grafiklerle sürekli taze bir deneyim s
 Çeşitli araçlar ve güçlendiriciler oyun deneyimini sürekli taze tutar. Görevleri tamamlayarak ödüller kazanın ve yükseltmeler satın alarak her seferinde daha iyi performans gösterin.`,
     controls: `Tıklayın veya basılı tutun — jetpack çalışır ve yükselirsiniz. Bırakın — alçalırsınız. Kısa dokunuşlarla yüksekliği ayarlayın.`,
   },
+  'fireboy-and-watergirl': {
+    title: 'Fireboy and Watergirl — Orman Tapınağı',
+    description: `İki zıt elementel kahramanı 32 kooperatif bulmaca seviyesinde yönetin. Ateş çocuğu ateşe bağışıklıdır, Su kız suya — yanlış elemente dokunun ve anında ölürsünüz. Kapıları açmak için kolları etkinleştirin ve her iki karakteri de aynı anda çıkışlara götürün.
+
+2009'da piyasaya çıktı, beş bölümde 500 milyonun üzerinde oynanışla en sevilen tarayıcı oyunu serilerinden biri. Tüm dünyadan öğretmenler takım çalışması egzersizi olarak kullanıyor.`,
+    controls: `Oyuncu 1 (Ateş Çocuğu): hareket ve zıplama için ok tuşları. Oyuncu 2 (Su Kız): hareket için WASD. Ateş çocuğu suda ölür, Su kız ateşte. İkisi de yeşil çamurda ölür. Her ikisini de eş zamanlı olarak uygun renkli çıkışlara götürün.`,
+  },
+  'ovo': {
+    title: 'OvO — Parkur Platformer',
+    description: `40'tan fazla hassas platform seviyesinde sprint yapın, kayın ve zıplayın. Engellerin altından geçmek için dalış-vuru ve kısayollar oluşturmak için duvar zıplamasını öğrenin.
+
+Dedragames tarafından yapıldı ve 2021'de viral oldu. Speedrun oyuncuları tüm oyunu 3 dakikanın altında tamamlıyor.`,
+    controls: `Koşmak için oklar veya WASD. Zıplamak için boşluk veya ↑. Havada ↓ dalış-vuru için. Koşarken dalış-vuru kaymak için. Duvara yakın zıplama duvar zıplaması için.`,
+  },
+  'basketball-stars': {
+    title: 'Basketball Stars — 1e1 Sokak Basketbolu',
+    description: `Yapay zeka veya bir arkadaşınızla bire bir basketbolda karşılaşın. Savunucunuzu yanıltın ve üçlük veya gösterişli bir smaç için mükemmel anı seçin.
+
+Madpuffers tarafından geliştirildi. Karakter kadrosu NBA süper yıldızlarından ilham alındı ve her gün yüz binlerce oyuncu oynuyor.`,
+    controls: `Oyuncu 1: A/D hareket, W zıpla, S savun/çal. Atmak için B veya tıklama. Oyuncu 2: oklar, ↑ zıpla, ↓ savun. Atmak için L veya tıklama.`,
+  },
+  'monkey-mart': {
+    title: 'Monkey Mart — Süpermarket Yöneticisi',
+    description: `Sevimli bir maymun olarak kendi süpermarketinizi yönetin! Ürünleri hasat edin, rafları doldurun ve müşteriler sabrini kaybetmeden önce hizmet verin. Görevleri otomatikleştirmek için yardımcı maymunlar işe alın.
+
+2022'den bu yana 100 milyonun üzerinde oynanış. Bağımsız geliştirici TinyDobbins tarafından yalnızca üç ayda yapıldı.`,
+    controls: `Yürümek için oklar veya WASD. Tarlalar üzerinde yürümek hasat eder. Boş raflara yaklaşmak doldurur. Yeni bölümler ve yardımcılar için bozuk para harcayın.`,
+  },
+  'short-life': {
+    title: 'Short Life — Engel Parkuru Hayatta Kalma',
+    description: `Dönen testereler, çekiçler ve mayınlarla dolu ölümcül engel parkurlarında ragdoll karakteri yönetin. Başlık abartı değil — ölün, gülün ve hemen tekrar deneyin.
+
+RHM Interactive tarafından geliştirildi. Her ölümü farklı yapan fizik motoruyla artan vahşette 20 seviye.`,
+    controls: `Hareket ve zıplama için oklar veya WASD. Tüm tehlikeler anında öldürür. İlerlemeye devam etmek için her seviyenin sonundaki bayrağa ulaşın. Her ölümden sonra anında yeniden başlatma.`,
+  },
+  '1v1-lol': {
+    title: '1v1.LOL — İnşa Et ve Vur',
+    description: `Hayatta kalmak için doğru nişan almayı ve daha da hızlı inşa etmeyi gerektiren arenaların da savaşın. Yüksek avantaj için duvarlar ve rampalar yerleştirin, ardından rakibinizi eleyin.
+
+Pazarlama bütçesi olmadan 200 milyondan fazla kayıtlı kullanıcı. Dünya genelindeki okullarda viral olarak yayıldı.`,
+    controls: `WASD hareket. Fare nişan al/ateş et. Q duvar, E zemin, R rampa, F çatı. Shift sprint. Fare tekerleği silah değiştirme.`,
+  },
+  'smash-karts': {
+    title: 'Smash Karts — Çok Oyunculu Kart Savaşı',
+    description: `Bir karta atlayın ve bu hızlı savaş arenasında roketler, makineli tüfekler ve mayınlarla rakipleri eleyin. Silah sandıklarını toplayın ve son kart olun.
+
+2023'te 150 milyonun üzerinde oynanış. Özel sunucular düşük gecikme süresi sağlar.`,
+    controls: `Sürmek için WASD veya oklar. Nişan almak için fare. Ateş etmek için boşluk veya tıklama. Silah sandıklarını toplayın. Süre bitiminde en fazla eleme kazanır.`,
+  },
+  'penalty-shooters-2': {
+    title: 'Penalty Shooters 2 — Futbol Penaltı Atışları',
+    description: `8 uluslararası turnuvadaki penaltı atışlarında en yüksek futbol baskısıyla yüzleşin. Atıcı olarak kalecinin eğilimini izleyin. Kaleci olarak atış yönünü okuyun.
+
+200 milyonun üzerinde oynanış. Otantik forma renkleriyle 50'den fazla milli takım.`,
+    controls: `Atıcı olarak: nişan almak için fare, atmak için tıklama. Kaleci eğiliyor — ipucunu kullanın. Kaleci olarak: atlamak için doğru tarafa tıklayın.`,
+  },
+  'getaway-shootout': {
+    title: 'Getaway Shootout — Kaotik Kaçış Yarışı',
+    description: `Bu kaotik brawlerda rakiplerinizden önce kaçış aracına zıplayın, ateş edin ve tökezleyin. Kontroller kasıtlı olarak beceriksiz — sola-sağa dönüşümlü zıplamalar — her yarışı bir komediye dönüştürüyor.
+
+New Eich Games tarafından geliştirildi. Rastgele oluşan silahlar benzersiz maçlar sağlar.`,
+    controls: `Oyuncu 1: W sola zıpla, E sağa zıpla, R eşyayı kullan. Oyuncu 2: I sol, O sağ, P eşya. Araca ilk ulaşan turu kazanır.`,
+  },
+  'big-tower-tiny-square': {
+    title: 'Big Tower Tiny Square — Dikey Platform Oyunu',
+    description: `Küçük bir kare olarak tehlikeli derecede yüksek bir kuleyi, her seferinde bir ölümcül oda tırmanın. Her kat daha zalim tuzaklar getirir. Hedefiniz en üstteki ananas.
+
+110'dan fazla el yapımı oda. Ortalama oyuncu zirveye ulaşmak için 3–5 saat ve 2.000'den fazla ölüme ihtiyaç duyuyor.`,
+    controls: `Hareket için oklar veya WASD. Zıplamak için boşluk, W veya ↑. Havada yöne çift dokunma küçük bir hız patlaması sağlar. Herhangi bir tehlike anında öldürür ve yalnızca mevcut odayı sıfırlar.`,
+  },
   'worlds-hardest-game': {
     title: 'World\'s Hardest Game — Nihai Hassasiyet Mücadelesi',
     description: `World's Hardest Game, gelmiş geçmiş en zor oyunlardan biri olarak bilinir. Kırmızı kareyi mavi toplardan kaçırın, sarı daireleri toplayın ve yeşil alana ulaşın.
